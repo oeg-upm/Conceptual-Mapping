@@ -13,7 +13,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#">
         <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
-        <dc:title xml:lang="en">Conceptual Mapping</dc:title>
+        <dc:title xml:lang="en">Conceptual Mapping Ontology</dc:title>
         <dcterms:contributor xml:lang="es">Andrea Cimmino (Ontology Engineering Group)</dcterms:contributor>
         <dcterms:contributor xml:lang="es">Edna Ruckhaus (Ontology Engineering Group)</dcterms:contributor>
         <dcterms:contributor xml:lang="es">Oscar Corcho (Ontology Engineering Group)</dcterms:contributor>
