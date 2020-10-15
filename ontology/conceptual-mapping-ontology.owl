@@ -1,0 +1,765 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://http://vocab.linkeddata.es/def/conceptual-mapping#"
+     xml:base="http://http://vocab.linkeddata.es/def/conceptual-mapping"
+     xmlns:cm="http://http://vocab.linkeddata.es/def/conceptual-mapping#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:wotsec="https://www.w3.org/2019/wot/security#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#">
+        <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <dc:title xml:lang="en">Conceptual Mapping</dc:title>
+        <dcterms:contributor xml:lang="es">Andrea Cimmino (Ontology Engineering Group)</dcterms:contributor>
+        <dcterms:contributor xml:lang="es">Edna Ruckhaus (Ontology Engineering Group)</dcterms:contributor>
+        <dcterms:contributor xml:lang="es">Oscar Corcho (Ontology Engineering Group)</dcterms:contributor>
+        <dcterms:contributor xml:lang="es">Raúl García Castro (Ontology Engineering Group)</dcterms:contributor>
+        <dcterms:created xml:lang="en">2020-10-14</dcterms:created>
+        <dcterms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</dcterms:creator>
+        <dcterms:description xml:lang="en">TBD</dcterms:description>
+        <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <dcterms:modified xml:lang="en">2020-10-14</dcterms:modified>
+        <vann:preferredNamespacePrefix xml:lang="en">cm</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/vann/hasSecurityScheme -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/vann/hasSecurityScheme"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#dataType -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#dataType"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#expects -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#expects"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasRule -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasRule"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#language -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#language"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#linkingExpression -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#linkingExpression"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#object -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#object"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#predicate -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#predicate"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#provenance -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#provenance"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#source -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#source"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#subject -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#subject"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#target -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#target"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#URI -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#URI"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#delimiter -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#delimiter"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#expression -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#expression"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#iterator -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#iterator"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#name"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#prefix -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#prefix"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#protocol -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#protocol"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#query -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#query"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#returnValue -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#returnValue"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#separator -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#separator"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#value -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Argument -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Argument">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#value"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Prefix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#provenance"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Ontology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Constant -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Constant">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/vann/hasSecurityScheme"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3.org/2019/wot/security#SecurityScheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#URI"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#protocol"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Rule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#object"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#dataType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#query"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#expects"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#returnValue"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#EventSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#EventSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Graph -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Graph">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Rule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#linkingExpression"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#source"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#target"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Rule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#object"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Ontology -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Ontology">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#URI"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#prefix"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Prefix -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Prefix">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#URI"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#prefix"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Rule -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Rule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#predicate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasRule"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Rule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#subject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#language"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#delimiter"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#separator"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#TextSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#TextSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#expression"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#iterator"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/security#SecurityScheme -->
+
+    <owl:Class rdf:about="https://www.w3.org/2019/wot/security#SecurityScheme"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
