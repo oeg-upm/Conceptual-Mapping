@@ -141,8 +141,14 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
     </owl:ObjectProperty>
     
@@ -214,8 +220,14 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#object -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#object">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule"/>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
     </owl:ObjectProperty>
     
@@ -225,6 +237,7 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#predicate">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Rule"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
     </owl:ObjectProperty>
     
 
@@ -279,9 +292,15 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#URI -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#URI">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Ontology"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Prefix"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Ontology"/>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Prefix"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
@@ -317,8 +336,14 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#name -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#name">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Ontology"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Ontology"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
