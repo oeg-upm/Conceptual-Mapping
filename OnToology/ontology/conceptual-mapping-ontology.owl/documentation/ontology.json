@@ -144,7 +144,7 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#object"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasObject"
   } ]
 }, {
   "@id" : "_:genid25",
@@ -157,7 +157,7 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#dataType"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType"
   } ]
 }, {
   "@id" : "_:genid26",
@@ -228,7 +228,7 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#linkingExpression"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression"
   } ]
 }, {
   "@id" : "_:genid32",
@@ -267,7 +267,7 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#object"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasObject"
   } ]
 }, {
   "@id" : "_:genid35",
@@ -328,7 +328,7 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#predicate"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -377,7 +377,7 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#subject"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -394,7 +394,7 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#language"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage"
   } ]
 }, {
   "@id" : "_:genid44",
@@ -487,8 +487,16 @@
 }, {
   "@id" : "http://purl.org/vocab/vann/hasSecurityScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a data access and the security scheme it has"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has security scheme"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://www.w3.org/2019/wot/security#SecurityScheme"
@@ -970,8 +978,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#URI",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Uniform Resource Identifier used in a data access, ontology or prefix"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "URI"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -991,7 +1007,109 @@
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#dataType",
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#delimiter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A character that separates the different fields of a tabular source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Delimiter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between an Evaluable Expression and the Evaluable Expressions it takes as parameters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Expects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "What specifies which data is retrieven from a text source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TextSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between the data access or data source and an argument that describes it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has argument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Argument"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a data source and its data access"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has data access"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a rule set and its data source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has data source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1002,70 +1120,92 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Data Type"
+    "@value" : "Has data type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#delimiter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a string property rule and an evaluable expression that defines the language of the rule"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has language"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expects",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a linking rule and its linking expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has linking expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a data or object property rule and the object it defines with an evaluable expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expression",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TextSource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument",
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a data or object property rule and the predicate it defines with an evaluable expression"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has predicate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Argument"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between the mapping and the prefixes it uses"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has prefix"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Prefix"
@@ -1073,8 +1213,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasRule",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a rule set and the rules it contains"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has rule"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Rule"
@@ -1082,71 +1230,84 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a mapping and the rule sets it contains"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has rule set"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#iterator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#language",
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a data or object property rule and the subject it defines with an evaluable expression"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has subject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#linkingExpression",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#iterator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "What is to be iterated in a tree source"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Iterator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of the argument or property to be defined"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#object",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#predicate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Rule"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
-  } ]
-}, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#prefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abreviation of an URI that is used in the ontology"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1154,8 +1315,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#protocol",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Protocol used to acces the data"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Protocol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1163,8 +1332,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#provenance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a mapping and the ontology of provenance"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Provenance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Ontology"
@@ -1172,8 +1349,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#query",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Query used to retrieve data in a data source"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Query"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1181,8 +1366,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Time between every data request"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Refresh time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -1190,8 +1383,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Value returned from an evaluable expression"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Returns value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -1199,8 +1400,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#separator",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Character that separates two values from one field in a tabular source"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Separator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1208,26 +1417,33 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#source",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a linking rule and its source rule set"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#subject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Source"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#target",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a linking rule and its target rule set"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Target"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
@@ -1235,8 +1451,16 @@
 }, {
   "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Value that takes an argument"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Argument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
