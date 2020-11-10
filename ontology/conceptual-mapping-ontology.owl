@@ -22,7 +22,7 @@
         <dcterms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</dcterms:creator>
         <dcterms:description xml:lang="en">TBD</dcterms:description>
         <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-05T00:00:00</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-10T00:00:00</dcterms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
     </owl:Ontology>
