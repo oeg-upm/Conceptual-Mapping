@@ -49,6 +49,9 @@
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#prefix",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "Concatenate" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate"
     },
@@ -74,9 +77,6 @@
     "expression" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expression",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "Graph" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Graph"
     },
     "hasRuleSet" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet",
@@ -134,6 +134,9 @@
     "hasSecurityScheme" : {
       "@id" : "http://purl.org/vocab/vann/hasSecurityScheme",
       "@type" : "@id"
+    },
+    "GraphSource" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource"
     },
     "DataSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
@@ -196,6 +199,9 @@
     },
     "ObjectPropertyRule" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "language" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#language",
