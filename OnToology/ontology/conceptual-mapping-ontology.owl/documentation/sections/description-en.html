@@ -1,3 +1,46 @@
 <h2 id="desc" class="list">Conceptual Mapping: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-In case you want to extend the description and put here the schema</span>
+Figure 1 provides a general overview of the current status of the Conceptual
+Mapping Ontology.
+</span>
+
+<center>
+  <img src="resources/images/cm_diagram.png" alt="General overview of the Conceptual Mapping Ontology." width="90%"> <figcaption><b>Figure 1.</b> - Vocabulary for the representation of mapping languages.</figcaption>
+</center>
+
+<span class="markdown">
+  The vocabulary can be divided in four parts: Data source and access, rule set,
+  evaluable expression and provenance.
+</span>
+<ul>
+  <li><b>Data source and access:</b> Provides the definition of the source data
+    (DataSource class), its formats (subclasses TabularSource, TreeSource, GraphSource,
+    and TextSource), ways to synchronize (subclasses EventSource, SynchronousSource
+    and AsynchronousSource) and how to access the data (DataAccess class). Moreover,
+    if these classes and their respective properties are not sufficient to describe
+    the data retrieval, the class Argument enable the definition of more features.
+  </li>
+  <li><b>Rule set:</b> Defines the sets of subject, predicate and objects described
+    in the mapping (ConceptualMapping class). Each rule set (RuleSet class) contains
+    one single subject (with the hasSubject property) and several rules (Rule class).
+    The rule defines the predicate (hasPredicate property), whereas the object
+    can be described by any of its subclasses (DataPropertyRule, ObjectPropertyRule
+    and LinkingRule classes, with the hasObject property). The datatype can be
+    specified for DataPropertyRule (hasDataType property), and the language only
+    for the class StringPropertyRule (haslanguage property). Finally, the union
+    between two rule sets can be specified with the LinkingRule class, and
+    the expression that links them with the linkingExpression property.
+  </li>
+  <li><b>Evaluable expression:</b> Allows the specification of different types of
+    values for subjects, predicates, objects and linking expressions. The
+    EvaluableExpression class inherits from the RDF lists to be able to expect
+    more than one evaluable expressions. These can be references to data source
+    (DataSource subclass), constant values (Constant subclass), a concatenation
+    of evaluable expressions (Concatenate subclass) or linking expressions
+    (LinkingExpression subclass). The subclasses can be extended to more functions
+    necessary to describe the data.
+  </li>
+  <li><b>Provenance:</b> It defines the ontologies (Ontology class) used to write
+    the mapping (ConceptualMapping class).
+  </li>
+</ul>
