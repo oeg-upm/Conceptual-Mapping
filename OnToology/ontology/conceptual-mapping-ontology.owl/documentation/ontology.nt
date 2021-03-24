@@ -2,6 +2,7 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Andrea Cimmino (Ontology Engineering Group)"@es .
+<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "David Chaves Fraga (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Edna Ruckhaus (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Oscar Corcho (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Raúl García Castro (Ontology Engineering Group)"@es .
@@ -9,7 +10,7 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/description> "TBD"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/modified> "2020-11-10" .
+<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/modified> "2020-03-24T00:00:00"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping> .
 # 
@@ -39,6 +40,9 @@
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -50,6 +54,15 @@
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2008/05/skos#definition
+<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -64,136 +77,192 @@
 <http://purl.org/vocab/vann/hasSecurityScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/vocab/vann/hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
 <http://purl.org/vocab/vann/hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2019/wot/security#SecurityScheme> .
-<http://purl.org/vocab/vann/hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a data access and the security scheme it has"@en .
-<http://purl.org/vocab/vann/hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Has security scheme"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#expects
-<http://vocab.linkeddata.es/def/conceptual-mapping#expects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#expects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#expects> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#expects> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an Evaluable Expression and the Evaluable Expressions it takes as parameters"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#expects> <http://www.w3.org/2000/01/rdf-schema#label> "Expects"@en .
+<http://purl.org/vocab/vann/hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#label> "has security scheme"@en .
+<http://purl.org/vocab/vann/hasSecurityScheme> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data access and the security scheme it has"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between the data access or data source and an argument that describes it"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/2000/01/rdf-schema#label> "Has argument"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/2000/01/rdf-schema#label> "has argument"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> <http://www.w3.org/2004/02/skos/core#definition> "A relation between the data access and an argument that describes it"@en .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology> <http://www.w3.org/2000/01/rdf-schema#label> "has associated ontology"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a mapping and the ontology of provenance"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a data source and its data access"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> <http://www.w3.org/2000/01/rdf-schema#label> "Has data access"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> <http://www.w3.org/2000/01/rdf-schema#label> "has data access"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data source and its data access"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a rule set and its data source"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#label> "Has data source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#label> "has data source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data source access and its data source"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a Data Property Object and its datatype"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#label> "Has data type"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#label> "has data type"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluable expression" .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a resource map and the evaluable expression that defines it"@en .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#label> "has function name"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a recursive expression and the name of the function it defines"@en .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#hasInput
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "has input"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasInput> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the list of parameters it requires"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a string property rule and an evaluable expression that defines the language of the rule"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Has language"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "has language"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a literal to define the language"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a linking rule and its linking expression"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Has linking expression"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Node> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#label> "has named graph"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the assigned named graph"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasObject
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a data or object property rule and the object it defines with an evaluable expression"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "Has object"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "has object"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a resource map to define the predicate"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Rule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a data or object property rule and the predicate it defines with an evaluable expression"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#label> "Has predicate"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#label> "has predicate"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between the mapping and the prefixes it uses"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix> <http://www.w3.org/2000/01/rdf-schema#label> "Has prefix"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#hasRule
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRule> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Rule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRule> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a rule set and the rules it contains"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRule> <http://www.w3.org/2000/01/rdf-schema#label> "Has rule"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a mapping and the rule sets it contains"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet> <http://www.w3.org/2000/01/rdf-schema#label> "Has rule set"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "has protocol"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol> <http://www.w3.org/2004/02/skos/core#definition> "A relation between the data access and the protocol that describes it"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a data or object property rule and the subject it defines with an evaluable expression"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#label> "Has subject"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Node> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#label> "has subject"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the subject"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#provenance
-<http://vocab.linkeddata.es/def/conceptual-mapping#provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#provenance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#provenance> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#provenance> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a mapping and the ontology of provenance"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#provenance> <http://www.w3.org/2000/01/rdf-schema#label> "Provenance"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#name
+<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an argument and the resource that describes its name"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#source
-<http://vocab.linkeddata.es/def/conceptual-mapping#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#source> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#source> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#source> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a linking rule and its source rule set"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#returns
+<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2000/01/rdf-schema#label> "returns"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the resource it returns"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#target
-<http://vocab.linkeddata.es/def/conceptual-mapping#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#target> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#target> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a linking rule and its target rule set"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#target> <http://www.w3.org/2000/01/rdf-schema#label> "Target"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#value
+<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an argument and the resource that describes its value"@en .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the subject RDF statement." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object> <http://www.w3.org/2000/01/rdf-schema#label> "object" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/2000/01/rdf-schema#comment> "The predicate of the subject RDF statement." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> <http://www.w3.org/2000/01/rdf-schema#label> "predicate" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the subject RDF statement." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#label> "subject" .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "is in scheme"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
 # 
 # 
 # 
@@ -206,106 +275,47 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#URI
 <http://vocab.linkeddata.es/def/conceptual-mapping#URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#URI> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#URI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#URI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#URI> <http://www.w3.org/2000/01/rdf-schema#comment> "Uniform Resource Identifier used in a data access, ontology or prefix"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#URI> <http://www.w3.org/2000/01/rdf-schema#label> "URI"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#delimiter
-<http://vocab.linkeddata.es/def/conceptual-mapping#delimiter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#delimiter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#delimiter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#delimiter> <http://www.w3.org/2000/01/rdf-schema#comment> "A character that separates the different fields of a tabular source"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#delimiter> <http://www.w3.org/2000/01/rdf-schema#label> "Delimiter"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#URI> <http://www.w3.org/2004/02/skos/core#definition> "Uniform Resource Identifier used to identify the resource retrieven by the data access"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#expression
 <http://vocab.linkeddata.es/def/conceptual-mapping#expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#comment> "What specifies which data is retrieven from a text source"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#label> "Expression"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#expression> <http://www.w3.org/2004/02/skos/core#definition> "What specifies which data is retrieven from a text source"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#iterator
 <http://vocab.linkeddata.es/def/conceptual-mapping#iterator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#iterator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#iterator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#iterator> <http://www.w3.org/2000/01/rdf-schema#comment> "What is to be iterated in a tree source"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#iterator> <http://www.w3.org/2000/01/rdf-schema#label> "Iterator"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#name
-<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the argument or property to be defined"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#prefix
-<http://vocab.linkeddata.es/def/conceptual-mapping#prefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#prefix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#prefix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#prefix> <http://www.w3.org/2000/01/rdf-schema#comment> "Abreviation of an URI that is used in the ontology"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#prefix> <http://www.w3.org/2000/01/rdf-schema#label> "Label"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#protocol
-<http://vocab.linkeddata.es/def/conceptual-mapping#protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#protocol> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#protocol> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#protocol> <http://www.w3.org/2000/01/rdf-schema#comment> "Protocol used to acces the data"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#protocol> <http://www.w3.org/2000/01/rdf-schema#label> "Protocol"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#query
-<http://vocab.linkeddata.es/def/conceptual-mapping#query> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#query> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#query> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#query> <http://www.w3.org/2000/01/rdf-schema#comment> "Query used to retrieve data in a data source"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#query> <http://www.w3.org/2000/01/rdf-schema#label> "Query"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#iterator> <http://www.w3.org/2000/01/rdf-schema#label> "iterator"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#iterator> <http://www.w3.org/2004/02/skos/core#definition> "What is to be iterated in a tree source"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime
 <http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time between every data request"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#label> "Refresh time"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue
-<http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Value returned from an evaluable expression"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue> <http://www.w3.org/2000/01/rdf-schema#label> "Returns value"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#label> "refresh time"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> <http://www.w3.org/2004/02/skos/core#definition> "Time between every data request"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#separator
 <http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/2000/01/rdf-schema#comment> "Character that separates two values from one field in a tabular source"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/2000/01/rdf-schema#label> "Separator"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/2000/01/rdf-schema#label> "separator"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#separator> <http://www.w3.org/2004/02/skos/core#definition> "Character that separates two values from one field in a tabular source"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#value
-<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2000/01/rdf-schema#comment> "Value that takes an argument"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#value> <http://www.w3.org/2000/01/rdf-schema#label> "Value"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#shape
+<http://vocab.linkeddata.es/def/conceptual-mapping#shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#shape> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#shape> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#shape> <http://www.w3.org/2000/01/rdf-schema#label> "shape"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#shape> <http://www.w3.org/2004/02/skos/core#definition> "Restrictions declared for an ontology in form of a shape"@en .
 # 
 # 
 # 
@@ -318,328 +328,324 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#Argument
 <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#name> .
-_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#value> .
-_:genid15 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that allows the definition of additional options for describing Data Access and Data Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#name> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#value> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/2000/01/rdf-schema#label> "Argument"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Argument> <http://www.w3.org/2004/02/skos/core#definition> "Required argument to describe data access"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> .
-_:genid16 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime> .
+_:genid11 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data source that is not synchronized when it is sent or received"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#label> "Asynchronous Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2004/02/skos/core#definition> "Data source that is not synchronized when it is sent or received"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate
-<http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate> <http://www.w3.org/2000/01/rdf-schema#comment> "Expression that joins the values of two Evaluable Expressions"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate> <http://www.w3.org/2000/01/rdf-schema#label> "Concatenate"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression
+<http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Base Expression"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression> <http://www.w3.org/2004/02/skos/core#definition> "Expression that cannot have nested functions and expects no parameters, only returns"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping
-<http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix> .
-_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet> .
-_:genid18 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#provenance> .
-_:genid19 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that contains the necessary information to transform source data to RDF according to an ontology's schema"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping> <http://www.w3.org/2000/01/rdf-schema#label> "Conceptual Mapping"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode
+<http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#Node> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode> <http://www.w3.org/2000/01/rdf-schema#label> "Blank Node" .
+<http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode> <http://www.w3.org/2004/02/skos/core#definition> "Unique node with no intrinsic name that is not a reference to a resource or a literal"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#Constant
 <http://vocab.linkeddata.es/def/conceptual-mapping#Constant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Constant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Constant> <http://www.w3.org/2000/01/rdf-schema#comment> "Expression that contains a constant value"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Constant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#Constant> <http://www.w3.org/2000/01/rdf-schema#label> "Constant"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Constant> <http://www.w3.org/2004/02/skos/core#definition> "Expression that contains a constant value"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess
 <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/vann/hasSecurityScheme> .
-_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3.org/2019/wot/security#SecurityScheme> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> .
-_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#URI> .
-_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#protocol> .
-_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the way of retrieving the data from its source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#URI> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2000/01/rdf-schema#label> "Data Access"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#Rule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> .
-_:genid24 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid24 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType> .
-_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule that contains the information to generate a data property"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> <http://www.w3.org/2000/01/rdf-schema#label> "Data Property Rule"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> <http://www.w3.org/2004/02/skos/core#definition> "Description of how to retrieve the data from its source"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#DataSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument> .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.linkeddata.es/def/conceptual-mapping#Argument> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> .
-_:genid27 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid27 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#query> .
-_:genid28 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the retrieved data"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#label> "Data Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> <http://www.w3.org/2004/02/skos/core#definition> "Description of the retrieved data"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess
 <http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "Expression with a value retrieved from the source data"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> <http://www.w3.org/2000/01/rdf-schema#label> "Data Source Access"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess> <http://www.w3.org/2004/02/skos/core#definition> "Expression with a value retrieved from the source data"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression
 <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#expects> .
-_:genid29 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid29 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue> .
-_:genid30 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that contains the information to form objects, predicates and subjects"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluable Expression"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2004/02/skos/core#definition> "Element that contains the information to form objects, predicates and subjects"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#EventSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> <http://www.w3.org/2000/01/rdf-schema#label> "Event Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#EventSource> <http://www.w3.org/2004/02/skos/core#definition> "Type of data access that retrieves data when a package arrives"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data source that is stored as a graph"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/2000/01/rdf-schema#label> "Graph Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource> <http://www.w3.org/2004/02/skos/core#definition> "Data source that is stored as a graph"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data stored in HTML format"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource> <http://www.w3.org/2000/01/rdf-schema#label> "HTML Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource> <http://www.w3.org/2004/02/skos/core#definition> "Data stored in HTML format"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data stored in JSON format"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource> <http://www.w3.org/2000/01/rdf-schema#label> "JSON Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource> <http://www.w3.org/2004/02/skos/core#definition> "Data stored in JSON format"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression
 <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "Expression that defines how two Rule Sets are linked"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Linking Expression"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> <http://www.w3.org/2004/02/skos/core#definition> "Expression that defines the link between two Nodes"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#Rule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression> .
-_:genid31 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid31 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#source> .
-_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid32 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#target> .
-_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid33 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule that contains the information to generate a link between two Rule Sets"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule> <http://www.w3.org/2000/01/rdf-schema#label> "Linking Rule"@en .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule
-<http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#Rule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> .
-_:genid34 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid34 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule that contains the information to generate an object property"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule> <http://www.w3.org/2000/01/rdf-schema#label> "Object Property Rule"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#Node
+<http://vocab.linkeddata.es/def/conceptual-mapping#Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Node> <http://www.w3.org/2000/01/rdf-schema#label> "Node" .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Node> <http://www.w3.org/2004/02/skos/core#definition> "Union of blank node and reference node"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#Ontology
 <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#URI> .
-_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid35 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#prefix> .
-_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology used guide the data translation"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#Ontology> <http://www.w3.org/2004/02/skos/core#definition> "Ontology used to guide the data translation"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#Prefix
-<http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#URI> .
-_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#prefix> .
-_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid38 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> <http://www.w3.org/2000/01/rdf-schema#comment> "Prefix used in the mapping"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Prefix> <http://www.w3.org/2000/01/rdf-schema#label> "Prefix"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource
+<http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource> <http://www.w3.org/2000/01/rdf-schema#label> "Periodic Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource> <http://www.w3.org/2004/02/skos/core#definition> "Data source that is retrieven repeatedly in a period of time"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#Rule
-<http://vocab.linkeddata.es/def/conceptual-mapping#Rule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Rule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> .
-_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid39 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Rule> <http://www.w3.org/2000/01/rdf-schema#comment> "Element that defines the properties and objects to be created"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#Rule> <http://www.w3.org/2000/01/rdf-schema#label> "Rule"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression
+<http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Recursive Expression"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression> <http://www.w3.org/2004/02/skos/core#definition> "Expression that can expect one or more parameters and nested functions"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet
-<http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource> .
-_:genid40 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid40 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasRule> .
-_:genid41 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#Rule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> .
-_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of Rules that are related to a subject"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet> <http://www.w3.org/2000/01/rdf-schema#label> "Rule Set"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode
+<http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#Node> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Node" .
+<http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode> <http://www.w3.org/2004/02/skos/core#definition> "Node that references an IRI"@en .
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule
-<http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage> .
-_:genid43 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid43 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule> <http://www.w3.org/2000/01/rdf-schema#comment> "Rule that contains the information to generate a data property with a string datatype"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule> <http://www.w3.org/2000/01/rdf-schema#label> "String Property Rule"@en .
+# http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap
+<http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Map"@en .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap
+<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasObject> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/def/conceptual-mapping#Node> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#label> "Statement Map"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap> <http://www.w3.org/2004/02/skos/core#definition> "Statement that defines for a triple its subject, predicate, object, and datatype, language and assigned named graph if applicable"@en .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource
+<http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource> <http://www.w3.org/2000/01/rdf-schema#label> "Stream Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource> <http://www.w3.org/2004/02/skos/core#definition> "Data that is continuously retrieved"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data source that is synchronized when it is sent or received"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> <http://www.w3.org/2000/01/rdf-schema#label> "Synchronous Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource> <http://www.w3.org/2004/02/skos/core#definition> "Data source that is synchronized when it is sent or received"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#delimiter> .
-_:genid44 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid44 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#separator> .
-_:genid45 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid45 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data structured into rows and columns"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/csvw#Dialect> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2000/01/rdf-schema#label> "Tabular Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource> <http://www.w3.org/2004/02/skos/core#definition> "Data structured into rows and columns"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#TextSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#expression> .
-_:genid46 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data stored as natural text"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#expression> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/2000/01/rdf-schema#label> "Text Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TextSource> <http://www.w3.org/2004/02/skos/core#definition> "Data stored as natural text"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#DataSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#iterator> .
-_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid47 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data structured as a tree"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/def/conceptual-mapping#iterator> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> <http://www.w3.org/2000/01/rdf-schema#label> "Tree Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> <http://www.w3.org/2004/02/skos/core#definition> "Data organized in a hierarchycal structure"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource
 <http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Data stored in XML format"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource> <http://www.w3.org/2000/01/rdf-schema#label> "XML Source"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource> <http://www.w3.org/2004/02/skos/core#definition> "Data stored in XML format"@en .
 # 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#List
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of RDF Lists." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#label> "List" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of RDF statements." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> <http://www.w3.org/2000/01/rdf-schema#label> "Statement" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Container
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of RDF containers." .
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://www.w3.org/2000/01/rdf-schema#Container> <http://www.w3.org/2000/01/rdf-schema#label> "Container" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Literal
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of literal values, eg. textual strings and integers." .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/2000/01/rdf-schema#label> "Literal" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "The class resource, everything." .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+# 
+# http://www.w3.org/2002/07/owl#Ontology
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of ontologies." .
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2002/07/owl#> .
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology" .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://purl.org/dc/terms/issued> "2008-05-xx" .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://purl.org/dc/terms/issued> "2008-05-xx"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept scheme may be defined to include concepts from different sources."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2008/05/skos#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+# 
+# http://www.w3.org/ns/csvw#Dialect
+<http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/2000/01/rdf-schema#comment> "A Dialect Description provides hints to parsers about how to parse a linked file."@en .
+<http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/csvw#> .
+<http://www.w3.org/ns/csvw#Dialect> <http://www.w3.org/2000/01/rdf-schema#label> "Dialect Description"@en .
 # 
 # https://www.w3.org/2019/wot/security#SecurityScheme
 <https://www.w3.org/2019/wot/security#SecurityScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2019/wot/security#SecurityScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Metadata describing the configuration of a security mechanism.  <span class=\"rfc2119-assertion\" id=\"td-security-scheme-name\">The value assigned to the name <code>scheme</code> MUST be defined within a vocabulary included in the Thing Description, either in the present vocabulary or in a TD context extension." .
+<https://www.w3.org/2019/wot/security#SecurityScheme> <http://www.w3.org/2000/01/rdf-schema#label> "SecurityScheme" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy
+<http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy
+<http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
