@@ -10,6 +10,7 @@
                                                       <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> ;
                                                       <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping"@en ;
                                                       <http://purl.org/dc/terms/contributor> "Andrea Cimmino (Ontology Engineering Group)"@es ,
+                                                                                             "David Chaves Fraga (Ontology Engineering Group)"@es ,
                                                                                              "Edna Ruckhaus (Ontology Engineering Group)"@es ,
                                                                                              "Oscar Corcho (Ontology Engineering Group)"@es ,
                                                                                              "Raúl García Castro (Ontology Engineering Group)"@es ;
@@ -17,7 +18,7 @@
                                                       <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es ;
                                                       <http://purl.org/dc/terms/description> "TBD"@en ;
                                                       <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                                      <http://purl.org/dc/terms/modified> "2020-11-10" ;
+                                                      <http://purl.org/dc/terms/modified> "2020-03-24T00:00:00"@en ;
                                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en ;
                                                       <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping> .
 
@@ -49,6 +50,10 @@
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
@@ -65,6 +70,18 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2008/05/skos#definition
+<http://www.w3.org/2008/05/skos#definition> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -73,144 +90,205 @@
 <http://purl.org/vocab/vann/hasSecurityScheme> rdf:type owl:ObjectProperty ;
                                                rdfs:domain :DataAccess ;
                                                rdfs:range <https://www.w3.org/2019/wot/security#SecurityScheme> ;
-                                               rdfs:comment "A relation between a data access and the security scheme it has"@en ;
-                                               rdfs:label "Has security scheme"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#expects
-:expects rdf:type owl:ObjectProperty ;
-         rdfs:domain :EvaluableExpression ;
-         rdfs:range :EvaluableExpression ;
-         rdfs:comment "A relation between an Evaluable Expression and the Evaluable Expressions it takes as parameters"@en ;
-         rdfs:label "Expects"@en .
+                                               rdfs:label "has security scheme"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data access and the security scheme it has"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument
 :hasArgument rdf:type owl:ObjectProperty ;
-             rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( :DataAccess
-                                         :DataSource
-                                       )
-                         ] ;
+             rdfs:domain :DataAccess ;
              rdfs:range :Argument ;
-             rdfs:comment "A relation between the data access or data source and an argument that describes it"@en ;
-             rdfs:label "Has argument"@en .
+             rdfs:label "has argument"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A relation between the data access and an argument that describes it"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology
+:hasAssociatedOntology rdf:type owl:ObjectProperty ;
+                       rdfs:domain :StatementMap ;
+                       rdfs:range :Ontology ;
+                       rdfs:label "has associated ontology"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "A relation between a mapping and the ontology of provenance"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess
 :hasDataAccess rdf:type owl:ObjectProperty ;
                rdfs:domain :DataSource ;
                rdfs:range :DataAccess ;
-               rdfs:comment "A relation between a data source and its data access"@en ;
-               rdfs:label "Has data access"@en .
+               rdfs:label "has data access"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data source and its data access"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource
 :hasDataSource rdf:type owl:ObjectProperty ;
-               rdfs:domain :RuleSet ;
+               rdfs:domain :DataSourceAccess ;
                rdfs:range :DataSource ;
-               rdfs:comment "A relation between a rule set and its data source"@en ;
-               rdfs:label "Has data source"@en .
+               rdfs:label "has data source"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data source access and its data source"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType
-:hasDataType rdf:type owl:ObjectProperty ;
-             rdfs:domain :DataPropertyRule ;
-             rdfs:range :EvaluableExpression ;
-             rdfs:comment "A relation between a Data Property Object and its datatype"@en ;
-             rdfs:label "Has data type"@en .
+:hasDataType rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :StatementMap ;
+             rdfs:range :ReferenceNode ;
+             rdfs:label "has data type"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression
+:hasEvaluableExpression rdf:type owl:ObjectProperty ;
+                        rdfs:domain :ResourceMap ;
+                        rdfs:range :EvaluableExpression ;
+                        rdfs:label "has evaluable expression" ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "A relation between a resource map and the evaluable expression that defines it"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName
+:hasFunctionName rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :RecursiveExpression ;
+                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                     owl:hasValue :function-taxonomy
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                 rdfs:label "has function name"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "A relation between a recursive expression and the name of the function it defines"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasInput
+:hasInput rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :EvaluableExpression ;
+          rdfs:range rdf:List ;
+          rdfs:label "has input"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the list of parameters it requires"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage
-:hasLanguage rdf:type owl:ObjectProperty ;
-             rdfs:domain :StringPropertyRule ;
-             rdfs:range :EvaluableExpression ;
-             rdfs:comment "A relation between a string property rule and an evaluable expression that defines the language of the rule"@en ;
-             rdfs:label "Has language"@en .
+:hasLanguage rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :StatementMap ;
+             rdfs:range rdfs:Literal ;
+             rdfs:label "has language"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a literal to define the language"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression
-:hasLinkingExpression rdf:type owl:ObjectProperty ;
-                      rdfs:domain :LinkingRule ;
-                      rdfs:range :LinkingExpression ;
-                      rdfs:comment "A relation between a linking rule and its linking expression"@en ;
-                      rdfs:label "Has linking expression"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph
+:hasNamedGraph rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :StatementMap ;
+               rdfs:range :Node ;
+               rdfs:label "has named graph"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the assigned named graph"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasObject
 :hasObject rdf:type owl:ObjectProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :DataPropertyRule
-                                       :ObjectPropertyRule
-                                     )
-                       ] ;
-           rdfs:range :EvaluableExpression ;
-           rdfs:comment "A relation between a data or object property rule and the object it defines with an evaluable expression"@en ;
-           rdfs:label "Has object"@en .
+           rdfs:subPropertyOf rdf:object ;
+           rdfs:domain :StatementMap ;
+           rdfs:range :ResourceMap ;
+           rdfs:label "has object"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a resource map to define the predicate"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate
 :hasPredicate rdf:type owl:ObjectProperty ;
-              rdfs:domain :Rule ;
-              rdfs:range :EvaluableExpression ;
-              rdfs:comment "A relation between a data or object property rule and the predicate it defines with an evaluable expression"@en ;
-              rdfs:label "Has predicate"@en .
+              rdfs:subPropertyOf rdf:predicate ;
+              rdfs:domain :StatementMap ;
+              rdfs:range :ReferenceNode ;
+              rdfs:label "has predicate"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix
-:hasPrefix rdf:type owl:ObjectProperty ;
-           rdfs:domain :ConceptualMapping ;
-           rdfs:range :Prefix ;
-           rdfs:comment "A relation between the mapping and the prefixes it uses"@en ;
-           rdfs:label "Has prefix"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#hasRule
-:hasRule rdf:type owl:ObjectProperty ;
-         rdfs:domain :RuleSet ;
-         rdfs:range :Rule ;
-         rdfs:comment "A relation between a rule set and the rules it contains"@en ;
-         rdfs:label "Has rule"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet
-:hasRuleSet rdf:type owl:ObjectProperty ;
-            rdfs:domain :ConceptualMapping ;
-            rdfs:range :RuleSet ;
-            rdfs:comment "A relation between a mapping and the rule sets it contains"@en ;
-            rdfs:label "Has rule set"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol
+:hasProtocol rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :DataAccess ;
+             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                 owl:hasValue :protocol-taxonomy
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+             rdfs:label "has protocol"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A relation between the data access and the protocol that describes it"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject
 :hasSubject rdf:type owl:ObjectProperty ;
-            rdfs:domain :RuleSet ;
-            rdfs:range :EvaluableExpression ;
-            rdfs:comment "A relation between a data or object property rule and the subject it defines with an evaluable expression"@en ;
-            rdfs:label "Has subject"@en .
+            rdfs:subPropertyOf rdf:subject ;
+            rdfs:domain :StatementMap ;
+            rdfs:range :Node ;
+            rdfs:label "has subject"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the subject"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#provenance
-:provenance rdf:type owl:ObjectProperty ;
-            rdfs:domain :ConceptualMapping ;
-            rdfs:range :Ontology ;
-            rdfs:comment "A relation between a mapping and the ontology of provenance"@en ;
-            rdfs:label "Provenance"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#name
+:name rdf:type owl:ObjectProperty ;
+      rdfs:domain :Argument ;
+      rdfs:range rdfs:Resource ;
+      rdfs:label "name"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "A relation between an argument and the resource that describes its name"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#source
-:source rdf:type owl:ObjectProperty ;
-        rdfs:domain :LinkingRule ;
-        rdfs:range :RuleSet ;
-        rdfs:comment "A relation between a linking rule and its source rule set"@en ;
-        rdfs:label "Source"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#returns
+:returns rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :EvaluableExpression ;
+         rdfs:range rdfs:Resource ;
+         rdfs:label "returns"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the resource it returns"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#target
-:target rdf:type owl:ObjectProperty ;
-        rdfs:domain :LinkingRule ;
-        rdfs:range :RuleSet ;
-        rdfs:comment "A relation between a linking rule and its target rule set"@en ;
-        rdfs:label "Target"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#value
+:value rdf:type owl:ObjectProperty ;
+       rdfs:domain :Argument ;
+       rdfs:range rdfs:Resource ;
+       rdfs:label "value"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "A relation between an argument and the resource that describes its value"@en .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+rdf:object rdf:type owl:ObjectProperty ;
+           rdfs:domain rdf:Statement ;
+           rdfs:range rdfs:Resource ;
+           rdfs:comment "The object of the subject RDF statement." ;
+           rdfs:isDefinedBy rdf: ;
+           rdfs:label "object" .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+rdf:predicate rdf:type owl:ObjectProperty ;
+              rdfs:domain rdf:Statement ;
+              rdfs:range rdfs:Resource ;
+              rdfs:comment "The predicate of the subject RDF statement." ;
+              rdfs:isDefinedBy rdf: ;
+              rdfs:label "predicate" .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+rdf:subject rdf:type owl:ObjectProperty ;
+            rdfs:domain rdf:Statement ;
+            rdfs:range rdfs:Resource ;
+            rdfs:comment "The subject of the subject RDF statement." ;
+            rdfs:isDefinedBy rdf: ;
+            rdfs:label "subject" .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                               rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                               rdfs:label "is in scheme"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
 
 
 #################################################################
@@ -219,107 +297,52 @@
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#URI
 :URI rdf:type owl:DatatypeProperty ;
-     rdfs:domain [ rdf:type owl:Class ;
-                   owl:unionOf ( :DataAccess
-                                 :Ontology
-                                 :Prefix
-                               )
-                 ] ;
+     rdfs:domain :DataAccess ;
      rdfs:range xsd:anyURI ;
-     rdfs:comment "Uniform Resource Identifier used in a data access, ontology or prefix"@en ;
-     rdfs:label "URI"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#delimiter
-:delimiter rdf:type owl:DatatypeProperty ;
-           rdfs:domain :TabularSource ;
-           rdfs:range xsd:string ;
-           rdfs:comment "A character that separates the different fields of a tabular source"@en ;
-           rdfs:label "Delimiter"@en .
+     rdfs:label "URI"@en ;
+     <http://www.w3.org/2004/02/skos/core#definition> "Uniform Resource Identifier used to identify the resource retrieven by the data access"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#expression
 :expression rdf:type owl:DatatypeProperty ;
             rdfs:domain :TextSource ;
             rdfs:range xsd:string ;
-            rdfs:comment "What specifies which data is retrieven from a text source"@en ;
-            rdfs:label "Expression"@en .
+            rdfs:label "expression"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "What specifies which data is retrieven from a text source"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#iterator
 :iterator rdf:type owl:DatatypeProperty ;
           rdfs:domain :TreeSource ;
           rdfs:range xsd:string ;
-          rdfs:comment "What is to be iterated in a tree source"@en ;
-          rdfs:label "Iterator"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#name
-:name rdf:type owl:DatatypeProperty ;
-      rdfs:domain [ rdf:type owl:Class ;
-                    owl:unionOf ( :Argument
-                                  :Ontology
-                                )
-                  ] ;
-      rdfs:range xsd:string ;
-      rdfs:comment "Name of the argument or property to be defined"@en ;
-      rdfs:label "Name"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#prefix
-:prefix rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Ontology ;
-        rdfs:range xsd:string ;
-        rdfs:comment "Abreviation of an URI that is used in the ontology"@en ;
-        rdfs:label "Label"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#protocol
-:protocol rdf:type owl:DatatypeProperty ;
-          rdfs:domain :DataAccess ;
-          rdfs:range xsd:string ;
-          rdfs:comment "Protocol used to acces the data"@en ;
-          rdfs:label "Protocol"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#query
-:query rdf:type owl:DatatypeProperty ;
-       rdfs:domain :DataSource ;
-       rdfs:range xsd:string ;
-       rdfs:comment "Query used to retrieve data in a data source"@en ;
-       rdfs:label "Query"@en .
+          rdfs:label "iterator"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "What is to be iterated in a tree source"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime
-:refreshTime rdf:type owl:DatatypeProperty ;
+:refreshTime rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
              rdfs:domain :AsynchronousSource ;
              rdfs:range xsd:integer ;
-             rdfs:comment "Time between every data request"@en ;
-             rdfs:label "Refresh time"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue
-:returnsValue rdf:type owl:DatatypeProperty ;
-              rdfs:domain :EvaluableExpression ;
-              rdfs:range rdfs:Literal ;
-              rdfs:comment "Value returned from an evaluable expression"@en ;
-              rdfs:label "Returns value"@en .
+             rdfs:label "refresh time"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Time between every data request"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#separator
-:separator rdf:type owl:DatatypeProperty ;
+:separator rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
            rdfs:domain :TabularSource ;
            rdfs:range xsd:string ;
-           rdfs:comment "Character that separates two values from one field in a tabular source"@en ;
-           rdfs:label "Separator"@en .
+           rdfs:label "separator"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Character that separates two values from one field in a tabular source"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#value
-:value rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Argument ;
-       rdfs:range rdfs:Literal ;
-       rdfs:comment "Value that takes an argument"@en ;
-       rdfs:label "Value"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#shape
+:shape rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Ontology ;
+       rdfs:range xsd:anyURI ;
+       rdfs:label "shape"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Restrictions declared for an ontology in form of a shape"@en .
 
 
 #################################################################
@@ -331,14 +354,15 @@
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty :name ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:string
+                            owl:onClass rdfs:Resource
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :value ;
-                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass rdfs:Resource
                           ] ;
-          rdfs:comment "Element that allows the definition of additional options for describing Data Access and Data Source"@en ;
-          rdfs:label "Argument"@en .
+          rdfs:label "Argument"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Required argument to describe data access"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource
@@ -349,297 +373,208 @@
                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onDataRange xsd:integer
                                     ] ;
-                    owl:disjointWith :EventSource ,
+                    owl:disjointWith :StreamSource ,
                                      :SynchronousSource ;
-                    rdfs:comment "Data source that is not synchronized when it is sent or received"@en ;
-                    rdfs:label "Asynchronous Source"@en .
+                    rdfs:label "Asynchronous Source"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Data source that is not synchronized when it is sent or received"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate
-:Concatenate rdf:type owl:Class ;
-             rdfs:subClassOf :EvaluableExpression ;
-             rdfs:comment "Expression that joins the values of two Evaluable Expressions"@en ;
-             rdfs:label "Concatenate"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression
+:BaseExpression rdf:type owl:Class ;
+                rdfs:subClassOf :EvaluableExpression ;
+                owl:disjointWith :RecursiveExpression ;
+                rdfs:label "Base Expression"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Expression that cannot have nested functions and expects no parameters, only returns"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping
-:ConceptualMapping rdf:type owl:Class ;
-                   rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasPrefix ;
-                                     owl:someValuesFrom :Prefix
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasRuleSet ;
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass :RuleSet
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :provenance ;
-                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onClass :Ontology
-                                   ] ;
-                   rdfs:comment "Element that contains the necessary information to transform source data to RDF according to an ontology's schema"@en ;
-                   rdfs:label "Conceptual Mapping"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode
+:BlankNode rdf:type owl:Class ;
+           rdfs:subClassOf :Node ;
+           rdfs:label "Blank Node" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Unique node with no intrinsic name that is not a reference to a resource or a literal"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#Constant
 :Constant rdf:type owl:Class ;
-          rdfs:subClassOf :EvaluableExpression ;
-          rdfs:comment "Expression that contains a constant value"@en ;
-          rdfs:label "Constant"@en .
+          rdfs:subClassOf :BaseExpression ;
+          rdfs:label "Constant"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Expression that contains a constant value"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess
 :DataAccess rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty <http://purl.org/vocab/vann/hasSecurityScheme> ;
-                              owl:someValuesFrom <https://www.w3.org/2019/wot/security#SecurityScheme>
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasArgument ;
-                              owl:someValuesFrom :Argument
-                            ] ,
-                            [ rdf:type owl:Restriction ;
                               owl:onProperty :URI ;
                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onDataRange xsd:anyURI
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :protocol ;
-                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:string
                             ] ;
-            rdfs:comment "Description of the way of retrieving the data from its source"@en ;
-            rdfs:label "Data Access"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule
-:DataPropertyRule rdf:type owl:Class ;
-                  rdfs:subClassOf :Rule ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasObject ;
-                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass :EvaluableExpression
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasDataType ;
-                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass :EvaluableExpression
-                                  ] ;
-                  rdfs:comment "Rule that contains the information to generate a data property"@en ;
-                  rdfs:label "Data Property Rule"@en .
+            rdfs:label "Data Access"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Description of how to retrieve the data from its source"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#DataSource
 :DataSource rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasArgument ;
-                              owl:someValuesFrom :Argument
-                            ] ,
-                            [ rdf:type owl:Restriction ;
                               owl:onProperty :hasDataAccess ;
-                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onClass :DataAccess
-                            ] ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :query ;
-                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:string
+                              owl:someValuesFrom :DataAccess
                             ] ;
-            rdfs:comment "Description of the retrieved data"@en ;
-            rdfs:label "Data Source"@en .
+            rdfs:label "Data Source"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Description of the retrieved data"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess
 :DataSourceAccess rdf:type owl:Class ;
-                  rdfs:subClassOf :EvaluableExpression ;
-                  rdfs:comment "Expression with a value retrieved from the source data"@en ;
-                  rdfs:label "Data Source Access"@en .
+                  rdfs:subClassOf :BaseExpression ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasDataSource ;
+                                    owl:someValuesFrom :DataSource
+                                  ] ;
+                  rdfs:label "Data Source Access"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Expression with a value retrieved from the source data"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression
 :EvaluableExpression rdf:type owl:Class ;
-                     rdfs:subClassOf rdf:List ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :expects ;
-                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onClass :EvaluableExpression
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :returnsValue ;
-                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                     ] ;
-                     rdfs:comment "Element that contains the information to form objects, predicates and subjects"@en ;
-                     rdfs:label "Evaluable Expression"@en .
+                     rdfs:label "Evaluable Expression"@en ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Element that contains the information to form objects, predicates and subjects"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#EventSource
 :EventSource rdf:type owl:Class ;
-             rdfs:subClassOf :DataSource ;
-             owl:disjointWith :SynchronousSource ;
-             rdfs:label "Event Source"@en .
+             rdfs:subClassOf :AsynchronousSource ;
+             owl:disjointWith :PeriodicSource ;
+             rdfs:label "Event Source"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Type of data access that retrieves data when a package arrives"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource
 :GraphSource rdf:type owl:Class ;
              rdfs:subClassOf :DataSource ;
-             rdfs:comment "Data source that is stored as a graph"@en ;
-             rdfs:label "Graph Source"@en .
+             owl:disjointWith :TabularSource ,
+                              :TextSource ,
+                              :TreeSource ;
+             rdfs:label "Graph Source"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Data source that is stored as a graph"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource
 :HTMLSource rdf:type owl:Class ;
             rdfs:subClassOf :TreeSource ;
-            rdfs:comment "Data stored in HTML format"@en ;
-            rdfs:label "HTML Source"@en .
+            owl:disjointWith :JSONSource ,
+                             :XMLSource ;
+            rdfs:label "HTML Source"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Data stored in HTML format"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource
 :JSONSource rdf:type owl:Class ;
             rdfs:subClassOf :TreeSource ;
-            rdfs:comment "Data stored in JSON format"@en ;
-            rdfs:label "JSON Source"@en .
+            owl:disjointWith :XMLSource ;
+            rdfs:label "JSON Source"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Data stored in JSON format"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression
 :LinkingExpression rdf:type owl:Class ;
-                   rdfs:subClassOf :EvaluableExpression ;
-                   rdfs:comment "Expression that defines how two Rule Sets are linked"@en ;
-                   rdfs:label "Linking Expression"@en .
+                   rdfs:subClassOf :RecursiveExpression ;
+                   rdfs:label "Linking Expression"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Expression that defines the link between two Nodes"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule
-:LinkingRule rdf:type owl:Class ;
-             rdfs:subClassOf :Rule ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :hasLinkingExpression ;
-                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :LinkingExpression
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :source ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :RuleSet
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :target ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onClass :RuleSet
-                             ] ;
-             rdfs:comment "Rule that contains the information to generate a link between two Rule Sets"@en ;
-             rdfs:label "Linking Rule"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule
-:ObjectPropertyRule rdf:type owl:Class ;
-                    rdfs:subClassOf :Rule ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :hasObject ;
-                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass :EvaluableExpression
-                                    ] ;
-                    rdfs:comment "Rule that contains the information to generate an object property"@en ;
-                    rdfs:label "Object Property Rule"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#Node
+:Node rdf:type owl:Class ;
+      rdfs:subClassOf :ResourceMap ;
+      rdfs:label "Node" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Union of blank node and reference node"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#Ontology
 :Ontology rdf:type owl:Class ;
-          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :URI ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:anyURI
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :prefix ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onDataRange xsd:string
-                          ] ;
-          rdfs:comment "Ontology used guide the data translation"@en ;
-          rdfs:label "Ontology"@en .
+          rdfs:subClassOf owl:Ontology ;
+          rdfs:label "Ontology"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Ontology used to guide the data translation"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#Prefix
-:Prefix rdf:type owl:Class ;
-        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                          owl:onProperty :URI ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onDataRange xsd:anyURI
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :prefix ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onDataRange xsd:string
-                        ] ;
-        rdfs:comment "Prefix used in the mapping"@en ;
-        rdfs:label "Prefix"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource
+:PeriodicSource rdf:type owl:Class ;
+                rdfs:subClassOf :AsynchronousSource ;
+                rdfs:label "Periodic Source"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Data source that is retrieven repeatedly in a period of time"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#Rule
-:Rule rdf:type owl:Class ;
-      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasPredicate ;
-                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :EvaluableExpression
-                      ] ;
-      rdfs:comment "Element that defines the properties and objects to be created"@en ;
-      rdfs:label "Rule"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression
+:RecursiveExpression rdf:type owl:Class ;
+                     rdfs:subClassOf :EvaluableExpression ;
+                     rdfs:label "Recursive Expression"@en ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Expression that can expect one or more parameters and nested functions"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet
-:RuleSet rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasDataSource ;
-                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :DataSource
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasRule ;
-                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Rule
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasSubject ;
-                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :EvaluableExpression
-                         ] ;
-         rdfs:comment "Group of Rules that are related to a subject"@en ;
-         rdfs:label "Rule Set"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode
+:ReferenceNode rdf:type owl:Class ;
+               rdfs:subClassOf :Node ;
+               rdfs:label "Reference Node" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Node that references an IRI"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule
-:StringPropertyRule rdf:type owl:Class ;
-                    rdfs:subClassOf :DataPropertyRule ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :hasLanguage ;
-                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass :EvaluableExpression
-                                    ] ;
-                    rdfs:comment "Rule that contains the information to generate a data property with a string datatype"@en ;
-                    rdfs:label "String Property Rule"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap
+:ResourceMap rdf:type owl:Class ;
+             owl:equivalentClass rdfs:Resource ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasEvaluableExpression ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :EvaluableExpression
+                             ] ;
+             rdfs:label "Resource Map"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap
+:StatementMap rdf:type owl:Class ;
+              rdfs:subClassOf rdf:Statement ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasObject ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :ResourceMap
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPredicate ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :ReferenceNode
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSubject ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Node
+                              ] ;
+              rdfs:label "Statement Map"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Statement that defines for a triple its subject, predicate, object, and datatype, language and assigned named graph if applicable"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource
+:StreamSource rdf:type owl:Class ;
+              rdfs:subClassOf :DataSource ;
+              owl:disjointWith :SynchronousSource ;
+              rdfs:label "Stream Source"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Data that is continuously retrieved"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource
 :SynchronousSource rdf:type owl:Class ;
                    rdfs:subClassOf :DataSource ;
-                   rdfs:comment "Data source that is synchronized when it is sent or received"@en ;
-                   rdfs:label "Synchronous Source"@en .
+                   rdfs:label "Synchronous Source"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Data source that is synchronized when it is sent or received"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource
 :TabularSource rdf:type owl:Class ;
-               rdfs:subClassOf :DataSource ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :delimiter ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :separator ;
-                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onDataRange xsd:string
+               rdfs:subClassOf [ rdf:type owl:Class ;
+                                 owl:unionOf ( :DataSource
+                                               <http://www.w3.org/ns/csvw#Dialect>
+                                             )
                                ] ;
-               rdfs:comment "Data structured into rows and columns"@en ;
-               rdfs:label "Tabular Source"@en .
+               owl:disjointWith :TextSource ,
+                                :TreeSource ;
+               rdfs:label "Tabular Source"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Data structured into rows and columns"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#TextSource
@@ -647,11 +582,11 @@
             rdfs:subClassOf :DataSource ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :expression ;
-                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:string
+                              owl:someValuesFrom xsd:string
                             ] ;
-            rdfs:comment "Data stored as natural text"@en ;
-            rdfs:label "Text Source"@en .
+            owl:disjointWith :TreeSource ;
+            rdfs:label "Text Source"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Data stored as natural text"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource
@@ -662,23 +597,108 @@
                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onDataRange xsd:string
                             ] ;
-            rdfs:comment "Data structured as a tree"@en ;
-            rdfs:label "Tree Source"@en .
+            rdfs:label "Tree Source"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Data organized in a hierarchycal structure"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource
 :XMLSource rdf:type owl:Class ;
            rdfs:subClassOf :TreeSource ;
-           rdfs:comment "Data stored in XML format"@en ;
-           rdfs:label "XML Source"@en .
+           rdfs:label "XML Source"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Data stored in XML format"@en .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
-rdf:List rdf:type owl:Class .
+rdf:List rdf:type owl:Class ;
+         rdfs:subClassOf rdfs:Resource ;
+         rdfs:comment "The class of RDF Lists." ;
+         rdfs:isDefinedBy rdf: ;
+         rdfs:label "List" .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+rdf:Statement rdf:type owl:Class ;
+              rdfs:subClassOf rdfs:Resource ;
+              rdfs:comment "The class of RDF statements." ;
+              rdfs:isDefinedBy rdf: ;
+              rdfs:label "Statement" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Container
+rdfs:Container rdf:type owl:Class ;
+               rdfs:subClassOf rdfs:Resource ;
+               rdfs:comment "The class of RDF containers." ;
+               rdfs:isDefinedBy rdfs: ;
+               rdfs:label "Container" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Literal
+rdfs:Literal rdf:type owl:Class ;
+             rdfs:subClassOf rdfs:Resource ;
+             rdfs:comment "The class of literal values, eg. textual strings and integers." ;
+             rdfs:isDefinedBy rdfs: ;
+             rdfs:label "Literal" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type owl:Class ;
+              rdfs:comment "The class resource, everything." ;
+              rdfs:isDefinedBy rdfs: ;
+              rdfs:label "Resource" .
+
+
+###  http://www.w3.org/2002/07/owl#Ontology
+owl:Ontology rdf:type owl:Class ;
+             rdfs:subClassOf rdfs:Resource ;
+             rdfs:comment "The class of ontologies." ;
+             rdfs:isDefinedBy owl: ;
+             rdfs:label "Ontology" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              owl:disjointWith <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                              <http://purl.org/dc/terms/issued> "2008-05-xx" ;
+                                              rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
+                                              rdfs:label "Concept"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class ;
+                                                    <http://purl.org/dc/terms/issued> "2008-05-xx"@en ;
+                                                    rdfs:comment "A concept scheme may be defined to include concepts from different sources."@en ,
+                                                                 "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
+                                                    rdfs:label "Concept Scheme"@en ;
+                                                    <http://www.w3.org/2008/05/skos#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+
+
+###  http://www.w3.org/ns/csvw#Dialect
+<http://www.w3.org/ns/csvw#Dialect> rdf:type owl:Class ;
+                                    rdfs:comment "A Dialect Description provides hints to parsers about how to parse a linked file."@en ;
+                                    rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
+                                    rdfs:label "Dialect Description"@en .
 
 
 ###  https://www.w3.org/2019/wot/security#SecurityScheme
-<https://www.w3.org/2019/wot/security#SecurityScheme> rdf:type owl:Class .
+<https://www.w3.org/2019/wot/security#SecurityScheme> rdf:type owl:Class ;
+                                                      rdfs:comment "Metadata describing the configuration of a security mechanism.  <span class=\"rfc2119-assertion\" id=\"td-security-scheme-name\">The value assigned to the name <code>scheme</code> MUST be defined within a vocabulary included in the Thing Description, either in the present vocabulary or in a TD context extension." ;
+                                                      rdfs:label "SecurityScheme" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy
+:function-taxonomy rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy
+:protocol-taxonomy rdf:type owl:NamedIndividual ,
+                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
