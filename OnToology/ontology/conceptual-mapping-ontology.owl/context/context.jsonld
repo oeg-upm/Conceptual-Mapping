@@ -4,19 +4,32 @@
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject",
       "@type" : "@id"
     },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "object" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+      "@type" : "@id"
+    },
     "AsynchronousSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource"
     },
     "created" : {
       "@id" : "http://purl.org/dc/terms/created"
     },
+    "returns" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#returns",
+      "@type" : "@id"
+    },
+    "StatementMap" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"
+    },
     "refreshTime" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
-    "protocol" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#protocol",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "BaseExpression" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
@@ -25,22 +38,14 @@
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasObject",
       "@type" : "@id"
     },
-    "expects" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expects",
-      "@type" : "@id"
-    },
-    "hasRule" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasRule",
-      "@type" : "@id"
-    },
-    "Prefix" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Prefix"
-    },
     "Constant" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Constant"
     },
     "DataAccess" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
     },
     "TextSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TextSource"
@@ -49,35 +54,35 @@
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument",
       "@type" : "@id"
     },
-    "prefix" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#prefix",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "shape" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#shape",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "hasAssociatedOntology" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology",
+      "@type" : "@id"
+    },
+    "RecursiveExpression" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression"
     },
     "hasPredicate" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate",
       "@type" : "@id"
     },
+    "Statement" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "Concatenate" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Concatenate"
-    },
-    "query" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#query",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "HTMLSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource"
     },
-    "ConceptualMapping" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ConceptualMapping"
-    },
     "DataSourceAccess" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess"
-    },
-    "StringPropertyRule" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StringPropertyRule"
     },
     "EvaluableExpression" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
@@ -86,51 +91,57 @@
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expression",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "hasRuleSet" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasRuleSet",
-      "@type" : "@id"
+    "ResourceMap" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"
+    },
+    "PeriodicSource" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource"
     },
     "iterator" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#iterator",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "DataPropertyRule" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataPropertyRule"
-    },
-    "RuleSet" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#RuleSet"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
     "name" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#name",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@type" : "@id"
     },
     "SecurityScheme" : {
       "@id" : "https://www.w3.org/2019/wot/security#SecurityScheme"
     },
+    "hasNamedGraph" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
     "value" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#value",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@type" : "@id"
+    },
+    "hasInput" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasInput",
+      "@type" : "@id"
     },
     "TabularSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource"
     },
-    "delimiter" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#delimiter",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "Dialect" : {
+      "@id" : "http://www.w3.org/ns/csvw#Dialect"
+    },
+    "Container" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Container"
     },
     "Argument" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Argument"
     },
-    "hasPrefix" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasPrefix",
+    "subject" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
       "@type" : "@id"
-    },
-    "returnsValue" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#returnsValue",
-      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
@@ -142,20 +153,35 @@
     "GraphSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource"
     },
+    "StreamSource" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource"
+    },
+    "ReferenceNode" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2008/05/skos#definition"
+    },
+    "BlankNode" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode"
+    },
     "DataSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
     },
     "TreeSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"
     },
-    "Rule" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Rule"
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
-    "source" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#source",
+    "hasEvaluableExpression" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression",
       "@type" : "@id"
     },
     "publisher" : {
@@ -174,12 +200,12 @@
     "LinkingExpression" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression"
     },
-    "provenance" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#provenance",
+    "hasFunctionName" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName",
       "@type" : "@id"
     },
-    "target" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#target",
+    "predicate" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
       "@type" : "@id"
     },
     "hasDataSource" : {
@@ -190,11 +216,8 @@
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType",
       "@type" : "@id"
     },
-    "LinkingRule" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#LinkingRule"
-    },
-    "ObjectPropertyRule" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ObjectPropertyRule"
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
     "hasLanguage" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage",
@@ -216,8 +239,18 @@
     "EventSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EventSource"
     },
-    "hasLinkingExpression" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasLinkingExpression",
+    "Node" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Node"
+    },
+    "hasProtocol" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol",
+      "@type" : "@id"
+    },
+    "Literal" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
       "@type" : "@id"
     },
     "hasDataAccess" : {
