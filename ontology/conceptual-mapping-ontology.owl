@@ -25,7 +25,7 @@
         <dcterms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</dcterms:creator>
         <dcterms:description xml:lang="en">TBD</dcterms:description>
         <dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <dcterms:modified xml:lang="en">2020-03-24T00:00:00</dcterms:modified>
+        <dcterms:modified xml:lang="en">2020-03-26T00:00:00</dcterms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
     </owl:Ontology>
@@ -227,7 +227,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -309,7 +309,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -992,17 +992,17 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy -->
+    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy -->
+    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
 </rdf:RDF>
