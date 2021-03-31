@@ -1,8 +1,11 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefiix cm: <http://vocab.linkeddata.es/kos/conceptual-mapping#> .
-@prefix cmp: <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-taxonomy/> .
+@prefix skos : <http://www.w3.org/2004/02/skos/core#> .
+@prefiix cm : <http://vocab.linkeddata.es/kos/conceptual-mapping#> .
+@prefix cmp : <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-taxonomy/> .
 
-cmp:06586368118907411138 a skos:Concept ;
+
+
+
+cmp:14454124591916103632 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Diameter_(protocol)' title='Diameter (protocol)'>Diameter Protocol</a>" ;
 	skos:notation "RFC 3588","RFC 6733" ;
@@ -10,7 +13,7 @@ cmp:06586368118907411138 a skos:Concept ;
 	skos:prefLabel "aaa","aaas" .
 
 
-cmp:06803644968063140638 a skos:Concept ;
+cmp:15237334563586595594 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Displaying product information and internal information" ;
 	skos:notation "RFC 6694" ;
@@ -18,7 +21,7 @@ cmp:06803644968063140638 a skos:Concept ;
 	skos:prefLabel "about" .
 
 
-cmp:18743993246360102791 a skos:Concept ;
+cmp:11176718960325038335 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Application_Configuration_Access_Protocol' title='Application Configuration Access Protocol'>Application Configuration Access Protocol</a>" ;
 	skos:notation "RFC 2244" ;
@@ -27,21 +30,21 @@ cmp:18743993246360102791 a skos:Concept ;
 	skos:prefLabel "acap" .
 
 
-cmp:18176393151460551554 a skos:Concept ;
+cmp:02999269010635352977 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Identifying user account" ;
 	skos:notation "RFC 7565" ;
 	skos:prefLabel "acct" .
 
 
-cmp:11648527462443352819 a skos:Concept ;
+cmp:16742466480194185088 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Anonymous Customer Reference" ;
 	skos:notation "IANA registration template  Open Mobile Alliance" ;
 	skos:prefLabel "acr" .
 
 
-cmp:12055362267896649352 a skos:Concept ;
+cmp:11983137889321500932 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Direct installation of Adium Xtras (plugins)." ;
 	skos:notation "IANA registration template  The Adium Team" ;
@@ -50,7 +53,7 @@ cmp:12055362267896649352 a skos:Concept ;
 	skos:prefLabel "adiumxtra" .
 
 
-cmp:17658934240602258411 a skos:Concept ;
+cmp:01498325954636162175 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Accessing <a href='/wiki/Apple_Filing_Protocol' title='Apple Filing Protocol'>Apple Filing Protocol</a> shares" ;
 	skos:notation "IANA registration template  IETF Draft" ;
@@ -58,14 +61,14 @@ cmp:17658934240602258411 a skos:Concept ;
 	skos:prefLabel "afp" .
 
 
-cmp:07542229309987662741 a skos:Concept ;
+cmp:12993418194254551698 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Andrew File System global file names" ;
 	skos:notation "RFC 1738" ;
 	skos:prefLabel "afs" .
 
 
-cmp:18105720778551939764 a skos:Concept ;
+cmp:07444592088132426435 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Controlling <a class='mw-redirect' href='/wiki/AOL_Instant_Messenger' title='AOL Instant Messenger'>AOL Instant Messenger</a> ." ;
 	skos:notation "IANA registration template  AOL" ;
@@ -74,7 +77,7 @@ cmp:18105720778551939764 a skos:Concept ;
 	skos:prefLabel "aim" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Experimental method of installing software using <a class='mw-redirect' href='/wiki/Advanced_Packaging_Tool' title='Advanced Packaging Tool'>APT</a> ." ;
 	skos:notation "IANA registration template" ;
@@ -83,7 +86,7 @@ cmp:06505858466237603565 a skos:Concept ;
 	skos:prefLabel "apt" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Attaching resources to <a href='/wiki/MHTML' title='MHTML'>MHTML</a> pages" ;
 	skos:notation "IANA registration template" ;
@@ -92,7 +95,7 @@ cmp:06505858466237603565 a skos:Concept ;
 	skos:prefLabel "attachment" .
 
 
-cmp:18214476823939979491 a skos:Concept ;
+cmp:11979227776874561718 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Link to an Active Worlds world" ;
 	skos:notation "IANA registration template  Activeworlds Inc." ;
@@ -101,7 +104,7 @@ cmp:18214476823939979491 a skos:Concept ;
 	skos:prefLabel "aw" .
 
 
-cmp:12820211334568064935 a skos:Concept ;
+cmp:0148938667411924763 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Identifier for an <a href='/wiki/Amplitude_modulation_signalling_system' title='Amplitude modulation signalling system'>AMSS</a> broadcast" ;
 	skos:notation "ETSI TS 103 270" ;
@@ -109,7 +112,7 @@ cmp:12820211334568064935 a skos:Concept ;
 	skos:prefLabel "amss" .
 
 
-cmp:08460260087526439273 a skos:Concept ;
+cmp:05868118625452939748 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Send e-money to a Barion e-money wallet" ;
 	skos:notation "IANA registration template  Barion URI scheme" ;
@@ -118,7 +121,7 @@ cmp:08460260087526439273 a skos:Concept ;
 	skos:prefLabel "barion" .
 
 
-cmp:02515482742409808426 a skos:Concept ;
+cmp:06145603966810327174 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Open a search query on a BeShare server" ;
 	skos:notation "IANA registration template  BeShare source code" ;
@@ -127,7 +130,7 @@ cmp:02515482742409808426 a skos:Concept ;
 	skos:prefLabel "beshare" .
 
 
-cmp:152545318391572512 a skos:Concept ;
+cmp:05787440794174706650 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Send money to a <a href='/wiki/Bitcoin' title='Bitcoin'>Bitcoin</a> address" ;
 	skos:notation "IANA registration template  Bitcoin URI Scheme" ;
@@ -135,14 +138,14 @@ cmp:152545318391572512 a skos:Concept ;
 	skos:prefLabel "bitcoin" .
 
 
-cmp:11372448721106648164 a skos:Concept ;
+cmp:13977065451409218454 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Binary data access in browsers" ;
 	skos:notation "IANA registration template  W3C" ;
 	skos:prefLabel "blob" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Join an existing bolo game." ;
 	skos:notation "IANA registration template" ;
@@ -151,7 +154,7 @@ cmp:06505858466237603565 a skos:Concept ;
 	skos:prefLabel "bolo" .
 
 
-cmp:01252412560312102388 a skos:Concept ;
+cmp:09021701358391389065 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Launching <a href='/wiki/Skype' title='Skype'>Skype</a> call (+And in Hungary the KLIP Software call too) (see also <a href='#skype:'>skype:</a> )" ;
 	skos:notation "IANA registration template  old version of IETF Draft" ;
@@ -160,7 +163,7 @@ cmp:01252412560312102388 a skos:Concept ;
 	skos:prefLabel "callto" .
 
 
-cmp:03183150357512589554 a skos:Concept ;
+cmp:01643279236099804065 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Calendar access protocol" ;
 	skos:notation "RFC 4324" ;
@@ -168,7 +171,7 @@ cmp:03183150357512589554 a skos:Concept ;
 	skos:prefLabel "cap" .
 
 
-cmp:04792024361629885995 a skos:Concept ;
+cmp:04332203735221215090 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Specifies user interfaces built using XUL in Mozilla-based browsers." ;
 	skos:notation "IANA registration template  Mozilla" ;
@@ -177,7 +180,7 @@ cmp:04792024361629885995 a skos:Concept ;
 	skos:prefLabel "chrome" .
 
 
-cmp:15985069822653664432 a skos:Concept ;
+cmp:13196813429494413933 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used for the management of <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> 's settings. In contrast with other browsers, its preferences appear as web-pages instead of dialog boxes." ;
 	skos:notation "IANA registration template  Google" ;
@@ -186,7 +189,7 @@ cmp:15985069822653664432 a skos:Concept ;
 	skos:prefLabel "chrome" .
 
 
-cmp:15985069822653664432 a skos:Concept ;
+cmp:13196813429494413933 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Manage the settings of extensions which have been installed." ;
 	skos:notation "IANA registration template  Google" ;
@@ -195,13 +198,13 @@ cmp:15985069822653664432 a skos:Concept ;
 	skos:prefLabel "chrome-extension" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "IANA registration template" ;
 	skos:prefLabel "com-eventbrite-attendee" .
 
 
-cmp:07695470765878543503 a skos:Concept ;
+cmp:12010854931135074786 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Referencing individual parts of an <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='/wiki/MIME' title='MIME'>MIME</a> message" ;
 	skos:notation "RFC 2111","RFC 2392" ;
@@ -210,7 +213,7 @@ cmp:07695470765878543503 a skos:Concept ;
 	skos:prefLabel "cid" .
 
 
-cmp:09137438950365429034 a skos:Concept ;
+cmp:03395792671092913953 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Constrained_Application_Protocol' title='Constrained Application Protocol'>Constrained Application Protocol</a>" ;
 	skos:notation "RFC 7252" ;
@@ -219,7 +222,7 @@ cmp:09137438950365429034 a skos:Concept ;
 	skos:prefLabel "coap","coaps" .
 
 
-cmp:16128217945694983941 a skos:Concept ;
+cmp:01457641285007246609 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Accessing an <a href='/wiki/Android_(operating_system)' title='Android (operating system)'>Android</a> content provider." ;
 	skos:notation "IANA registration template  Open Handset Alliance" ;
@@ -228,7 +231,7 @@ cmp:16128217945694983941 a skos:Concept ;
 	skos:prefLabel "content" .
 
 
-cmp:14953438950046108785 a skos:Concept ;
+cmp:06747489267710111682 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/TV-Anytime' title='TV-Anytime'>TV-Anytime</a> Content Reference Identifier" ;
 	skos:notation "RFC 4078" ;
@@ -237,7 +240,7 @@ cmp:14953438950046108785 a skos:Concept ;
 	skos:prefLabel "crid" .
 
 
-cmp:02277590507164508604 a skos:Concept ;
+cmp:13541643805628453716 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Provides a link to a <a href='/wiki/Concurrent_Versions_System' title='Concurrent Versions System'>Concurrent Versions System</a> (CVS) Repository" ;
 	skos:notation "IANA registration template  Concurrent Versions System" ;
@@ -245,7 +248,7 @@ cmp:02277590507164508604 a skos:Concept ;
 	skos:prefLabel "cvs" .
 
 
-cmp:12820211334568064935 a skos:Concept ;
+cmp:0148938667411924763 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Identifier for a <a class='mw-redirect' href='/wiki/Digital_Audio_Broadcasting' title='Digital Audio Broadcasting'>DAB</a> broadcast" ;
 	skos:notation "ETSI TS 103 270" ;
@@ -253,7 +256,7 @@ cmp:12820211334568064935 a skos:Concept ;
 	skos:prefLabel "dab" .
 
 
-cmp:15465605729279736181 a skos:Concept ;
+cmp:02860350109151675916 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Inclusion of small data items inline" ;
 	skos:notation "RFC 2397" ;
@@ -261,7 +264,7 @@ cmp:15465605729279736181 a skos:Concept ;
 	skos:prefLabel "data" .
 
 
-cmp:18452584609971683238 a skos:Concept ;
+cmp:05390845337777687472 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "HTTP Extensions for Distributed Authoring ( <a href='/wiki/WebDAV' title='WebDAV'>WebDAV</a> )" ;
 	skos:notation "RFC 2518","RFC 4918" ;
@@ -270,7 +273,7 @@ cmp:18452584609971683238 a skos:Concept ;
 	skos:prefLabel "dav" .
 
 
-cmp:15717743027775570391 a skos:Concept ;
+cmp:05166268941163827651 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/DICT' title='DICT'>Dictionary service protocol</a>" ;
 	skos:notation "RFC 2229" ;
@@ -279,13 +282,13 @@ cmp:15717743027775570391 a skos:Concept ;
 	skos:prefLabel "dict" .
 
 
-cmp:05681455618384890133 a skos:Concept ;
+cmp:03119236438044797069 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "IANA registration template IANA registration template" ;
 	skos:prefLabel "dlna-playsingle","dlna-playcontainer" .
 
 
-cmp:15708089607313309212 a skos:Concept ;
+cmp:1988177956507658562 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Domain_Name_System' title='Domain Name System'>Domain Name System</a>" ;
 	skos:notation "RFC 4501" ;
@@ -294,14 +297,14 @@ cmp:15708089607313309212 a skos:Concept ;
 	skos:prefLabel "dns" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Direct Network Transfer Protocol" ;
 	skos:notation "IANA registration template" ;
 	skos:prefLabel "dntp" .
 
 
-cmp:12820211334568064935 a skos:Concept ;
+cmp:0148938667411924763 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Identifier for a <a href='/wiki/Digital_Radio_Mondiale' title='Digital Radio Mondiale'>DRM</a> broadcast" ;
 	skos:notation "ETSI TS 103 270" ;
@@ -309,20 +312,20 @@ cmp:12820211334568064935 a skos:Concept ;
 	skos:prefLabel "drm" .
 
 
-cmp:02581974037113024962 a skos:Concept ;
+cmp:17432327556965326207 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "DTNRG research and development" ;
 	skos:notation "RFC 5050" ;
 	skos:prefLabel "dtn" .
 
 
-cmp:0556698349583234368 a skos:Concept ;
+cmp:12349607570184198195 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "IETF Draft" ;
 	skos:prefLabel "dvb" .
 
 
-cmp:16268494241646037499 a skos:Concept ;
+cmp:15095624232126977059 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Resources available using the <a href='/wiki/EDonkey2000' title='EDonkey2000'>eDonkey2000</a> network" ;
 	skos:notation "IANA registration template  eDonkey2000" ;
@@ -331,7 +334,7 @@ cmp:16268494241646037499 a skos:Concept ;
 	skos:prefLabel "ed2k" .
 
 
-cmp:1851579204747089175 a skos:Concept ;
+cmp:13753788014888415206 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "For examples" ;
 	skos:notation "RFC 7595" ;
@@ -339,7 +342,7 @@ cmp:1851579204747089175 a skos:Concept ;
 	skos:prefLabel "example" .
 
 
-cmp:05796172411547419783 a skos:Concept ;
+cmp:19127489528826167586 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "FaceTime is a video conferencing software developed by Apple for iPhone 4, the fourth generation iPod Touch, and computers running Mac OS X." ;
 	skos:notation "IANA registration template  Apple Inc." ;
@@ -348,7 +351,7 @@ cmp:05796172411547419783 a skos:Concept ;
 	skos:prefLabel "facetime" .
 
 
-cmp:06052225621191831851 a skos:Concept ;
+cmp:03290515343844853365 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used for <a href='/wiki/Fax' title='Fax'>telefacsimile</a> numbers" ;
 	skos:notation "RFC 2806","RFC 3966" ;
@@ -357,7 +360,7 @@ cmp:06052225621191831851 a skos:Concept ;
 	skos:prefLabel "fax" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Web_feed' title='Web feed'>web feed</a> subscription" ;
 	skos:notation "IANA registration template" ;
@@ -366,7 +369,7 @@ cmp:06505858466237603565 a skos:Concept ;
 	skos:prefLabel "feed" .
 
 
-cmp:16026780614004874584 a skos:Concept ;
+cmp:01497893420773724940 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Addressing files on local or network <a href='/wiki/File_system' title='File system'>file systems</a>" ;
 	skos:notation "RFC 1738","RFC 3986" ;
@@ -375,14 +378,14 @@ cmp:16026780614004874584 a skos:Concept ;
 	skos:prefLabel "file" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Abandoned part of File API" ;
 	skos:notation "IANA registration template" ;
 	skos:prefLabel "filesystem" .
 
 
-cmp:17658934240602258411 a skos:Concept ;
+cmp:01498325954636162175 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Querying user information using the <a href='/wiki/Finger_protocol' title='Finger protocol'>Finger protocol</a>" ;
 	skos:notation "IANA registration template  IETF Draft" ;
@@ -390,7 +393,7 @@ cmp:17658934240602258411 a skos:Concept ;
 	skos:prefLabel "finger" .
 
 
-cmp:08462048085953986163 a skos:Concept ;
+cmp:17660892186792218870 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Accessing another computer's files using the <a class='mw-redirect' href='/wiki/Secure_Shell' title='Secure Shell'>SSH</a> protocol" ;
 	skos:notation "IANA registration template  fish KDE kioslave" ;
@@ -399,7 +402,7 @@ cmp:08462048085953986163 a skos:Concept ;
 	skos:prefLabel "fish" .
 
 
-cmp:12820211334568064935 a skos:Concept ;
+cmp:0148938667411924763 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Identifier for a <a href='/wiki/FM_broadcasting' title='FM broadcasting'>FM</a> broadcast" ;
 	skos:notation "ETSI TS 103 270" ;
@@ -407,14 +410,14 @@ cmp:12820211334568064935 a skos:Concept ;
 	skos:prefLabel "fm" .
 
 
-cmp:15415327659082687688 a skos:Concept ;
+cmp:0888476862592059729 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/File_Transfer_Protocol' title='File Transfer Protocol'>FTP</a> resources" ;
 	skos:notation "RFC 1738  IETF Draft  Old IETF Draft" ;
 	skos:prefLabel "ftp" .
 
 
-cmp:170034159768105017 a skos:Concept ;
+cmp:08398148548871111992 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "A Uniform Resource Identifier for Geographic Locations" ;
 	skos:notation "RFC 5870" ;
@@ -423,7 +426,7 @@ cmp:170034159768105017 a skos:Concept ;
 	skos:prefLabel "geo" .
 
 
-cmp:11002902259371087514 a skos:Concept ;
+cmp:02431840688468630139 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Starting chat with <a href='/wiki/Gadu-Gadu' title='Gadu-Gadu'>Gadu-Gadu</a> user" ;
 	skos:notation "IANA registration template  Gadu-Gadu" ;
@@ -431,7 +434,7 @@ cmp:11002902259371087514 a skos:Concept ;
 	skos:prefLabel "gg" .
 
 
-cmp:02394128895568890951 a skos:Concept ;
+cmp:06103286277023186620 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Provides a link to a GIT repository" ;
 	skos:notation "IANA registration template  Git" ;
@@ -439,7 +442,7 @@ cmp:02394128895568890951 a skos:Concept ;
 	skos:prefLabel "git" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Gizmo5' title='Gizmo5'>Gizmo5</a> calling link." ;
 	skos:notation "IANA registration template" ;
@@ -448,7 +451,7 @@ cmp:06505858466237603565 a skos:Concept ;
 	skos:prefLabel "gizmoproject" .
 
 
-cmp:05396095851063693890 a skos:Concept ;
+cmp:15676865859113425698 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Common Name Resolution Protocol" ;
 	skos:notation "RFC 3368" ;
@@ -456,7 +459,7 @@ cmp:05396095851063693890 a skos:Concept ;
 	skos:prefLabel "go" .
 
 
-cmp:14751747191647107652 a skos:Concept ;
+cmp:1893746312445117142 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used with <a href='/wiki/Gopher_(protocol)' title='Gopher (protocol)'>Gopher protocol</a>" ;
 	skos:notation "RFC 4266" ;
@@ -464,7 +467,7 @@ cmp:14751747191647107652 a skos:Concept ;
 	skos:prefLabel "gopher" .
 
 
-cmp:01611885527800149789 a skos:Concept ;
+cmp:03409163638939213341 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Start a chat with a <a href='/wiki/Google_Talk' title='Google Talk'>Google Talk</a> user" ;
 	skos:notation "IANA registration template  Google Talk" ;
@@ -473,7 +476,7 @@ cmp:01611885527800149789 a skos:Concept ;
 	skos:prefLabel "gtalk" .
 
 
-cmp:01090678652156876142 a skos:Concept ;
+cmp:11336297672107783096 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used with <a href='/wiki/H.323' title='H.323'>H.323</a> multimedia communications" ;
 	skos:notation "RFC 3508" ;
@@ -481,7 +484,7 @@ cmp:01090678652156876142 a skos:Concept ;
 	skos:prefLabel "h323" .
 
 
-cmp:07136536446775807812 a skos:Concept ;
+cmp:13568390996503266149 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Displaying a help page on <a class='mw-redirect' href='/wiki/Microsoft_Windows_Help_and_Support_Center' title='Microsoft Windows Help and Support Center'>Microsoft Windows Help and Support Center</a> ." ;
 	skos:notation "IANA registration template  Microsoft" ;
@@ -490,21 +493,21 @@ cmp:07136536446775807812 a skos:Concept ;
 	skos:prefLabel "hcp" .
 
 
-cmp:15531965863294912939 a skos:Concept ;
+cmp:18763241551089761805 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/HyperText_Transfer_Protocol' title='HyperText Transfer Protocol'>HTTP</a> resources" ;
 	skos:notation "RFC 1738","RFC 2616(makes","RFC 2068obsolete)","RFC 7230" ;
 	skos:prefLabel "http" .
 
 
-cmp:01193557566503222955 a skos:Concept ;
+cmp:05205100437117249315 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "HTTP connections secured using <a href='/wiki/Transport_Layer_Security' title='Transport Layer Security'>SSL/TLS</a>" ;
 	skos:notation "RFC 2817","RFC 7230" ;
 	skos:prefLabel "https" .
 
 
-cmp:03596914879213797877 a skos:Concept ;
+cmp:17386966792985809457 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Inter-Asterisk_eXchange' title='Inter-Asterisk eXchange'>Inter-Asterisk eXchange</a> protocol version 2" ;
 	skos:notation "RFC 5456" ;
@@ -512,20 +515,20 @@ cmp:03596914879213797877 a skos:Concept ;
 	skos:prefLabel "iax" .
 
 
-cmp:017240451579747019 a skos:Concept ;
+cmp:15603023642140491592 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Internet_Content_Adaptation_Protocol' title='Internet Content Adaptation Protocol'>Internet Content Adaptation Protocol</a>" ;
 	skos:notation "RFC 3507" ;
 	skos:prefLabel "icap" .
 
 
-cmp:0556698349583234368 a skos:Concept ;
+cmp:12349607570184198195 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "IETF Draft" ;
 	skos:prefLabel "icon" .
 
 
-cmp:08181335412753433044 a skos:Concept ;
+cmp:0706761620715166554 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Instant_messaging' title='Instant messaging'>Instant messaging</a> protocol" ;
 	skos:notation "RFC 3860" ;
@@ -534,7 +537,7 @@ cmp:08181335412753433044 a skos:Concept ;
 	skos:prefLabel "im" .
 
 
-cmp:08974176320325226798 a skos:Concept ;
+cmp:01079515587531356666 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Accessing e-mail resources through <a class='mw-redirect' href='/wiki/IMAP' title='IMAP'>IMAP</a>" ;
 	skos:notation "RFC 2192","RFC 5092" ;
@@ -542,41 +545,41 @@ cmp:08974176320325226798 a skos:Concept ;
 	skos:prefLabel "imap" .
 
 
-cmp:04278351992192160178 a skos:Concept ;
+cmp:04326430213453420005 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Information Assets with Identifiers in Public Namespaces" ;
 	skos:notation "RFC 4452" ;
 	skos:prefLabel "info" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Identify things on <a class='mw-redirect' href='/wiki/Internet_of_Things' title='Internet of Things'>Internet of Things</a>" ;
 	skos:notation "IANA registration template" ;
 	skos:prefLabel "iotdisco" .
 
 
-cmp:02016443235499760372 a skos:Concept ;
+cmp:13009257182049445645 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC 6260" ;
 	skos:prefLabel "ipn" .
 
 
-cmp:1296406171419042574 a skos:Concept ;
+cmp:02398493261625434271 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a>" ;
 	skos:notation "RFC 3510" ;
 	skos:prefLabel "ipp" .
 
 
-cmp:04930514785479965498 a skos:Concept ;
+cmp:12296237906139784136 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a> over HTTPS" ;
 	skos:notation "RFC 7472" ;
 	skos:prefLabel "ipps" .
 
 
-cmp:04578309419995921145 a skos:Concept ;
+cmp:09119003507327795037 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Connecting to an <a href='/wiki/Internet_Relay_Chat' title='Internet Relay Chat'>Internet Relay Chat</a> server to join a channel." ;
 	skos:notation "IANA registration template  IETF Draft  Old IETF Draft" ;
@@ -585,7 +588,7 @@ cmp:04578309419995921145 a skos:Concept ;
 	skos:prefLabel "irc" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/IPv6' title='IPv6'>IPv6</a> equivalent of <i>irc</i>" ;
 	skos:notation "IANA registration template" ;
@@ -594,7 +597,7 @@ cmp:06505858466237603565 a skos:Concept ;
 	skos:prefLabel "irc6" .
 
 
-cmp:17658934240602258411 a skos:Concept ;
+cmp:01498325954636162175 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Secure equivalent of <i>irc</i>" ;
 	skos:notation "IANA registration template  IETF Draft" ;
@@ -603,14 +606,14 @@ cmp:17658934240602258411 a skos:Concept ;
 	skos:prefLabel "ircs" .
 
 
-cmp:11924003063538842641 a skos:Concept ;
+cmp:13548220190280283902 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Internet Registry Information Service" ;
 	skos:notation "RFC 3981","RFC 3983","RFC 4992","RFC 4992","RFC 4993" ;
 	skos:prefLabel "iris","iris.beep","iris.xpc","iris.xpcs","iris.lws" .
 
 
-cmp:02655119058408032437 a skos:Concept ;
+cmp:11022197384994118613 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used for connecting to the <a class='mw-redirect' href='/wiki/ITunes_Music_Store' title='ITunes Music Store'>iTunes Music Store</a>" ;
 	skos:notation "IANA registration template  Apple Inc" ;
@@ -618,13 +621,13 @@ cmp:02655119058408032437 a skos:Concept ;
 	skos:prefLabel "itms" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "IANA registration template" ;
 	skos:prefLabel "jabber" .
 
 
-cmp:15252541234857465844 a skos:Concept ;
+cmp:09023073625226202892 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Compressed archive member" ;
 	skos:notation "IANA registration template  Java API" ;
@@ -633,14 +636,14 @@ cmp:15252541234857465844 a skos:Concept ;
 	skos:prefLabel "jar" .
 
 
-cmp:12267770700989160349 a skos:Concept ;
+cmp:03368672096966195865 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Java Message Service" ;
 	skos:notation "RFC 6167" ;
 	skos:prefLabel "jms" .
 
 
-cmp:14251368599618459804 a skos:Concept ;
+cmp:06281271550616587967 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Keyparc encrypt/decrypt resource." ;
 	skos:notation "IANA registration template  Bloombase" ;
@@ -648,7 +651,7 @@ cmp:14251368599618459804 a skos:Concept ;
 	skos:prefLabel "keyparc" .
 
 
-cmp:13244245711759488753 a skos:Concept ;
+cmp:01820701177783233217 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Connecting to a <a class='new' href='/w/index.php?title=Radio_stream&amp;action=edit&amp;redlink=1' title='Radio stream (page does not exist)'>radio stream</a> from <a href='/wiki/Last.fm' title='Last.fm'>Last.fm</a> ." ;
 	skos:notation "IANA registration template  Last.fm" ;
@@ -656,7 +659,7 @@ cmp:13244245711759488753 a skos:Concept ;
 	skos:prefLabel "lastfm" .
 
 
-cmp:19156866151939436590 a skos:Concept ;
+cmp:05169677787977794274 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Lightweight_Directory_Access_Protocol' title='Lightweight Directory Access Protocol'>LDAP</a> directory request" ;
 	skos:notation "RFC 2255","RFC 4516" ;
@@ -664,7 +667,7 @@ cmp:19156866151939436590 a skos:Concept ;
 	skos:prefLabel "ldap" .
 
 
-cmp:01683575469773112565 a skos:Concept ;
+cmp:036945718607098685 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Secure equivalent of <i>ldap</i>" ;
 	skos:notation "IANA registration template  Old version of IETF Draft" ;
@@ -673,7 +676,7 @@ cmp:01683575469773112565 a skos:Concept ;
 	skos:prefLabel "ldaps" .
 
 
-cmp:16081704877767230262 a skos:Concept ;
+cmp:18468419611791561894 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "'magnet links'" ;
 	skos:notation "IANA registration template  Magnet-URI Project" ;
@@ -682,14 +685,14 @@ cmp:16081704877767230262 a skos:Concept ;
 	skos:prefLabel "magnet" .
 
 
-cmp:03663913140996961965 a skos:Concept ;
+cmp:05794117962580958741 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Access to data available from mail servers" ;
 	skos:notation "RFC 6196" ;
 	skos:prefLabel "mailserver" .
 
 
-cmp:17970319063465602930 a skos:Concept ;
+cmp:06474537999781795793 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Simple_Mail_Transfer_Protocol' title='Simple Mail Transfer Protocol'>SMTP</a>  <a class='mw-redirect' href='/wiki/E-mail' title='E-mail'>e-mail</a> addresses and default content" ;
 	skos:notation "RFC 6068" ;
@@ -698,7 +701,7 @@ cmp:17970319063465602930 a skos:Concept ;
 	skos:prefLabel "mailto" .
 
 
-cmp:06505858466237603565 a skos:Concept ;
+cmp:14999067690922397324 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "'map links'" ;
 	skos:notation "IANA registration template" ;
@@ -707,7 +710,7 @@ cmp:06505858466237603565 a skos:Concept ;
 	skos:prefLabel "maps" .
 
 
-cmp:08598836446869971556 a skos:Concept ;
+cmp:04027869430380983310 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Opens Google Play" ;
 	skos:notation "IANA registration template  Android 3" ;
@@ -716,7 +719,7 @@ cmp:08598836446869971556 a skos:Concept ;
 	skos:prefLabel "market" .
 
 
-cmp:15507378998297083603 a skos:Concept ;
+cmp:12175539694629031860 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Direct link to specific email message" ;
 	skos:notation "IANA registration template  Apple Inc 4" ;
@@ -724,7 +727,7 @@ cmp:15507378998297083603 a skos:Concept ;
 	skos:prefLabel "message" .
 
 
-cmp:07695470765878543503 a skos:Concept ;
+cmp:12010854931135074786 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Referencing <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='/wiki/MIME' title='MIME'>MIME</a> messages, or parts of messages." ;
 	skos:notation "RFC 2111","RFC 2392" ;
@@ -733,7 +736,7 @@ cmp:07695470765878543503 a skos:Concept ;
 	skos:prefLabel "mid" .
 
 
-cmp:07136536446775807812 a skos:Concept ;
+cmp:13568390996503266149 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Windows streaming media" ;
 	skos:notation "IANA registration template  Microsoft" ;
@@ -742,14 +745,14 @@ cmp:07136536446775807812 a skos:Concept ;
 	skos:prefLabel "mms" .
 
 
-cmp:06052225621191831851 a skos:Concept ;
+cmp:03290515343844853365 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC 2806","RFC 3966" ;
 	skos:note "Deprecated in RFC 3966 in favour of <a href='#tel:'>tel:</a> . Listed as ' <span data-sort-value='3' style='display:none;'></span> Historical'" ;
 	skos:prefLabel "modem" .
 
 
-cmp:07136536446775807812 a skos:Concept ;
+cmp:13568390996503266149 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Displaying a help page on <a class='mw-redirect' href='/wiki/Microsoft_Windows_Help_and_Support_Center' title='Microsoft Windows Help and Support Center'>Microsoft Windows Help and Support Center</a> . Used by <a href='/wiki/Windows_Vista' title='Windows Vista'>Windows Vista</a> and later." ;
 	skos:notation "IANA registration template  Microsoft" ;
@@ -758,14 +761,14 @@ cmp:07136536446775807812 a skos:Concept ;
 	skos:prefLabel "ms-help" .
 
 
-cmp:07553693142467657368 a skos:Concept ;
+cmp:1768622665065332402 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Settings application in Windows" ;
 	skos:notation "IANA registration templates" ;
 	skos:prefLabel "ms-settings","ms-settings-airplanemode","ms-settings-bluetooth","ms-settings-camera","ms-settings-cellular","ms-settings-cloudstorage","ms-settings-emailandaccounts","ms-settings-language","ms-settings-location","ms-settings-lock","ms-settings-nfctransactions","ms-settings-notifications","ms-settings-power","ms-settings-privacy","ms-settings-proximity","ms-settings-screenrotation","ms-settings-wifi","ms-settings-workplace" .
 
 
-cmp:04720716233004506489 a skos:Concept ;
+cmp:15086021218860293538 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Adding a contact, or starting a conversation in Windows Live Messenger" ;
 	skos:notation "IANA registration template  Windows Live Messenger" ;
@@ -774,21 +777,21 @@ cmp:04720716233004506489 a skos:Concept ;
 	skos:prefLabel "msnim" .
 
 
-cmp:12066458791686840079 a skos:Concept ;
+cmp:16044821335124202477 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Message_Session_Relay_Protocol' title='Message Session Relay Protocol'>Message Session Relay Protocol</a>" ;
 	skos:notation "RFC 4975" ;
 	skos:prefLabel "msrp","msrps" .
 
 
-cmp:17094608903880794978 a skos:Concept ;
+cmp:04380329178921917719 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Message Tracking Query Protocol" ;
 	skos:notation "RFC 3887" ;
 	skos:prefLabel "mtqp" .
 
 
-cmp:04734574736012860398 a skos:Concept ;
+cmp:07505344781094207593 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Joining a server." ;
 	skos:notation "IANA registration template  Mumble" ;
@@ -798,14 +801,14 @@ cmp:04734574736012860398 a skos:Concept ;
 	skos:prefLabel "mumble" .
 
 
-cmp:0179526936506902070 a skos:Concept ;
+cmp:11727616305848161499 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Mailbox Update Protocol" ;
 	skos:notation "RFC 3656" ;
 	skos:prefLabel "mupdate" .
 
 
-cmp:16946328029630629250 a skos:Concept ;
+cmp:05495022462453311648 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Access <a href='/wiki/Apache_Maven' title='Apache Maven'>Apache Maven</a> repository artifacts" ;
 	skos:notation "IANA registration template  OPS4J" ;
@@ -813,7 +816,7 @@ cmp:16946328029630629250 a skos:Concept ;
 	skos:prefLabel "mvn" .
 
 
-cmp:13014335350052785056 a skos:Concept ;
+cmp:14415443198590301905 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "( <a href='/wiki/Usenet' title='Usenet'>Usenet</a> ) newsgroups and postings" ;
 	skos:notation "RFC 1738","RFC 5538" ;
@@ -822,14 +825,14 @@ cmp:13014335350052785056 a skos:Concept ;
 	skos:prefLabel "news" .
 
 
-cmp:19003207120460444053 a skos:Concept ;
+cmp:15585093191929397303 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/Network_File_System_(protocol)' title='Network File System (protocol)'>Network File System</a> resources" ;
 	skos:notation "RFC 2224" ;
 	skos:prefLabel "nfs" .
 
 
-cmp:11175350718296827265 a skos:Concept ;
+cmp:06166582026238690150 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Naming Things with Hashes" ;
 	skos:notation "RFC 6920" ;
@@ -838,7 +841,7 @@ cmp:11175350718296827265 a skos:Concept ;
 	skos:prefLabel "ni","nih" .
 
 
-cmp:13014335350052785056 a skos:Concept ;
+cmp:14415443198590301905 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Usenet <a href='/wiki/Network_News_Transfer_Protocol' title='Network News Transfer Protocol'>NNTP</a>" ;
 	skos:notation "RFC 1738","RFC 5538" ;
@@ -847,7 +850,7 @@ cmp:13014335350052785056 a skos:Concept ;
 	skos:prefLabel "nntp" .
 
 
-cmp:08899001260604583420 a skos:Concept ;
+cmp:173506109518141292 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Open a <a class='mw-redirect' href='/wiki/Lotus_Notes' title='Lotus Notes'>Lotus Notes</a> document or database" ;
 	skos:notation "IANA registration template  Lotus Notes" ;
@@ -856,25 +859,25 @@ cmp:08899001260604583420 a skos:Concept ;
 	skos:prefLabel "notes" .
 
 
-cmp:05049032682271647262 a skos:Concept ;
+cmp:0541332028166771571 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "IANA registration template IETF Draft" ;
 	skos:prefLabel "oid" .
 
 
-cmp:18452584609971683238 a skos:Concept ;
+cmp:05390845337777687472 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC 2518","RFC 4918" ;
 	skos:prefLabel "opaquelocktoken" .
 
 
-cmp:05049032682271647262 a skos:Concept ;
+cmp:0541332028166771571 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "IANA registration template IETF Draft" ;
 	skos:prefLabel "pack" .
 
 
-cmp:04358494474182778566 a skos:Concept ;
+cmp:13001807492669048275 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used to designate system services in HP <a href='/wiki/WebOS' title='WebOS'>webOS</a> applications" ;
 	skos:notation "IANA registration template  HP webOS" ;
@@ -883,7 +886,7 @@ cmp:04358494474182778566 a skos:Concept ;
 	skos:prefLabel "palm" .
 
 
-cmp:14025974993127354275 a skos:Concept ;
+cmp:16442441686975686172 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used to launch and automatically take a screen shot using the application 'Paparazzi!' ( <a class='mw-redirect' href='/wiki/Mac_OS' title='Mac OS'>Mac</a> only)" ;
 	skos:notation "IANA registration template  Derailer" ;
@@ -892,7 +895,7 @@ cmp:14025974993127354275 a skos:Concept ;
 	skos:prefLabel "paparazzi" .
 
 
-cmp:02950833015104498004 a skos:Concept ;
+cmp:0901246118899781582 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Designate target for payments" ;
 	skos:notation "RFC 8905" ;
@@ -900,14 +903,14 @@ cmp:02950833015104498004 a skos:Concept ;
 	skos:prefLabel "payto" .
 
 
-cmp:14933582289845752505 a skos:Concept ;
+cmp:01412242789167872932 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/PKCS_11' title='PKCS 11'>PKCS #11</a>" ;
 	skos:notation "RFC 7512" ;
 	skos:prefLabel "pkcs11" .
 
 
-cmp:17393491248445520902 a skos:Concept ;
+cmp:16520922776465579024 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Access to Eclipse platform resources." ;
 	skos:notation "IANA registration template  Eclipse platform scheme documentation" ;
@@ -916,7 +919,7 @@ cmp:17393491248445520902 a skos:Concept ;
 	skos:prefLabel "platform" .
 
 
-cmp:14003955172691162234 a skos:Concept ;
+cmp:18083246240105304585 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Accessing mailbox through <a class='mw-redirect' href='/wiki/POP3' title='POP3'>POP3</a>" ;
 	skos:notation "RFC 2384" ;
@@ -924,7 +927,7 @@ cmp:14003955172691162234 a skos:Concept ;
 	skos:prefLabel "pop" .
 
 
-cmp:15570592723655689198 a skos:Concept ;
+cmp:09205165124908400812 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used in Common Profile for Presence (CPP) to identify presence" ;
 	skos:notation "RFC 3859" ;
@@ -933,7 +936,7 @@ cmp:15570592723655689198 a skos:Concept ;
 	skos:prefLabel "pres" .
 
 
-cmp:18893526985459335330 a skos:Concept ;
+cmp:11485807317894105371 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Prospero Directory Service" ;
 	skos:notation "RFC 1738","RFC 4157" ;
@@ -941,7 +944,7 @@ cmp:18893526985459335330 a skos:Concept ;
 	skos:prefLabel "prospero" .
 
 
-cmp:14549697643971657254 a skos:Concept ;
+cmp:17810610875820021039 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Alter proxy settings in the FoxyProxy application" ;
 	skos:notation "IANA registration template  FoxyProxy" ;
@@ -950,7 +953,7 @@ cmp:14549697643971657254 a skos:Concept ;
 	skos:prefLabel "proxy" .
 
 
-cmp:07684253195284268903 a skos:Concept ;
+cmp:05204513819665069481 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used to identify or locate a person, group, place or a service and specify its ability to communicate" ;
 	skos:notation "IANA registration template  PSYC" ;
@@ -959,7 +962,7 @@ cmp:07684253195284268903 a skos:Concept ;
 	skos:prefLabel "psyc" .
 
 
-cmp:14873310174143617499 a skos:Concept ;
+cmp:11780436988785039829 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Opens a filesystem query" ;
 	skos:notation "IANA registration template  Haiku" ;
@@ -968,14 +971,14 @@ cmp:14873310174143617499 a skos:Concept ;
 	skos:prefLabel "query" .
 
 
-cmp:17328564892701812307 a skos:Concept ;
+cmp:17151499943020136122 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Redis' title='Redis'>Redis</a> database" ;
 	skos:notation "IANA registration template  IANA registration template" ;
 	skos:prefLabel "redis","rediss" .
 
 
-cmp:14879174352845929129 a skos:Concept ;
+cmp:12127626999127309896 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/REsource_LOcation_And_Discovery_Framing' title='REsource LOcation And Discovery Framing'>REsource LOcation And Discovery Protocol</a>" ;
 	skos:notation "RFC 6940" ;
@@ -983,7 +986,7 @@ cmp:14879174352845929129 a skos:Concept ;
 	skos:prefLabel "reload" .
 
 
-cmp:07136536446775807812 a skos:Concept ;
+cmp:13568390996503266149 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used by <a href='/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> to display <a href='/wiki/List_of_HTTP_status_codes#4xx_Client_Error' title='List of HTTP status codes'>error pages</a> when the server doesn't have its own customized error pages, or when there is no response from the server (in case which the server wasn't found, like when the server is down or the domain isn't registered or when there is no Internet connection, or in case of a timeout)." ;
 	skos:notation "IANA registration template  Microsoft" ;
@@ -992,7 +995,7 @@ cmp:07136536446775807812 a skos:Concept ;
 	skos:prefLabel "res" .
 
 
-cmp:04792024361629885995 a skos:Concept ;
+cmp:04332203735221215090 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Creating mapping for resource protocol aliases generted by the resource instruction. Used by <a href='/wiki/Firefox' title='Firefox'>Firefox</a> . <sup class='reference' id='cite_ref-1'><a href='#cite_note-1'>[1]</a></sup>" ;
 	skos:notation "IANA registration template  Mozilla" ;
@@ -1001,7 +1004,7 @@ cmp:04792024361629885995 a skos:Concept ;
 	skos:prefLabel "resource" .
 
 
-cmp:04109731551310895758 a skos:Concept ;
+cmp:1291076811227908703 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Look up a Java object in an RMI registry." ;
 	skos:notation "IANA registration template  Sun" ;
@@ -1010,7 +1013,7 @@ cmp:04109731551310895758 a skos:Concept ;
 	skos:prefLabel "rmi" .
 
 
-cmp:07426055835296417640 a skos:Concept ;
+cmp:17119740664200493925 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Rsync' title='Rsync'>rsync</a>" ;
 	skos:notation "RFC 5781" ;
@@ -1018,7 +1021,7 @@ cmp:07426055835296417640 a skos:Concept ;
 	skos:prefLabel "rsync" .
 
 
-cmp:1312456251878198228 a skos:Concept ;
+cmp:17225337529030997319 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/Real_Time_Media_Flow_Protocol' title='Real Time Media Flow Protocol'>Real Time Media Flow Protocol</a>" ;
 	skos:notation "RFC IANAregistrationtemplate","RFC 7425" ;
@@ -1026,7 +1029,7 @@ cmp:1312456251878198228 a skos:Concept ;
 	skos:prefLabel "rtmfp" .
 
 
-cmp:17259860105610891053 a skos:Concept ;
+cmp:08907416836200003068 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/Real_Time_Messaging_Protocol' title='Real Time Messaging Protocol'>Real Time Messaging Protocol</a>" ;
 	skos:notation "IANA registration template  Adobe Systems" ;
@@ -1035,21 +1038,21 @@ cmp:17259860105610891053 a skos:Concept ;
 	skos:prefLabel "rtmp" .
 
 
-cmp:04205455580233325422 a skos:Concept ;
+cmp:16059806681890773339 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Real_Time_Streaming_Protocol' title='Real Time Streaming Protocol'>Real Time Streaming Protocol</a>" ;
 	skos:notation "RFC 2326" ;
 	skos:prefLabel "rtsp" .
 
 
-cmp:12312352137891564908 a skos:Concept ;
+cmp:02039940033270436805 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Amazon_S3' title='Amazon S3'>Amazon S3</a> bucket" ;
 	skos:notation "aws-cli documentation" ;
 	skos:scopeNote "s3://mybucket/puppy.jpg"@en  .
 
 
-cmp:13869244124038422922 a skos:Concept ;
+cmp:18630545654108565785 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Open the Map floater in Second Life application to teleport the resident to the location." ;
 	skos:notation "IANA registration template  Linden Lab" ;
@@ -1058,13 +1061,13 @@ cmp:13869244124038422922 a skos:Concept ;
 	skos:prefLabel "secondlife" .
 
 
-cmp:04328561988729295257 a skos:Concept ;
+cmp:19131230093811429320 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC 2609" ;
 	skos:prefLabel "service" .
 
 
-cmp:06848329238739316099 a skos:Concept ;
+cmp:15798821993278462832 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Media_Resource_Control_Protocol' title='Media Resource Control Protocol'>Media Resource Control Protocol</a>" ;
 	skos:notation "RFC 4463","RFC 6787" ;
@@ -1072,7 +1075,7 @@ cmp:06848329238739316099 a skos:Concept ;
 	skos:prefLabel "session" .
 
 
-cmp:17658934240602258411 a skos:Concept ;
+cmp:01498325954636162175 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/SSH_file_transfer_protocol' title='SSH file transfer protocol'>SFTP</a> file transfers (not be to confused with <a href='/wiki/FTPS' title='FTPS'>FTPS</a> (FTP/SSL))" ;
 	skos:notation "IANA registration template  IETF Draft" ;
@@ -1080,7 +1083,7 @@ cmp:17658934240602258411 a skos:Concept ;
 	skos:prefLabel "sftp" .
 
 
-cmp:15985069822653664432 a skos:Concept ;
+cmp:13196813429494413933 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Social Graph Node Mapper" ;
 	skos:notation "IANA registration template  Google" ;
@@ -1089,7 +1092,7 @@ cmp:15985069822653664432 a skos:Concept ;
 	skos:prefLabel "sgn" .
 
 
-cmp:04509910952432485252 a skos:Concept ;
+cmp:19028347385319814411 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Secure_Hypertext_Transfer_Protocol' title='Secure Hypertext Transfer Protocol'>Secure HTTP</a>" ;
 	skos:notation "RFC 2660" ;
@@ -1097,14 +1100,14 @@ cmp:04509910952432485252 a skos:Concept ;
 	skos:prefLabel "shttp" .
 
 
-cmp:1403201635158166815 a skos:Concept ;
+cmp:03227042293683844338 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='new' href='/w/index.php?title=ManageSieve&amp;action=edit&amp;redlink=1' title='ManageSieve (page does not exist)'>ManageSieve</a> protocol" ;
 	skos:notation "RFC 5804" ;
 	skos:prefLabel "sieve" .
 
 
-cmp:02771983934319739445 a skos:Concept ;
+cmp:0973920315845400734 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used with <a href='/wiki/Session_Initiation_Protocol' title='Session Initiation Protocol'>Session Initiation Protocol</a> (SIP)" ;
 	skos:notation "RFC 2543","RFC 3969","RFC 3261" ;
@@ -1112,7 +1115,7 @@ cmp:02771983934319739445 a skos:Concept ;
 	skos:prefLabel "sip" .
 
 
-cmp:04036298913860168108 a skos:Concept ;
+cmp:19043486106700299446 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Secure equivalent of <i>sip</i>" ;
 	skos:notation "RFC 3969","RFC 3261" ;
@@ -1120,7 +1123,7 @@ cmp:04036298913860168108 a skos:Concept ;
 	skos:prefLabel "sips" .
 
 
-cmp:13653485774970063318 a skos:Concept ;
+cmp:01657046464164983540 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Launching <a href='/wiki/Skype' title='Skype'>Skype</a> call (see also <a href='#callto:'>callto:</a> )" ;
 	skos:notation "IANA registration template  Skype" ;
@@ -1128,7 +1131,7 @@ cmp:13653485774970063318 a skos:Concept ;
 	skos:prefLabel "skype" .
 
 
-cmp:17658934240602258411 a skos:Concept ;
+cmp:01498325954636162175 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Accessing <a href='/wiki/Server_Message_Block' title='Server Message Block'>SMB</a> /CIFS shares" ;
 	skos:notation "IANA registration template  IETF Draft" ;
@@ -1136,7 +1139,7 @@ cmp:17658934240602258411 a skos:Concept ;
 	skos:prefLabel "smb" .
 
 
-cmp:05528028065189771488 a skos:Concept ;
+cmp:0850825884579074709 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Interact with <a href='/wiki/SMS' title='SMS'>SMS</a> capable devices for composing and sending messages." ;
 	skos:notation "RFC 5724" ;
@@ -1145,14 +1148,14 @@ cmp:05528028065189771488 a skos:Concept ;
 	skos:prefLabel "sms" .
 
 
-cmp:15045571755668493017 a skos:Concept ;
+cmp:01574771214373020341 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "NNTP over SSL/TLS" ;
 	skos:notation "RFC 5538" ;
 	skos:prefLabel "snews" .
 
 
-cmp:1929563290714730379 a skos:Concept ;
+cmp:0328205810645564812 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Simple_Network_Management_Protocol' title='Simple Network Management Protocol'>Simple Network Management Protocol</a>" ;
 	skos:notation "RFC 4088" ;
@@ -1160,13 +1163,13 @@ cmp:1929563290714730379 a skos:Concept ;
 	skos:prefLabel "snmp" .
 
 
-cmp:16990687872291905942 a skos:Concept ;
+cmp:1768484928362592046 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC 3288","RFC 4227" ;
 	skos:prefLabel "soap.beep","soap.beeps" .
 
 
-cmp:16837606409285317717 a skos:Concept ;
+cmp:12566502468874935472 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Joining servers" ;
 	skos:notation "IANA registration template  Soldat" ;
@@ -1175,7 +1178,7 @@ cmp:16837606409285317717 a skos:Concept ;
 	skos:prefLabel "soldat" .
 
 
-cmp:0246139582593043870 a skos:Concept ;
+cmp:05475089675650458380 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Load a track, album, artist, search, or playlist in Spotify" ;
 	skos:notation "IANA registration template  Spotify" ;
@@ -1184,7 +1187,7 @@ cmp:0246139582593043870 a skos:Concept ;
 	skos:prefLabel "spotify" .
 
 
-cmp:17658934240602258411 a skos:Concept ;
+cmp:01498325954636162175 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/Secure_Shell' title='Secure Shell'>SSH</a> connections (like telnet:)" ;
 	skos:notation "IANA registration template  IETF Draft" ;
@@ -1192,7 +1195,7 @@ cmp:17658934240602258411 a skos:Concept ;
 	skos:prefLabel "ssh" .
 
 
-cmp:13868937925995748660 a skos:Concept ;
+cmp:01098667328877095503 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Interact with Steam: install apps, purchase games, run games, etc." ;
 	skos:notation "IANA registration template  Steam"," Valve" ;
@@ -1201,7 +1204,7 @@ cmp:13868937925995748660 a skos:Concept ;
 	skos:prefLabel "steam" .
 
 
-cmp:03606854943319203181 a skos:Concept ;
+cmp:05329487426843364291 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/Session_Traversal_Utilities_for_NAT' title='Session Traversal Utilities for NAT'>Session Traversal Utilities for NAT</a> (STUN)" ;
 	skos:notation "RFC 7064" ;
@@ -1209,7 +1212,7 @@ cmp:03606854943319203181 a skos:Concept ;
 	skos:prefLabel "stun","stuns" .
 
 
-cmp:18048977905329187850 a skos:Concept ;
+cmp:08347215370914042673 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Provides a link to a Subversion (SVN) source control repository" ;
 	skos:notation "IANA registration template  Subversion" ;
@@ -1217,7 +1220,7 @@ cmp:18048977905329187850 a skos:Concept ;
 	skos:prefLabel "svn" .
 
 
-cmp:12895878570988840846 a skos:Concept ;
+cmp:01538212793576893465 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/Tag_URI' title='Tag URI'>Tag URI</a>" ;
 	skos:notation "RFC 4151" ;
@@ -1226,7 +1229,7 @@ cmp:12895878570988840846 a skos:Concept ;
 	skos:prefLabel "tag" .
 
 
-cmp:11277032228596164227 a skos:Concept ;
+cmp:08689540797677780684 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Joining a server." ;
 	skos:notation "IANA registration template  TeamSpeak" ;
@@ -1235,7 +1238,7 @@ cmp:11277032228596164227 a skos:Concept ;
 	skos:prefLabel "teamspeak" .
 
 
-cmp:15475148343884477183 a skos:Concept ;
+cmp:08208796236500490626 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used for telephone numbers" ;
 	skos:notation "RFC 5341","RFC 3966","RFC 2806" ;
@@ -1243,7 +1246,7 @@ cmp:15475148343884477183 a skos:Concept ;
 	skos:prefLabel "tel" .
 
 
-cmp:18674515892427649517 a skos:Concept ;
+cmp:08466757706676005575 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used with <a href='/wiki/Telnet' title='Telnet'>telnet</a>" ;
 	skos:notation "RFC 1738","RFC 4248" ;
@@ -1251,14 +1254,14 @@ cmp:18674515892427649517 a skos:Concept ;
 	skos:prefLabel "telnet" .
 
 
-cmp:171655592939754613 a skos:Concept ;
+cmp:02703639208915975731 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Trivial_File_Transfer_Protocol' title='Trivial File Transfer Protocol'>Trivial File Transfer Protocol</a>" ;
 	skos:notation "RFC 3617" ;
 	skos:prefLabel "tftp" .
 
 
-cmp:05559130480758160335 a skos:Concept ;
+cmp:16546487795362415878 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Interact with <a class='mw-redirect' href='/wiki/Things_(application)' title='Things (application)'>Things</a> : create new to-dos or go to a specific list" ;
 	skos:notation "IANA registration template  Cultured Code" ;
@@ -1267,28 +1270,28 @@ cmp:05559130480758160335 a skos:Concept ;
 	skos:prefLabel "things" .
 
 
-cmp:14137437720447388465 a skos:Concept ;
+cmp:12649006520543070986 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "multipart/related relative reference resolution" ;
 	skos:notation "RFC IANAregistrationtemplate","RFC 2557" ;
 	skos:prefLabel "thismessage" .
 
 
-cmp:04030140945207361486 a skos:Concept ;
+cmp:0944213010301847663 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Interactive 3270 emulation sessions" ;
 	skos:notation "RFC 6270" ;
 	skos:prefLabel "tn3270" .
 
 
-cmp:03896821612213948366 a skos:Concept ;
+cmp:05257534276087780612 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Transaction Internet Protocol" ;
 	skos:notation "RFC 2371" ;
 	skos:prefLabel "tip" .
 
 
-cmp:14742230442706264379 a skos:Concept ;
+cmp:07078474012087422672 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Traversal_Using_Relays_around_NAT' title='Traversal Using Relays around NAT'>Traversal Using Relays around NAT</a> (TURN)" ;
 	skos:notation "RFC 7065" ;
@@ -1296,14 +1299,14 @@ cmp:14742230442706264379 a skos:Concept ;
 	skos:prefLabel "turn","turns" .
 
 
-cmp:01536926240506258331 a skos:Concept ;
+cmp:02290571966158969744 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "TV Broadcasts" ;
 	skos:notation "RFC 2838" ;
 	skos:prefLabel "tv" .
 
 
-cmp:07881760012316791540 a skos:Concept ;
+cmp:12972999664751748816 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "BitTorrent tracker protocol based on UDP." ;
 	skos:notation "IANA registration template  BitTorrent" ;
@@ -1312,7 +1315,7 @@ cmp:07881760012316791540 a skos:Concept ;
 	skos:prefLabel "udp" .
 
 
-cmp:01570951724128280191 a skos:Concept ;
+cmp:15405888727362364854 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "MPEG Transport Stream over UDP" ;
 	skos:notation "IANA registration template  MPEG-TS" ;
@@ -1321,7 +1324,7 @@ cmp:01570951724128280191 a skos:Concept ;
 	skos:prefLabel "udp" .
 
 
-cmp:01055707990464158229 a skos:Concept ;
+cmp:05650317503508997130 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Joining servers" ;
 	skos:notation "IANA registration template  Unreal" ;
@@ -1330,7 +1333,7 @@ cmp:01055707990464158229 a skos:Concept ;
 	skos:prefLabel "unreal" .
 
 
-cmp:02289766730323402899 a skos:Concept ;
+cmp:15061476171309850267 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Uniform_Resource_Name' title='Uniform Resource Name'>Uniform Resource Names</a>" ;
 	skos:notation "RFC 2141" ;
@@ -1339,7 +1342,7 @@ cmp:02289766730323402899 a skos:Concept ;
 	skos:prefLabel "urn" .
 
 
-cmp:11855996992100843823 a skos:Concept ;
+cmp:02107096473381028804 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Joining servers" ;
 	skos:notation "IANA registration template  Unreal Tournament 2004" ;
@@ -1348,14 +1351,14 @@ cmp:11855996992100843823 a skos:Concept ;
 	skos:prefLabel "ut2004" .
 
 
-cmp:17028738030795790180 a skos:Concept ;
+cmp:11767801935668602576 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<b>Ve</b> rsatile <b>M</b> ulti <b>m</b> edia <b>I</b> nterface" ;
 	skos:notation "RFC 2122" ;
 	skos:prefLabel "vemmi" .
 
 
-cmp:17602169977554974209 a skos:Concept ;
+cmp:15571973622718827563 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Joining a server." ;
 	skos:notation "IANA registration template  Ventrilo" ;
@@ -1364,13 +1367,13 @@ cmp:17602169977554974209 a skos:Concept ;
 	skos:prefLabel "ventrilo" .
 
 
-cmp:06515816155586232507 a skos:Concept ;
+cmp:03745575923592486388 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC IANAregistrationtemplateIETFDraft","RFC 2122","RFC 3986" ;
 	skos:prefLabel "videotex" .
 
 
-cmp:06951697898683227450 a skos:Concept ;
+cmp:12479562949613038321 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Shows a web page as code 'in the raw'." ;
 	skos:notation "IANA registration template \nIETF Draft" ;
@@ -1379,7 +1382,7 @@ cmp:06951697898683227450 a skos:Concept ;
 	skos:prefLabel "view-source" .
 
 
-cmp:14611888543273840355 a skos:Concept ;
+cmp:11300168282851624880 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Virtual_Network_Computing' title='Virtual Network Computing'>Virtual Network Computing</a>" ;
 	skos:notation "RFC 7869" ;
@@ -1387,7 +1390,7 @@ cmp:14611888543273840355 a skos:Concept ;
 	skos:prefLabel "vnc" .
 
 
-cmp:08899777513102834889 a skos:Concept ;
+cmp:02393953308610133153 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Used with <a href='/wiki/Wide_area_information_server' title='Wide area information server'>Wide area information server</a> (WAIS)" ;
 	skos:notation "RFC 1738","RFC 4156" ;
@@ -1396,7 +1399,7 @@ cmp:08899777513102834889 a skos:Concept ;
 	skos:prefLabel "wais" .
 
 
-cmp:1512370003860600044 a skos:Concept ;
+cmp:08081000342951723086 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Subscribing to calendars in <a href='/wiki/ICalendar' title='ICalendar'>iCalendar</a> format" ;
 	skos:notation "IANA registration template  iCalendar" ;
@@ -1405,7 +1408,7 @@ cmp:1512370003860600044 a skos:Concept ;
 	skos:prefLabel "webcal" .
 
 
-cmp:01551803924184117488 a skos:Concept ;
+cmp:17255034801994811644 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/WebSocket' title='WebSocket'>WebSocket</a> protocol" ;
 	skos:notation "RFC 6455" ;
@@ -1413,7 +1416,7 @@ cmp:01551803924184117488 a skos:Concept ;
 	skos:prefLabel "ws","wss" .
 
 
-cmp:02315895790005321467 a skos:Concept ;
+cmp:19220906757213079509 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Wireless Telephony Application Interface" ;
 	skos:notation "IANA registration template  WAP Forum" ;
@@ -1422,7 +1425,7 @@ cmp:02315895790005321467 a skos:Concept ;
 	skos:prefLabel "wtai" .
 
 
-cmp:04792024361629885995 a skos:Concept ;
+cmp:04332203735221215090 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "What You Cache Is What You Get <a href='/wiki/WYCIWYG' title='WYCIWYG'>WYCIWYG</a>" ;
 	skos:notation "IANA registration template  Mozilla" ;
@@ -1431,13 +1434,13 @@ cmp:04792024361629885995 a skos:Concept ;
 	skos:prefLabel "wyciwyg" .
 
 
-cmp:16037689004124131470 a skos:Concept ;
+cmp:17350643088582699652 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC 6501" ;
 	skos:prefLabel "xcon","xcon-userid" .
 
 
-cmp:13712958975110339528 a skos:Concept ;
+cmp:14460441500231914006 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Adding friends and servers, joining servers, changing status text." ;
 	skos:notation "IANA registration template  Xfire" ;
@@ -1446,13 +1449,13 @@ cmp:13712958975110339528 a skos:Concept ;
 	skos:prefLabel "xfire" .
 
 
-cmp:18085928379022372706 a skos:Concept ;
+cmp:03552594084673618628 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:notation "RFC 3529" ;
 	skos:prefLabel "xmlrpc.beep","xmlrpc.beeps" .
 
 
-cmp:03326020346195557833 a skos:Concept ;
+cmp:0191705011499907663 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a class='mw-redirect' href='/wiki/Extensible_Messaging_and_Presence_Protocol' title='Extensible Messaging and Presence Protocol'>XMPP</a>" ;
 	skos:notation "RFC 4622","RFC 5122" ;
@@ -1460,7 +1463,7 @@ cmp:03326020346195557833 a skos:Concept ;
 	skos:prefLabel "xmpp" .
 
 
-cmp:0909810528436628255 a skos:Concept ;
+cmp:08343532322436984581 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "eXtensible Resource Identifier ( <a class='mw-redirect' href='/wiki/XRI' title='XRI'>XRI</a> )" ;
 	skos:notation "IANA registration template  OASIS XRI Technical Committee" ;
@@ -1469,7 +1472,7 @@ cmp:0909810528436628255 a skos:Concept ;
 	skos:prefLabel "xri" .
 
 
-cmp:17695450071545596267 a skos:Concept ;
+cmp:13578080485706086611 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Sending an instant message to a Yahoo! Contact." ;
 	skos:notation "IANA registration template  Yahoo! Messenger" ;
@@ -1477,14 +1480,14 @@ cmp:17695450071545596267 a skos:Concept ;
 	skos:prefLabel "ymsgr" .
 
 
-cmp:05823177512554171670 a skos:Concept ;
+cmp:12830848185450538791 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Z39.50 information access" ;
 	skos:notation "RFC 1738","RFC 2056" ;
 	skos:prefLabel "z39.50" .
 
 
-cmp:12095566059599818566 a skos:Concept ;
+cmp:12675820802053312317 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "<a href='/wiki/Z39.50' title='Z39.50'>Z39.50</a> retrieval" ;
 	skos:notation "RFC 2056" ;
@@ -1492,11 +1495,90 @@ cmp:12095566059599818566 a skos:Concept ;
 	skos:prefLabel "z39.50r" .
 
 
-cmp:12095566059599818566 a skos:Concept ;
+cmp:12675820802053312317 a skos:Concept ;
 	skos:inScheme cm:protocols-taxonomy ;
 	skos:definition "Z39.50 session" ;
 	skos:notation "RFC 2056" ;
 	skos:scopeNote "z39.50s://<host>[:<port>]/[<database>][?<docid>][;esn=<elementset>][;rs=<recordsyntax>]"@en  ;
 	skos:prefLabel "z39.50s" .
+
+
+
+
+cmp:1114748226570492804 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "URL scheme in the <a href='/wiki/GNOME' title='GNOME'>GNOME</a> desktop environment to access file(s) with <a href='/wiki/Superuser' title='Superuser'>administrative permissions</a> with GUI applications in a safer way, instead of the <i>insecure-considered</i>  <a href='/wiki/Sudo' title='Sudo'>sudo, gksu &amp; gksudo</a> ." ;
+	skos:notation "admin://<path>/<to>/<file>\nexample: gedit admin://etc/default/grub" ;
+	skos:prefLabel "admin" .
+
+
+cmp:1851089431049613835 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "URL scheme can be used by packaged applications to obtain resources that are inside a container." ;
+	skos:notation "app://<application>/<path>\nexample: app://com.foo.bar/index.html" ;
+	skos:prefLabel "app" .
+
+
+cmp:05356886845271597521 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Digital object identifier, a digital identifier for any object of intellectual property." ;
+	skos:notation "doi:10.<publisher number>/<suffix>example: doi:10.1000/182" ;
+	skos:scopeNote "https://doi.org/"@en ,"http://hdl.handle.net/"@en  ;
+	skos:prefLabel "doi" .
+
+
+cmp:07665749251880889085 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Execute <a href='/wiki/JavaScript' title='JavaScript'>JavaScript</a> code" ;
+	skos:notation "javascript:<javascript to execute>" ;
+	skos:prefLabel "javascript" .
+
+
+cmp:13673442946797636030 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Connect a database with <a href='/wiki/Java_Database_Connectivity' title='Java Database Connectivity'>Java Database Connectivity</a> technology." ;
+	skos:notation "jdbc:somejdbcvendor:other_data...\njdbc:oracle:oci:@host:port(sid or /service)?params...\njdbc:sqlserver://serverName\\instanceName:portNumber;params...\njdbc:mysql://host:port/database?params..." ;
+	skos:prefLabel "jdbc" .
+
+
+cmp:0 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "<a href='/wiki/Open_Database_Connectivity' title='Open Database Connectivity'>Open Database Connectivity</a>" ;
+	skos:prefLabel "odbc" .
+
+
+cmp:15897928671761182840 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Connectivity URI for the Stratum <a class='mw-redirect' href='/wiki/Communications_protocol' title='Communications protocol'>protocol</a> , used for <a class='mw-redirect' href='/wiki/Proof-of-work' title='Proof-of-work'>proof-of-work</a> coordination in pooled <a href='/wiki/Cryptocurrency' title='Cryptocurrency'>cryptocurrency</a>  <a href='/wiki/Cryptocurrency#Proof-of-work_schemes' title='Cryptocurrency'>mining</a> ." ;
+	skos:notation "stratum+tcp://server:port"," stratum+udp://server:port" ;
+	skos:prefLabel "stratum" .
+
+
+cmp:01009185088947004958 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Effectively namespaces web-based protocols from other, potentially less web-secure, protocols." ;
+	skos:notation "web+⟨string of some lower-case alphabetic characters⟩:" ;
+	skos:prefLabel "web+..." .
+
+
+cmp:01106022156542493133 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Used by Zoom conferencing software to launch the Zoom client" ;
+	skos:notation "example: zoommtg://zoom.us/join?confno=<confno>..." ;
+	skos:prefLabel "zoommtg","zoomus" .
+
+
+cmp:05919628521490555887 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Used by TrueConf Server to interact with client applications" ;
+	skos:notation "trueconf:target@server&param_1=value_1&...&param_n=value_n" ;
+	skos:prefLabel "trueconf:" .
+
+
+cmp:11266177526082053849 a skos:Concept ;
+	skos:inScheme cm:protocols-taxonomy ;
+	skos:definition "Used by Slack to launch the Slack client" ;
+	skos:notation "example: slack://open?team={TEAM_ID}" ;
+	skos:prefLabel "slack" .
 
 
