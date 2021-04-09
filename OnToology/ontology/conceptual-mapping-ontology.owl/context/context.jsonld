@@ -81,11 +81,11 @@
     "HTMLSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource"
     },
-    "DataSourceAccess" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess"
-    },
     "EvaluableExpression" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"
+    },
+    "NodeMap" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"
     },
     "expression" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#expression",
@@ -146,6 +146,9 @@
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
+    "BlankNodeMap" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap"
+    },
     "hasSecurityScheme" : {
       "@id" : "http://purl.org/vocab/vann/hasSecurityScheme",
       "@type" : "@id"
@@ -156,17 +159,11 @@
     "StreamSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource"
     },
-    "ReferenceNode" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode"
-    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
     "definition" : {
       "@id" : "http://www.w3.org/2008/05/skos#definition"
-    },
-    "BlankNode" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode"
     },
     "DataSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"
@@ -186,6 +183,9 @@
     },
     "publisher" : {
       "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "ReferenceNodeMap" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"
     },
     "URI" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#URI",
@@ -216,6 +216,9 @@
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType",
       "@type" : "@id"
     },
+    "DataItem" : {
+      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#DataItem"
+    },
     "Resource" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
@@ -238,9 +241,6 @@
     },
     "EventSource" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#EventSource"
-    },
-    "Node" : {
-      "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#Node"
     },
     "hasProtocol" : {
       "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol",

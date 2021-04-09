@@ -16,8 +16,8 @@ This section provides details for each class and property defined by Conceptual 
             title="http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression">Base Expression</a>
       </li>
       <li>
-         <a href="#BlankNode"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode">Blank Node</a>
+         <a href="#BlankNodeMap"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap">Blank Node Map</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
@@ -38,12 +38,12 @@ This section provides details for each class and property defined by Conceptual 
             title="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess">Data Access</a>
       </li>
       <li>
-         <a href="#DataSource"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource">Data Source</a>
+         <a href="#DataItem"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#DataItem">Data Item</a>
       </li>
       <li>
-         <a href="#DataSourceAccess"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess">Data Source Access</a>
+         <a href="#DataSource"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource">Data Source</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/csvw#Dialect" title="http://www.w3.org/ns/csvw#Dialect">Dialect Description</a>
@@ -79,8 +79,8 @@ This section provides details for each class and property defined by Conceptual 
          <a href="#http://www.w3.org/2000/01/rdf-schema#Literal" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
       </li>
       <li>
-         <a href="#Node"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#Node">Node</a>
+         <a href="#NodeMap"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap">Node Map</a>
       </li>
       <li>
          <a href="#Ontology"
@@ -98,8 +98,8 @@ This section provides details for each class and property defined by Conceptual 
             title="http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression">Recursive Expression</a>
       </li>
       <li>
-         <a href="#ReferenceNode"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode">Reference Node</a>
+         <a href="#ReferenceNodeMap"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap">Reference Node Map</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
@@ -236,8 +236,8 @@ This section provides details for each class and property defined by Conceptual 
          <dd>
             <a href="#Constant"
                title="http://vocab.linkeddata.es/def/conceptual-mapping#Constant">Constant</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DataSourceAccess"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess">Data Source Access</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DataItem"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#DataItem">Data Item</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -248,21 +248,21 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="BlankNode">
-      <h3>Blank Node<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="BlankNodeMap">
+      <h3>Blank Node Map<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap</p>
       <div class="comment">
          <span class="markdown">Unique node with no intrinsic name that is not a reference to a resource or a literal</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Node"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#Node">Node</a>
+            <a href="#NodeMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap">Node Map</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -316,10 +316,10 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#function-taxonomy"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy">function taxonomy</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#protocol-taxonomy"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy">protocol taxonomy</a>
+            <a href="#http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"
+               title="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy">function taxonomy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"
+               title="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy">protocol taxonomy</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -404,6 +404,31 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="DataItem">
+      <h3>Data Item<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#DataItem</p>
+      <div class="comment">
+         <span class="markdown">Expression with a value retrieved from the source data</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#BaseExpression"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression">Base Expression</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDataSource"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource">has data source</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="DataSource">
       <h3>Data Source<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -440,31 +465,6 @@ This section provides details for each class and property defined by Conceptual 
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
-         <dd>
-            <a href="#hasDataSource"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource">has data source</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="DataSourceAccess">
-      <h3>Data Source Access<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess</p>
-      <div class="comment">
-         <span class="markdown">Expression with a value retrieved from the source data</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#BaseExpression"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression">Base Expression</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
          <dd>
             <a href="#hasDataSource"
                title="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource">has data source</a>
@@ -711,13 +711,13 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Node">
-      <h3>Node<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="NodeMap">
+      <h3>Node Map<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#Node</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap</p>
       <div class="comment">
          <span class="markdown">Union of blank node and reference node</span>
       </div>
@@ -730,10 +730,10 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#BlankNode"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode">Blank Node</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ReferenceNode"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode">Reference Node</a>
+            <a href="#BlankNodeMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap">Blank Node Map</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ReferenceNodeMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap">Reference Node Map</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -868,21 +868,21 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="ReferenceNode">
-      <h3>Reference Node<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="ReferenceNodeMap">
+      <h3>Reference Node Map<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap</p>
       <div class="comment">
          <span class="markdown">Node that references an IRI</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Node"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#Node">Node</a>
+            <a href="#NodeMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap">Node Map</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -957,8 +957,8 @@ This section provides details for each class and property defined by Conceptual 
          <dd/>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#Node"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#Node">Node</a>
+            <a href="#NodeMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap">Node Map</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1447,8 +1447,8 @@ This section provides details for each class and property defined by Conceptual 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#DataSourceAccess"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess">Data Source Access</a>
+               <a href="#DataItem"
+                  title="http://vocab.linkeddata.es/def/conceptual-mapping#DataItem">Data Item</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1483,8 +1483,8 @@ This section provides details for each class and property defined by Conceptual 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ReferenceNode"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode">Reference Node</a>
+               <a href="#ReferenceNodeMap"
+                  title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap">Reference Node Map</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1545,8 +1545,8 @@ This section provides details for each class and property defined by Conceptual 
                <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
                <sup class="type-op" title="object property">op</sup> 
                <span class="logic">value</span> 
-               <a href="#function-taxonomy"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy">function taxonomy</a>)</dd>
+               <a href="#http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"
+                  title="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy">function taxonomy</a>)</dd>
          </dl>
       </div>
    </div>
@@ -1631,8 +1631,8 @@ This section provides details for each class and property defined by Conceptual 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Node"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#Node">Node</a>
+               <a href="#NodeMap"
+                  title="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap">Node Map</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1697,8 +1697,8 @@ This section provides details for each class and property defined by Conceptual 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#ReferenceNode"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode">Reference Node</a>
+               <a href="#ReferenceNodeMap"
+                  title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap">Reference Node Map</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1732,8 +1732,8 @@ This section provides details for each class and property defined by Conceptual 
                <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
                <sup class="type-op" title="object property">op</sup> 
                <span class="logic">value</span> 
-               <a href="#protocol-taxonomy"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy">protocol taxonomy</a>)</dd>
+               <a href="#http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"
+                  title="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy">protocol taxonomy</a>)</dd>
          </dl>
       </div>
    </div>
@@ -1790,8 +1790,8 @@ This section provides details for each class and property defined by Conceptual 
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Node"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#Node">Node</a>
+               <a href="#NodeMap"
+                  title="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap">Node Map</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2225,25 +2225,25 @@ This section provides details for each class and property defined by Conceptual 
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#function-taxonomy"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy">
+         <a href="#http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"
+            title="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy">
             <span>function taxonomy</span>
          </a>
       </li>
       <li>
-         <a href="#protocol-taxonomy"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy">
+         <a href="#http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"
+            title="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy">
             <span>protocol taxonomy</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="function-taxonomy">
+   <div class="entity" id="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy">
       <h3>function taxonomy<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -2253,13 +2253,13 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="protocol-taxonomy">
+   <div class="entity" id="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy">
       <h3>protocol taxonomy<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
