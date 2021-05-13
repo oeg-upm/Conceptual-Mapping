@@ -173,6 +173,7 @@
         <owl:inverseOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasField"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:comment>A relationship between a data field and the source frame it belongs to</rdfs:comment>
         <rdfs:label>belongs to frame</rdfs:label>
     </owl:ObjectProperty>
     
@@ -183,6 +184,7 @@
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
+        <rdfs:comment>A relationship between a combined frame and the frames it combines</rdfs:comment>
         <rdfs:label>combines frame</rdfs:label>
     </owl:ObjectProperty>
     
@@ -204,13 +206,14 @@
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition">
         <rdfs:domain>
             <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
+                <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap"/>
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
-                </owl:intersectionOf>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
+                </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:comment>A relationship between a linking expression or a conditional statement map and its boolean evaluable expression</rdfs:comment>
         <rdfs:label>has boolean condition</rdfs:label>
     </owl:ObjectProperty>
     
@@ -255,6 +258,7 @@
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasField">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
+        <rdfs:comment>A relationship between a source frame and its data field</rdfs:comment>
         <rdfs:label>has field</rdfs:label>
     </owl:ObjectProperty>
     
@@ -266,6 +270,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
+        <rdfs:comment>A relationship between a statement map and its frame</rdfs:comment>
         <rdfs:label>has frame</rdfs:label>
     </owl:ObjectProperty>
     
@@ -335,6 +340,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:comment>A relationship between a source frame and another source frame within</rdfs:comment>
         <rdfs:label>has nested frame</rdfs:label>
     </owl:ObjectProperty>
     
@@ -401,8 +407,9 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:comment>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</rdfs:comment>
         <rdfs:label>inverse property</rdfs:label>
     </owl:ObjectProperty>
     
@@ -413,6 +420,7 @@
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
+        <rdfs:comment>A relationship between a join combination and the field it joins the sources by</rdfs:comment>
         <rdfs:label>joins by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -421,8 +429,9 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#property -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#property">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:comment>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</rdfs:comment>
         <rdfs:label>property</rdfs:label>
     </owl:ObjectProperty>
     
@@ -443,8 +452,9 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#source -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#source">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:comment>A relationship between a linking expression and its source statement map</rdfs:comment>
         <rdfs:label>source</rdfs:label>
     </owl:ObjectProperty>
     
@@ -453,8 +463,9 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#target -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#target">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:comment>A relationship between a linking expression and its target statement map</rdfs:comment>
         <rdfs:label>target</rdfs:label>
     </owl:ObjectProperty>
     
@@ -624,6 +635,8 @@
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#field">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>expression that defines a field of the data</rdfs:label>
+        <rdfs:label>field</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -874,9 +887,9 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition"/>
@@ -884,7 +897,8 @@
                 <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>Linking Expression</rdfs:label>
+        <rdfs:comment>What links two subjects from different statement maps and their data sources</rdfs:comment>
+        <rdfs:label>Linking Map</rdfs:label>
     </owl:Class>
     
 
