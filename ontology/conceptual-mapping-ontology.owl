@@ -109,9 +109,27 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
     
 
 
@@ -141,7 +159,7 @@
     <!-- http://purl.org/vocab/vann/hasSecurityScheme -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/vocab/vann/hasSecurityScheme">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService"/>
         <rdfs:range rdf:resource="https://www.w3.org/2019/wot/security#SecurityScheme"/>
         <rdfs:label xml:lang="en">has security scheme</rdfs:label>
         <skos:definition xml:lang="en">A relation between a data access and the security scheme it has</skos:definition>
@@ -149,13 +167,23 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
-        <rdfs:label xml:lang="en">has argument</rdfs:label>
-        <skos:definition xml:lang="en">A relation between the data access and an argument that describes it</skos:definition>
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame">
+        <owl:inverseOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasField"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:label>belongs to frame</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
+        <rdfs:label>combines frame</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -171,13 +199,19 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
-        <rdfs:label xml:lang="en">has data access</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a data source and its data access</skos:definition>
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap"/>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:label>has boolean condition</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -185,7 +219,7 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataItem"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
         <rdfs:label xml:lang="en">has data source</rdfs:label>
         <skos:definition xml:lang="en">A relation between a data source access and its data source</skos:definition>
@@ -216,11 +250,32 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasField -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasField">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
+        <rdfs:label>has field</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasFrame -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasFrame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
+        <rdfs:label>has frame</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -242,8 +297,8 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasInput">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
         <rdfs:label xml:lang="en">has input</rdfs:label>
         <skos:definition xml:lang="en">A relation between an evaluable expression and the list of parameters it requires</skos:definition>
     </owl:ObjectProperty>
@@ -255,7 +310,7 @@
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap"/>
         <rdfs:label xml:lang="en">has language</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a literal to define the language</skos:definition>
     </owl:ObjectProperty>
@@ -274,10 +329,21 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasNestedFrame -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasNestedFrame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:label>has nested frame</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasObject -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasObject">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
         <rdfs:label xml:lang="en">has object</rdfs:label>
@@ -289,7 +355,7 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
         <rdfs:label xml:lang="en">has predicate</rdfs:label>
@@ -302,7 +368,7 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -323,7 +389,7 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
         <rdfs:label xml:lang="en">has subject</rdfs:label>
@@ -332,13 +398,32 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#name -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#name">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:label xml:lang="en">name</rdfs:label>
-        <skos:definition xml:lang="en">A relation between an argument and the resource that describes its name</skos:definition>
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:label>inverse property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
+        <rdfs:label>joins by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#property -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#property">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:label>property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -347,7 +432,7 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#returns">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Constant"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:label xml:lang="en">returns</rdfs:label>
         <skos:definition xml:lang="en">A relation between an evaluable expression and the resource it returns</skos:definition>
@@ -355,49 +440,46 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#value -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#source -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#value">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Argument"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:label xml:lang="en">value</rdfs:label>
-        <skos:definition xml:lang="en">A relation between an argument and the resource that describes its value</skos:definition>
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#source">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:label>source</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#object -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#target -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The object of the subject RDF statement.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-        <rdfs:label>object</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#target">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:label>target</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate -->
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#first -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The predicate of the subject RDF statement.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:comment>The first item in the subject RDF list.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-        <rdfs:label>predicate</rdfs:label>
+        <rdfs:label>first</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#subject -->
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#rest -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The subject of the subject RDF statement.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
+        <rdfs:comment>The rest of the subject RDF list after the first item.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-        <rdfs:label>subject</rdfs:label>
+        <rdfs:label>rest</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -415,6 +497,105 @@
     
 
 
+    <!-- http://www.w3.org/ns/dcat#accessService -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#accessService">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:comment xml:lang="en">A site or end-point that gives access to the distribution of the dataset.</rdfs:comment>
+        <rdfs:comment xml:lang="da">Et websted eller endpoint der giver adgang til en repræsentation af datasættet.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Umístění či přístupový bod zpřístupňující distribuci datové sady.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un sitio o end-point que da acceso a la distribución de un conjunto de datos.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un sito o end-point che dà accesso alla distribuzione del set di dati.</rdfs:comment>
+        <rdfs:label xml:lang="en">data access service</rdfs:label>
+        <rdfs:label xml:lang="da">dataadgangstjeneste</rdfs:label>
+        <rdfs:label xml:lang="es">servicio de acceso de datos</rdfs:label>
+        <rdfs:label xml:lang="it">servizio di accesso ai dati</rdfs:label>
+        <rdfs:label xml:lang="cs">služba pro přístup k datům</rdfs:label>
+        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva propiedad agregada en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="da">Ny egenskab tilføjet i DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="en">A site or end-point that gives access to the distribution of the dataset.</skos:definition>
+        <skos:definition xml:lang="da">Et websted eller endpoint der giver adgang til en repræsentation af datasættet.</skos:definition>
+        <skos:definition xml:lang="cs">Umístění či přístupový bod zpřístupňující distribuci datové sady.</skos:definition>
+        <skos:definition xml:lang="es">Un sitio o end-point que da acceso a la distribución de un conjunto de datos.</skos:definition>
+        <skos:definition xml:lang="it">Un sito o end-point che dà accesso alla distribuzione del set di dati.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#distribution">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:comment xml:lang="en">An available distribution of the dataset.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Connecte un jeu de données à des distributions disponibles.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Dostupná distribuce datové sady.</rdfs:comment>
+        <rdfs:comment xml:lang="da">En tilgængelig repræsentation af datasættet.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una distribución disponible del conjunto de datos.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una distribuzione disponibile per il set di dati.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του.</rdfs:comment>
+        <rdfs:comment xml:lang="ar">تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات</rdfs:comment>
+        <rdfs:comment xml:lang="ja">データセットを、その利用可能な配信に接続します。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="cs">distribuce</rdfs:label>
+        <rdfs:label xml:lang="es">distribución</rdfs:label>
+        <rdfs:label xml:lang="da">distribution</rdfs:label>
+        <rdfs:label xml:lang="en">distribution</rdfs:label>
+        <rdfs:label xml:lang="fr">distribution</rdfs:label>
+        <rdfs:label xml:lang="it">distribuzione</rdfs:label>
+        <rdfs:label xml:lang="el">διανομή</rdfs:label>
+        <rdfs:label xml:lang="ar">توزيع</rdfs:label>
+        <rdfs:label xml:lang="ja">データセット配信</rdfs:label>
+        <skos:altLabel xml:lang="da">har distribution</skos:altLabel>
+        <skos:definition xml:lang="en">An available distribution of the dataset.</skos:definition>
+        <skos:definition xml:lang="fr">Connecte un jeu de données à des distributions disponibles.</skos:definition>
+        <skos:definition xml:lang="cs">Dostupná distribuce datové sady.</skos:definition>
+        <skos:definition xml:lang="da">En tilgængelig repræsentation af datasættet.</skos:definition>
+        <skos:definition xml:lang="es">Una distribución disponible del conjunto de datos.</skos:definition>
+        <skos:definition xml:lang="it">Una distribuzione disponibile per il set di dati.</skos:definition>
+        <skos:definition xml:lang="el">Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του.</skos:definition>
+        <skos:definition xml:lang="ar">تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات</skos:definition>
+        <skos:definition xml:lang="ja">データセットを、その利用可能な配信に接続します。</skos:definition>
+        <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, translations pending (except for Italian, Spanish and Czech).</skos:editorialNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#servesDataset -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#servesDataset">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:comment xml:lang="en">A collection of data that this DataService can distribute.</rdfs:comment>
+        <rdfs:comment xml:lang="da">En samling af data som denne datatjeneste kan distribuere.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Kolekce dat, kterou je tato Datová služba schopna poskytnout.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una colección de datos que este Servicio de Datos puede distribuir.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una raccolta di dati che questo DataService può distribuire.</rdfs:comment>
+        <rdfs:label xml:lang="da">datatjeneste for datasæt</rdfs:label>
+        <rdfs:label xml:lang="cs">poskytuje datovou sadu</rdfs:label>
+        <rdfs:label xml:lang="es">provee conjunto de datos</rdfs:label>
+        <rdfs:label xml:lang="it">serve set di dati</rdfs:label>
+        <rdfs:label xml:lang="en">serves dataset</rdfs:label>
+        <skos:altLabel xml:lang="da">distribuerer</skos:altLabel>
+        <skos:altLabel xml:lang="da">ekspederer</skos:altLabel>
+        <skos:altLabel xml:lang="da">udstiller</skos:altLabel>
+        <skos:changeNote xml:lang="en">New property in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva propiedad agregada en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova proprietà in DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="en">A collection of data that this DataService can distribute.</skos:definition>
+        <skos:definition xml:lang="da">En samling af data som denne datatjeneste kan distribuere.</skos:definition>
+        <skos:definition xml:lang="cs">Kolekce dat, kterou je tato Datová služba schopna poskytnout.</skos:definition>
+        <skos:definition xml:lang="es">Una colección de datos que este Servicio de Datos puede distribuir.</skos:definition>
+        <skos:definition xml:lang="it">Una raccolta di dati che questo DataService può distribuire.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -426,21 +607,11 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#URI -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#URI">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">URI</rdfs:label>
-        <skos:definition xml:lang="en">Uniform Resource Identifier used to identify the resource retrieven by the data access</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#expression -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#expression">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TextSource"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">expression</rdfs:label>
         <skos:definition xml:lang="en">What specifies which data is retrieven from a text source</skos:definition>
@@ -448,13 +619,11 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#iterator -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#field -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#iterator">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#field">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">iterator</rdfs:label>
-        <skos:definition xml:lang="en">What is to be iterated in a tree source</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -471,18 +640,6 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#separator -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#separator">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">separator</rdfs:label>
-        <skos:definition xml:lang="en">Character that separates two values from one field in a tabular source</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#shape -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#shape">
@@ -490,6 +647,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">shape</rdfs:label>
         <skos:definition xml:lang="en">Restrictions declared for an ontology in form of a shape</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#type -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#type">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>type of join combination of frames</rdfs:comment>
+        <rdfs:label>type</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -505,26 +674,9 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Argument -->
+    <!-- http://purl.org/dc/dcmitype/Service -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Argument">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#name"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#value"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Argument</rdfs:label>
-        <skos:definition xml:lang="en">Required argument to describe data access</skos:definition>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Service"/>
     
 
 
@@ -547,17 +699,6 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression -->
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression"/>
-        <rdfs:label xml:lang="en">Base Expression</rdfs:label>
-        <skos:definition xml:lang="en">Expression that cannot have nested functions and expects no parameters, only returns</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap">
@@ -568,43 +709,92 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#CartessianProductCombination -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#CartessianProductCombination">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
+        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
+        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination"/>
+        <rdfs:label>Cartessian Product Combination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:label>Combined Frame</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Conditional Statement Map</rdfs:label>
+        <skos:definition xml:lang="en">Statement Map that needs to fulfil one condition to be generated</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Constant -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Constant">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression"/>
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
         <rdfs:label xml:lang="en">Constant</rdfs:label>
         <skos:definition xml:lang="en">Expression that contains a constant value</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#URI"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Data Access</rdfs:label>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
+        <rdfs:label>Container Map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:label xml:lang="en">Data Access Service</rdfs:label>
         <skos:definition xml:lang="en">Description of how to retrieve the data from its source</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataItem -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataField -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataItem">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression"/>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataField">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource"/>
-                <owl:someValuesFrom rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Data Item</rdfs:label>
+        <rdfs:label xml:lang="en">Data Field</rdfs:label>
         <skos:definition xml:lang="en">Expression with a value retrieved from the source data</skos:definition>
     </owl:Class>
     
@@ -613,12 +803,7 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataSource -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess"/>
-                <owl:someValuesFrom rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <rdfs:label xml:lang="en">Data Source</rdfs:label>
         <skos:definition xml:lang="en">Description of the retrieved data</skos:definition>
     </owl:Class>
@@ -645,48 +830,79 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TextSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
-        <rdfs:label xml:lang="en">Graph Source</rdfs:label>
-        <skos:definition xml:lang="en">Data source that is stored as a graph</skos:definition>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <rdfs:label>Expression List</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Frame -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource"/>
-        <rdfs:label xml:lang="en">HTML Source</rdfs:label>
-        <skos:definition xml:lang="en">Data stored in HTML format</skos:definition>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Frame">
+        <rdfs:label>Frame</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource"/>
-        <rdfs:label xml:lang="en">JSON Source</rdfs:label>
-        <skos:definition xml:lang="en">Data stored in JSON format</skos:definition>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:label xml:lang="en">Function Expression</rdfs:label>
+        <skos:definition xml:lang="en">Expression that can expect one or more parameters and nested functions</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression"/>
-        <rdfs:label xml:lang="en">Linking Expression</rdfs:label>
-        <skos:definition xml:lang="en">Expression that defines the link between two Nodes</skos:definition>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination"/>
+        <rdfs:label>Join Combination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingEspression">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Linking Expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ListMap -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ListMap">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
+        <rdfs:label>List Map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
+        <rdfs:label>Literal Map</rdfs:label>
     </owl:Class>
     
 
@@ -721,16 +937,6 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression -->
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <rdfs:label xml:lang="en">Recursive Expression</rdfs:label>
-        <skos:definition xml:lang="en">Expression that can expect one or more parameters and nested functions</skos:definition>
-    </owl:Class>
-    
-
-
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap">
@@ -744,7 +950,6 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap">
-        <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression"/>
@@ -757,10 +962,25 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Source Frame</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasObject"/>
@@ -809,65 +1029,11 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-                    <rdf:Description rdf:about="http://www.w3.org/ns/csvw#Dialect"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TextSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
-        <rdfs:label xml:lang="en">Tabular Source</rdfs:label>
-        <skos:definition xml:lang="en">Data structured into rows and columns</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#TextSource -->
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#TextSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#expression"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
-        <rdfs:label xml:lang="en">Text Source</rdfs:label>
-        <skos:definition xml:lang="en">Data stored as natural text</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource -->
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#iterator"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Tree Source</rdfs:label>
-        <skos:definition xml:lang="en">Data organized in a hierarchycal structure</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource -->
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource"/>
-        <rdfs:label xml:lang="en">XML Source</rdfs:label>
-        <skos:definition xml:lang="en">Data stored in XML format</skos:definition>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
+        <rdfs:label>Union Combination</rdfs:label>
     </owl:Class>
     
 
@@ -879,39 +1045,6 @@
         <rdfs:comment>The class of RDF Lists.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
         <rdfs:label>List</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement -->
-
-    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The class of RDF statements.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-        <rdfs:label>Statement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#Container -->
-
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The class of RDF containers.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
-        <rdfs:label>Container</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
-
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The class of literal values, eg. textual strings and integers.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
-        <rdfs:label>Literal</rdfs:label>
     </owl:Class>
     
 
@@ -962,13 +1095,150 @@
     
 
 
-    <!-- http://www.w3.org/ns/csvw#Dialect -->
+    <!-- http://www.w3.org/ns/dcat#DataService -->
 
-    <owl:Class rdf:about="http://www.w3.org/ns/csvw#Dialect">
-        <rdfs:comment xml:lang="en">A Dialect Description provides hints to parsers about how to parse a linked file.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/csvw#"/>
-        <rdfs:label xml:lang="en">Dialect Description</rdfs:label>
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#DataService">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment xml:lang="en">A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.</rdfs:comment>
+        <rdfs:comment xml:lang="da">Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un sito o end-point che fornisce operazioni relative alla scoperta, all&apos;accesso o all&apos;elaborazione di funzioni su dati o risorse correlate.</rdfs:comment>
+        <rdfs:label xml:lang="en">Data service</rdfs:label>
+        <rdfs:label xml:lang="da">Datatjeneste</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio de datos</rdfs:label>
+        <rdfs:label xml:lang="it">Servizio di dati</rdfs:label>
+        <skos:altLabel xml:lang="da">Dataservice</skos:altLabel>
+        <skos:changeNote xml:lang="en">New class added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová třída přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva clase añadida en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova classe aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="da">Ny klasse tilføjet i DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="en">A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.</skos:definition>
+        <skos:definition xml:lang="da">Et site eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.</skos:definition>
+        <skos:definition xml:lang="cs">Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích.</skos:definition>
+        <skos:definition xml:lang="es">Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados.</skos:definition>
+        <skos:definition xml:lang="it">Un sito o end-point che fornisce operazioni relative alla scoperta, all&apos;accesso o all&apos;elaborazione di funzioni su dati o risorse correlate.</skos:definition>
+        <skos:scopeNote xml:lang="da">Datatjenestetypen kan indikeres ved hjælp af egenskaben dct:type. Værdien kan tages fra kontrollerede udfaldsrum såsom INSPIRE spatial data service vocabulary.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Druh služby může být indikován vlastností dct:type. Její hodnota může být z řízeného slovníku, kterým je například slovník typů prostorových datových služeb INSPIRE.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">El tipo de servicio puede indicarse usando la propiedad dct:type. Su valor puede provenir de un vocabulario controlado, como por ejemplo el vocabulario de servicios de datos espaciales de INSPIRE.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Hvis en dcat:DataService er bundet til en eller flere specifikke datasæt kan dette indikeres ved hjælp af egenskaben dcat:servesDataset. </skos:scopeNote>
+        <skos:scopeNote xml:lang="en">If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Il tipo di servizio può essere indicato usando la proprietà dct:type. Il suo valore può essere preso da un vocabolario controllato come il vocabolario dei tipi di servizi per dati spaziali di INSPIRE.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Pokud je dcat:DataService navázána na jednu či více Datových sad, jsou tyto indikovány vlstností dcat:servesDataset.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Se un dcat:DataService è associato a uno o più Dataset specificati, questi sono indicati dalla proprietà dcat:serveDataset.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Si un dcat:DataService está asociado con uno o más conjuntos de datos especificados, dichos conjuntos de datos pueden indicarse con la propiedad dcat:servesDataset.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The kind of service can be indicated using the dct:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type vocabulary.</skos:scopeNote>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment xml:lang="ja">1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。</rdfs:comment>
+        <rdfs:comment xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more representations.</rdfs:comment>
+        <rdfs:comment xml:lang="da">En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Raccolta di dati, pubblicati o curati da un&apos;unica fonte, disponibili per l&apos;accesso o il download in uno o più formati.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.</rdfs:comment>
+        <rdfs:comment xml:lang="el">Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.</rdfs:comment>
+        <rdfs:comment xml:lang="ar">قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="es">Conjunto de datos</rdfs:label>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+        <rdfs:label xml:lang="it">Dataset</rdfs:label>
+        <rdfs:label xml:lang="da">Datasæt</rdfs:label>
+        <rdfs:label xml:lang="cs">Datová sada</rdfs:label>
+        <rdfs:label xml:lang="fr">Jeu de données</rdfs:label>
+        <rdfs:label xml:lang="el">Σύνολο Δεδομένων</rdfs:label>
+        <rdfs:label xml:lang="ar">قائمة بيانات</rdfs:label>
+        <rdfs:label xml:lang="ja">データセット</rdfs:label>
+        <skos:altLabel xml:lang="da">Datasamling</skos:altLabel>
+        <skos:changeNote xml:lang="cs">2018-02 - odstraněno tvrzení o podtřídě dctype:Dataset, jelikož rozsah dcat:Dataset zahrnuje několik dalších typů ze slovníku dctype.</skos:changeNote>
+        <skos:changeNote xml:lang="es">2018-02 - se eliminó el axioma de subclase con dctype:Dataset porque el alcance de dcat:Dataset incluye muchos otros tipos del vocabulario dctype.</skos:changeNote>
+        <skos:changeNote xml:lang="it">2018-02 - sottoclasse di dctype:Dataset rimosso perché l&apos;ambito di dcat:Dataset include diversi altri tipi dal vocabolario dctype.</skos:changeNote>
+        <skos:changeNote xml:lang="en">2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary.</skos:changeNote>
+        <skos:changeNote xml:lang="da">2018-02 - subklasse af dctype:Dataset fjernet da scope af dcat:Dataset omfatter flere forskellige typer fra dctype-vokabularet.</skos:changeNote>
+        <skos:definition xml:lang="ja">1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。</skos:definition>
+        <skos:definition xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more represenations.</skos:definition>
+        <skos:definition xml:lang="da">En samling a data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.</skos:definition>
+        <skos:definition xml:lang="cs">Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</skos:definition>
+        <skos:definition xml:lang="it">Raccolta di dati, pubblicati o curati da un&apos;unica fonte, disponibili per l&apos;accesso o il download in uno o più formati.</skos:definition>
+        <skos:definition xml:lang="es">Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.</skos:definition>
+        <skos:definition xml:lang="fr">Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.</skos:definition>
+        <skos:definition xml:lang="el">Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.</skos:definition>
+        <skos:definition xml:lang="ar">قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها</skos:definition>
+        <skos:editorialNote xml:lang="en">2020-03-16 A new scopenote added and need to be translated</skos:editorialNote>
+        <skos:scopeNote xml:lang="fr">Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Denne klasse beskriver det konceptuelle datasæt. En eller flere repræsentationer kan være tilgængelige med forskellige skematiske opsætninger, formater eller serialiseringer.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes. </skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Esta clase representa el conjunto de datos publicados. En los casos donde es necesario distinguir entre el conjunto de datos y su entrada en el catálogo de datos, se debe utilizar la clase &apos;registro del catálogo&apos;.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Questa classe descrive il dataset dal punto di vista concettuale. Possono essere disponibili una o più rappresentazioni, con diversi layout e formati schematici o serializzazioni.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Questa classe rappresenta il dataset come pubblicato dall’editore. Nel caso in cui sia necessario operare  una distinzione fra i metadati originali del dataset e il record dei metadati ad esso associato nel catalogo (ad esempio, per distinguere la data di modifica del dataset da quella del dataset nel catalogo) si può impiegare la classe catalog record.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Tato třída reprezentuje datovou sadu tak, jak je publikována poskytovatelem dat. V případě potřeby rozlišení datové sady a jejího katalogizačního záznamu (jelikož metadata jako datum modifikace se mohou lišit) pro něj může být použita třída &quot;katalogizační záznam&quot;.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The notion of dataset in DCAT is broad and inclusive, with the intention of accommodating resource types arising from all communities. Data comes in many forms including numbers, text, pixels, imagery, sound and other multi-media, and potentially other types, any of which might be collected into a dataset.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This class describes the conceptual dataset. One or more representations might be available, with differing schematic layouts and formats or serializations.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This class represents the actual dataset as published by the dataset provider. In cases where a distinction between the actual dataset and its entry in the catalog is necessary (because metadata such as modification date and maintainer might differ), the catalog record class can be used for the latter.</skos:scopeNote>
+        <skos:scopeNote xml:lang="el">Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ&apos;εαυτό, όπως έχει δημοσιευθεί από τον εκδότη. Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο.</skos:scopeNote>
+        <skos:scopeNote xml:lang="ja">このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution">
+        <rdfs:comment xml:lang="en">A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</rdfs:comment>
+        <rdfs:comment xml:lang="da">En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Représente une forme spécifique d&apos;un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, &apos;media-type&apos; o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).</rdfs:comment>
+        <rdfs:comment xml:lang="el">Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.</rdfs:comment>
+        <rdfs:comment xml:lang="ar">شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="cs">Distribuce</rdfs:label>
+        <rdfs:label xml:lang="es">Distribución</rdfs:label>
+        <rdfs:label xml:lang="da">Distribution</rdfs:label>
+        <rdfs:label xml:lang="en">Distribution</rdfs:label>
+        <rdfs:label xml:lang="fr">Distribution</rdfs:label>
+        <rdfs:label xml:lang="it">Distribuzione</rdfs:label>
+        <rdfs:label xml:lang="el">Διανομή</rdfs:label>
+        <rdfs:label xml:lang="ar">التوزيع</rdfs:label>
+        <rdfs:label xml:lang="ja">配信</rdfs:label>
+        <skos:altLabel xml:lang="da">Datadistribution</skos:altLabel>
+        <skos:altLabel xml:lang="da">Datamanifestation</skos:altLabel>
+        <skos:altLabel xml:lang="da">Datarepræsentation</skos:altLabel>
+        <skos:altLabel xml:lang="da">Dataudstilling</skos:altLabel>
+        <skos:definition xml:lang="en">A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</skos:definition>
+        <skos:definition xml:lang="da">En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).</skos:definition>
+        <skos:definition xml:lang="cs">Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</skos:definition>
+        <skos:definition xml:lang="it">Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.</skos:definition>
+        <skos:definition xml:lang="fr">Représente une forme spécifique d&apos;un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.</skos:definition>
+        <skos:definition xml:lang="es">Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, &apos;media-type&apos; o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).</skos:definition>
+        <skos:definition xml:lang="el">Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.</skos:definition>
+        <skos:definition xml:lang="ar">شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك.</skos:definition>
+        <skos:definition xml:lang="ja">データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。</skos:definition>
+        <skos:scopeNote xml:lang="fr">Ceci représente une disponibilité générale du jeu de données, et implique qu&apos;il n&apos;existe pas d&apos;information sur la méthode d&apos;accès réelle des données, par exple, si c&apos;est un lien de téléchargement direct ou à travers une page Web.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Denne klasse repræsenterer datasættets overordnede tilgængelighed og giver ikke oplysninger om hvilken metode der kan anvendes til at få adgang til data, dvs. om adgang til datasættet realiseres ved direkte download, API eller via et websted. Anvendelsen af egenskaben dcat:downloadURL indikerer at distributionen kan downloades direkte.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Questa classe rappresenta una disponibilità generale di un dataset e non implica alcuna informazione sul metodo di accesso effettivo ai dati, ad esempio se si tratta di un accesso a download diretto, API, o attraverso una pagina Web. L&apos;utilizzo della proprietà dcat:downloadURL indica distribuzioni direttamente scaricabili.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skutečné metodě přístupu k datům, tj. zda jsou přímo ke stažení, skrze API či přes webovou stránku. Použití vlastnosti dcat:downloadURL indikuje přímo stažitelné distribuce.</skos:scopeNote>
+        <skos:scopeNote xml:lang="el">Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα, μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές.</skos:scopeNote>
+        <skos:scopeNote xml:lang="ja">これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Resource -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource"/>
     
 
 
