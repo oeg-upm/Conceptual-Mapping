@@ -16,9 +16,9 @@
                                                                                              "Raúl García Castro (Ontology Engineering Group)"@es ;
                                                       <http://purl.org/dc/terms/created> "2020-10-14"@en ;
                                                       <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es ;
-                                                      <http://purl.org/dc/terms/description> "TBD"@en ;
+                                                      <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims at gathering the expressiveness of the current mapping languages to serve as common interchange language and improve the inroperability among them."@en ;
                                                       <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                                      <http://purl.org/dc/terms/modified> "2020-03-24T00:00:00"@en ;
+                                                      <http://purl.org/dc/terms/modified> "2020-05-14T00:00:00"@en ;
                                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en ;
                                                       <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping> .
 
@@ -70,8 +70,20 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+<http://www.w3.org/2004/02/skos/core#changeNote> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
@@ -88,18 +100,27 @@
 
 ###  http://purl.org/vocab/vann/hasSecurityScheme
 <http://purl.org/vocab/vann/hasSecurityScheme> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain :DataAccess ;
+                                               rdfs:domain :DataAccessService ;
                                                rdfs:range <https://www.w3.org/2019/wot/security#SecurityScheme> ;
                                                rdfs:label "has security scheme"@en ;
                                                <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data access and the security scheme it has"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#hasArgument
-:hasArgument rdf:type owl:ObjectProperty ;
-             rdfs:domain :DataAccess ;
-             rdfs:range :Argument ;
-             rdfs:label "has argument"@en ;
-             <http://www.w3.org/2004/02/skos/core#definition> "A relation between the data access and an argument that describes it"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame
+:belongsToFrame rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasField ;
+                rdfs:domain :DataField ;
+                rdfs:range :SourceFrame ;
+                rdfs:comment "A relationship between a data field and the source frame it belongs to" ;
+                rdfs:label "belongs to frame" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame
+:combinesFrame rdf:type owl:ObjectProperty ;
+               rdfs:domain :CombinedFrame ;
+               rdfs:range :Frame ;
+               rdfs:comment "A relationship between a combined frame and the frames it combines" ;
+               rdfs:label "combines frame" .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasAssociatedOntology
@@ -110,17 +131,21 @@
                        <http://www.w3.org/2004/02/skos/core#definition> "A relation between a mapping and the ontology of provenance"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#hasDataAccess
-:hasDataAccess rdf:type owl:ObjectProperty ;
-               rdfs:domain :DataSource ;
-               rdfs:range :DataAccess ;
-               rdfs:label "has data access"@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data source and its data access"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition
+:hasBooleanCondition rdf:type owl:ObjectProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :ConditionalStatementMap
+                                                 :LinkingMap
+                                               )
+                                 ] ;
+                     rdfs:range :EvaluableExpression ;
+                     rdfs:comment "A relationship between a linking expression or a conditional statement map and its boolean evaluable expression" ;
+                     rdfs:label "has boolean condition" .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource
 :hasDataSource rdf:type owl:ObjectProperty ;
-               rdfs:domain :DataSourceAccess ;
+               rdfs:domain :SourceFrame ;
                rdfs:range :DataSource ;
                rdfs:label "has data source"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data source access and its data source"@en .
@@ -130,7 +155,7 @@
 :hasDataType rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :StatementMap ;
-             rdfs:range :ReferenceNode ;
+             rdfs:range :ReferenceNodeMap ;
              rdfs:label "has data type"@en ;
              <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
 
@@ -143,14 +168,31 @@
                         <http://www.w3.org/2004/02/skos/core#definition> "A relation between a resource map and the evaluable expression that defines it"@en .
 
 
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasField
+:hasField rdf:type owl:ObjectProperty ;
+          rdfs:domain :SourceFrame ;
+          rdfs:range :DataField ;
+          rdfs:comment "A relationship between a source frame and its data field" ;
+          rdfs:label "has field" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasFrame
+:hasFrame rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :StatementMap ;
+          rdfs:range :Frame ;
+          rdfs:comment "A relationship between a statement map and its frame" ;
+          rdfs:label "has frame" .
+
+
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName
 :hasFunctionName rdf:type owl:ObjectProperty ,
                           owl:FunctionalProperty ;
-                 rdfs:domain :RecursiveExpression ;
+                 rdfs:domain :FunctionExpression ;
                  rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                     owl:hasValue :function-taxonomy
+                                                     owl:hasValue <http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy>
                                                    ]
                                                  ) ;
                               rdf:type owl:Class
@@ -162,8 +204,8 @@
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasInput
 :hasInput rdf:type owl:ObjectProperty ,
                    owl:FunctionalProperty ;
-          rdfs:domain :EvaluableExpression ;
-          rdfs:range rdf:List ;
+          rdfs:domain :FunctionExpression ;
+          rdfs:range :ExpressionList ;
           rdfs:label "has input"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the list of parameters it requires"@en .
 
@@ -172,7 +214,7 @@
 :hasLanguage rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :StatementMap ;
-             rdfs:range rdfs:Literal ;
+             rdfs:range :LiteralMap ;
              rdfs:label "has language"@en ;
              <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a literal to define the language"@en .
 
@@ -181,14 +223,23 @@
 :hasNamedGraph rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :StatementMap ;
-               rdfs:range :Node ;
+               rdfs:range :NodeMap ;
                rdfs:label "has named graph"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the assigned named graph"@en .
 
 
+###  http://vocab.linkeddata.es/def/conceptual-mapping#hasNestedFrame
+:hasNestedFrame rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :SourceFrame ;
+                rdfs:range :SourceFrame ;
+                rdfs:comment "A relationship between a source frame and another source frame within" ;
+                rdfs:label "has nested frame" .
+
+
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasObject
 :hasObject rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf rdf:object ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
            rdfs:domain :StatementMap ;
            rdfs:range :ResourceMap ;
            rdfs:label "has object"@en ;
@@ -197,9 +248,9 @@
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate
 :hasPredicate rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf rdf:predicate ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :StatementMap ;
-              rdfs:range :ReferenceNode ;
+              rdfs:range :ReferenceNodeMap ;
               rdfs:label "has predicate"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
 
@@ -207,11 +258,11 @@
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol
 :hasProtocol rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
-             rdfs:domain :DataAccess ;
+             rdfs:domain :DataAccessService ;
              rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                 owl:hasValue :protocol-taxonomy
+                                                 owl:hasValue <http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy>
                                                ]
                                              ) ;
                           rdf:type owl:Class
@@ -222,63 +273,78 @@
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject
 :hasSubject rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf rdf:subject ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :StatementMap ;
-            rdfs:range :Node ;
+            rdfs:range :NodeMap ;
             rdfs:label "has subject"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the subject"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#name
-:name rdf:type owl:ObjectProperty ;
-      rdfs:domain :Argument ;
-      rdfs:range rdfs:Resource ;
-      rdfs:label "name"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "A relation between an argument and the resource that describes its name"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty
+:inverseProperty rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LinkingMap ;
+                 rdfs:range :ReferenceNodeMap ;
+                 rdfs:comment "A relationship between the linking expression and the reference node map formed when the condition is fulfilled" ;
+                 rdfs:label "inverse property" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy
+:joinsBy rdf:type owl:ObjectProperty ;
+         rdfs:domain :JoinCombination ;
+         rdfs:range :DataField ;
+         rdfs:comment "A relationship between a join combination and the field it joins the sources by" ;
+         rdfs:label "joins by" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#property
+:property rdf:type owl:ObjectProperty ;
+          rdfs:domain :LinkingMap ;
+          rdfs:range :ReferenceNodeMap ;
+          rdfs:comment "A relationship between the linking expression and the reference node map formed when the condition is fulfilled" ;
+          rdfs:label "property" .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#returns
 :returns rdf:type owl:ObjectProperty ,
                   owl:FunctionalProperty ;
-         rdfs:domain :EvaluableExpression ;
+         rdfs:domain :Constant ;
          rdfs:range rdfs:Resource ;
          rdfs:label "returns"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the resource it returns"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#value
-:value rdf:type owl:ObjectProperty ;
-       rdfs:domain :Argument ;
-       rdfs:range rdfs:Resource ;
-       rdfs:label "value"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "A relation between an argument and the resource that describes its value"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#source
+:source rdf:type owl:ObjectProperty ;
+        rdfs:domain :LinkingMap ;
+        rdfs:range :StatementMap ;
+        rdfs:comment "A relationship between a linking expression and its source statement map" ;
+        rdfs:label "source" .
 
 
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#object
-rdf:object rdf:type owl:ObjectProperty ;
-           rdfs:domain rdf:Statement ;
-           rdfs:range rdfs:Resource ;
-           rdfs:comment "The object of the subject RDF statement." ;
-           rdfs:isDefinedBy rdf: ;
-           rdfs:label "object" .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#target
+:target rdf:type owl:ObjectProperty ;
+        rdfs:domain :LinkingMap ;
+        rdfs:range :StatementMap ;
+        rdfs:comment "A relationship between a linking expression and its target statement map" ;
+        rdfs:label "target" .
 
 
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
-rdf:predicate rdf:type owl:ObjectProperty ;
-              rdfs:domain rdf:Statement ;
-              rdfs:range rdfs:Resource ;
-              rdfs:comment "The predicate of the subject RDF statement." ;
-              rdfs:isDefinedBy rdf: ;
-              rdfs:label "predicate" .
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+rdf:first rdf:type owl:ObjectProperty ;
+          rdfs:domain :ExpressionList ;
+          rdfs:range :EvaluableExpression ;
+          rdfs:comment "The first item in the subject RDF list." ;
+          rdfs:isDefinedBy rdf: ;
+          rdfs:label "first" .
 
 
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
-rdf:subject rdf:type owl:ObjectProperty ;
-            rdfs:domain rdf:Statement ;
-            rdfs:range rdfs:Resource ;
-            rdfs:comment "The subject of the subject RDF statement." ;
-            rdfs:isDefinedBy rdf: ;
-            rdfs:label "subject" .
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+rdf:rest rdf:type owl:ObjectProperty ;
+         rdfs:domain :ExpressionList ;
+         rdfs:range :ExpressionList ;
+         rdfs:comment "The rest of the subject RDF list after the first item." ;
+         rdfs:isDefinedBy rdf: ;
+         rdfs:label "rest" .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -291,32 +357,115 @@ rdf:subject rdf:type owl:ObjectProperty ;
                                                <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
 
 
+###  http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+                                          rdfs:range <http://www.w3.org/ns/dcat#DataService> ;
+                                          rdfs:comment "A site or end-point that gives access to the distribution of the dataset."@en ,
+                                                       "Et websted eller endpoint der giver adgang til en repræsentation af datasættet."@da ,
+                                                       "Umístění či přístupový bod zpřístupňující distribuci datové sady."@cs ,
+                                                       "Un sitio o end-point que da acceso a la distribución de un conjunto de datos."@es ,
+                                                       "Un sito o end-point che dà accesso alla distribuzione del set di dati."@it ;
+                                          rdfs:label "data access service"@en ,
+                                                     "dataadgangstjeneste"@da ,
+                                                     "servicio de acceso de datos"@es ,
+                                                     "servizio di accesso ai dati"@it ,
+                                                     "služba pro přístup k datům"@cs ;
+                                          <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en ,
+                                                                                           "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                           "Nueva propiedad agregada en DCAT 2.0."@es ,
+                                                                                           "Nuova proprietà aggiunta in DCAT 2.0."@it ,
+                                                                                           "Ny egenskab tilføjet i DCAT 2.0."@da ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A site or end-point that gives access to the distribution of the dataset."@en ,
+                                                                                           "Et websted eller endpoint der giver adgang til en repræsentation af datasættet."@da ,
+                                                                                           "Umístění či přístupový bod zpřístupňující distribuci datové sady."@cs ,
+                                                                                           "Un sitio o end-point que da acceso a la distribución de un conjunto de datos."@es ,
+                                                                                           "Un sito o end-point che dà accesso alla distribuzione del set di dati."@it .
+
+
+###  http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+                                         rdfs:range <http://www.w3.org/ns/dcat#Distribution> ;
+                                         rdfs:comment "An available distribution of the dataset."@en ,
+                                                      "Connecte un jeu de données à des distributions disponibles."@fr ,
+                                                      "Dostupná distribuce datové sady."@cs ,
+                                                      "En tilgængelig repræsentation af datasættet."@da ,
+                                                      "Una distribución disponible del conjunto de datos."@es ,
+                                                      "Una distribuzione disponibile per il set di dati."@it ,
+                                                      "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του."@el ,
+                                                      "تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات"@ar ,
+                                                      "データセットを、その利用可能な配信に接続します。"@ja ;
+                                         rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+                                         rdfs:label "distribuce"@cs ,
+                                                    "distribución"@es ,
+                                                    "distribution"@da ,
+                                                    "distribution"@en ,
+                                                    "distribution"@fr ,
+                                                    "distribuzione"@it ,
+                                                    "διανομή"@el ,
+                                                    "توزيع"@ar ,
+                                                    "データセット配信"@ja ;
+                                         <http://www.w3.org/2004/02/skos/core#altLabel> "har distribution"@da ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "An available distribution of the dataset."@en ,
+                                                                                          "Connecte un jeu de données à des distributions disponibles."@fr ,
+                                                                                          "Dostupná distribuce datové sady."@cs ,
+                                                                                          "En tilgængelig repræsentation af datasættet."@da ,
+                                                                                          "Una distribución disponible del conjunto de datos."@es ,
+                                                                                          "Una distribuzione disponibile per il set di dati."@it ,
+                                                                                          "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του."@el ,
+                                                                                          "تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات"@ar ,
+                                                                                          "データセットを、その利用可能な配信に接続します。"@ja ;
+                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "Status: English Definition text modified by DCAT revision team, translations pending (except for Italian, Spanish and Czech)."@en .
+
+
+###  http://www.w3.org/ns/dcat#servesDataset
+<http://www.w3.org/ns/dcat#servesDataset> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://www.w3.org/ns/dcat#DataService> ;
+                                          rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                                          rdfs:comment "A collection of data that this DataService can distribute."@en ,
+                                                       "En samling af data som denne datatjeneste kan distribuere."@da ,
+                                                       "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs ,
+                                                       "Una colección de datos que este Servicio de Datos puede distribuir."@es ,
+                                                       "Una raccolta di dati che questo DataService può distribuire."@it ;
+                                          rdfs:label "datatjeneste for datasæt"@da ,
+                                                     "poskytuje datovou sadu"@cs ,
+                                                     "provee conjunto de datos"@es ,
+                                                     "serve set di dati"@it ,
+                                                     "serves dataset"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#altLabel> "distribuerer"@da ,
+                                                                                         "ekspederer"@da ,
+                                                                                         "udstiller"@da ;
+                                          <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en ,
+                                                                                           "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                           "Nueva propiedad agregada en DCAT 2.0."@es ,
+                                                                                           "Nuova proprietà in DCAT 2.0."@it ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A collection of data that this DataService can distribute."@en ,
+                                                                                           "En samling af data som denne datatjeneste kan distribuere."@da ,
+                                                                                           "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs ,
+                                                                                           "Una colección de datos que este Servicio de Datos puede distribuir."@es ,
+                                                                                           "Una raccolta di dati che questo DataService può distribuire."@it .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#URI
-:URI rdf:type owl:DatatypeProperty ;
-     rdfs:domain :DataAccess ;
-     rdfs:range xsd:anyURI ;
-     rdfs:label "URI"@en ;
-     <http://www.w3.org/2004/02/skos/core#definition> "Uniform Resource Identifier used to identify the resource retrieven by the data access"@en .
-
-
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#expression
-:expression rdf:type owl:DatatypeProperty ;
-            rdfs:domain :TextSource ;
+:expression rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :SourceFrame ;
             rdfs:range xsd:string ;
             rdfs:label "expression"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "What specifies which data is retrieven from a text source"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#iterator
-:iterator rdf:type owl:DatatypeProperty ;
-          rdfs:domain :TreeSource ;
-          rdfs:range xsd:string ;
-          rdfs:label "iterator"@en ;
-          <http://www.w3.org/2004/02/skos/core#definition> "What is to be iterated in a tree source"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#field
+:field rdf:type owl:DatatypeProperty ;
+       rdfs:domain :DataField ;
+       rdfs:range xsd:string ;
+       rdfs:label "expression that defines a field of the data" ,
+                  "field" .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime
@@ -328,15 +477,6 @@ rdf:subject rdf:type owl:ObjectProperty ;
              <http://www.w3.org/2004/02/skos/core#definition> "Time between every data request"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#separator
-:separator rdf:type owl:DatatypeProperty ,
-                    owl:FunctionalProperty ;
-           rdfs:domain :TabularSource ;
-           rdfs:range xsd:string ;
-           rdfs:label "separator"@en ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Character that separates two values from one field in a tabular source"@en .
-
-
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#shape
 :shape rdf:type owl:DatatypeProperty ;
        rdfs:domain :Ontology ;
@@ -345,24 +485,21 @@ rdf:subject rdf:type owl:ObjectProperty ;
        <http://www.w3.org/2004/02/skos/core#definition> "Restrictions declared for an ontology in form of a shape"@en .
 
 
+###  http://vocab.linkeddata.es/def/conceptual-mapping#type
+:type rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :JoinCombination ;
+      rdfs:range xsd:string ;
+      rdfs:comment "type of join combination of frames" ;
+      rdfs:label "type" .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#Argument
-:Argument rdf:type owl:Class ;
-          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :name ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass rdfs:Resource
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :value ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass rdfs:Resource
-                          ] ;
-          rdfs:label "Argument"@en ;
-          <http://www.w3.org/2004/02/skos/core#definition> "Required argument to describe data access"@en .
+###  http://purl.org/dc/dcmitype/Service
+<http://purl.org/dc/dcmitype/Service> rdf:type owl:Class .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource
@@ -379,58 +516,89 @@ rdf:subject rdf:type owl:ObjectProperty ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Data source that is not synchronized when it is sent or received"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#BaseExpression
-:BaseExpression rdf:type owl:Class ;
-                rdfs:subClassOf :EvaluableExpression ;
-                owl:disjointWith :RecursiveExpression ;
-                rdfs:label "Base Expression"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Expression that cannot have nested functions and expects no parameters, only returns"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap
+:BlankNodeMap rdf:type owl:Class ;
+              rdfs:subClassOf :NodeMap ;
+              owl:disjointWith :ReferenceNodeMap ;
+              rdfs:label "Blank Node Map" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Unique node with no intrinsic name that is not a reference to a resource or a literal"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#BlankNode
-:BlankNode rdf:type owl:Class ;
-           rdfs:subClassOf :Node ;
-           rdfs:label "Blank Node" ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Unique node with no intrinsic name that is not a reference to a resource or a literal"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#CartessianProductCombination
+:CartessianProductCombination rdf:type owl:Class ;
+                              rdfs:subClassOf :CombinedFrame ;
+                              owl:disjointWith :JoinCombination ,
+                                               :UnionCombination ;
+                              rdfs:comment "Combined frame by cartessian product" ;
+                              rdfs:label "Cartessian Product Combination" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame
+:CombinedFrame rdf:type owl:Class ;
+               rdfs:subClassOf :Frame ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :combinesFrame ;
+                                 owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Frame
+                               ] ;
+               owl:disjointWith :SourceFrame ;
+               rdfs:comment "Frame that is formed by the combination of two other frames by union, join or cartessian product" ;
+               rdfs:label "Combined Frame" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap
+:ConditionalStatementMap rdf:type owl:Class ;
+                         rdfs:subClassOf :StatementMap ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasBooleanCondition ;
+                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                           owl:onClass :EvaluableExpression
+                                         ] ;
+                         rdfs:label "Conditional Statement Map"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Statement Map that needs to fulfil one condition to be generated"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#Constant
 :Constant rdf:type owl:Class ;
-          rdfs:subClassOf :BaseExpression ;
+          rdfs:subClassOf :EvaluableExpression ;
           rdfs:label "Constant"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Expression that contains a constant value"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#DataAccess
-:DataAccess rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :URI ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:anyURI
-                            ] ;
-            rdfs:label "Data Access"@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> "Description of how to retrieve the data from its source"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap
+:ContainerMap rdf:type owl:Class ;
+              rdfs:subClassOf :ResourceMap ;
+              owl:disjointWith :ListMap ,
+                               :LiteralMap ,
+                               :NodeMap ;
+              rdfs:comment "Resource map that defines a container" ;
+              rdfs:label "Container Map" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService
+:DataAccessService rdf:type owl:Class ;
+                   rdfs:subClassOf <http://www.w3.org/ns/dcat#DataService> ;
+                   rdfs:label "Data Access Service"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "Description of how to retrieve the data from its source"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#DataField
+:DataField rdf:type owl:Class ;
+           rdfs:subClassOf :EvaluableExpression ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :belongsToFrame ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Frame
+                           ] ;
+           rdfs:label "Data Field"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Expression with a value retrieved from the source data"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#DataSource
 :DataSource rdf:type owl:Class ;
-            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasDataAccess ;
-                              owl:someValuesFrom :DataAccess
-                            ] ;
+            rdfs:subClassOf <http://www.w3.org/ns/dcat#Distribution> ;
             rdfs:label "Data Source"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "Description of the retrieved data"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#DataSourceAccess
-:DataSourceAccess rdf:type owl:Class ;
-                  rdfs:subClassOf :BaseExpression ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasDataSource ;
-                                    owl:someValuesFrom :DataSource
-                                  ] ;
-                  rdfs:label "Data Source Access"@en ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Expression with a value retrieved from the source data"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression
@@ -447,45 +615,71 @@ rdf:subject rdf:type owl:ObjectProperty ;
              <http://www.w3.org/2004/02/skos/core#definition> "Type of data access that retrieves data when a package arrives"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#GraphSource
-:GraphSource rdf:type owl:Class ;
-             rdfs:subClassOf :DataSource ;
-             owl:disjointWith :TabularSource ,
-                              :TextSource ,
-                              :TreeSource ;
-             rdfs:label "Graph Source"@en ;
-             <http://www.w3.org/2004/02/skos/core#definition> "Data source that is stored as a graph"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList
+:ExpressionList rdf:type owl:Class ;
+                rdfs:subClassOf rdf:List ;
+                rdfs:label "Expression List" .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#HTMLSource
-:HTMLSource rdf:type owl:Class ;
-            rdfs:subClassOf :TreeSource ;
-            owl:disjointWith :JSONSource ,
-                             :XMLSource ;
-            rdfs:label "HTML Source"@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> "Data stored in HTML format"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#Frame
+:Frame rdf:type owl:Class ;
+       rdfs:comment "Fragment of data that is used to form statements" ;
+       rdfs:label "Frame" .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#JSONSource
-:JSONSource rdf:type owl:Class ;
-            rdfs:subClassOf :TreeSource ;
-            owl:disjointWith :XMLSource ;
-            rdfs:label "JSON Source"@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> "Data stored in JSON format"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression
+:FunctionExpression rdf:type owl:Class ;
+                    rdfs:subClassOf :EvaluableExpression ;
+                    rdfs:label "Function Expression"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Expression that can expect one or more parameters and nested functions"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#LinkingExpression
-:LinkingExpression rdf:type owl:Class ;
-                   rdfs:subClassOf :RecursiveExpression ;
-                   rdfs:label "Linking Expression"@en ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "Expression that defines the link between two Nodes"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination
+:JoinCombination rdf:type owl:Class ;
+                 rdfs:subClassOf :CombinedFrame ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :joinsBy ;
+                                   owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :DataField
+                                 ] ;
+                 owl:disjointWith :UnionCombination ;
+                 rdfs:comment "Combined frame by join" ;
+                 rdfs:label "Join Combination" .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#Node
-:Node rdf:type owl:Class ;
-      rdfs:subClassOf :ResourceMap ;
-      rdfs:label "Node" ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Union of blank node and reference node"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap
+:LinkingMap rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasBooleanCondition ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :EvaluableExpression
+                            ] ;
+            rdfs:comment "What links two subjects from different statement maps and their data sources" ;
+            rdfs:label "Linking Map" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#ListMap
+:ListMap rdf:type owl:Class ;
+         rdfs:subClassOf :ResourceMap ;
+         owl:disjointWith :LiteralMap ,
+                          :NodeMap ;
+         rdfs:comment "Resource map that defines a list" ;
+         rdfs:label "List Map" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap
+:LiteralMap rdf:type owl:Class ;
+            rdfs:subClassOf :ResourceMap ;
+            owl:disjointWith :NodeMap ;
+            rdfs:comment "Resource map that defines a literal" ;
+            rdfs:label "Literal Map" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap
+:NodeMap rdf:type owl:Class ;
+         rdfs:subClassOf :ResourceMap ;
+         rdfs:label "Node Map" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Union of blank node and reference node"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#Ontology
@@ -502,35 +696,39 @@ rdf:subject rdf:type owl:ObjectProperty ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Data source that is retrieven repeatedly in a period of time"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#RecursiveExpression
-:RecursiveExpression rdf:type owl:Class ;
-                     rdfs:subClassOf :EvaluableExpression ;
-                     rdfs:label "Recursive Expression"@en ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "Expression that can expect one or more parameters and nested functions"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNode
-:ReferenceNode rdf:type owl:Class ;
-               rdfs:subClassOf :Node ;
-               rdfs:label "Reference Node" ;
-               <http://www.w3.org/2004/02/skos/core#definition> "Node that references an IRI"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap
+:ReferenceNodeMap rdf:type owl:Class ;
+                  rdfs:subClassOf :NodeMap ;
+                  rdfs:label "Reference Node Map" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Node that references an IRI"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap
 :ResourceMap rdf:type owl:Class ;
-             owl:equivalentClass rdfs:Resource ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                owl:onProperty :hasEvaluableExpression ;
                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onClass :EvaluableExpression
                              ] ;
+             rdfs:comment "What is to be created in a statement, either a subject, predicate, object, datatype, language or named graph" ;
              rdfs:label "Resource Map"@en .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame
+:SourceFrame rdf:type owl:Class ;
+             rdfs:subClassOf :Frame ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasDataSource ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :DataSource
+                             ] ;
+             rdfs:comment "Frame that is related to the data source" ;
+             rdfs:label "Source Frame" .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap
 :StatementMap rdf:type owl:Class ;
-              rdfs:subClassOf rdf:Statement ,
-                              [ rdf:type owl:Restriction ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasObject ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass :ResourceMap
@@ -538,12 +736,12 @@ rdf:subject rdf:type owl:ObjectProperty ;
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasPredicate ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass :ReferenceNode
+                                owl:onClass :ReferenceNodeMap
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasSubject ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                owl:onClass :Node
+                                owl:onClass :NodeMap
                               ] ;
               rdfs:label "Statement Map"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "Statement that defines for a triple its subject, predicate, object, and datatype, language and assigned named graph if applicable"@en .
@@ -564,48 +762,11 @@ rdf:subject rdf:type owl:ObjectProperty ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Data source that is synchronized when it is sent or received"@en .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#TabularSource
-:TabularSource rdf:type owl:Class ;
-               rdfs:subClassOf [ rdf:type owl:Class ;
-                                 owl:unionOf ( :DataSource
-                                               <http://www.w3.org/ns/csvw#Dialect>
-                                             )
-                               ] ;
-               owl:disjointWith :TextSource ,
-                                :TreeSource ;
-               rdfs:label "Tabular Source"@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> "Data structured into rows and columns"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#TextSource
-:TextSource rdf:type owl:Class ;
-            rdfs:subClassOf :DataSource ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :expression ;
-                              owl:someValuesFrom xsd:string
-                            ] ;
-            owl:disjointWith :TreeSource ;
-            rdfs:label "Text Source"@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> "Data stored as natural text"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#TreeSource
-:TreeSource rdf:type owl:Class ;
-            rdfs:subClassOf :DataSource ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :iterator ;
-                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                              owl:onDataRange xsd:string
-                            ] ;
-            rdfs:label "Tree Source"@en ;
-            <http://www.w3.org/2004/02/skos/core#definition> "Data organized in a hierarchycal structure"@en .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#XMLSource
-:XMLSource rdf:type owl:Class ;
-           rdfs:subClassOf :TreeSource ;
-           rdfs:label "XML Source"@en ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Data stored in XML format"@en .
+###  http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination
+:UnionCombination rdf:type owl:Class ;
+                  rdfs:subClassOf :CombinedFrame ;
+                  rdfs:comment "Combined frame by union" ;
+                  rdfs:label "Union Combination" .
 
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
@@ -614,30 +775,6 @@ rdf:List rdf:type owl:Class ;
          rdfs:comment "The class of RDF Lists." ;
          rdfs:isDefinedBy rdf: ;
          rdfs:label "List" .
-
-
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
-rdf:Statement rdf:type owl:Class ;
-              rdfs:subClassOf rdfs:Resource ;
-              rdfs:comment "The class of RDF statements." ;
-              rdfs:isDefinedBy rdf: ;
-              rdfs:label "Statement" .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#Container
-rdfs:Container rdf:type owl:Class ;
-               rdfs:subClassOf rdfs:Resource ;
-               rdfs:comment "The class of RDF containers." ;
-               rdfs:isDefinedBy rdfs: ;
-               rdfs:label "Container" .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#Literal
-rdfs:Literal rdf:type owl:Class ;
-             rdfs:subClassOf rdfs:Resource ;
-             rdfs:comment "The class of literal values, eg. textual strings and integers." ;
-             rdfs:isDefinedBy rdfs: ;
-             rdfs:label "Literal" .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#Resource
@@ -674,11 +811,140 @@ owl:Ontology rdf:type owl:Class ;
                                                     <http://www.w3.org/2008/05/skos#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
 
 
-###  http://www.w3.org/ns/csvw#Dialect
-<http://www.w3.org/ns/csvw#Dialect> rdf:type owl:Class ;
-                                    rdfs:comment "A Dialect Description provides hints to parsers about how to parse a linked file."@en ;
-                                    rdfs:isDefinedBy <http://www.w3.org/ns/csvw#> ;
-                                    rdfs:label "Dialect Description"@en .
+###  http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/dc/dcmitype/Service> ,
+                                                        <http://www.w3.org/ns/dcat#Resource> ;
+                                        rdfs:comment "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en ,
+                                                     "Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da ,
+                                                     "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs ,
+                                                     "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es ,
+                                                     "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate."@it ;
+                                        rdfs:label "Data service"@en ,
+                                                   "Datatjeneste"@da ,
+                                                   "Servicio de datos"@es ,
+                                                   "Servizio di dati"@it ;
+                                        <http://www.w3.org/2004/02/skos/core#altLabel> "Dataservice"@da ;
+                                        <http://www.w3.org/2004/02/skos/core#changeNote> "New class added in DCAT 2.0."@en ,
+                                                                                         "Nová třída přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                         "Nueva clase añadida en DCAT 2.0."@es ,
+                                                                                         "Nuova classe aggiunta in DCAT 2.0."@it ,
+                                                                                         "Ny klasse tilføjet i DCAT 2.0."@da ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en ,
+                                                                                         "Et site eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da ,
+                                                                                         "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs ,
+                                                                                         "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es ,
+                                                                                         "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate."@it ;
+                                        <http://www.w3.org/2004/02/skos/core#scopeNote> "Datatjenestetypen kan indikeres ved hjælp af egenskaben dct:type. Værdien kan tages fra kontrollerede udfaldsrum såsom INSPIRE spatial data service vocabulary."@da ,
+                                                                                        "Druh služby může být indikován vlastností dct:type. Její hodnota může být z řízeného slovníku, kterým je například slovník typů prostorových datových služeb INSPIRE."@cs ,
+                                                                                        "El tipo de servicio puede indicarse usando la propiedad dct:type. Su valor puede provenir de un vocabulario controlado, como por ejemplo el vocabulario de servicios de datos espaciales de INSPIRE."@es ,
+                                                                                        "Hvis en dcat:DataService er bundet til en eller flere specifikke datasæt kan dette indikeres ved hjælp af egenskaben dcat:servesDataset. "@da ,
+                                                                                        "If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property."@en ,
+                                                                                        "Il tipo di servizio può essere indicato usando la proprietà dct:type. Il suo valore può essere preso da un vocabolario controllato come il vocabolario dei tipi di servizi per dati spaziali di INSPIRE."@it ,
+                                                                                        "Pokud je dcat:DataService navázána na jednu či více Datových sad, jsou tyto indikovány vlstností dcat:servesDataset."@cs ,
+                                                                                        "Se un dcat:DataService è associato a uno o più Dataset specificati, questi sono indicati dalla proprietà dcat:serveDataset."@it ,
+                                                                                        "Si un dcat:DataService está asociado con uno o más conjuntos de datos especificados, dichos conjuntos de datos pueden indicarse con la propiedad dcat:servesDataset."@es ,
+                                                                                        "The kind of service can be indicated using the dct:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type vocabulary."@en .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+                                    rdfs:comment "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja ,
+                                                 "A collection of data, published or curated by a single source, and available for access or download in one or more representations."@en ,
+                                                 "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ,
+                                                 "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs ,
+                                                 "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it ,
+                                                 "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es ,
+                                                 "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr ,
+                                                 "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el ,
+                                                 "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar ;
+                                    rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+                                    rdfs:label "Conjunto de datos"@es ,
+                                               "Dataset"@en ,
+                                               "Dataset"@it ,
+                                               "Datasæt"@da ,
+                                               "Datová sada"@cs ,
+                                               "Jeu de données"@fr ,
+                                               "Σύνολο Δεδομένων"@el ,
+                                               "قائمة بيانات"@ar ,
+                                               "データセット"@ja ;
+                                    <http://www.w3.org/2004/02/skos/core#altLabel> "Datasamling"@da ;
+                                    <http://www.w3.org/2004/02/skos/core#changeNote> "2018-02 - odstraněno tvrzení o podtřídě dctype:Dataset, jelikož rozsah dcat:Dataset zahrnuje několik dalších typů ze slovníku dctype."@cs ,
+                                                                                     "2018-02 - se eliminó el axioma de subclase con dctype:Dataset porque el alcance de dcat:Dataset incluye muchos otros tipos del vocabulario dctype."@es ,
+                                                                                     "2018-02 - sottoclasse di dctype:Dataset rimosso perché l'ambito di dcat:Dataset include diversi altri tipi dal vocabolario dctype."@it ,
+                                                                                     "2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary."@en ,
+                                                                                     "2018-02 - subklasse af dctype:Dataset fjernet da scope af dcat:Dataset omfatter flere forskellige typer fra dctype-vokabularet."@da ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja ,
+                                                                                     "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."@en ,
+                                                                                     "En samling a data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ,
+                                                                                     "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs ,
+                                                                                     "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it ,
+                                                                                     "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es ,
+                                                                                     "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr ,
+                                                                                     "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el ,
+                                                                                     "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar ;
+                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "2020-03-16 A new scopenote added and need to be translated"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#scopeNote> "Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier."@fr ,
+                                                                                    "Denne klasse beskriver det konceptuelle datasæt. En eller flere repræsentationer kan være tilgængelige med forskellige skematiske opsætninger, formater eller serialiseringer."@da ,
+                                                                                    "Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes. "@da ,
+                                                                                    "Esta clase representa el conjunto de datos publicados. En los casos donde es necesario distinguir entre el conjunto de datos y su entrada en el catálogo de datos, se debe utilizar la clase 'registro del catálogo'."@es ,
+                                                                                    "Questa classe descrive il dataset dal punto di vista concettuale. Possono essere disponibili una o più rappresentazioni, con diversi layout e formati schematici o serializzazioni."@it ,
+                                                                                    "Questa classe rappresenta il dataset come pubblicato dall’editore. Nel caso in cui sia necessario operare  una distinzione fra i metadati originali del dataset e il record dei metadati ad esso associato nel catalogo (ad esempio, per distinguere la data di modifica del dataset da quella del dataset nel catalogo) si può impiegare la classe catalog record."@it ,
+                                                                                    "Tato třída reprezentuje datovou sadu tak, jak je publikována poskytovatelem dat. V případě potřeby rozlišení datové sady a jejího katalogizačního záznamu (jelikož metadata jako datum modifikace se mohou lišit) pro něj může být použita třída \"katalogizační záznam\"."@cs ,
+                                                                                    "The notion of dataset in DCAT is broad and inclusive, with the intention of accommodating resource types arising from all communities. Data comes in many forms including numbers, text, pixels, imagery, sound and other multi-media, and potentially other types, any of which might be collected into a dataset."@en ,
+                                                                                    "This class describes the conceptual dataset. One or more representations might be available, with differing schematic layouts and formats or serializations."@en ,
+                                                                                    "This class represents the actual dataset as published by the dataset provider. In cases where a distinction between the actual dataset and its entry in the catalog is necessary (because metadata such as modification date and maintainer might differ), the catalog record class can be used for the latter."@en ,
+                                                                                    "Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη. Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο."@el ,
+                                                                                    "このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。"@ja .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> rdf:type owl:Class ;
+                                         rdfs:comment "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ,
+                                                      "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)."@da ,
+                                                      "Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly)."@cs ,
+                                                      "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed."@it ,
+                                                      "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS."@fr ,
+                                                      "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."@es ,
+                                                      "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed."@el ,
+                                                      "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك."@ar ,
+                                                      "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"@ja ;
+                                         rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+                                         rdfs:label "Distribuce"@cs ,
+                                                    "Distribución"@es ,
+                                                    "Distribution"@da ,
+                                                    "Distribution"@en ,
+                                                    "Distribution"@fr ,
+                                                    "Distribuzione"@it ,
+                                                    "Διανομή"@el ,
+                                                    "التوزيع"@ar ,
+                                                    "配信"@ja ;
+                                         <http://www.w3.org/2004/02/skos/core#altLabel> "Datadistribution"@da ,
+                                                                                        "Datamanifestation"@da ,
+                                                                                        "Datarepræsentation"@da ,
+                                                                                        "Dataudstilling"@da ;
+                                         <http://www.w3.org/2004/02/skos/core#definition> "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ,
+                                                                                          "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)."@da ,
+                                                                                          "Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly)."@cs ,
+                                                                                          "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed."@it ,
+                                                                                          "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS."@fr ,
+                                                                                          "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."@es ,
+                                                                                          "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed."@el ,
+                                                                                          "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك."@ar ,
+                                                                                          "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"@ja ;
+                                         <http://www.w3.org/2004/02/skos/core#scopeNote> "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information sur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web."@fr ,
+                                                                                         "Denne klasse repræsenterer datasættets overordnede tilgængelighed og giver ikke oplysninger om hvilken metode der kan anvendes til at få adgang til data, dvs. om adgang til datasættet realiseres ved direkte download, API eller via et websted. Anvendelsen af egenskaben dcat:downloadURL indikerer at distributionen kan downloades direkte."@da ,
+                                                                                         "Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web."@es ,
+                                                                                         "Questa classe rappresenta una disponibilità generale di un dataset e non implica alcuna informazione sul metodo di accesso effettivo ai dati, ad esempio se si tratta di un accesso a download diretto, API, o attraverso una pagina Web. L'utilizzo della proprietà dcat:downloadURL indica distribuzioni direttamente scaricabili."@it ,
+                                                                                         "This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en ,
+                                                                                         "Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skutečné metodě přístupu k datům, tj. zda jsou přímo ke stažení, skrze API či přes webovou stránku. Použití vlastnosti dcat:downloadURL indikuje přímo stažitelné distribuce."@cs ,
+                                                                                         "Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα, μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές."@el ,
+                                                                                         "これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。"@ja .
+
+
+###  http://www.w3.org/ns/dcat#Resource
+<http://www.w3.org/ns/dcat#Resource> rdf:type owl:Class .
 
 
 ###  https://www.w3.org/2019/wot/security#SecurityScheme
@@ -691,14 +957,14 @@ owl:Ontology rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#function-taxonomy
-:function-taxonomy rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy
+<http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping#protocol-taxonomy
-:protocol-taxonomy rdf:type owl:NamedIndividual ,
-                            <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
