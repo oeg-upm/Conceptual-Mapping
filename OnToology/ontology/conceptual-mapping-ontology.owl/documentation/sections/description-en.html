@@ -1,18 +1,128 @@
 <h2 id="desc" class="list">Conceptual Mapping: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Figure 1 provides a general overview of the current status of the Conceptual
-Mapping Ontology.
+Figure 1 provides a general overview of the the Conceptual
+Mappings Ontology.
 </span>
 
 <center>
-  <img src="resources/images/cm_diagram.png" alt="General overview of the Conceptual Mapping Ontology." width="90%"> <figcaption><b>Figure 1.</b> - Vocabulary for the representation of mapping languages.</figcaption>
+  <img src="resources/images/cm_diagram.png" alt="General overview of the Conceptual Mapping Ontology." width="90%"> <figcaption><b>Figure 1.</b> - Vocabulary for the representation of of the concepts covered by state-of-the-art mapping languages.</figcaption>
 </center>
 
 <span class="markdown">
-  The vocabulary can be divided in four parts: Data source and access, rule set,
-  evaluable expression and provenance.
+  The Conceptual Mappings ontology has two sections which are denoted as Statement Map and Data Source. It reuses the Data Catalog (dcat) ontology and the Web of Things (wot) ontology for some concepts in the Data Source section. It also reuses  rdf classes and properties in order to represent evaluable expressions in the Statement Map section. Additionally predefined values for certain properties are represented using the Simple Knowledge Organization (skos) vocabulary.
 </span>
 <ul>
+<li><b>Statement Map:</b><p>The central class of this section is the StatementMap that represents a rule that defines for a triple its subject (hasSubject), predicate (hasPredicate), and its object (hasObject). It also specifies the object datatype (hasDatatype) and language (hasLanguage) and an assigned named graph (hasNamedGraph) if applicable. A statement map refers an ontology (Ontology) that can define shapes (shapes) for its restrictions.</p>
+      
+<p>Statement maps are similar to RDF statements as both are comprised by a subject, predicate and object. In statement maps objects are resources (ResourceMap),  and subjects and predicates are more specifically, certain subclasses of the resource map: predicates are reference node maps (ReferenceNodeMap) that represent resources with an IRI, i.e. ontology properties. Subjects are node maps (nodeMap) which may be blank nodes (BlankNode) or also reference nodes. An object may be a literal (LiteralMap), a blank node, a container (ContainerMap) or a collection that defines a list (ListMap). The language is expressed as a literal and the datatype is also a resource with an URI, i.e. a reference node map.</p>
+      
+<p>Resource maps, may have an evaluable expression (EvaluableExpression) where the base case may be a constant (Constant) or a data field (DataField) that belongs to some data source fragment (belongsToFrame), this will be explained in more detail in the Data Source section. The recursive case is a function expression (FunctionExpression) where the function name (hasFuntionName) is taken from a set of predefined names that are organized as a Simple Knowledge Organization System (SKOS). Recursion in this function expression is represented through its input (hasInput) as an expression list (ExpressionList). The expression list may be a nested list and has been represented as a subclass of rdf lists (rdf:List) and where the properties (rdf:first) and (rdf:rest) have been reused.</p>
+      
+<p>A special case of a statement map is a conditional statement map (ConditionalStatementMap), a statement map that must satisfy a condition for the triples to be generated. The condition (hasBooleanCondition) is a function expression. Another class is a linking map (LinkingMap) that links subjects from a source (source) and a target (target) statement map, i.e. two data sources are linked and triples are generated if a linking condition is satisfied; similarly to the conditional statement map, this condition is represented as a function expression.</p>
+      
+    
+<li><b>Data Source:</b> 
+<p> A data source (DataSource) describes the data that will be mapped to a KG using the rules that have been defined. For this section the  Data Catalog (DCAT) vocabulary  has been reused. A data source is a subclass of the dcat:Distribution class that is a  specific representation of a dataset (dcat:Dataset) which is defined as ''data encoded in a certain structure such as lists, tables and databases''. A source can be a streaming source (StreamSource) that continously generates data, a synchronous source (SynchronousSource) or an asynchronous source (AsynchronousSource). Asynchronous sources in turn can be event sources (EventSource) or periodic sources (PeriodicSource). Details of the data source access are represented with the data acces service class (dataAccessService) that in turn is a subclass of dcat:DataService; this class represents a collection of operations that provides access to one or more datasets or data processing functions, i.e. a description on how the data is accessed and retrieved. The data access service has a security scheme </p>
+          
+<p> Data properties in the dcat:Dataset, dcat:Distribution and dcat:DataService classes may be reused according to the features that may be represented in each mapping language, e.g. endpoint description (dcat:endpointDescription), endpoint URL (dcat:endpointURL), access URL (dcat:accessURL). Some of these data properties are descriptive and provenance attributes. A data acess service is related to a security scheme. The class wot:SecurityScheme fom the Web of Things (wot) ontology has been reused; this class has different types of security schemes as subclasses and includes properties to specify the infomration on the scheme, e.g. the encryptionalgorithm, the format of the authentication information, the location of the authenticatiob information. The security protocol (hasProtocol) has as set of predefined values that have been organized as a SKOS</p>
+    
+<p>In order to express the fragments of data that are referenced (hasFrame) in a statement map, the class Frame has been defined. A frame can be a source frame (base case) or a combined frame. A source frame (SourceFrame) corresponds to a data source (hasDataSource) and defines which is the data in the source that is retrieved (expression); it may be related to another source frame (hasNestedFrame). A combined frame (CombinedFrame) may be a union (UnionCombination), a cartesian product (CartessianProductCombination) or a join combination (JoinCombination). A fragment may refer to many data fields (hasField); this property  is the inverse property of the property belongsToFrame mentioned in the previous Data Source ontology section.
+    </p>
+    
+    </li>
+    </ul>
+
+<h3>3.1 Examples<span class="backlink"> back to <a href="#toc">index</a></span></h3>
+  <span class="markdown">
+  The following examples illustrate the representation of RML mappings using the concepts defined in the ontology:
+      
+  The first example refers to a data source frame that contains ''airport'' data such as its latitude, longitude and id. This frame or fragmnent of data belongs to a synchronous source that is a csv file with ''File'' protocol. The endpoint url and media type are specified; it has no security scheme. 
+</span>
+<pre>
+## Airport file
+ex:Frame1 a cm:SourceFrame ;
+    cm:hasField ex:csvlat ;
+    cm:hasField ex:csvlong; 
+    cm:hasField [ a cm:DataField; cm:field "id" ] ;
+    cm:hasDataSource [ a cm:SynchronousSource ;
+        dcat:mediaType "text/csv" ;
+        dcat:accessService [
+            cm:hasProtocol skos:File;
+            dcat:endpointURL "file:///example/path/Airport.csv" ;
+            cm:hasSecurityScheme [ 
+                a wotsec:NoSecurityScheme;
+            ] ;
+    ] .
+
+ex:csvlat a cm:DataField ; cm:field "latitude" .
+ex:csvlong a cm:DataField ; cm:field "longitude" .
+
+
+</pre>
+<span class="markdown"> The following statement map retrieves the data that was specified in the source frame defined previously, Frame1. Its subject is a reference node map, i.e. an RDF resource with an URI, and it is a concatenation of  a list of input parameters: the URI prefix, the latitude, a ''-'' and the longitude. Its predicate is the ''lat'' property and and its object refers to the latitude field in the airport data frame. Similarly, there is a statement map for the ''long'' property. 
+    </span>
+<pre>
+
+ex:Statement1 a cm:StatementMap ;
+    cm:hasFrame ex:Frame1 ;
+    cm:subject ex:SubjectRes1 ;
+    cm:predicate [
+        cm:hasEvaluableExpression [
+            cm:returns ex:lat;
+        ]
+    ] ;
+    cm:object [
+        cm:hasEvaluableExpression ex:csvlat
+    ] .
+ex:SubjectRes1 a cm:ReferenceNodeMap ;
+    cm:hasEvaluableExpression [
+        cm:hasFunctionName skos-function-name:Concatenate ;
+        cm:hasInput ( [ cm:returns "http://loc.example.com/latlong/" ]  ex:csvlat [ cm:returns "-" ] ex:csvlong ) .
+    ] .
+
+</pre>
+<span class="markdown"> Another example deals with Venue data in json format. There is a data frame to represent a fragment of this data that contains the venue's latitude, longitude, city, country and continent. The statement map defines the rule to generate the triples that state that a certain instance belongs to the class City (rdf:type). The subject is the concatenation of the  URI prefix and the city field that belongs to the data frame. 
+</span>
+<pre>
+ex:Frame2 a cm:SourceFrame ;
+    cm:expression "$.venue[*]" ;
+    cm:hasField ex:jsonlat ;
+    cm:hasField ex:jsonlong ;
+    cm:hasField [ a cm:DataField; cm:field "location.city" ] ;
+    cm:hasField [ a cm:DataField; cm:field "location.country" ] ;
+    cm:hasField [ a cm:DataField; cm:field "location.continent" ] ;
+    cm:hasDataSource [ a cm:SynchronousSource ;
+        dcat:mediaType "text/json" ;
+        dcat:accessService [
+            cm:hasProtocol skos:File;
+            dcat:endpointURL "file:///example/path/Venue.json" ;
+            cm:hasSecurityScheme [ 
+                a wotsec:NoSecurityScheme;
+            ] ;
+    ] .
+
+ex:Statement5 a cm:StatementMap ;
+    cm:hasPortion ex:Portion2 ;
+    cm:subject ex:SubjectRes3 ;
+    cm:predicate [
+        cm:hasEvaluableExpression [
+            cm:returns rdf:type;
+        ]
+    ] ;
+    cm:object [
+        cm:hasEvaluableExpression  [
+            cm:returns ex:City;
+        ]
+    ] .
+
+ex:SubjectRes3 a cm:ReferenceNodeMap ;
+    cm:hasEvaluableExpression [
+        cm:hasFunctionName skos:Concatenate ;
+        cm:hasInput ( [ cm:returns "http://loc.example.com/city/" ] [ cm:field "location.city" ] ) .
+    ] .
+</pre>
+
+<!-- <ul>
   <li><b>Data source and access:</b> Provides the definition of the source data
     (DataSource class), its formats (subclasses TabularSource, TreeSource, GraphSource,
     and TextSource), ways to synchronize (subclasses EventSource, SynchronousSource
@@ -43,4 +153,4 @@ Mapping Ontology.
   <li><b>Provenance:</b> It defines the ontologies (Ontology class) used to write
     the mapping (ConceptualMapping class).
   </li>
-</ul>
+</ul> -->
