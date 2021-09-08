@@ -12,7 +12,7 @@
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"
+    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -174,7 +174,7 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"
+    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -1199,10 +1199,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy",
+  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy",
+  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",

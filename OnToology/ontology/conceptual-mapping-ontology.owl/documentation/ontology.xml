@@ -315,7 +315,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -416,7 +416,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1389,19 +1389,19 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy -->
+    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy -->
+    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
 </rdf:RDF>
