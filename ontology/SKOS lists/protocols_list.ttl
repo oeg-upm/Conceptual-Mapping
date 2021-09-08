@@ -1,0 +1,1576 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/aaa> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Diameter_(protocol)' title='Diameter (protocol)'>Diameter Protocol</a>" ;
+	skos:notation "RFC 3588","RFC 6733" ;
+	skos:scopeNote "aaa[s]://<host>[:<port>][;transport=<transport>][;protocol=<protocol>]"@en ,"aaa://host.example.com:1813;transport=udp;protocol=radius"@en  ;
+	skos:prefLabel "aaa","aaas" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/about> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Displaying product information and internal information" ;
+	skos:notation "RFC 6694" ;
+	skos:note "Widely used by <a href='/wiki/Web_browser' title='Web browser'>web browsers</a> , sometimes even providing interactive resources. Individual vendors modify this scheme: for instance, the <a href='/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera web browser</a> forwards to their <code>opera:</code> scheme instead and <a class='mw-redirect' href='/wiki/Chrome_(browser)' title='Chrome (browser)'>Chrome</a> uses <code>chrome:</code> ." ;
+	skos:prefLabel "about" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/acap> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Application_Configuration_Access_Protocol' title='Application Configuration Access Protocol'>Application Configuration Access Protocol</a>" ;
+	skos:notation "RFC 2244" ;
+	skos:scopeNote "acap://[<user>[;AUTH=<type>]@]<host>[:<port>]/<entry>"@en  ;
+	skos:note "URL scheme used within the ACAP protocol for the 'subdataset' attribute, referrals and inheritance" ;
+	skos:prefLabel "acap" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/acct> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Identifying user account" ;
+	skos:notation "RFC 7565" ;
+	skos:prefLabel "acct" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/acr> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Anonymous Customer Reference" ;
+	skos:notation "IANA registration template  Open Mobile Alliance" ;
+	skos:prefLabel "acr" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/adiumxtra> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Direct installation of Adium Xtras (plugins)." ;
+	skos:notation "IANA registration template  The Adium Team" ;
+	skos:scopeNote "adiumxtra://www.adiumxtras.com/download/0000"@en  ;
+	skos:note "<code>0000</code> refers to a specific Xtra" ;
+	skos:prefLabel "adiumxtra" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/afp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Accessing <a href='/wiki/Apple_Filing_Protocol' title='Apple Filing Protocol'>Apple Filing Protocol</a> shares" ;
+	skos:notation "IANA registration template  IETF Draft" ;
+	skos:scopeNote "afp://[<user>@]<host>[:<port>][/[<path>]]"@en ,"afp:/at/[<user>@]<host>[:<zone>][/]"@en  ;
+	skos:prefLabel "afp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/afs> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Andrew File System global file names" ;
+	skos:notation "RFC 1738" ;
+	skos:prefLabel "afs" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/aim> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Controlling <a class='mw-redirect' href='/wiki/AOL_Instant_Messenger' title='AOL Instant Messenger'>AOL Instant Messenger</a> ." ;
+	skos:notation "IANA registration template  AOL" ;
+	skos:scopeNote "aim:<function>?<parameters>"@en  ;
+	skos:note "Functions include <code>goim</code> , <code>addbuddy</code> , and <code>buddyicon</code> ." ;
+	skos:prefLabel "aim" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/apt> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Experimental method of installing software using <a class='mw-redirect' href='/wiki/Advanced_Packaging_Tool' title='Advanced Packaging Tool'>APT</a> ." ;
+	skos:notation "IANA registration template" ;
+	skos:scopeNote "apt:<package name>"@en  ;
+	skos:note "Commonly found on websites which contain Debian software repositories." ;
+	skos:prefLabel "apt" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/attachment> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Attaching resources to <a href='/wiki/MHTML' title='MHTML'>MHTML</a> pages" ;
+	skos:notation "IANA registration template" ;
+	skos:scopeNote "attachment:/<resource number>/<filename>"@en  ;
+	skos:note "<a href='/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera</a> -specific" ;
+	skos:prefLabel "attachment" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/aw> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Link to an Active Worlds world" ;
+	skos:notation "IANA registration template  Activeworlds Inc." ;
+	skos:scopeNote "aw://<worldserver host>:<worldserver port>/<worldname>"@en  ;
+	skos:note "Mostly found in HTTP referers when users open a website from within an Active Worlds world." ;
+	skos:prefLabel "aw" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/amss> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Identifier for an <a href='/wiki/Amplitude_modulation_signalling_system' title='Amplitude modulation signalling system'>AMSS</a> broadcast" ;
+	skos:notation "ETSI TS 103 270" ;
+	skos:scopeNote "amss:<sid>"@en  ;
+	skos:prefLabel "amss" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/barion> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Send e-money to a Barion e-money wallet" ;
+	skos:notation "IANA registration template  Barion URI scheme" ;
+	skos:scopeNote "barion:<target>[?[amount=<amount>][&][currency=<currency>][&][comment=<comment>][&][sender=<sender>][&][type=purchase|charity|p2p]]"@en  ;
+	skos:note "Used by Barion mobile apps." ;
+	skos:prefLabel "barion" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/beshare> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Open a search query on a BeShare server" ;
+	skos:notation "IANA registration template  BeShare source code" ;
+	skos:scopeNote "beshare://<servername>/<query>"@en  ;
+	skos:note "Mostly used internally, with variants." ;
+	skos:prefLabel "beshare" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/bitcoin> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Send money to a <a href='/wiki/Bitcoin' title='Bitcoin'>Bitcoin</a> address" ;
+	skos:notation "IANA registration template  Bitcoin URI Scheme" ;
+	skos:scopeNote "bitcoin:<address>[?[amount=<size>][&][label=<label>][&][message=<message>]]"@en  ;
+	skos:prefLabel "bitcoin" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/blob> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Binary data access in browsers" ;
+	skos:notation "IANA registration template  W3C" ;
+	skos:prefLabel "blob" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/bolo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Join an existing bolo game." ;
+	skos:notation "IANA registration template" ;
+	skos:scopeNote "bolo://<hostname>/"@en  ;
+	skos:note "Mostly passed via IRC or via tracker servers." ;
+	skos:prefLabel "bolo" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/callto> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Launching <a href='/wiki/Skype' title='Skype'>Skype</a> call (+And in Hungary the KLIP Software call too) (see also <a href='#skype:'>skype:</a> )" ;
+	skos:notation "IANA registration template  old version of IETF Draft" ;
+	skos:scopeNote "callto:<screenname>"@en ,"callto:<phonenumber>"@en  ;
+	skos:note "Introduced with <a href='/wiki/Microsoft_NetMeeting' title='Microsoft NetMeeting'>Microsoft NetMeeting</a> . Works with current version of <a href='/wiki/Skype' title='Skype'>Skype</a> with <a href='/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> , <a href='/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera</a> and <a href='/wiki/Safari_(web_browser)' title='Safari (web browser)'>Safari</a>" ;
+	skos:prefLabel "callto" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/cap> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Calendar access protocol" ;
+	skos:notation "RFC 4324" ;
+	skos:note "URL scheme used to designate both calendar stores and calendars accessible using the CAP protocol" ;
+	skos:prefLabel "cap" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/chrome> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Specifies user interfaces built using XUL in Mozilla-based browsers." ;
+	skos:notation "IANA registration template  Mozilla" ;
+	skos:scopeNote "chrome://<package>/<section>/<path>"@en ,"<section>"@en ,"content"@en ,"skin"@en ,"locale"@en  ;
+	skos:note "Works only in Mozilla-based browsers such as Firefox, SeaMonkey and Netscape. Not related to the <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> browser." ;
+	skos:prefLabel "chrome" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/chrome> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used for the management of <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> 's settings. In contrast with other browsers, its preferences appear as web-pages instead of dialog boxes." ;
+	skos:notation "IANA registration template  Google" ;
+	skos:scopeNote "chrome://<settings>/<path>/[<specificSetting>]"@en  ;
+	skos:note "Works only in <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> and <a href='/wiki/Chromium_(web_browser)' title='Chromium (web browser)'>Chromium</a> ." ;
+	skos:prefLabel "chrome" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/chrome-extension> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Manage the settings of extensions which have been installed." ;
+	skos:notation "IANA registration template  Google" ;
+	skos:scopeNote "chrome-extension://<extensionID>/<pageName>.html"@en ,"<extensionID>"@en ,"<pageName>"@en  ;
+	skos:note "Works only in <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> and <a href='/wiki/Chromium_(web_browser)' title='Chromium (web browser)'>Chromium</a> ." ;
+	skos:prefLabel "chrome-extension" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/com-eventbrite-attendee> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "IANA registration template" ;
+	skos:prefLabel "com-eventbrite-attendee" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/cid> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Referencing individual parts of an <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='/wiki/MIME' title='MIME'>MIME</a> message" ;
+	skos:notation "RFC 2111","RFC 2392" ;
+	skos:scopeNote "cid:<content-id>"@en  ;
+	skos:note "e.g. referencing an attached image within a formatted e-mail. (See also <a href='#mid:'>mid:</a> )" ;
+	skos:prefLabel "cid" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/coap> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Constrained_Application_Protocol' title='Constrained Application Protocol'>Constrained Application Protocol</a>" ;
+	skos:notation "RFC 7252" ;
+	skos:scopeNote "coap[s]://<host>[:<port>]/<path>[?<query>]"@en  ;
+	skos:note "Identify CoAP resources and provide a means of locating the resource." ;
+	skos:prefLabel "coap","coaps" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/content> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Accessing an <a href='/wiki/Android_(operating_system)' title='Android (operating system)'>Android</a> content provider." ;
+	skos:notation "IANA registration template  Open Handset Alliance" ;
+	skos:scopeNote "content://provider/<path>"@en  ;
+	skos:note "Performs a query on an Android <a class='external text' href='https://developer.android.com/guide/topics/providers/content-providers.html' rel='nofollow'>Content Provider</a>" ;
+	skos:prefLabel "content" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/crid> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/TV-Anytime' title='TV-Anytime'>TV-Anytime</a> Content Reference Identifier" ;
+	skos:notation "RFC 4078" ;
+	skos:scopeNote "crid://<host>/<data>"@en  ;
+	skos:note "Allow references to scheduled publications of broadcast media content." ;
+	skos:prefLabel "crid" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/cvs> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Provides a link to a <a href='/wiki/Concurrent_Versions_System' title='Concurrent Versions System'>Concurrent Versions System</a> (CVS) Repository" ;
+	skos:notation "IANA registration template  Concurrent Versions System" ;
+	skos:scopeNote "cvs://<method:logindetails>@<repository>/<modulepath>;[date=date to retrieve | tag=tag to retrieve]"@en  ;
+	skos:prefLabel "cvs" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dab> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Identifier for a <a class='mw-redirect' href='/wiki/Digital_Audio_Broadcasting' title='Digital Audio Broadcasting'>DAB</a> broadcast" ;
+	skos:notation "ETSI TS 103 270" ;
+	skos:scopeNote "dab:<gcc>.<eid>.<sid>.<scids>[.<uatype>]"@en  ;
+	skos:prefLabel "dab" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/data> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Inclusion of small data items inline" ;
+	skos:notation "RFC 2397" ;
+	skos:scopeNote "data:<mediatype>[;base64],<data>"@en  ;
+	skos:prefLabel "data" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dav> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "HTTP Extensions for Distributed Authoring ( <a href='/wiki/WebDAV' title='WebDAV'>WebDAV</a> )" ;
+	skos:notation "RFC 2518","RFC 4918" ;
+	skos:scopeNote "dav:"@en  ;
+	skos:note "Used for internal identifiers only; WebDAV itself addresses resources using the <code>http:</code> and <code>https:</code> schemes. <a class='external autonumber' href='https://web.archive.org/web/20090114080855/http://article.gmane.org/gmane.org.w3c.uri/808' rel='nofollow'>[2]</a>" ;
+	skos:prefLabel "dav" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dict> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/DICT' title='DICT'>Dictionary service protocol</a>" ;
+	skos:notation "RFC 2229" ;
+	skos:scopeNote "dict://<user>;<auth>@<host>:<port>/d:<word>:<database>:<n>"@en ,"dict://<user>;<auth>@<host>:<port>/m:<word>:<database>:<strat>:<n>"@en  ;
+	skos:note "refer to definitions or word lists available using the DICT protocol" ;
+	skos:prefLabel "dict" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dlna-playsingle> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "IANA registration template IANA registration template" ;
+	skos:prefLabel "dlna-playsingle","dlna-playcontainer" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dns> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Domain_Name_System' title='Domain Name System'>Domain Name System</a>" ;
+	skos:notation "RFC 4501" ;
+	skos:scopeNote "dns:[//<host>[:<port>]/]<dnsname>[?<dnsquery>]"@en ,"dns:example?TYPE=A;CLASS=IN"@en ,"dns://192.168.1.1/ftp.example.org?type=A"@en  ;
+	skos:note "designates a DNS resource record set, referenced by domain name, class, type, and, optionally, the authority" ;
+	skos:prefLabel "dns" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dntp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Direct Network Transfer Protocol" ;
+	skos:notation "IANA registration template" ;
+	skos:prefLabel "dntp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/drm> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Identifier for a <a href='/wiki/Digital_Radio_Mondiale' title='Digital Radio Mondiale'>DRM</a> broadcast" ;
+	skos:notation "ETSI TS 103 270" ;
+	skos:scopeNote "drm:<sid>[.<appdomain>.<uatype>]"@en  ;
+	skos:prefLabel "drm" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dtn> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "DTNRG research and development" ;
+	skos:notation "RFC 5050" ;
+	skos:prefLabel "dtn" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/dvb> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "IETF Draft" ;
+	skos:prefLabel "dvb" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ed2k> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Resources available using the <a href='/wiki/EDonkey2000' title='EDonkey2000'>eDonkey2000</a> network" ;
+	skos:notation "IANA registration template  eDonkey2000" ;
+	skos:scopeNote "ed2k://|file|<filename>|<size of file>|<hash of file>|/"@en ,"ed2k://|server|<host>|<port>|/"@en  ;
+	skos:note "Links to servers are also possible, as are additional parameters. Official documentation from <a class='external text' href='https://web.archive.org/*/http://www.edonkey2000.com/documentation/distro.html' rel='nofollow'>eDonkey2000 website</a> at the <a href='/wiki/Wayback_Machine' title='Wayback Machine'>Wayback Machine</a> (archive index)" ;
+	skos:prefLabel "ed2k" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/example> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "For examples" ;
+	skos:notation "RFC 7595" ;
+	skos:scopeNote "example:<anything>"@en  ;
+	skos:prefLabel "example" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/facetime> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "FaceTime is a video conferencing software developed by Apple for iPhone 4, the fourth generation iPod Touch, and computers running Mac OS X." ;
+	skos:notation "IANA registration template  Apple Inc." ;
+	skos:scopeNote "facetime://<address>|<MSISDN>|<mobile number>"@en ,"facetime://+19995551234"@en  ;
+	skos:note "Apple has not published documentation on this protocol yet." ;
+	skos:prefLabel "facetime" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/fax> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used for <a href='/wiki/Fax' title='Fax'>telefacsimile</a> numbers" ;
+	skos:notation "RFC 2806","RFC 3966" ;
+	skos:scopeNote "fax:<phonenumber>"@en  ;
+	skos:note "Deprecated in RFC 3966 in favour of <a href='#tel:'>tel:</a> . Listed as ' <span data-sort-value='3' style='display:none;'></span> Historical'" ;
+	skos:prefLabel "fax" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/feed> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Web_feed' title='Web feed'>web feed</a> subscription" ;
+	skos:notation "IANA registration template" ;
+	skos:scopeNote "feed:<absolute_uri>"@en ,"feed://<hierarchical part>"@en ,"feed://example.com/rss.xml"@en ,"feed:https://example.com/rss.xml"@en  ;
+	skos:note "See <a href='/wiki/Feed_URI_scheme' title='Feed URI scheme'>Feed URI scheme</a> for a detailed overview of common implementations, supported software, and critics." ;
+	skos:prefLabel "feed" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/file> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Addressing files on local or network <a href='/wiki/File_system' title='File system'>file systems</a>" ;
+	skos:notation "RFC 1738","RFC 3986" ;
+	skos:scopeNote "file://[host]/path"@en ,"file:[//host]/path"@en  ;
+	skos:note "Since this usually used for local files the host from RFC 1738 is often empty leading to a starting triple /. RFC 3986 allows an absolute path with no host part." ;
+	skos:prefLabel "file" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/filesystem> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Abandoned part of File API" ;
+	skos:notation "IANA registration template" ;
+	skos:prefLabel "filesystem" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/finger> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Querying user information using the <a href='/wiki/Finger_protocol' title='Finger protocol'>Finger protocol</a>" ;
+	skos:notation "IANA registration template  IETF Draft" ;
+	skos:scopeNote "finger://host[:port][/<request>]"@en  ;
+	skos:prefLabel "finger" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/fish> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Accessing another computer's files using the <a class='mw-redirect' href='/wiki/Secure_Shell' title='Secure Shell'>SSH</a> protocol" ;
+	skos:notation "IANA registration template  fish KDE kioslave" ;
+	skos:scopeNote "fish://[<username>[:<password>]@]<hostname>[:<port>]"@en  ;
+	skos:note "See <a href='/wiki/Files_transferred_over_shell_protocol' title='Files transferred over shell protocol'>Files transferred over shell protocol</a> for details about the protocol." ;
+	skos:prefLabel "fish" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/fm> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Identifier for a <a href='/wiki/FM_broadcasting' title='FM broadcasting'>FM</a> broadcast" ;
+	skos:notation "ETSI TS 103 270" ;
+	skos:scopeNote "fm:<gcc>.<pi>.<frequency>"@en  ;
+	skos:prefLabel "fm" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ftp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/File_Transfer_Protocol' title='File Transfer Protocol'>FTP</a> resources" ;
+	skos:notation "RFC 1738  IETF Draft  Old IETF Draft" ;
+	skos:prefLabel "ftp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/geo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "A Uniform Resource Identifier for Geographic Locations" ;
+	skos:notation "RFC 5870" ;
+	skos:scopeNote "geo:<lat>,<lon>[,<alt>][;u=<uncertainty>]"@en  ;
+	skos:note "Other <a class='mw-redirect' href='/wiki/Spatial_referencing_system' title='Spatial referencing system'>coordinate reference systems</a> (including those for non-terrestrial globes, such as <a href='/wiki/Moon' title='Moon'>The Moon</a> and <a href='/wiki/Mars' title='Mars'>Mars</a> ) will be supported, once registered." ;
+	skos:prefLabel "geo" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/gg> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Starting chat with <a href='/wiki/Gadu-Gadu' title='Gadu-Gadu'>Gadu-Gadu</a> user" ;
+	skos:notation "IANA registration template  Gadu-Gadu" ;
+	skos:scopeNote "gg:<userid>"@en  ;
+	skos:prefLabel "gg" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/git> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Provides a link to a GIT repository" ;
+	skos:notation "IANA registration template  Git" ;
+	skos:scopeNote "git://github.com/user/project-name.git"@en  ;
+	skos:prefLabel "git" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/gizmoproject> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Gizmo5' title='Gizmo5'>Gizmo5</a> calling link." ;
+	skos:notation "IANA registration template" ;
+	skos:scopeNote "gizmoproject://call?id=<gizmo_id>"@en  ;
+	skos:note "May use <a class='external free' href='sip://' rel='nofollow'>sip://</a> instead of gizmoproject:// in recent versions of Gizmo5." ;
+	skos:prefLabel "gizmoproject" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/go> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Common Name Resolution Protocol" ;
+	skos:notation "RFC 3368" ;
+	skos:scopeNote "go://[<host>]?[<common-name>]*[;<attribute>=[<type>,]<value>]"@en ,"go:<common-name>*[;<attribute>=[<type>,]<value>]"@en  ;
+	skos:prefLabel "go" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/gopher> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used with <a href='/wiki/Gopher_(protocol)' title='Gopher (protocol)'>Gopher protocol</a>" ;
+	skos:notation "RFC 4266" ;
+	skos:scopeNote "gopher://<host>:<port>/<item type><path>"@en  ;
+	skos:prefLabel "gopher" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/gtalk> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Start a chat with a <a href='/wiki/Google_Talk' title='Google Talk'>Google Talk</a> user" ;
+	skos:notation "IANA registration template  Google Talk" ;
+	skos:scopeNote "gtalk:chat?jid=example@gmail.com"@en  ;
+	skos:note "See <a href='/wiki/Google_Talk' title='Google Talk'>Google Talk</a> , <a class='mw-redirect' href='/wiki/Extensible_Messaging_and_Presence_Protocol' title='Extensible Messaging and Presence Protocol'>XMPP</a> , and <a class='external free' href='http://juberti.blogspot.com/2006/11/gtalk-uri.html' rel='nofollow'>http://juberti.blogspot.com/2006/11/gtalk-uri.html</a> for more information" ;
+	skos:prefLabel "gtalk" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/h323> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used with <a href='/wiki/H.323' title='H.323'>H.323</a> multimedia communications" ;
+	skos:notation "RFC 3508" ;
+	skos:scopeNote "h323:[<user>@]<host>[:<port>][;<parameters>]"@en  ;
+	skos:prefLabel "h323" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/hcp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Displaying a help page on <a class='mw-redirect' href='/wiki/Microsoft_Windows_Help_and_Support_Center' title='Microsoft Windows Help and Support Center'>Microsoft Windows Help and Support Center</a> ." ;
+	skos:notation "IANA registration template  Microsoft" ;
+	skos:scopeNote "hcp://system/<File>.htm"@en ,"<File>"@en  ;
+	skos:note "Works only on <a href='/wiki/Windows_XP' title='Windows XP'>Windows XP</a> . Later replaced by <a href='#ms-help:'>ms-help:</a> ." ;
+	skos:prefLabel "hcp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/http> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/HyperText_Transfer_Protocol' title='HyperText Transfer Protocol'>HTTP</a> resources" ;
+	skos:notation "RFC 1738","RFC 2616(makes","RFC 2068obsolete)","RFC 7230" ;
+	skos:prefLabel "http" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/https> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "HTTP connections secured using <a href='/wiki/Transport_Layer_Security' title='Transport Layer Security'>SSL/TLS</a>" ;
+	skos:notation "RFC 2817","RFC 7230" ;
+	skos:prefLabel "https" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/iax> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Inter-Asterisk_eXchange' title='Inter-Asterisk eXchange'>Inter-Asterisk eXchange</a> protocol version 2" ;
+	skos:notation "RFC 5456" ;
+	skos:scopeNote "iax:[<username>@]<host>[:<port>][/<number>[?<context>]]"@en ,"iax:[2001:db8::1]:4569/alice?friends"@en ,"iax:johnQ@example.com/12022561414"@en  ;
+	skos:prefLabel "iax" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/icap> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Internet_Content_Adaptation_Protocol' title='Internet Content Adaptation Protocol'>Internet Content Adaptation Protocol</a>" ;
+	skos:notation "RFC 3507" ;
+	skos:prefLabel "icap" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/icon> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "IETF Draft" ;
+	skos:prefLabel "icon" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/im> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Instant_messaging' title='Instant messaging'>Instant messaging</a> protocol" ;
+	skos:notation "RFC 3860" ;
+	skos:scopeNote "im:<username>@<host>, and also im:sip:<username>@<host> for MS Communicator launching"@en  ;
+	skos:note "Works as <code>xmpp:</code> URI for single user chat sessions." ;
+	skos:prefLabel "im" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/imap> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Accessing e-mail resources through <a class='mw-redirect' href='/wiki/IMAP' title='IMAP'>IMAP</a>" ;
+	skos:notation "RFC 2192","RFC 5092" ;
+	skos:scopeNote "imap://[<user>[;AUTH=<type>]@]<host>[:<port>]/<command>"@en  ;
+	skos:prefLabel "imap" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/info> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Information Assets with Identifiers in Public Namespaces" ;
+	skos:notation "RFC 4452" ;
+	skos:prefLabel "info" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/iotdisco> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Identify things on <a class='mw-redirect' href='/wiki/Internet_of_Things' title='Internet of Things'>Internet of Things</a>" ;
+	skos:notation "IANA registration template" ;
+	skos:prefLabel "iotdisco" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ipn> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC 6260" ;
+	skos:prefLabel "ipn" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ipp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a>" ;
+	skos:notation "RFC 3510" ;
+	skos:prefLabel "ipp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ipps> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a> over HTTPS" ;
+	skos:notation "RFC 7472" ;
+	skos:prefLabel "ipps" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/irc> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Connecting to an <a href='/wiki/Internet_Relay_Chat' title='Internet Relay Chat'>Internet Relay Chat</a> server to join a channel." ;
+	skos:notation "IANA registration template  IETF Draft  Old IETF Draft" ;
+	skos:scopeNote "irc://<host>[:<port>]/[<channel>[?<password>]]"@en  ;
+	skos:note "Assuming the client knows a server associated with the name, 'host' may optionally be an IRC network name." ;
+	skos:prefLabel "irc" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/irc6> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/IPv6' title='IPv6'>IPv6</a> equivalent of <i>irc</i>" ;
+	skos:notation "IANA registration template" ;
+	skos:scopeNote "irc6://<host>[:<port>]/[<channel>[?<password>]]"@en  ;
+	skos:note "See <i>irc</i>" ;
+	skos:prefLabel "irc6" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ircs> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Secure equivalent of <i>irc</i>" ;
+	skos:notation "IANA registration template  IETF Draft" ;
+	skos:scopeNote "ircs://<host>[:<port>]/[<channel>[?<password>]]"@en  ;
+	skos:note "See <i>irc</i>" ;
+	skos:prefLabel "ircs" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/iris> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Internet Registry Information Service" ;
+	skos:notation "RFC 3981","RFC 3983","RFC 4992","RFC 4992","RFC 4993" ;
+	skos:prefLabel "iris","iris.beep","iris.xpc","iris.xpcs","iris.lws" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/itms> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used for connecting to the <a class='mw-redirect' href='/wiki/ITunes_Music_Store' title='ITunes Music Store'>iTunes Music Store</a>" ;
+	skos:notation "IANA registration template  Apple Inc" ;
+	skos:scopeNote "itms:"@en  ;
+	skos:prefLabel "itms" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/jabber> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "IANA registration template" ;
+	skos:prefLabel "jabber" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/jar> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Compressed archive member" ;
+	skos:notation "IANA registration template  Java API" ;
+	skos:scopeNote "jar:<url>!/[<entry>]"@en  ;
+	skos:note "Works for any <a href='/wiki/ZIP_(file_format)' title='ZIP (file format)'>ZIP</a> based file." ;
+	skos:prefLabel "jar" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/jms> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Java Message Service" ;
+	skos:notation "RFC 6167" ;
+	skos:prefLabel "jms" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/keyparc> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Keyparc encrypt/decrypt resource." ;
+	skos:notation "IANA registration template  Bloombase" ;
+	skos:scopeNote "keyparc://encrypt/<username>/<uri>"@en ,"keyparc://decrypt/<username>/<uri>"@en  ;
+	skos:prefLabel "keyparc" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/lastfm> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Connecting to a <a class='new' href='/w/index.php?title=Radio_stream&amp;action=edit&amp;redlink=1' title='Radio stream (page does not exist)'>radio stream</a> from <a href='/wiki/Last.fm' title='Last.fm'>Last.fm</a> ." ;
+	skos:notation "IANA registration template  Last.fm" ;
+	skos:scopeNote "lastfm://<radio_stream>"@en ,"lastfm://globaltags/<genre>"@en ,"lastfm://user/<username>/<stuff>"@en  ;
+	skos:prefLabel "lastfm" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ldap> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Lightweight_Directory_Access_Protocol' title='Lightweight Directory Access Protocol'>LDAP</a> directory request" ;
+	skos:notation "RFC 2255","RFC 4516" ;
+	skos:scopeNote "ldap://[<host>[:<port>]][/<dn> [?[<attributes>][?[<scope>][?[<filter>][?<extensions>]]]]]"@en ,"ldap://ldap1.example.net:6666/o=University%20of%20Michigan, c=US??sub?(cn=Babs%20Jensen)"@en  ;
+	skos:prefLabel "ldap" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ldaps> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Secure equivalent of <i>ldap</i>" ;
+	skos:notation "IANA registration template  Old version of IETF Draft" ;
+	skos:scopeNote "ldaps://[<host>[:<port>]][/<dn> [?[<attributes>][?[<scope>][?[<filter>][?<extensions>]]]]]"@en  ;
+	skos:note "Not an IETF standard, but commonly used in applications." ;
+	skos:prefLabel "ldaps" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/magnet> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "'magnet links'" ;
+	skos:notation "IANA registration template  Magnet-URI Project" ;
+	skos:scopeNote "magnet:?xt=urn:sha1:<hash of file>&dn=<display name>"@en  ;
+	skos:note "Used by various <a href='/wiki/Peer-to-peer' title='Peer-to-peer'>peer-to-peer</a> clients, usually providing the hash of a file to be located on the network." ;
+	skos:prefLabel "magnet" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mailserver> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Access to data available from mail servers" ;
+	skos:notation "RFC 6196" ;
+	skos:prefLabel "mailserver" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mailto> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Simple_Mail_Transfer_Protocol' title='Simple Mail Transfer Protocol'>SMTP</a>  <a class='mw-redirect' href='/wiki/E-mail' title='E-mail'>e-mail</a> addresses and default content" ;
+	skos:notation "RFC 6068" ;
+	skos:scopeNote "mailto:<address>[?<header1>=<value1>[&<header2>=<value2>]]"@en ,"mailto:jsmith@example.com?subject=A%20Test&body=My%20idea%20is%3A%20%0A"@en  ;
+	skos:note "Headers are optional, but often include <code>subject=</code> ; <code>body=</code> can be used to pre-fill the body of the message." ;
+	skos:prefLabel "mailto" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/maps> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "'map links'" ;
+	skos:notation "IANA registration template" ;
+	skos:scopeNote "maps:q=<physical location>"@en  ;
+	skos:note "Some mobile web browsers will launch a dedicated mapping application. <a class='mw-redirect' href='/wiki/Geo_URI' title='Geo URI'>See also 'geo:'</a> (RFC 5870)" ;
+	skos:prefLabel "maps" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/market> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Opens Google Play" ;
+	skos:notation "IANA registration template  Android 3" ;
+	skos:scopeNote "market://details?id=Package_name"@en ,"market://search?q=Search_Query"@en ,"market://search?q=pub:Publisher_Name"@en  ;
+	skos:note "Supported by Android devices" ;
+	skos:prefLabel "market" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/message> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Direct link to specific email message" ;
+	skos:notation "IANA registration template  Apple Inc 4" ;
+	skos:note "Supported by <a class='mw-redirect' href='/wiki/Mail_(OS_X)' title='Mail (OS X)'>Mail</a> since <a class='mw-redirect' href='/wiki/OS_X_10.5' title='OS X 10.5'>OS X 10.5</a>" ;
+	skos:prefLabel "message" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mid> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Referencing <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='/wiki/MIME' title='MIME'>MIME</a> messages, or parts of messages." ;
+	skos:notation "RFC 2111","RFC 2392" ;
+	skos:scopeNote "mid:<message-id>[/<content-id>]"@en  ;
+	skos:note "(See also <a href='#cid:'>cid:</a> )" ;
+	skos:prefLabel "mid" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mms> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Windows streaming media" ;
+	skos:notation "IANA registration template  Microsoft" ;
+	skos:scopeNote "mms://<host>:<port>/<path>"@en  ;
+	skos:note "Used by Windows Media Player to stream audio and/or video." ;
+	skos:prefLabel "mms" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/modem> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC 2806","RFC 3966" ;
+	skos:note "Deprecated in RFC 3966 in favour of <a href='#tel:'>tel:</a> . Listed as ' <span data-sort-value='3' style='display:none;'></span> Historical'" ;
+	skos:prefLabel "modem" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ms-help> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Displaying a help page on <a class='mw-redirect' href='/wiki/Microsoft_Windows_Help_and_Support_Center' title='Microsoft Windows Help and Support Center'>Microsoft Windows Help and Support Center</a> . Used by <a href='/wiki/Windows_Vista' title='Windows Vista'>Windows Vista</a> and later." ;
+	skos:notation "IANA registration template  Microsoft" ;
+	skos:scopeNote "ms-help://<section>/<path>/<file>.htm"@en ,"<section>"@en ,"<path>"@en ,"<file>"@en  ;
+	skos:note "Works only on <a href='/wiki/Windows_Vista' title='Windows Vista'>Windows Vista</a> and later." ;
+	skos:prefLabel "ms-help" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ms-settings> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Settings application in Windows" ;
+	skos:notation "IANA registration templates" ;
+	skos:prefLabel "ms-settings","ms-settings-airplanemode","ms-settings-bluetooth","ms-settings-camera","ms-settings-cellular","ms-settings-cloudstorage","ms-settings-emailandaccounts","ms-settings-language","ms-settings-location","ms-settings-lock","ms-settings-nfctransactions","ms-settings-notifications","ms-settings-power","ms-settings-privacy","ms-settings-proximity","ms-settings-screenrotation","ms-settings-wifi","ms-settings-workplace" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/msnim> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Adding a contact, or starting a conversation in Windows Live Messenger" ;
+	skos:notation "IANA registration template  Windows Live Messenger" ;
+	skos:scopeNote "msnim:add?contact=nada@example.com"@en ,"msnim:chat?contact=nada@example.com"@en ,"msnim:voice?contact=nada@example.com"@en ,"msnim:video?contact=nada@example.com"@en  ;
+	skos:note "Can be invoked from a web page or via a run command or an Internet Explorer browser URL (won't work with Firefox 2.0.0.8). For web pages use this HTML: <code>&lt;a href='chat?contact=nada@example.com'&gt;Click to chat!&lt;/a&gt;</code>" ;
+	skos:prefLabel "msnim" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/msrp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Message_Session_Relay_Protocol' title='Message Session Relay Protocol'>Message Session Relay Protocol</a>" ;
+	skos:notation "RFC 4975" ;
+	skos:prefLabel "msrp","msrps" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mtqp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Message Tracking Query Protocol" ;
+	skos:notation "RFC 3887" ;
+	skos:prefLabel "mtqp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mumble> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Joining a server." ;
+	skos:notation "IANA registration template  Mumble" ;
+	skos:scopeNote "mumble://[username[:password]@]<address>[:port]/[channelpath]?version=<serverversion>[&title=<servername>][&url=<serverurl>]
+	skos:note "Official documentation from <a class='external text' href='http://mumble.sourceforge.net/Mumble_URL' rel='nofollow'>Mumble website</a>" ;
+	skos:prefLabel "mumble" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mupdate> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Mailbox Update Protocol" ;
+	skos:notation "RFC 3656" ;
+	skos:prefLabel "mupdate" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/mvn> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Access <a href='/wiki/Apache_Maven' title='Apache Maven'>Apache Maven</a> repository artifacts" ;
+	skos:notation "IANA registration template  OPS4J" ;
+	skos:scopeNote "mvn:org.ops4j.pax.web.bundles/service/0.2.0-SNAPSHOT"@en ,"mvn:http://user:password@repository.ops4j.org/maven2!org.ops4j.pax.web.bundles/service/0.2.0"@en  ;
+	skos:prefLabel "mvn" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/news> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "( <a href='/wiki/Usenet' title='Usenet'>Usenet</a> ) newsgroups and postings" ;
+	skos:notation "RFC 1738","RFC 5538" ;
+	skos:scopeNote "news:<newsgroupname>"@en ,"news:<message-id>"@en  ;
+	skos:note "References a particular <i>resource</i> , regardless of location." ;
+	skos:prefLabel "news" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/nfs> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/Network_File_System_(protocol)' title='Network File System (protocol)'>Network File System</a> resources" ;
+	skos:notation "RFC 2224" ;
+	skos:prefLabel "nfs" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ni> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Naming Things with Hashes" ;
+	skos:notation "RFC 6920" ;
+	skos:scopeNote "ni://<authority>/<algorithm>;<hash-value>?<tag1>=<value1>&<tag2>=<value2>"@en  ;
+	skos:note "Identify a digital object using the output from a hash function" ;
+	skos:prefLabel "ni","nih" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/nntp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Usenet <a href='/wiki/Network_News_Transfer_Protocol' title='Network News Transfer Protocol'>NNTP</a>" ;
+	skos:notation "RFC 1738","RFC 5538" ;
+	skos:scopeNote "nntp://<host>:<port>/<newsgroup-name>/<article-number>"@en  ;
+	skos:note "Referencing a specific host is often less useful than referencing the resource generically, as NNTP servers are not always publicly accessible" ;
+	skos:prefLabel "nntp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/notes> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Open a <a class='mw-redirect' href='/wiki/Lotus_Notes' title='Lotus Notes'>Lotus Notes</a> document or database" ;
+	skos:notation "IANA registration template  Lotus Notes" ;
+	skos:scopeNote "notes://<address>"@en  ;
+	skos:note "Used by IBM Lotus Notes to refer to documents and databases stored within the Lotus Notes system. When clicked in a browser on a computer with Lotus Notes client installed, Notes will open the document link as if a Notes DocLink were clicked within Notes." ;
+	skos:prefLabel "notes" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/oid> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "IANA registration template IETF Draft" ;
+	skos:prefLabel "oid" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/opaquelocktoken> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC 2518","RFC 4918" ;
+	skos:prefLabel "opaquelocktoken" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/pack> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "IANA registration template IETF Draft" ;
+	skos:prefLabel "pack" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/palm> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used to designate system services in HP <a href='/wiki/WebOS' title='WebOS'>webOS</a> applications" ;
+	skos:notation "IANA registration template  HP webOS" ;
+	skos:scopeNote "palm:<servicename>[/<method>]]/"@en  ;
+	skos:note "Official documentation from <a class='external text' href='https://web.archive.org/web/20101231064025/http://developer.palm.com/index.php?option=com_content&amp;view=article&amp;id=1649&amp;Itemid=20' rel='nofollow'>HP webOS Services Overview</a>" ;
+	skos:prefLabel "palm" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/paparazzi> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used to launch and automatically take a screen shot using the application 'Paparazzi!' ( <a class='mw-redirect' href='/wiki/Mac_OS' title='Mac OS'>Mac</a> only)" ;
+	skos:notation "IANA registration template  Derailer" ;
+	skos:scopeNote "paparazzi:[<options>]http:[//<host>[:[<port>][<transport>]]/"@en  ;
+	skos:note "Official documentation from the <a class='external text' href='http://www.derailer.org/paparazzi/faq' rel='nofollow'>Paparazzi! website</a>" ;
+	skos:prefLabel "paparazzi" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/payto> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Designate target for payments" ;
+	skos:notation "RFC 8905" ;
+	skos:scopeNote "payto://<authority>/<receiver>[?<options>]"@en ,"payto://iban/DE75512108001245126199?amount=EUR:200.0&message=hello"@en ,"payto://bic/SOGEDEFFXXX"@en ,"payto://void/?amount=EUR:10.5"@en  ;
+	skos:prefLabel "payto" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/pkcs11> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/PKCS_11' title='PKCS 11'>PKCS #11</a>" ;
+	skos:notation "RFC 7512" ;
+	skos:prefLabel "pkcs11" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/platform> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Access to Eclipse platform resources." ;
+	skos:notation "IANA registration template  Eclipse platform scheme documentation" ;
+	skos:scopeNote "platform:/(resource|plugin|fragment|meta|config|base)/..."@en  ;
+	skos:note "Registered with java.net.URL when launching with the org.eclipse.core.filesystem bundle, and heavily leveraged by org.eclipse.emf.common.util.URI." ;
+	skos:prefLabel "platform" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/pop> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Accessing mailbox through <a class='mw-redirect' href='/wiki/POP3' title='POP3'>POP3</a>" ;
+	skos:notation "RFC 2384" ;
+	skos:scopeNote "pop://[<user>[;AUTH=<auth>]@]<host>[:<port>]"@en  ;
+	skos:prefLabel "pop" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/pres> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used in Common Profile for Presence (CPP) to identify presence" ;
+	skos:notation "RFC 3859" ;
+	skos:scopeNote "pres:<address>[?<header1>=<value1>[&<header2>=<value2>]]"@en  ;
+	skos:note "Similar to 'mailto:'" ;
+	skos:prefLabel "pres" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/prospero> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Prospero Directory Service" ;
+	skos:notation "RFC 1738","RFC 4157" ;
+	skos:note "Listed as ' <span data-sort-value='3' style='display:none;'></span> Historical' by IANA." ;
+	skos:prefLabel "prospero" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/proxy> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Alter proxy settings in the FoxyProxy application" ;
+	skos:notation "IANA registration template  FoxyProxy" ;
+	skos:scopeNote "proxy:<option>=<value>[&<option>=<value>[&...]]"@en  ;
+	skos:note "Official documentation from <a class='external text' href='https://web.archive.org/web/20130620014949/http://getfoxyproxy.org/proxyprotocol.html' rel='nofollow'>FoxyProxy website</a>" ;
+	skos:prefLabel "proxy" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/psyc> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used to identify or locate a person, group, place or a service and specify its ability to communicate" ;
+	skos:notation "IANA registration template  PSYC" ;
+	skos:scopeNote "psyc:[//<host>[:[<port>][<transport>]]/[<object-name>][#<channel-name>]"@en  ;
+	skos:note "Official documentation from <a class='external text' href='http://www.psyc.eu/unl.html' rel='nofollow'>PSYC website</a>" ;
+	skos:prefLabel "psyc" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/query> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Opens a filesystem query" ;
+	skos:notation "IANA registration template  Haiku" ;
+	skos:scopeNote "query:<queryformula>"@en  ;
+	skos:note "Implemented by the url_wrapper application" ;
+	skos:prefLabel "query" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/redis> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Redis' title='Redis'>Redis</a> database" ;
+	skos:notation "IANA registration template  IANA registration template" ;
+	skos:prefLabel "redis","rediss" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/reload> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/REsource_LOcation_And_Discovery_Framing' title='REsource LOcation And Discovery Framing'>REsource LOcation And Discovery Protocol</a>" ;
+	skos:notation "RFC 6940" ;
+	skos:scopeNote "reload://<destination>@<overlay>/[<specifier>]"@en  ;
+	skos:prefLabel "reload" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/res> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used by <a href='/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> to display <a href='/wiki/List_of_HTTP_status_codes#4xx_Client_Error' title='List of HTTP status codes'>error pages</a> when the server doesn't have its own customized error pages, or when there is no response from the server (in case which the server wasn't found, like when the server is down or the domain isn't registered or when there is no Internet connection, or in case of a timeout)." ;
+	skos:notation "IANA registration template  Microsoft" ;
+	skos:scopeNote "res://ieframe.dll/<File>"@en ,"<File>"@en  ;
+	skos:note "Works only in <a href='/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> ." ;
+	skos:prefLabel "res" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/resource> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Creating mapping for resource protocol aliases generted by the resource instruction. Used by <a href='/wiki/Firefox' title='Firefox'>Firefox</a> . <sup class='reference' id='cite_ref-1'><a href='#cite_note-1'>[1]</a></sup>" ;
+	skos:notation "IANA registration template  Mozilla" ;
+	skos:scopeNote "resource://<aliasname>/"@en ,"<aliasname>"@en  ;
+	skos:note "Works only in <a href='/wiki/Firefox' title='Firefox'>Firefox</a> ." ;
+	skos:prefLabel "resource" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/rmi> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Look up a Java object in an RMI registry." ;
+	skos:notation "IANA registration template  Sun" ;
+	skos:scopeNote "rmi://<host>[:<port>]/<object-name>"@en  ;
+	skos:note "URI scheme understood by <a class='mw-redirect' href='/wiki/Jndi' title='Jndi'>JNDI</a> . Can be used to look up a remote Java object within an RMI registry (typically for the purposes of <a href='/wiki/Java_remote_method_invocation' title='Java remote method invocation'>RMI</a> on that object). Host/port in the URI are of the <a class='external text' href='http://java.sun.com/javase/6/docs/technotes/tools/solaris/rmiregistry.html' rel='nofollow'>rmiregistry</a> process, not the remote object." ;
+	skos:prefLabel "rmi" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/rsync> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Rsync' title='Rsync'>rsync</a>" ;
+	skos:notation "RFC 5781" ;
+	skos:scopeNote "rsync://<host>[:<port>]/<path>"@en  ;
+	skos:prefLabel "rsync" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/rtmfp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/Real_Time_Media_Flow_Protocol' title='Real Time Media Flow Protocol'>Real Time Media Flow Protocol</a>" ;
+	skos:notation "RFC IANAregistrationtemplate","RFC 7425" ;
+	skos:scopeNote "rtmfp://<host>/<application>/<media>"@en  ;
+	skos:prefLabel "rtmfp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/rtmp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/Real_Time_Messaging_Protocol' title='Real Time Messaging Protocol'>Real Time Messaging Protocol</a>" ;
+	skos:notation "IANA registration template  Adobe Systems" ;
+	skos:scopeNote "rtmp://<host>/<application>/<media>"@en  ;
+	skos:note "URI schema used to connect to Adobe Flash Media Server." ;
+	skos:prefLabel "rtmp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/rtsp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Real_Time_Streaming_Protocol' title='Real Time Streaming Protocol'>Real Time Streaming Protocol</a>" ;
+	skos:notation "RFC 2326" ;
+	skos:prefLabel "rtsp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/secondlife> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Open the Map floater in Second Life application to teleport the resident to the location." ;
+	skos:notation "IANA registration template  Linden Lab" ;
+	skos:scopeNote "secondlife://<region name>/<x position>/<y position>/<z position>"@en  ;
+	skos:note "Used by <a class='external text' href='http://slurl.com/' rel='nofollow'>SLurl.com</a> . <a class='external text' href='http://wiki.secondlife.com/wiki/How_do_I_Log_in_using_the_secondlife://_web_protocol' rel='nofollow'>Knowledge base article</a> ." ;
+	skos:prefLabel "secondlife" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/service> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC 2609" ;
+	skos:prefLabel "service" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/session> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Media_Resource_Control_Protocol' title='Media Resource Control Protocol'>Media Resource Control Protocol</a>" ;
+	skos:notation "RFC 4463","RFC 6787" ;
+	skos:scopeNote "session:<content-id>"@en ,"session:help@root-level.store"@en  ;
+	skos:prefLabel "session" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/sftp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/SSH_file_transfer_protocol' title='SSH file transfer protocol'>SFTP</a> file transfers (not be to confused with <a href='/wiki/FTPS' title='FTPS'>FTPS</a> (FTP/SSL))" ;
+	skos:notation "IANA registration template  IETF Draft" ;
+	skos:scopeNote "sftp://[<user>[;fingerprint=<host-key fingerprint>]@]<host>[:<port>]/<path>/<file>"@en  ;
+	skos:prefLabel "sftp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/sgn> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Social Graph Node Mapper" ;
+	skos:notation "IANA registration template  Google" ;
+	skos:scopeNote "sgn://social-network.example.com/?ident=bob"@en  ;
+	skos:note "Official documentation from <a class='external text' href='https://code.google.com/p/google-sgnodemapper/' rel='nofollow'>sgnodemapper project</a> ." ;
+	skos:prefLabel "sgn" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/shttp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Secure_Hypertext_Transfer_Protocol' title='Secure Hypertext Transfer Protocol'>Secure HTTP</a>" ;
+	skos:notation "RFC 2660" ;
+	skos:note "Largely superseded by <a href='/wiki/HTTPS' title='HTTPS'>HTTPS</a> ." ;
+	skos:prefLabel "shttp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/sieve> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='new' href='/w/index.php?title=ManageSieve&amp;action=edit&amp;redlink=1' title='ManageSieve (page does not exist)'>ManageSieve</a> protocol" ;
+	skos:notation "RFC 5804" ;
+	skos:prefLabel "sieve" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/sip> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used with <a href='/wiki/Session_Initiation_Protocol' title='Session Initiation Protocol'>Session Initiation Protocol</a> (SIP)" ;
+	skos:notation "RFC 2543","RFC 3969","RFC 3261" ;
+	skos:scopeNote "sip:<user>[:<password>]@<host>[:<port>][;<uri-parameters>][?<headers>]"@en ,"sip:alice@atlanta.com?subject=project%20x&priority=urgent"@en ,"sip:+1-212-555-1212:1234@gateway.com;user=phone"@en  ;
+	skos:prefLabel "sip" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/sips> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Secure equivalent of <i>sip</i>" ;
+	skos:notation "RFC 3969","RFC 3261" ;
+	skos:scopeNote "sips:<user>[:<password>]@<host>[:<port>][;<uri-parameters>][?<headers>]"@en  ;
+	skos:prefLabel "sips" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/skype> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Launching <a href='/wiki/Skype' title='Skype'>Skype</a> call (see also <a href='#callto:'>callto:</a> )" ;
+	skos:notation "IANA registration template  Skype" ;
+	skos:scopeNote "skype:<username|phonenumber>[?[add|call|chat|sendfile|userinfo]]"@en  ;
+	skos:prefLabel "skype" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/smb> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Accessing <a href='/wiki/Server_Message_Block' title='Server Message Block'>SMB</a> /CIFS shares" ;
+	skos:notation "IANA registration template  IETF Draft" ;
+	skos:scopeNote "smb://[<user>@]<host>[:<port>][/[<path>]][?<param1>=<value1>[;<param2>=<value2>]]"@en ,"smb://[<user>@]<workgroup>[:<port>][/]"@en ,"smb://[[<domain>;]<username>[:<password>]@]<server>[:<port>][/[<share>[/[<path>]]][?[<param>=<value>[<param2>=<value2>[...]]]]]"@en ,"smb://workgroup;user:password@server/share/folder/file.txt"@en  ;
+	skos:prefLabel "smb" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/sms> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Interact with <a href='/wiki/SMS' title='SMS'>SMS</a> capable devices for composing and sending messages." ;
+	skos:notation "RFC 5724" ;
+	skos:scopeNote "sms:<phone number>?<action>"@en ,"sms:+15105550101?body=hello%20there"@en ,"sms:+15105550101,+15105550102?body=hello%20there"@en  ;
+	skos:note "Should be used as a subset to the <code>tel:</code> schema. <sup class='noprint Inline-Template Template-Fact' style='white-space:nowrap;'>[<i><a href='/wiki/Wikipedia:Citation_needed' title='Wikipedia:Citation needed'><span title='This claim needs references to reliable sources. (August 2007)'>citation needed</span></a></i>]</sup>" ;
+	skos:prefLabel "sms" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/snews> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "NNTP over SSL/TLS" ;
+	skos:notation "RFC 5538" ;
+	skos:prefLabel "snews" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/snmp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Simple_Network_Management_Protocol' title='Simple Network Management Protocol'>Simple Network Management Protocol</a>" ;
+	skos:notation "RFC 4088" ;
+	skos:scopeNote "snmp://[user@]host[:port][/[<context>[;<contextEngineID>]][/<oid>]]"@en ,"snmp://example.com//1.3.6.1.2.1.1.3+"@en ,"snmp://tester5@example.com:8161/bridge1;800002b804616263"@en  ;
+	skos:prefLabel "snmp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/soap.beep> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC 3288","RFC 4227" ;
+	skos:prefLabel "soap.beep","soap.beeps" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/soldat> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Joining servers" ;
+	skos:notation "IANA registration template  Soldat" ;
+	skos:scopeNote "soldat://<host>:<port>/[password]"@en ,"soldat://127.0.0.1:23073/thatssecret!"@en  ;
+	skos:note "Official note in <a class='external text' href='http://www.soldat.pl/man/manual-en.html' rel='nofollow'>Manual</a>" ;
+	skos:prefLabel "soldat" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/spotify> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Load a track, album, artist, search, or playlist in Spotify" ;
+	skos:notation "IANA registration template  Spotify" ;
+	skos:scopeNote "spotify:<artist|album|track>:<id> "@en ,"spotify:search:<text> "@en ,"spotify:user:<username>:playlist:<id>"@en ,"spotify:track:2jCnn1QPQ3E8ExtLe6INsx"@en  ;
+	skos:note "Informally specified in Spotify official blog <a class='external text' href='https://web.archive.org/web/20121120114317/http://www.spotify.com/uk/blog/archives/2008/01/14/linking-to-spotify/' rel='nofollow'>post</a> by CTO Andreas Ehn." ;
+	skos:prefLabel "spotify" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ssh> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/Secure_Shell' title='Secure Shell'>SSH</a> connections (like telnet:)" ;
+	skos:notation "IANA registration template  IETF Draft" ;
+	skos:scopeNote "ssh://[<user>[;fingerprint=<host-key fingerprint>]@]<host>[:<port>]"@en  ;
+	skos:prefLabel "ssh" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/steam> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Interact with Steam: install apps, purchase games, run games, etc." ;
+	skos:notation "IANA registration template  Steam"," Valve" ;
+	skos:scopeNote "steam:<command line arguments>"@en ,"steam://<action>/<id, addon, IP, hostname, etc.>"@en  ;
+	skos:note "Official documentation from <a class='external text' href='http://developer.valvesoftware.com/wiki/Steam_browser_protocol' rel='nofollow'>Valve Developer Community website</a>" ;
+	skos:prefLabel "steam" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/stun> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/Session_Traversal_Utilities_for_NAT' title='Session Traversal Utilities for NAT'>Session Traversal Utilities for NAT</a> (STUN)" ;
+	skos:notation "RFC 7064" ;
+	skos:scopeNote "stun[s]:<host>[:<port>]"@en  ;
+	skos:prefLabel "stun","stuns" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/svn> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Provides a link to a Subversion (SVN) source control repository" ;
+	skos:notation "IANA registration template  Subversion" ;
+	skos:scopeNote "svn[+ssh]://<logindetails>@<repository><:port>/<modulepath>"@en  ;
+	skos:prefLabel "svn" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/tag> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/Tag_URI' title='Tag URI'>Tag URI</a>" ;
+	skos:notation "RFC 4151" ;
+	skos:scopeNote "tag:<email/domainname>,<date>:<Item>"@en  ;
+	skos:note "Represented entities do not necessarily have to be accessible electronically." ;
+	skos:prefLabel "tag" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/teamspeak> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Joining a server." ;
+	skos:notation "IANA registration template  TeamSpeak" ;
+	skos:scopeNote "teamspeak://<server>[:<port>]/[?<parameter1>=<value1>[&<parameter2>=<value2>]]"@en  ;
+	skos:note "Official documentation from <a class='external text' href='http://www.goteamspeak.com/?page=faq&amp;cat=client&amp;rate=46#howto_connect_via_browser' rel='nofollow'>TeamSpeak Website</a>" ;
+	skos:prefLabel "teamspeak" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/tel> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used for telephone numbers" ;
+	skos:notation "RFC 5341","RFC 3966","RFC 2806" ;
+	skos:scopeNote "tel:<phonenumber>"@en  ;
+	skos:prefLabel "tel" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/telnet> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used with <a href='/wiki/Telnet' title='Telnet'>telnet</a>" ;
+	skos:notation "RFC 1738","RFC 4248" ;
+	skos:scopeNote "telnet://<user>:<password>@<host>[:<port>/]"@en  ;
+	skos:prefLabel "telnet" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/tftp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Trivial_File_Transfer_Protocol' title='Trivial File Transfer Protocol'>Trivial File Transfer Protocol</a>" ;
+	skos:notation "RFC 3617" ;
+	skos:prefLabel "tftp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/things> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Interact with <a class='mw-redirect' href='/wiki/Things_(application)' title='Things (application)'>Things</a> : create new to-dos or go to a specific list" ;
+	skos:notation "IANA registration template  Cultured Code" ;
+	skos:scopeNote "things:command?parameter1=value1&parameter2..."@en  ;
+	skos:note "Works in iOS or OS X if Things by <a class='external text' href='https://culturedcode.com/' rel='nofollow'>Cultured Code</a> is installed. <a class='external text' href='https://web.archive.org/web/20181119145913/https://support.culturedcode.com/customer/portal/articles/1541296' rel='nofollow'>Complete documentation</a>" ;
+	skos:prefLabel "things" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/thismessage> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "multipart/related relative reference resolution" ;
+	skos:notation "RFC IANAregistrationtemplate","RFC 2557" ;
+	skos:prefLabel "thismessage" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/tn3270> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Interactive 3270 emulation sessions" ;
+	skos:notation "RFC 6270" ;
+	skos:prefLabel "tn3270" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/tip> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Transaction Internet Protocol" ;
+	skos:notation "RFC 2371" ;
+	skos:prefLabel "tip" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/turn> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Traversal_Using_Relays_around_NAT' title='Traversal Using Relays around NAT'>Traversal Using Relays around NAT</a> (TURN)" ;
+	skos:notation "RFC 7065" ;
+	skos:scopeNote "turn[s]:<host>[:<port>][?transport=<transport>]"@en  ;
+	skos:prefLabel "turn","turns" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/tv> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "TV Broadcasts" ;
+	skos:notation "RFC 2838" ;
+	skos:prefLabel "tv" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/udp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "BitTorrent tracker protocol based on UDP." ;
+	skos:notation "IANA registration template  BitTorrent" ;
+	skos:scopeNote "udp://<server>[:<port>]/"@en  ;
+	skos:note "Documentation: <a class='external text' href='http://xbtt.sourceforge.net/udp_tracker_protocol.html' rel='nofollow'>UDP tracker protocol</a>" ;
+	skos:prefLabel "udp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/udp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "MPEG Transport Stream over UDP" ;
+	skos:notation "IANA registration template  MPEG-TS" ;
+	skos:scopeNote "udp://[<localaddress>@]<destination|multicastgroup>[:<port>]"@en  ;
+	skos:note "Supported by <a href='/wiki/FFmpeg' title='FFmpeg'>FFmpeg</a> , <a href='/wiki/VLC_media_player' title='VLC media player'>VLC</a> and other common video streaming applications and appliances. Each UDP packet typically contains 1 to 7 188 byte TS packets with no additional headers or footers." ;
+	skos:prefLabel "udp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/unreal> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Joining servers" ;
+	skos:notation "IANA registration template  Unreal" ;
+	skos:scopeNote "unreal://<server>[:<port>]/"@en  ;
+	skos:note "Unreal legacy 'protocol'" ;
+	skos:prefLabel "unreal" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/urn> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Uniform_Resource_Name' title='Uniform Resource Name'>Uniform Resource Names</a>" ;
+	skos:notation "RFC 2141" ;
+	skos:scopeNote "urn:<namespace>:<specificpart>"@en  ;
+	skos:note "Commonly used with namespace 'uuid'. See <a class='external text' href='https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml' rel='nofollow'>URN Namespaces</a> ." ;
+	skos:prefLabel "urn" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ut2004> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Joining servers" ;
+	skos:notation "IANA registration template  Unreal Tournament 2004" ;
+	skos:scopeNote "ut2004://<server>[:<port>][/<map>?<options>]"@en  ;
+	skos:note "Documentation from <a class='external text' href='https://web.archive.org/web/20061230075143/http://udn.epicgames.com/Two/IniFilesTutorial' rel='nofollow'>Unreal Developer Network</a>" ;
+	skos:prefLabel "ut2004" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/vemmi> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<b>Ve</b> rsatile <b>M</b> ulti <b>m</b> edia <b>I</b> nterface" ;
+	skos:notation "RFC 2122" ;
+	skos:prefLabel "vemmi" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ventrilo> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Joining a server." ;
+	skos:notation "IANA registration template  Ventrilo" ;
+	skos:scopeNote "ventrilo://<server>[:<port>]/[?<parameter1>=<value1>[&<parameter2>=<value2>]]"@en  ;
+	skos:note "Official documentation from <a class='external text' href='http://www.ventrilo.com/setup.php#Web_Links' rel='nofollow'>Ventrilo Website</a>" ;
+	skos:prefLabel "ventrilo" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/videotex> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC IANAregistrationtemplateIETFDraft","RFC 2122","RFC 3986" ;
+	skos:prefLabel "videotex" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/view-source> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Shows a web page as code 'in the raw'." ;
+	skos:notation "IANA registration template \nIETF Draft" ;
+	skos:scopeNote "view-source:<absolute-URI>"@en ,"view-source:http://en.wikipedia.org/wiki/URI_scheme"@en  ;
+	skos:note "See <a href='/wiki/View-source_URI_scheme' title='View-source URI scheme'>view-source URI scheme</a> for details." ;
+	skos:prefLabel "view-source" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/vnc> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Virtual_Network_Computing' title='Virtual Network Computing'>Virtual Network Computing</a>" ;
+	skos:notation "RFC 7869" ;
+	skos:scopeNote "vnc://[<host>[:<port>]][?<params>]"@en  ;
+	skos:prefLabel "vnc" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/wais> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used with <a href='/wiki/Wide_area_information_server' title='Wide area information server'>Wide area information server</a> (WAIS)" ;
+	skos:notation "RFC 1738","RFC 4156" ;
+	skos:scopeNote "wais://<host>:<port>/<database>[?<search>]"@en ,"wais://<host>:<port>/<database>/<wtype>/<wpath>"@en  ;
+	skos:note "Listed as ' <span data-sort-value='3' style='display:none;'></span> Historical' by IANA." ;
+	skos:prefLabel "wais" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/webcal> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Subscribing to calendars in <a href='/wiki/ICalendar' title='ICalendar'>iCalendar</a> format" ;
+	skos:notation "IANA registration template  iCalendar" ;
+	skos:scopeNote "webcal://<hierarchical part>"@en ,"webcal://example.com/calendar.ics"@en  ;
+	skos:note "<a class='mw-redirect' href='/wiki/HTTP' title='HTTP'>HTTP</a> as a transport protocol is assumed. <br/> See <a href='/wiki/Webcal' title='Webcal'>Webcal</a> for details." ;
+	skos:prefLabel "webcal" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ws> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/WebSocket' title='WebSocket'>WebSocket</a> protocol" ;
+	skos:notation "RFC 6455" ;
+	skos:scopeNote "ws:<hierarchical part>"@en  ;
+	skos:prefLabel "ws","wss" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/wtai> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Wireless Telephony Application Interface" ;
+	skos:notation "IANA registration template  WAP Forum" ;
+	skos:scopeNote "wtai://wp/mc/+18165551212"@en  ;
+	skos:note "See <a class='external text' href='https://web.archive.org/web/20130108022712/http://www.wapforum.org/what/technical/SPEC-WAESpec-19990524.pdf#Wireless' rel='nofollow'>Application Protocol Wireless Application Environment Specification Version 1.1</a> for details." ;
+	skos:prefLabel "wtai" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/wyciwyg> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "What You Cache Is What You Get <a href='/wiki/WYCIWYG' title='WYCIWYG'>WYCIWYG</a>" ;
+	skos:notation "IANA registration template  Mozilla" ;
+	skos:scopeNote "wyciwyg://<URI>"@en  ;
+	skos:note "See <a href='/wiki/WYCIWYG' title='WYCIWYG'>WYCIWYG</a> for details." ;
+	skos:prefLabel "wyciwyg" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/xcon> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC 6501" ;
+	skos:prefLabel "xcon","xcon-userid" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/xfire> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Adding friends and servers, joining servers, changing status text." ;
+	skos:notation "IANA registration template  Xfire" ;
+	skos:scopeNote "xfire:<function>[?<parameter1>=<value1>[&<parameter2>=<value2>]]"@en  ;
+	skos:note "Official documentation from <a class='external text' href='https://web.archive.org/web/20160303184852/http://xfire.com/xfire_urls/?name=XFire&amp;file=xfireurls' rel='nofollow'>Xfire website</a>" ;
+	skos:prefLabel "xfire" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/xmlrpc.beep> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:notation "RFC 3529" ;
+	skos:prefLabel "xmlrpc.beep","xmlrpc.beeps" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/xmpp> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a class='mw-redirect' href='/wiki/Extensible_Messaging_and_Presence_Protocol' title='Extensible Messaging and Presence Protocol'>XMPP</a>" ;
+	skos:notation "RFC 4622","RFC 5122" ;
+	skos:scopeNote "xmpp:[<user>]@<host>[:<port>]/[<resource>][?<query>]"@en  ;
+	skos:prefLabel "xmpp" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/xri> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "eXtensible Resource Identifier ( <a class='mw-redirect' href='/wiki/XRI' title='XRI'>XRI</a> )" ;
+	skos:notation "IANA registration template  OASIS XRI Technical Committee" ;
+	skos:scopeNote "xri://<authority>[/[<path>]][?<query>][#fragment]"@en  ;
+	skos:note "Official documentation from <a class='external text' href='http://www.oasis-open.org/committees/xri' rel='nofollow'>OASIS XRI Technical Committee</a>" ;
+	skos:prefLabel "xri" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/ymsgr> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Sending an instant message to a Yahoo! Contact." ;
+	skos:notation "IANA registration template  Yahoo! Messenger" ;
+	skos:scopeNote "ymsgr:sendIM?<screenname>"@en  ;
+	skos:prefLabel "ymsgr" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/z39.50> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Z39.50 information access" ;
+	skos:notation "RFC 1738","RFC 2056" ;
+	skos:prefLabel "z39.50" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/z39.50r> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Z39.50' title='Z39.50'>Z39.50</a> retrieval" ;
+	skos:notation "RFC 2056" ;
+	skos:scopeNote "z39.50r://<host>[:<port>]/<database>?<docid>[;esn=<elementset>][;rs=<recordsyntax>]"@en  ;
+	skos:prefLabel "z39.50r" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/z39.50s> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Z39.50 session" ;
+	skos:notation "RFC 2056" ;
+	skos:scopeNote "z39.50s://<host>[:<port>]/[<database>][?<docid>][;esn=<elementset>][;rs=<recordsyntax>]"@en  ;
+	skos:prefLabel "z39.50s" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/admin> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "URL scheme in the <a href='/wiki/GNOME' title='GNOME'>GNOME</a> desktop environment to access file(s) with <a href='/wiki/Superuser' title='Superuser'>administrative permissions</a> with GUI applications in a safer way, instead of the <i>insecure-considered</i>  <a href='/wiki/Sudo' title='Sudo'>sudo, gksu &amp; gksudo</a> ." ;
+	skos:notation "admin://<path>/<to>/<file>\nexample: gedit admin://etc/default/grub" ;
+	skos:prefLabel "admin" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/app> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "URL scheme can be used by packaged applications to obtain resources that are inside a container." ;
+	skos:notation "app://<application>/<path>\nexample: app://com.foo.bar/index.html" ;
+	skos:prefLabel "app" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/doi> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Digital object identifier, a digital identifier for any object of intellectual property." ;
+	skos:notation "doi:10.<publisher number>/<suffix>example: doi:10.1000/182" ;
+	skos:scopeNote "https://doi.org/"@en ,"http://hdl.handle.net/"@en  ;
+	skos:prefLabel "doi" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/javascript> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Execute <a href='/wiki/JavaScript' title='JavaScript'>JavaScript</a> code" ;
+	skos:notation "javascript:<javascript to execute>" ;
+	skos:prefLabel "javascript" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/jdbc> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Connect a database with <a href='/wiki/Java_Database_Connectivity' title='Java Database Connectivity'>Java Database Connectivity</a> technology." ;
+	skos:notation "jdbc:somejdbcvendor:other_data...\njdbc:oracle:oci:@host:port(sid or /service)?params...\njdbc:sqlserver://serverName\\instanceName:portNumber;params...\njdbc:mysql://host:port/database?params..." ;
+	skos:prefLabel "jdbc" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/odbc> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "<a href='/wiki/Open_Database_Connectivity' title='Open Database Connectivity'>Open Database Connectivity</a>" ;
+	skos:prefLabel "odbc" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/stratum> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Connectivity URI for the Stratum <a class='mw-redirect' href='/wiki/Communications_protocol' title='Communications protocol'>protocol</a> , used for <a class='mw-redirect' href='/wiki/Proof-of-work' title='Proof-of-work'>proof-of-work</a> coordination in pooled <a href='/wiki/Cryptocurrency' title='Cryptocurrency'>cryptocurrency</a>  <a href='/wiki/Cryptocurrency#Proof-of-work_schemes' title='Cryptocurrency'>mining</a> ." ;
+	skos:notation "stratum+tcp://server:port"," stratum+udp://server:port" ;
+	skos:prefLabel "stratum" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/web+...> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Effectively namespaces web-based protocols from other, potentially less web-secure, protocols." ;
+	skos:notation "web+⟨string of some lower-case alphabetic characters⟩:" ;
+	skos:prefLabel "web+..." .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/zoommtg> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used by Zoom conferencing software to launch the Zoom client" ;
+	skos:notation "example: zoommtg://zoom.us/join?confno=<confno>..." ;
+	skos:prefLabel "zoommtg","zoomus" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/trueconf:> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used by TrueConf Server to interact with client applications" ;
+	skos:notation "trueconf:target@server&param_1=value_1&...&param_n=value_n" ;
+	skos:prefLabel "trueconf:" .
+
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/slack> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list> ;
+	skos:definition "Used by Slack to launch the Slack client" ;
+	skos:notation "example: slack://open?team={TEAM_ID}" ;
+	skos:prefLabel "slack" .
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list>
+  skos:prefLabel "Protocols list" ;
+  dc:title "Thesaurus that gathers information of protocols" ;
+  dc:date "2021-09-07" ;
+  dc:creator "Ana Iglesias (Universidad Politécnica de Madrid)" ;
+  dc:creator "Andrea Cimmino (Universidad Politécnica de Madrid)" ;
+  a skos:conceptScheme .
+
