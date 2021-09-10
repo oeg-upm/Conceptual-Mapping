@@ -22,7 +22,7 @@
         <terms:created xml:lang="en">2020-10-14</terms:created>
         <terms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</terms:creator>
         <terms:description xml:lang="en">This ontology describes a mapping language that aims at gathering the expressiveness of the current mapping languages to serve as common interchange language and improve the inroperability among them.</terms:description>
-        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"/>
         <terms:modified xml:lang="en">2020-05-14T00:00:00</terms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
@@ -315,7 +315,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -416,7 +416,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1389,19 +1389,19 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy -->
+    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy -->
+    <!-- http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
 </rdf:RDF>

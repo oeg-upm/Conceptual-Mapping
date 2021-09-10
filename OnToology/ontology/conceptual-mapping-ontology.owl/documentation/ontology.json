@@ -12,7 +12,7 @@
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy"
+    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -174,7 +174,7 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy"
+    "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -281,7 +281,7 @@
     "@value" : "This ontology describes a mapping language that aims at gathering the expressiveness of the current mapping languages to serve as common interchange language and improve the inroperability among them."
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+    "@id" : "http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@language" : "en",
@@ -1199,10 +1199,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#function-taxonomy",
+  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocol-taxonomy",
+  "@id" : "http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
