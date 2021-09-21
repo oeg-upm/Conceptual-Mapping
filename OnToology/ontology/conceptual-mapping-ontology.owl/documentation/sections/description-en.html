@@ -11,233 +11,567 @@ Mappings Ontology.
 <span class="markdown">
   The Conceptual Mappings ontology has two sections which are denoted as Statement
   Map and Data Source. It reuses the Data Catalog (dcat) Ontology and the Web of
-  Things Security (wot) Ontology for some concepts in the Data Source section. It
+  Things Security (WoT) Ontology for some concepts in the Data Source section. It
   also reuses rdf and owl classes and properties in order to represent evaluable
   expressions and statement maps in the Statement Map section. Additionally
   predefined values for certain properties are represented using the Simple
   Knowledge Organization (skos) vocabulary.
 </span>
 <ul>
-<li><b>Statement Map:</b><p>The central class of this section is the StatementMap
-  that represents a rule that defines for a triple its subject (hasSubject),
-  predicate (hasPredicate), and its object (hasObject). It also specifies the
-  object datatype (hasDatatype) and language (hasLanguage) and an assigned named
-  graph (hasNamedGraph) if applicable. A statement map refers an ontology (Ontology)
-  that can define shapes (shapes) for its restrictions.</p>
+<li><b>Statements:</b><p>The central class of this section is the <tt>StatementMap</tt>,
+  which represents a rule that defines for a triple its subject (<tt>hasSubject</tt>),
+  predicate (<tt>hasPredicate</tt>), and object (<tt>hasObject</tt>). Optionally,
+  it can also specify the object datatype (<tt>hasDatatype</tt>) and language
+  (<tt>hasLanguage</tt>) and an assigned named graph (<tt>hasNamedGraph</tt>).
+  Therefore, statement maps are similar to RDF statements as both of them are
+  comprised by a subject, predicate and object. In statement maps, objects are
+  resources (<tt>Resource Map</tt>), and subjects and predicates are more specific,
+  certain subclasses of the resource map: predicates are reference node maps
+  (<tt>ReferenceNodeMap</tt>) that represent resources with an IRI, i.e. ontology
+  properties. Subjects are node maps (<tt>nodeMap</tt>) which may be blank nodes
+  (<tt>BlankNode</tt>) or also reference nodes. An object may be a literal
+  (<tt>LiteralMap</tt>), a blank node, a container (<tt>ContainerMap</tt>) or a
+  collection that defines a list (<tt>ListMap</tt>). The language is expressed as
+  a literal, and the datatype is also a resource with an IRI, i.e. a reference
+  node map. A statement map can also specify the ontology (<tt>Ontology</tt>) it
+  uses, and can define shapes (<tt>shapes</tt>) for its restrictions.</p>
 
-<p>Statement maps are similar to RDF statements as both are comprised by a subject,
-  predicate and object. In statement maps, objects are resources (ResourceMap),
-  and subjects and predicates are more specifically, certain subclasses of the
-  resource map: predicates are reference node maps (ReferenceNodeMap) that represent
-  resources with an IRI, i.e. ontology properties. Subjects are node maps (nodeMap)
-  which may be blank nodes (BlankNode) or also reference nodes. An object may be
-  a literal (LiteralMap), a blank node, a container (ContainerMap) or a collection
-  that defines a list (ListMap). The language is expressed as a literal and the
-  datatype is also a resource with an URI, i.e. a reference node map.</p>
+<p>Resource maps are expressed with an evaluable expression (<tt>EvaluableExpression</tt>)
+  that may be a constant value (<tt>Constant</tt>), a data field (<tt>DataField</tt>)
+  that belongs to some data source fragment (<tt>belongsToFrame</tt>) or a function
+  expression (<tt>FunctionExpression</tt>), where the function name (<tt>hasFuntionName</tt>)
+  is taken from a set of predefined names organized in a SKOS concept scheme. Recursion i
+  n this function expression is represented through its input (<tt>hasInput</tt>)
+  as an expression list (<tt>ExpressionList</tt>). The expression list may be a
+  nested list and has been represented as a subclass of RDF lists (<tt>rdf:List</tt>)
+  and where the properties (<tt>rdf:first</tt>) and (<tt>rdf:rest</tt>) have been reused.</p>
 
-<p>Resource maps are expressed with an evaluable expression (EvaluableExpression)
-  that may be a constant value (Constant), a data field (DataField) that belongs
-  to some data source fragment (belongsToFrame, this will be explained in more
-  detail in the Data Source section) or a function expression (FunctionExpression)
-  where the function name (hasFuntionName) is taken from a set of predefined names
-  that are organized as a Simple Knowledge Organization System (SKOS). Recursion
-  in this function expression is represented through its input (hasInput) as an
-  expression list (ExpressionList). The expression list may be a nested list and
-  has been represented as a subclass of rdf lists (rdf:List) and where the properties
-  (rdf:first) and (rdf:rest) have been reused.</p>
-
-<p>A special case of a statement map is a conditional statement map (ConditionalStatementMap),
-  a statement map that must satisfy a condition for the triples to be generated.
-  The condition (hasBooleanCondition) is a function expression. Another class is
-  a linking map (LinkingMap) that links subjects from a source (source) and a target
-  (target) statement map, i.e. two data sources are linked and triples are generated
-  if a linking condition is satisfied; similarly to the conditional statement map,
-  this condition is represented as a function expression.</p>
+<p>A special case of a statement map is a conditional statement map
+  (<tt>ConditionalStatementMap</tt>), a statement map that must satisfy a condition
+  for the triples to be generated. The condition (<tt>hasBooleanCondition</tt>)
+  is a function expression (e.g. if a value from a field called "present" is set
+  to "False", the statement is not generated). Another relevant class is the
+  linking map (<tt>LinkingMap</tt>) that enables linking subjects from a source
+  (<tt>source</tt>) and a target (<tt>target</tt>) statement maps, i.e. two resources
+  are linked and triples are generated if a linking condition is satisfied. Similarly
+  to the conditional statement map, this condition is represented as a function expression.</p>
 
 
-<li><b>Data Source:</b>
-<p> A data source (DataSource) describes the data that will be mapped to a KG using
-  the rules that have been defined. For this section the  Data Catalog (DCAT)
-  vocabulary  has been reused. A data source is a subclass of the dcat:Distribution
-  class that is a  specific representation of a dataset (dcat:Dataset) which is
-  defined as ''data encoded in a certain structure such as lists, tables and databases''.
-  A source can be a streaming source (StreamSource) that continously generates data,
-  a synchronous source (SynchronousSource) or an asynchronous source (AsynchronousSource).
-  Asynchronous sources in turn can be event sources (EventSource) or periodic sources
-  (PeriodicSource). Details of the data source access are represented with the data
-  acces service class (dataAccessService) that in turn is a subclass of dcat:DataService;
-  this class represents a collection of operations that provides access to one or more
-  datasets or data processing functions, i.e. a description on how the data is accessed
-  and retrieved. The data access service optionally has a security scheme and an access
-  protocol.</p>
+<li><b>Data Sources:</b>
+<p> A data source (<tt>DataSource</tt>) describes the data that will be mapped to
+  an ontology using the rules that have been defined. For this section, the Data Catalog
+  (DCAT) vocabulary has been reused. <tt>DataSource</tt>
+  is a subclass of <tt>dcat:Distribution</tt> , which is a specific representation
+  of a dataset (<tt>dcat:Dataset</tt>), defined as ''data encoded in a certain
+  structure such as lists, tables and databases''. A source can be a streaming
+  source (<tt>StreamSource</tt>) that continuously generates data, a synchronous
+  source (<tt>SynchronousSource</tt>) or an asynchronous source (<tt>AsynchronousSource</tt>).
+  Asynchronous sources in turn can be event sources (<tt>EventSource</tt>) or periodic
+  sources (<tt>PeriodicSource</tt>). Details of the data source access are represented
+  with the data access service class (<tt>DataAccessService</tt>), that in turn is
+  a subclass of <tt>dcat:DataService</tt>. This class represents a collection of
+  operations that provides access to one or more datasets or data processing functions,
+  i.e. a description on how the data is accessed and retrieved. The data access service
+  optionally has a security scheme (e.g. OAuth2, API Key, etc) and an access protocol
+  (e.g. HTTP(s), FTP).</p>
 
-<p> Data properties in the dcat:Dataset, dcat:Distribution and dcat:DataService classes
-  may be reused according to the features that may be represented in each mapping language,
-  e.g. endpoint description (dcat:endpointDescription), endpoint URL (dcat:endpointURL),
-  access URL (dcat:accessURL). Some of these data properties are descriptive and provenance
-  attributes. A data acess service is related to a security scheme. The class wot:SecurityScheme
-  fom the Web of Things (wot) ontology has been reused; this class has different types of
-  security schemes as subclasses and includes properties to specify the infomration on
-  the scheme, e.g. the encryptionalgorithm, the format of the authentication information,
-  the location of the authenticatiob information. The security protocol (hasProtocol)
-  has as set of predefined values that have been organized as a SKOS.</p>
+<p> Data properties in the <tt>dcat:Dataset</tt>, <tt>dcat:Distribution</tt> and
+  <tt>dcat:DataService</tt> classes may be reused according to the features that
+  may be represented in each mapping language, e.g. <tt>dcat:endpointDescription</tt>,
+  <tt>dcat:endpoint URL</tt> and <tt>dcat:accessURL</tt>. A data access service
+  is related to a security scheme. The class <tt>wot:Security Scheme</tt> (from
+  the Web of Things (WoT) Security ontology)
+  has been reused. This class has different types of security schemes as subclasses
+  and includes properties to specify the information on the scheme (e.g. the
+  encryption algorithm, the format of the authentication information, the location
+  of the authentication information). The security protocol <tt>hasProtocol</tt>
+  has as set of predefined values that have been organized as a SKOS concept scheme.
+  It contains almost 200 security protocols, e.g. HTTP(s), JDBC, (S)FTP, GEO, among others.</p>
 
-<p>In order to express the fragments of data that are referenced (hasFrame) in a
-  statement map, the class Frame has been defined. A frame can be a source frame
-  (base case) or a combined frame. A source frame (SourceFrame) corresponds to a
-  data source (hasDataSource) and defines which is the data in the source that is
-  retrieved ahd how is fragmented (expression), i.e. a JSONPath or XPath or a
-  query (among others) can be expressed in "expression" ; it may be related to another
-  source frame (hasNestedFrame), e.g. a frame is accessed firstly with a SPARQL query,
-  and their results as a CSV file with "hasNestedFrame". A combined frame (CombinedFrame)
-  may be a union (UnionCombination), a cartesian product (CartessianProductCombination)
-  or a join combination (JoinCombination). A fragment may refer to many data fields
-  (hasField); this property is the inverse property of the property belongsToFrame
-  mentioned in the previous Data Source ontology section.</p>
+<p>In order to represent the fragments of data that are referenced
+  in a statement map, the class <tt>Frame</tt> has been defined.
+  They are connected with the property <tt>hasFrame</tt>. A frame can be
+  a <tt>SourceFrame</tt> (base case) or a <tt>CombinedFrame</tt>, the latter
+  representing two source frames or combined frames that are combined by means
+  of a join (<tt>JoinCombination</tt>), a union (<tt>UnionCombination</tt>) or a
+  cartessian product (<tt>CartessianProductCombination</tt>). A source frame
+  corresponds to a data source (with <tt>hasDataSource</tt>) and defines which is
+  the data in the source that is retrieved and how it is a fragmented <tt>expression</tt>,
+  i.e. a JSONPath, XPath, a query or a regular expression, among others, can be
+  expressed with this feature. It may be related to another source frame with
+  <tt>hasNestedFrame</tt>, e.g. a frame is accessed firstly with a SPARQL query,
+  and their results as a CSV file with this property. A source fragment
+  may refer to many data fields (<tt>hasField</tt>); this property is the inverse
+  property of the property <tt>belongsToFrame</tt>.</p>
 
     </li>
     </ul>
 
-<h3>3.1 Examples<span class="backlink"> back to <a href="#toc">index</a></span></h3>
-  <span class="markdown">
-  The following examples illustrate the representation of mappings using the concepts defined in the ontology:
+<h3>3.1 Examples: Cities and Locations with the Conceptual Mapping<span class="backlink"> back to <a href="#toc">index</a></span></h3>
+  <p>
+  The following examples illustrate the representation of mappings using the concepts
+  defined in the ontology:
 
   The first example refers to a data source frame that contains location data
   such as latitude, longitude and city. This frame or fragment of data belongs
-  to a synchronous source that is a csv file with ''File'' protocol. The endpoint
-  url and media type are specified; it has no security scheme.
-</span>
+  to a synchronous source: a JSON file "coordinates.json" access with the with HTTPS protocol.
+  The corresponding endpoint url and media type are specified; it has no security scheme.
+</p>
 
 <pre>
-## Location data
-ex:Frame1 a cm:SourceFrame ;
-    cm:hasField ex:csvlat ;
-    cm:hasField ex:csvlong ;
-    cm:hasField ex:csvcity ;
-    cm:hasDataSource [ a cm:SynchronousSource ;
-        dcat:mediaType "text/csv" ;
+:FrameLoc a cm:SourceFrame;
+    cm:expression "$.coordinates[*]";
+    cm:hasField :lat;
+    cm:hasField :long;
+    cm:hasField :loc_city;
+    cm:hasDataSource [ a cm:SynchronousSource;
+        dcat:mediaType "text/json";
         dcat:accessService [
-            cm:hasProtocol skos:File;
-            dcat:endpointURL "file:///example/path/Location.csv" ;
-            cm:hasSecurityScheme [
-                a wotsec:NoSecurityScheme;
-            ] ;
+            cm:hasProtocol cmp:https;
+            dcat:endpointURL "https://ex.com/geodata/coordinates.json"
+            cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
         ] ;
     ] .
 
-ex:csvlat a cm:DataField ; cm:field "latitude" .
-ex:csvlong a cm:DataField ; cm:field "longitude" .
-ex:csvcity a cm:DataField; cm:field "city" .
+:lat a cm:DataField ; cm:field "$.latitude" .
+:long a cm:DataField ; cm:field "$.longitude" .
+:loc_city a cm:DataField; cm:field "$.city" .
 </pre>
 
-<span class="markdown"> The following statement maps retrieve the data that was
-  specified in the source frame defined previously, ex:Frame1. Its subject, ex:SubjectRes1
-  is a reference node map, i.e. an RDF resource with an URI, and it is a concatenation
+<p> The following statement maps retrieve the data that was
+  specified in the source frame defined previously, <tt>:FrameLoc</tt>. Its subject, <tt>:SubjectLoc</tt>
+  is a reference node map, i.e. an RDF resource with an IRI, and it is a concatenation
   of a list of input parameters: the URI prefix, the latitude, a ''-'' and the longitude.
-  The firs statement map, ex:Statement1, defines indicate the class the subject belongs
-  to, ex:Location. Similarly, ex:Statement2 and ex:Statement3 indicate the latitude and
-  longitude with the predicates ex:lat and ex:long respectively, each one with a DataField
-  as object, ex:csvlat and ex:csvlong.
-</span>
+  The firs statement map, <tt>:StatementLoc1</tt>, defines the class that the subject belongs
+  to, <tt>eg:Location</tt>. Similarly, <tt>:StatementLoc2</tt> and <tt>:StatementLoc3</tt> indicate the latitude and
+  longitude with the predicates <tt>eg:lat</tt> and <tt>eg:long</tt> respectively, each one with a <tt>DataField</tt>
+  as object, <tt>:lat</tt> and <tt>:long</tt>.
+</p>
 
 <pre>
-ex:SubjectRes1 a cm:ReferenceNodeMap ;
-    cm:hasEvaluableExpression [
-        cm:hasFunctionName skos-function-name:Concatenate ;
-        cm:hasInput ( [ cm:returns "http://loc.example.com/latlong/" ]  ex:csvlat [ cm:returns "-" ] ex:csvlong ) .
-        ] .
+  :SubjectLoc a cm:ReferenceNodeMap ;
+      cm:hasEvaluableExpression [
+          cm:hasFunctionName cmf:concat;
+          cm:hasInput ([cm:returns "http://ex.com/loc/"]
+                       eg:lat [ cm:returns "-" ] eg:long) ] .
 
-ex:Statement2 a cm:StatementMap ;
-    cm:hasFrame ex:Frame1 ;
-    cm:subject ex:SubjectRes1 ;
-    cm:predicate [
-        cm:hasEvaluableExpression [ cm:returns rdf:type ]
-    ] ;
-    cm:object [
-        cm:hasEvaluableExpression [ cm:returns ex:Location ]
-    ] .
+  :StatementLoc1 a cm:StatementMap ;
+      cm:hasFrame :FrameLoc ;
+      cm:subject :SubjectLoc ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns rdf:type ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:returns eg:Location] ].
 
-ex:Statement2 a cm:StatementMap ;
-    cm:hasFrame ex:Frame1 ;
-    cm:subject ex:SubjectRes1 ;
-    cm:predicate [
-        cm:hasEvaluableExpression [ cm:returns ex:lat ]
-    ] ;
-    cm:object [
-        cm:hasEvaluableExpression ex:csvlat
-    ] .
+  :StatementLoc2 a cm:StatementMap ;
+      cm:hasFrame :FrameLoc ;
+      cm:subject :SubjectLoc ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns eg:lat] ];
+      cm:object [ a cm:Literal; cm:hasEvaluableExpression :lat ];
+      cm:hasDatatype [cm:hasEvaluableExpression xsd:decimal ].
 
-ex:Statement3 a cm:StatementMap ;
-    cm:hasFrame ex:Frame1 ;
-    cm:subject ex:SubjectRes1 ;
-    cm:predicate [
-        cm:hasEvaluableExpression [ cm:returns ex:long ]
-    ] ;
-    cm:object [
-        cm:hasEvaluableExpression ex:csvlong
-    ] .
+  :StatementLoc3 a cm:StatementMap ;
+      cm:hasFrame :FrameLoc ;
+      cm:subject :SubjectLoc ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns eg:long] ];
+      cm:object [ a cm:Literal; cm:hasEvaluableExpression :long ];
+      cm:hasDatatype [ cm:hasEvaluableExpression xsd:decimal ].
 </pre>
 
-<span class="markdown"> Another example deals with Venue data a json available in the web. There
-  is a data frame to represent a fragment of this data that contains the venue's city,
-  country and continent. The statement map defines the rule to generate the triples
-  that state that a certain instance belongs to the class ex:City (rdf:type). The subject
-  is the concatenation of the  URI prefix and the city field that belongs to the data frame.
-</span>
+<p> Another example deals with data of cities stored in a relational database.
+  There is a data frame to represent a table, "cities" that contains the name of the city,
+  population, zipcodes and year that the record was updated. This information is retrieved
+  with the JDBC protocol, and a SQL query. The subject URI is formed
+  with the concatenation of the  URI prefix and the city name field <tt>:c_city</tt>.
+  The statement <tt>:StatementCit1</tt> indicates that a certain instance belongs to the class <tt>eg:City</tt>.
+  <tt>:StatementCit1</tt> generates the triples for the zipcodes (<tt>eg:zipcodes</tt>).
+  Finally, <tt>:StatementCit3</tt> defines a conditional statement map, in which the
+  population of the city (<tt>:population</tt>) is only added when the record was updated
+  after the year 2020. That is, the field <tt>:year</tt> must be greater than 2020.
+  </p>
 
 <pre>
-## Venue data
-ex:Frame2 a cm:SourceFrame ;
-    cm:expression "$.venue[*]" ;
-    cm:hasField ex:jsoncity ;
-    cm:hasField ex:jsoncountry ;
-    cm:hasField ex:jsoncontinent ;
-    cm:hasDataSource [ a cm:SynchronousSource ;
-        dcat:mediaType "text/json" ;
+:FrameCities a cm:SourceFrame ;
+    cm:expression "SELECT * FROM cities;";
+    cm:hasField :c_city;
+    cm:hasField :population;
+    cm:hasField :year;
+    cm:hasNestedFrame [
+        cm:expression "$.zipcodes.*";
+        cm:hasField :zipcode ];
+    cm:hasDataSource [ a cm:SynchronousSource;
+        dcat:mediaType "text/plain";
         dcat:accessService [
-            cm:hasProtocol skos:URL;
-            dcat:endpointURL "http://example.com/Venue.json" ;
-            cm:hasSecurityScheme [
-                a wotsec:NoSecurityScheme;
-            ] ;
-    ] .
+            cm:hasProtocol cmp:jdbc;
+            dcat:endpointURL "jdbc:mysql://localhost:3306/citydb";
+            cm:hasSecurityScheme [a wotsec:NoSecurityScheme;] ].
 
-ex:jsoncity a cm:DataField; cm:field "location.city" .
-ex:jsoncountry a cm:DataField; cm:field "location.country" .
-ex:jsoncontinent a cm:DataField; cm:field "location.continent"  .
+:c_city a cm:DataField; cm:field "city" .
+:population a cm:DataField; cm:field "population" .
+:year a cm:DataField; cm:field "year_modified" .
+:zipcode a cm:DataField cm:field "zipcodes"
 
-ex:SubjectRes2 a cm:ReferenceNodeMap ;
+
+:city_ns a cm:FunctionExpression ;
+    cm:functionName cmf:replace ;
+    cm:hasInput (c_city, " ", "")
+
+:SubjectCities a cm:ReferenceNodeMap;
     cm:hasEvaluableExpression [
-        cm:hasFunctionName skos:Concatenate ;
-        cm:hasInput ( [ cm:returns "http://loc.example.com/city/" ] [ cm:field "location.city" ] ) .
-    ] .
+        cm:hasFunctionName cmf:concat;
+        cm:hasInput ([cm:returns "http://ex.com/city/"] :city_ns)].
 
-ex:Statement4 a cm:StatementMap ;
-    cm:hasFrame ex:Frame2 ;
-    cm:subject ex:SubjectRes2 ;
-    cm:predicate [
-        cm:hasEvaluableExpression [ cm:returns rdf:type; ]
-    ] ;
-    cm:object [
-        cm:hasEvaluableExpression  [ cm:returns ex:City; ]
-    ] .
+:StatementCit1 a cm:StatementMap ;
+    cm:hasFrame :FrameCities ;
+    cm:subject :SubjectCities ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns rdf:type] ];
+    cm:object [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression  [cm:returns eg:City] ] .
+
+:StatementCit2 a cm:StatementMap ;
+    cm:hasFrame :FrameCities ;
+    cm:subject :SubjectCities ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns eg:zipcode] ];
+    cm:object [ a cm:Literal;
+        cm:hasEvaluableExpression [cm:returns :zipcode] ];
+    cm:hasDatatype [ cm:hasEvaluableExpression xsd:integer ].
+
+:StatementCit3 a cm:ConditionalStatementMap ;
+    cm:hasFrame :FrameCities ;
+    cm:subject :SubjectCities ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns eg:population] ];
+    cm:object [ a cm:Literal;
+        cm:hasEvaluableExpression  [cm:returns :population] ];
+    cm:hasDatatype [ cm:hasEvaluableExpression xsd:nonNegativeInteger ];
+    cm:hasBooleanCondition [
+        cm:functionName cmf:greater_than ;
+        cm:hasInput ( :year 2020 ) ] .
+
 </pre>
 
-<span class="markdown"> The subjects defined for each frame can be linked using a
-  LinkingMap, as the following example shows. The linking map performs a link between
-  the subject from ex:Statement4 (ex:SubjectRes1) to the subject from ex:Statement4
-  (ex:SubjectRes2) with the property ex:latlong. The condition to form the link is
-  performed with an equal function defined in the SKOS, to match two fields, ex:jsoncity
-  and ex:csvcity.
-</span>
+<p> The subjects defined for each frame can be linked using a
+  <tt>LinkingMap</tt>, as the following example shows. The linking map performs a link between
+  the subject from <tt>:StatementCit1</tt> (<tt>:SubjectCities</tt>) to the subject
+  from <tt>:StatementLoc1</tt> (<tt>:SubjectLoc</tt>)  with the property ex:location.
+  The condition to perform the link is given by two nested functions: first the
+  <tt>cmf:levenshtein</tt> function is carried out to calculate the distance between the fields
+  <tt>:c_city</tt> and <tt>:loc_city</tt>. The result of this function is evaluated by
+  <tt>cmf:greaterThan</tt> with a threshold of "0.75". If the output of the levenshtein function
+  is greater than the threshold, then the linked is formed.
+</p>
 
 <pre>
-ex:LinkExp1 a cm:LinkingExpression ;
-    cm:source ex:Statement4 ;
-    cm:target ex:Statement1 ;
-    cm:property ex:latlong ;
-    cm:hasBooleanCondition [
-        cm:functionName skosfun:equal ;
-        cm:hasInput ( ex:jsoncity ex:csvcity )
-] .
+  LinkExp1 a cm:LinkingExpression ;
+      cm:source :StatementCit1 ;
+      cm:target :StatementLoc1 ;
+      cm:property eg:location ;
+      cm:hasBooleanCondition [
+          cm:functionName cmf:greater_than ;
+          cm:hasInput ( :levfun 0.75 ) ] .
+
+  :levfun a cm:FunctionExpression ;
+      cm:functionName cmf:levenshtein_distance ;
+      cm:hasInput (:c_city :loc_city) .
 </pre>
+
+
+<h3>3.2 Examples: Cities and Locations with other mapping languages<span class="backlink"> back to <a href="#toc">index</a></span></h3>
+  This section provides the mapping of cities and locations described in the previous section
+  in other mapping languages: R2RML, RML+FnO, xR2RML, ShExML, Helio and SPARQL-Generate.
+
+  <b>R2RML</b>
+  <pre>
+    <#Cities> a rr:TriplesMap ;
+      rr:logicalTable [ rr:tableName "cities" ] ;
+      rr:subjectMap [
+        rr:template "http://ex.com/city/{city}"  ;
+        rr:class eg:City ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:zipcode ;
+        rr:objectMap [ rr:column "zipcodes" ] ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:population ;
+        rr:objectMap [ rr:column "population"; rr:datatype xsd:nonNegativeInteger] ;
+      ] .
+  </pre>
+
+  <b>RML+FnO</b>
+  <pre>
+    <#Location> a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "https://ex.com/geodata/coordinates.json";
+        rml:referenceFormulation ql:JSONPath;
+        rml:iterator "$.coordinates[*]";
+      ] ;
+      rr:subjectMap [
+        rr:template "http://ex.com/loc/{latitude}-{longitude}" ;
+        rr:class eg:Location ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:lat ;
+        rr:objectMap [ rml:reference "$.latitude"; rr:datatype xsd:decimal] ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:long ;
+        rr:objectMap [ rml:reference "$.longitude"; rr:datatype xsd:decimal] ;
+      ].
+
+    <#Cities> a rr:TriplesMap ;
+      rml:logicalSource [
+        rml:source "cities";
+        rml:referenceFormulation rr:SQL2008;
+      ] ;
+      rr:subjectMap [
+        rr:template <#FunctionMapConcat> ;
+        rr:class eg:City ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:zipcode ;
+        rr:objectMap [ rml:reference "zipcodes" ] ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:population ;
+        rr:objectMap [ rml:reference "population" ] ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:location;
+        rr:objectMap [
+          rr:parentTriplesMap <#Location>;
+          rr:joinCondition [
+            rr:child "city";
+            rr:parent "city";
+          ];
+        ];
+      ].
+
+    <#FunctionMapConcat>
+      rml:functionValue [
+        rml:logicalSource <#CitiesSource> ;
+        rr:predicateObjectMap [
+          rr:predicate fno:executes ;
+          rr:objectMap [rr:constant ex:concat]
+        ];
+        rr:predicateObjectMap [
+          rr:predicate ex:param1 ;
+          rr:objectMap [rr:constant "http://ex.com/city/"]
+        ];
+        rr:predicateObjectMap [
+          rr:predicate ex:param2 ;
+          rr:objectMap <#FunctionMapReplace>
+        ];
+
+      ].
+
+    <#FunctionMapReplace>
+      rml:functionValue [
+        rml:logicalSource <#CitiesSource> ;
+        rr:predicateObjectMap [
+          rr:predicate fno:executes ;
+          rr:objectMap [rr:constant ex:replace]
+        ];
+        rr:predicateObjectMap [
+          rr:predicate ex:paramField ;
+          rr:objectMap [rml:reference "city"]
+        ];
+        rr:predicateObjectMap [
+          rr:predicate ex:paramMatch ;
+          rr:objectMap [rr:constant " " ]
+        ];
+        rr:predicateObjectMap [
+          rr:predicate ex:paramReplace ;
+          rr:objectMap [rr:constant "" ]
+        ];
+
+      ].
+  </pre>
+
+  <b>xR2RML</b>
+  <pre>
+    <#Location> a rr:TriplesMap ;
+      xrr:logicalSource [ rr:tableName "cities" ] ; ;
+      rr:subjectMap [
+        rr:template "http://ex.com/loc/{$.latitude}-{$.longitude}" ;
+        rr:class eg:Location ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:lat ;
+        rr:objectMap [ xrr:reference "$.latitude"; rr:datatype xsd:decimal] ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:long ;
+        rr:objectMap [ xrr:reference "$.longitude"; rr:datatype xsd:decimal] ;
+      ].
+
+    <#Cities> a rr:TriplesMap ;
+      xrr:logicalSource [
+        xrr:source "https://ex.com/geodata/coordinates.json";
+        rml:iterator "$.coordinates[*]";] ;
+      rr:subjectMap [
+        rr:template "http://ex.com/city/{city}" ;
+        rr:class eg:City ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:population ;
+        rr:objectMap [ xrr:reference "Column(zipcodes)/JSONPath($.*)"; rr:datatype xsd:nonNegativeInteger] ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:population ;
+        rr:objectMap [ xrr:reference "population" ] ;
+      ];
+      rr:predicateObjectMap [
+        rr:predicate eg:location;
+        rr:objectMap [
+          rr:parentTriplesMap <#Location>;
+          rr:joinCondition [
+            rr:child "city";
+            rr:parent "city";
+          ];
+        ];
+      ].
+  </pre>
+
+  <b>ShExML</b>
+  <pre>
+    SOURCE cities_source &ltjdbc:mysql://localhost:3306/citydb>
+    SOURCE coord_source &lthttps://ex.com/geodata/coordinates.json>
+
+    ITERATOR cities_rdb &ltsql: cities> {
+      FIELD c_city &ltcity>
+      FIELD population &ltpopulation>
+      FIELD year &ltyear_modified>
+      FIELD zipcodes &ltzipcodes>
+    }
+
+    ITERATOR coord_json &ltjsonpath: $.coordinates[*]> {
+      FIELD lat &lt$.latitude>
+      FIELD long &lt$.longitude>
+      FIELD loc_city &lt$.city>
+    }
+
+    EXPRESSION cit_locs &ltcities_source.cities_rdb.c_city JOIN coord_source.coord_json.loc_city>
+    EXPRESSION latlong &ltcoord_source.coord_json.lat> + "-" + &ltcoord_source.coord_json.long>
+
+    :Location ex:[latlong] {
+      :latitude [cit_locs.latitude] ;
+      :longitude [cit_locs.longitude] ;
+    }
+
+    :City ex:[cit_locs.city] {
+      :population [cit_locs.population] ;
+      :zipcode [cit_locs.zipcodes] ;
+      :location @:Location
+    }
+  </pre>
+
+  <b>Helio</b>
+  <pre>
+    {
+      "datasources" : [
+            {
+                "id": "locations_source",
+                "handler": { "type": "JsonHandler", "iterator" : "$.coordinates[*]" },
+                "provider": { "type": "URLProvider", "url" : "https://ex.com/geodata/coordinates.json" }
+            },{
+                "id": "cities_source",
+                "handler": { "type": "CsvHandler", "has_headers": True },
+                "provider": { "type": "URLProvider", "url" : "jdbc:mysql://localhost:3306/citydb" }
+            }
+        ],
+      "resource_rules" : [
+            {
+                "id" : "Locations",
+                "datasource_ids" : ["locations_source"],
+                "subject" : "http://ex.com/loc/{$.latitude}-{$.longitude}",
+                "properties" : [
+                    {
+                        "predicate" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                        "object" : "eg:Location",
+                        "is_literal" : "False"
+                    },{
+                        "predicate" : "http://example.com/geo#lat",
+                        "object" : "{$.latitude}",
+                        "is_literal" : "True" ,
+                        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal"
+                    },{
+                        "predicate" : "http://example.com/geo#long",
+                        "object" : "{$.longitude}",
+                        "is_literal" : "True" ,
+                        "datatype" : "http://www.w3.org/2001/XMLSchema#decimal"
+                    }
+                ]
+            },{
+                "id" : "Cities",
+                "datasource_ids" : ["cities_source"],
+                "subject" : "http://ex.com/city/[replace({$.city}, ’ ’, ’’)]",
+                "properties" : [
+                    {
+                        "predicate" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                        "object" : "eg:City",
+                        "is_literal" : "False"
+                    },{
+                        "predicate" : "http://example.com/geo#zipcode",
+                        "object" : "{zipcodes}",
+                        "is_literal" : "True" ,
+                        "datatype" : "http://www.w3.org/2001/XMLSchema#integer"
+                    },{
+                        "predicate" : "http://example.com/geo#population",
+                        "object" : "{population}",
+                        "is_literal" : "True" ,
+                        "datatype" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                    }
+                ]
+            }
+        ],
+        "link_rules" : [
+            {
+                "condition" : "levenshtein(S({city}), T({$.city}))>0.75",
+                "source" : "Cities",
+                "target" : "Locations",
+                "predicate" : "http://example.com/geo#location"
+            }
+        ]
+    }
+  </pre>
+
+  <b>SPARQL-Generate</b>
+  <pre>
+    GENERATE {
+      &ltcity/{REPLACE( ?city, " ", "")}> a eg:City ;
+        eg:zipcode ?zipcode .
+
+      &ltloc/{?lat}-{?long}> a eg:Location ;
+        eg:lat "{?lat}"^^xsd:decimal ;
+        eg:long "{?long}"^^xsd:decimal .
+
+      GENERATE {
+        &ltcity/{REPLACE( ?city, " ", "")}> eg:population "{?population}"^^xsd:nonNegativeInteger .
+      } WHERE {
+        FILTER("{?year_modified}"^^xsd:integer > 2020)
+      }.
+
+      GENERATE{
+        &ltcity/{REPLACE( ?city, " ", "")}> eg:location &ltloc/{?lat}-{?long}> .
+      } WHERE {
+        FILTER(?loc_city = ?city)
+      }.
+
+    }
+
+    ITERATOR iter:CSV(&lthttp://example.org/document#1>, true, "\"", "\t", "\n", "city", "population", "year_modified", "zipcodes") AS ?city ?population ?year_modified ?zipcodes
+
+    ITERATOR iter:CSVHeaders(?zipcodes) AS ?zipcode
+
+    ITERATOR iter:JSONPath(&lthttp://example.org/document#1>, "$.coordinates[*]") AS ?location
+
+    WHERE {
+      BIND(fun:JSONPath(?location, "$.city") as ?loc_city)
+      BIND(fun:JSONPath(?location, "$.latitude") as ?lat)
+      BIND(fun:JSONPath(?location, "$.longitude") as ?long)
+    }
+  </pre>

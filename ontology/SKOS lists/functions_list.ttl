@@ -911,6 +911,34 @@
   skos:prefLabel "ZERO" ;
   skos:broader <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/numeric_functions> .
 
+<http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/logical_functions>
+  skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list> ;
+  a skos:Concept ;
+  skos:definition "Logical operators" ;
+  skos:prefLabel "Logical Functions" ;
+  skos:narrower <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/equal>, <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/greater_than>, <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/less_than> .
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/equal>
+  skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list> ;
+  a skos:Concept ;
+  skos:definition "Checks if two given values are the same" ;
+  skos:prefLabel "equal" ;
+  skos:broader <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/logical_functions> .
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/greater_than>
+  skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list> ;
+  a skos:Concept ;
+  skos:definition "Checks if numerical value is greater than another" ;
+  skos:prefLabel "greater than" ;
+  skos:broader <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/logical_functions> .
+
+<http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/less_than>
+  skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list> ;
+  a skos:Concept ;
+  skos:definition "Checks if numerical value is less than another" ;
+  skos:prefLabel "less than" ;
+  skos:broader <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/logical_functions> .
+
 <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/datetime_functions>
   skos:inScheme <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list> ;
   a skos:Concept ;
