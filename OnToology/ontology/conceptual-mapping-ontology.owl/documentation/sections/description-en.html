@@ -110,11 +110,27 @@ Mappings Ontology.
 <h3>3.1 Examples: Cities and Locations with the Conceptual Mapping<span class="backlink"> back to <a href="#toc">index</a></span></h3>
   <p>
   The following examples illustrate the representation of mappings using the concepts
-  defined in the ontology:
+  defined in the ontology. They show how to describe a JSON file, "coordinates.json"
+  (Figure 3a) and a RDB table (Figure 3b) following the ontology described by Figure 2.
+  This ontology is composed of two classes <tt>eg:City</tt> and <tt>eg:Location</tt>.
+  The cities are described with the properties <tt>eg:zipcode</tt>, <tt>eg:population</tt> and
+  the <tt>eg:location</tt>. The class <tt>eg:Location</tt> is described with coordinates
+  (<tt>eg:lat</tt> and <tt>eg:long</tt>).
+</p>
 
+<center>
+  <img src="resources/images/ex_onto.png" alt="Ontology example, cities and locations" width="40%"> <figcaption><b>Figure 2.</b> - Ontology representing cities and locations.</figcaption>
+</center>
+
+<center>
+  <img src="resources/images/input_example.png" alt="JSON and RDB table input" width="65%"> <figcaption><b>Figure 3.</b> - Input data, (a) online JSON file and (b) MySQL table.</figcaption>
+</center>
+
+
+<p>
   The first example refers to a data source frame that contains location data
   such as latitude, longitude and city. This frame or fragment of data belongs
-  to a synchronous source: a JSON file "coordinates.json" access with the with HTTPS protocol.
+  to a synchronous source: the JSON file "coordinates.json" accessed with the with HTTPS protocol.
   The corresponding endpoint url and media type are specified; it has no security scheme.
 </p>
 
