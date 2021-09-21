@@ -9,7 +9,7 @@ Mappings Ontology.
 </center>
 
 <span class="markdown">
-  The Conceptual Mappings ontology has two sections which are denoted as Statement
+  The Conceptual Mapping ontology has two sections which are denoted as Statement
   Map and Data Source. It reuses the Data Catalog (dcat) Ontology and the Web of
   Things Security (WoT) Ontology for some concepts in the Data Source section. It
   also reuses rdf and owl classes and properties in order to represent evaluable
@@ -126,6 +126,35 @@ Mappings Ontology.
   <img src="resources/images/input_example.png" alt="JSON and RDB table input" width="65%"> <figcaption><b>Figure 3.</b> - Input data, (a) online JSON file and (b) MySQL table.</figcaption>
 </center>
 
+<p>The expected RDF output is as follows:</p>
+
+<pre>
+&lthttp://ex.com/loc/40.4189--3.6919> a eg:Location ;
+  eg:lat "40.4189"^^xsd:decimal ;
+  eg:long "-3.6919"^^xsd:decimal .
+
+&lthttp://ex.com/loc/43.3713--8.4188> a eg:Location ;
+  eg:lat "43.3713"^^xsd:decimal ;
+  eg:long "-8.4188"^^xsd:decimal .
+
+&lthttp://ex.com/loc/36.8333--2.45> a eg:Location ;
+  eg:lat "36.8333"^^xsd:decimal ;
+  eg:long "-2.45"^^xsd:decimal .
+
+&lthttp://ex.com/city/ACoruña> a eg:City ;
+  eg:zipcode 15001, 15002, 15003, 15004 ;
+  eg:location <&lthttp://ex.com/loc/43.3713--8.4188> .
+
+&lthttp://ex.com/city/Almería> a eg:City ;
+  eg:zipcode 04001, 04002 ;
+  eg:population 201322 ;
+  eg:location &lthttp://ex.com/loc/36.8333--2.45> .
+
+&lthttp://ex.com/city/Madrid> a eg:City ;
+  eg:zipcode 28001, 28002, 28003, 28004, 28005, 28006 ;
+  eg:population 3334730 ;
+  eg:location &lthttp://ex.com/loc/40.4189--3.6919> .
+</pre>
 
 <p>
   The first example refers to a data source frame that contains location data
@@ -158,7 +187,7 @@ Mappings Ontology.
   specified in the source frame defined previously, <tt>:FrameLoc</tt>. Its subject, <tt>:SubjectLoc</tt>
   is a reference node map, i.e. an RDF resource with an IRI, and it is a concatenation
   of a list of input parameters: the URI prefix, the latitude, a ''-'' and the longitude.
-  The firs statement map, <tt>:StatementLoc1</tt>, defines the class that the subject belongs
+  The first statement map, <tt>:StatementLoc1</tt>, defines the class that the subject belongs
   to, <tt>eg:Location</tt>. Similarly, <tt>:StatementLoc2</tt> and <tt>:StatementLoc3</tt> indicate the latitude and
   longitude with the predicates <tt>eg:lat</tt> and <tt>eg:long</tt> respectively, each one with a <tt>DataField</tt>
   as object, <tt>:lat</tt> and <tt>:long</tt>.
@@ -296,8 +325,9 @@ Mappings Ontology.
 
 
 <h3>3.2 Examples: Cities and Locations with other mapping languages<span class="backlink"> back to <a href="#toc">index</a></span></h3>
-  This section provides the mapping of cities and locations described in the previous section
+  <p>This section provides the mapping of cities and locations described in the previous section
   in other mapping languages: R2RML, RML+FnO, xR2RML, ShExML, Helio and SPARQL-Generate.
+  </p>
 
   <b>R2RML</b>
   <pre>
