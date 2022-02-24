@@ -729,8 +729,8 @@
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination"/>
-        <rdfs:comment>Combined frame by cartessian product</rdfs:comment>
         <rdfs:label>Cartessian Product Combination</rdfs:label>
+        <skos:definition>Combined frame by cartessian product</skos:definition>
     </owl:Class>
     
 
@@ -747,8 +747,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:comment>Frame that is formed by the combination of two other frames by union, join or cartessian product</rdfs:comment>
         <rdfs:label>Combined Frame</rdfs:label>
+        <skos:definition>Frame that is formed by the combination of two other frames by union, join or cartessian product</skos:definition>
     </owl:Class>
     
 
@@ -787,8 +787,8 @@
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ListMap"/>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap"/>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:comment>Resource map that defines a container</rdfs:comment>
         <rdfs:label>Container Map</rdfs:label>
+        <skos:definition>Resource map that defines a container</skos:definition>
     </owl:Class>
     
 
@@ -855,6 +855,7 @@
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <rdfs:label>Expression List</rdfs:label>
+        <skos:definition>An expression that defines a list of Evaluable Expressions</skos:definition>
     </owl:Class>
     
 
@@ -862,8 +863,8 @@
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Frame -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Frame">
-        <rdfs:comment>Fragment of data that is used to form statements</rdfs:comment>
         <rdfs:label>Frame</rdfs:label>
+        <skos:definition>Fragment of data that is used to form statements</skos:definition>
     </owl:Class>
     
 
@@ -890,8 +891,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination"/>
-        <rdfs:comment>Combined frame by join</rdfs:comment>
         <rdfs:label>Join Combination</rdfs:label>
+        <skos:definition>Combined frame by join</skos:definition>
     </owl:Class>
     
 
@@ -906,8 +907,8 @@
                 <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>What links two subjects from different statement maps and their data sources</rdfs:comment>
         <rdfs:label>Linking Map</rdfs:label>
+        <skos:definition>What links two subjects from different statement maps and their data sources</skos:definition>
     </owl:Class>
     
 
@@ -918,8 +919,8 @@
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap"/>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:comment>Resource map that defines a list</rdfs:comment>
         <rdfs:label>List Map</rdfs:label>
+        <skos:definition>Resource map that defines a list</skos:definition>
     </owl:Class>
     
 
@@ -929,8 +930,8 @@
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap">
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
         <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:comment>Resource map that defines a literal</rdfs:comment>
         <rdfs:label>Literal Map</rdfs:label>
+        <skos:definition>Resource map that defines a literal</skos:definition>
     </owl:Class>
     
 
@@ -985,8 +986,8 @@
                 <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>What is to be created in a statement, either a subject, predicate, object, datatype, language or named graph</rdfs:comment>
         <rdfs:label xml:lang="en">Resource Map</rdfs:label>
+        <skos:definition>What is to be created in a statement, either a subject, predicate, object, datatype, language or named graph</skos:definition>
     </owl:Class>
     
 
@@ -1002,8 +1003,8 @@
                 <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Frame that is related to the data source</rdfs:comment>
         <rdfs:label>Source Frame</rdfs:label>
+        <skos:definition>Frame that is related to the data source</skos:definition>
     </owl:Class>
     
 
@@ -1063,8 +1064,8 @@
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination">
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
-        <rdfs:comment>Combined frame by union</rdfs:comment>
         <rdfs:label>Union Combination</rdfs:label>
+        <skos:definition>Combined frame by union</skos:definition>
     </owl:Class>
     
 
