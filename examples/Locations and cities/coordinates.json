@@ -1,0 +1,17 @@
+{
+  "coordinates": [
+    {
+      "city"  : "Madrid",
+      "latitude": "40.4189",
+      "longitude": "-3.6919"
+    },{
+      "city"  : "La Coruña",
+      "latitude": "43.3713",  
+      "longitude": "-8.4188"
+    },{
+      "city"  : "Almeria",
+      "latitude": "36.8333",    
+      "year_meodified": "-2.45"
+    }
+  ]
+}
