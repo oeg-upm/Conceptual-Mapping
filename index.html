@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>conceptual-mapping-ontology</title>
+    <title>Conceptual Mapping</title>
     <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
     <script src="vocab/js/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
@@ -46,10 +46,17 @@
       </button>
     </div>
     <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Vocabularies</a></li>
-        <li><a href="report.html">Vocabulary report</a></li>
-      </ul>
+       <ul class="nav navbar-nav">
+          <li><a href="index.html">Ontologies</a></li>
+          <!-- <li><a href="#">Knowledge Graph Generator</a></li> -->
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                  aria-expanded="false">Ontology requirements</a>
+             <ul class="dropdown-menu">
+                <li><a href="requirements/requirements-core.html">Conceptual Mapping Requirements </a></li>
+             </ul>
+          </li>
+          <li><a href="guide.html">Guidelines</a></li>
+       </ul>
     </div><!--/.nav-collapse -->
   </div>
  </div>
@@ -79,7 +86,7 @@
   <tr id="tr1">
     <td><a href = "http://vocab.linkeddata.es/def/conceptual-mapping" target="_blank">Conceptual Mapping</a> </td>
     <td>This vocabulary aims to gather the expressiveness of current mapping languages that describe the transformation of heterogeneous data sources into RDF.</td>
-    <td><a href="TBD" target="_blank"> <span class="label label-success">TBD</span> </a></td>
+    <td><span><a href="requirements/requirements-core.html" target="_blank">Ontology Requirements </a></span></td>
     <td><span><a href="https://github.com/oeg-upm/Conceptual-Mapping">Ontology Repository </a></span></td>
     <td><span><a href="https://github.com/oeg-upm/Conceptual-Mapping/issues">Ontology Issue Tracker</a></span></td>
     <td><span><a href="https://github.com/oeg-upm/Conceptual-Mapping/releases">Ontology Releases</a></span></td>

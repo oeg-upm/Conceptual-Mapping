@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Guidelines Conceptual Mapping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This describes a catalog of ontologies authored or contributed to by BIMERR project.">
+    <meta name="languaje" content="English">
+
+    <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="vocab/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="vocab/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="vocab/js/jquery.stickytableheaders.js"></script>
+    <script type="text/javascript" src="vocab/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="vocab/css/jquery-ui.css"></link>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function()
+		    {
+		    	$("#tablesorter-demo").tablesorter();
+		    	$("#tablesorter-demo").stickyTableHeaders();
+		    	$('[data-toggle="tooltip"]').tooltip();
+		    }
+	    );
+    </script>
+
+    <!-- Le styles -->
+    <link href="vocab/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="vocab/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  </head>
+<div class="container">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+       <ul class="nav navbar-nav">
+          <li><a href="index.html">Ontologies</a></li>
+          <!-- <li><a href="#">Knowledge Graph Generator</a></li> -->
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                  aria-expanded="false">Ontology requirements</a>
+             <ul class="dropdown-menu">
+                <li><a href="requirements/requirements-core.html">Conceptual Mapping Requirements </a></li>
+             </ul>
+          </li>
+          <li><a href="guide.html">Guidelines</a></li>
+       </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+ <h1> How We Work</h1>
+ <hr>
+    This document provides a brief overview of our process for developing ontologies. It contains a minimal amount of technical detail sufficient to explain our approach to ontology development.
+
+ <h2>Overview</h2>
+ <hr>
+<ul>
+
+<li>Each ontology is going to be stored in a GitHub repository.</li>
+<li>Improvements and issues for each domain are discussed in the repository's GitHub issue tracker. </li>
+<li>The requirements of each module are stored in the <a href="https://github.com/oeg-upm/Conceptual-Mapping/tree/main/requirements">requirements folder</a> as Excel sheets. When a developer generates a release version of a domain, the spreadsheet is converted to HTML and added to the repository.</li>
+<li>The ontology developers have to evaluate the ontology and generate its documentation before publishing it.</li>
+<li>The releases versions of the domains are published in the site. </li>
+<li><a href="http://oops.linkeddata.es/">Oops!</a>, <a href="https://foops.linkeddata.es/FAIR_validator.html#">Foops!</a> and <a href="http://ontoology.linkeddata.es/">OnToology</a> will generate the evaluation, and the documentation of the ontology respectively. </li>
+</ul>
+
+<h2> Structure of the GitHub repository</h2>
+<hr>
+The tool selected to  store the ontology is GitHub. Each extension of the Conceptual Mapping will be stored in a <a href="index.html">repository</a>.
+
+Each repository will include:
+
+<ul>
+<li>A folder where the implementation of the ontology is stored.</li>
+<li>A folder where the ontology model (conceptualization) is stored.</li>
+<li>A folder with the documentation of the ontology in HTML.</li>
+<li>A folder with examples of the ontology.</li>
+<li>A forlder with the ontology requirements.</li>
+</ul>
+<h3>GitHub Flow</h3>
+For developing an ontology using GitHub we propose to follow some steps: <ol>
+
+<li>The central repository holds a main branch called <em>master</em> where the source code reflects the production-ready state.To work on something new, the ontology developers have to create a descriptively named branch off the <em>master</em>, so that the rest of the developers can see what is being worked on. </li>
+<li>Once the branch is created, the developers add changes to the ontology and commit them. Each commit has to be associated with a commit message, which is a description explaining why a particular change was made, so that the  developers can roll back changes if a bug is found.</li>
+<li>After adding commits, the ontology developers have to open a pull request to discuss the modifications done to the ontology. After creating the pull request, some tests are executed to check if the ontology meets all the requirements identified. </li>
+<li>If everyone agree and the ontology pass the tests the pull request is accepted and the changes are merged to the <em>master</em> branch.</li>
+<li>When the developers want to publish a version of the ontology on the Web they have to create a pre-release version of it. </li>
+</ol>
+
+<h2>Development process</h2>
+<hr>
+Once the ontology is implemented (for this step the developers can use an ontology editor like <a href = "http://protege.stanford.edu/"> Protégé</a>), it has to be evaluated and documented before its publication.
+<h3>Ontology Evaluation</h3>
+The ontology has to be evaluated according to syntactic, model and semantic errors. The developer will evaluate the ontology using <a href="http://oops.linkeddata.es/">Oops!</a> and <a href="https://foops.linkeddata.es/FAIR_validator.html#">Foops!</a>, which generates an evaluation report of the model. The ontology developers also have  to guarantee that the ontology meets all the requirements identified.
+<h3>Ontology Documentation</h3>
+The developer will generate the documentation using <a href="https://github.com/dgarijo/Widoco" >Widoco</a> every time there is a new version of the model. This documentation  includes an HTML description of the ontology which describes the classes, properties and data properties of the ontology, and the license URI and title being used.
+The ontology development team in collaboration with the domain experts can complete this HTML documentation.
+<h3>Ontology Versioning and change control</h3>
+The ontologies are developed incrementally. For each ontology we may have several releases, which are stored in the GitHub repositories. Each release has a name that is assigned upon publication(e.g. v0.0.1). The content of each release is based on the discussions with the domain experts and the discussions hosted on the GitHub site.
+<h3>Ontology Publication</h3>
+Releases are published in the official site by the project webmaster, so  the ontology and its documentation will be accessible to all the users.
+The site will publish additionally for each ontology the repositiory where is stored, its issue tracker, the releases created and the requirements associated to each ontology.
+The diagrams generated represent the ontology conceptualization, and follow the <a href="https://chowlk.linkeddata.es/notation.html">Chowlk notation</a>.
+<h3>Ontology Maintenance</h3>
+If the ontology developers or domain experts want to update or add new requirements to the ontology they have to create a new issue in the GitHub issue tracker. This issue will let the developers to start a discussion and accept or regret the modifications.
+GitHub also provide a good practices guide for <a href="https://guides.github.com/features/issues/">creating issues</a>.
+<hr>
+<footer class="footer">
+  <div class="row">
+    <div class="col-md-10">
+      Developed by <a href="http://oeg-upm.net" target="_blank">Ontology Engineering Group</a>
+      <br>
+      Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a>
+      <br>
+      Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+      Icons from <a target="_blank" href="http://glyphicons.com/">Glyphicons</a>
+      <br>
+      Latest revision March, 2022
+      <br>
+      <p>&copy; Ontology Engineering Group</p>
+    </div>
+    <div class="col-md-2">
+      <a href="https://oeg.fi.upm.es/" target="_blank"><img src="./vocab/logoOEG.gif" alt="OEG logo" class="img-rounded"
+                                                            class="img-responsive" width="30%" /></a>
+
+      <a href="http://fi.upm.es/" target="_blank"><img src="./vocab/fiLogo.png" alt="FI logo" class="img-rounded"
+                                                       class="img-responsive" width="30%" /></a>
+
+      <a href="https://www.upm.es/" target="_blank"><img src="./vocab/upmlogo.png" alt="UPM logo" class="img-rounded"
+                                                         class="img-responsive" width="30%" /></a>
+    </div>
+  </div>
+</footer>
+    </div> <!-- /container -->
