@@ -7,13 +7,13 @@
     <script src="vocab/js/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
     <script type="text/javascript" id="js">
-	    $(document).ready(function() 
-		    { 
-		    	$("#tablesorter-demo").tablesorter(); 
-		    	$("#tablesorter-demo").stickyTableHeaders(); 
-		    	$('[data-toggle="tooltip"]').tooltip(); 
-		    } 
-	    ); 
+	    $(document).ready(function()
+		    {
+		    	$("#tablesorter-demo").tablesorter();
+		    	$("#tablesorter-demo").stickyTableHeaders();
+		    	$('[data-toggle="tooltip"]').tooltip();
+		    }
+	    );
     </script>
 
     <!-- Le styles -->
@@ -24,7 +24,7 @@
         padding-bottom: 40px;
       }
     </style>
-    
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="vocab/js/html5shiv.js"></script>
@@ -57,47 +57,58 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>conceptual-mapping-ontology landing page</h1>
-        <p class="lead">Here you can find the list of vocabularies that have been found on conceptual-mapping-ontology.</p>
+        <h1>Conceptual Mapping</h1>
+        <p class="lead">Here you can find the list of vocabularies related to the Conceptual Mapping.</p>
       </div>
       <hr>
-<div class="row"> 
+<div class="row">
 </div>
 <br>
 <table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
 <thead>
-<tr>
-<th class="col-md-2">Ontology</th>
-<th class="col-md-1">Serialization</th>
-<th class="col-md-2">License</th>
-<th class="col-md-1">Language</th>
-<th class="col-md-6">Description</th>
-</tr>
+  <tr>
+    <th class="col-md-2">Ontology</th>
+    <th class="col-md-3">Description</th>
+    <th class="col-md-3">Requirements</th>
+    <th class="col-md-2">Repository </th>
+    <th class="col-md-2">Issue tracker </th>
+    <th class="col-md-2">Releases </th>
+  </tr>
 </thead>
 <tbody>
-<tr id="tr1">
-<td><a href = "http://vocab.linkeddata.es/def/conceptual-mapping" target="_blank">Conceptual Mapping</a> </td><td>
-<a href="ontologies/conceptual-mapping-ontology.owl"><span class="label label-primary">RDF/XML</span></a>
-</td>
-<td><a href="http://purl.org/NET/rdflicense/cc-by4.0" target="_blank"> <span class="label label-success">http://purl.org/NET/rdflicens...</span> </a></td>
-<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> <a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> </td>
-<td>
-TBD</td>
+  <tr id="tr1">
+    <td><a href = "http://vocab.linkeddata.es/def/conceptual-mapping" target="_blank">Conceptual Mapping</a> </td>
+    <td>This vocabulary aims to gather the expressiveness of current mapping languages that describe the transformation of heterogeneous data sources into RDF.</td>
+    <td><a href="TBD" target="_blank"> <span class="label label-success">TBD</span> </a></td>
+    <td><span><a href="https://github.com/oeg-upm/Conceptual-Mapping">Ontology Repository </a></span></td>
+    <td><span><a href="https://github.com/oeg-upm/Conceptual-Mapping/issues">Ontology Issue Tracker</a></span></td>
+    <td><span><a href="https://github.com/oeg-upm/Conceptual-Mapping/releases">Ontology Releases</a></span></td>
 </tr></tbody></table>
 <hr>
-      <footer class="footer">
-           <footer class="footer">
-            <div class="row">
-    	<div class="col-md-10">
-    		Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a> (<a href="http://oeg-upm.net/">Ontology Engineering Group</a>)
-	        <br>
-    	Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
- 	        <br>
-	        Latest revision November, 2020
-        </div>
-		<div class="col-md-2">
-			<a href="https://github.com/dgarijo/vocabLite"><img width="140px"src="vocab/logoLite.png"></img></a>
-		</div>
-      </footer>      </div>
-      </footer>
+<footer class="footer">
+  <div class="row">
+    <div class="col-md-10">
+      Developed by <a href="http://oeg-upm.net" target="_blank">Ontology Engineering Group</a>
+      <br>
+      Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a>
+      <br>
+      Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+      Icons from <a target="_blank" href="http://glyphicons.com/">Glyphicons</a>
+      <br>
+      Latest revision March, 2022
+      <br>
+      <p>&copy; Ontology Engineering Group</p>
+    </div>
+    <div class="col-md-2">
+      <a href="https://oeg.fi.upm.es/" target="_blank"><img src="./vocab/logoOEG.gif" alt="OEG logo" class="img-rounded"
+                                                            class="img-responsive" width="30%" /></a>
+
+      <a href="http://fi.upm.es/" target="_blank"><img src="./vocab/fiLogo.png" alt="FI logo" class="img-rounded"
+                                                       class="img-responsive" width="30%" /></a>
+
+      <a href="https://www.upm.es/" target="_blank"><img src="./vocab/upmlogo.png" alt="UPM logo" class="img-rounded"
+                                                         class="img-responsive" width="30%" /></a>
+    </div>
+  </div>
+</footer>
     </div> <!-- /container -->
