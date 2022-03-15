@@ -37,8 +37,11 @@
    <script src="../vocab/js/html5shiv.js"></script>
    <![endif]-->
    <!-- Fav and touch icons -->
+   <style type="text/css" media="print">
+    .tableFloatingHeader{display:none !important;}.tableFloatingHeaderOriginal{position:static !important;}
+  </style>
 </head>
-<body>
+<body style>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
    <div class="container">
       <div class="navbar-header">
@@ -78,7 +81,7 @@
       </div>
    </div>
    <br>
-   <div style=" height:600px; overflow:scroll;">
+   <!-- <div style=" height:600px; overflow:scroll;"> -->
       <table id="tablesorter-demo" class="tablesorter table table-hover table-responsive" style="padding: 0px">
          <thead class="tableFloatingHeaderOriginal" style="top: 0px; width: 619px; margin-top: 0px; left: 381.5px; z-index: 1; position: sticky;">
          <tr>
@@ -323,7 +326,7 @@
            </tr>
          </tbody>
       </table>
-   </div>
+   <!-- </div> -->
    <hr>
    <footer class="footer">
      <div class="row">
