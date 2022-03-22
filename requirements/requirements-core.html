@@ -92,295 +92,277 @@
          </tr>
          </thead>
          <tbody>
-            <tr height=56 style='height:42.0pt'>
-             <td height=56 class=xl64 style='height:42.0pt'>cm-r1</td>
-             <td class=xl65 width=320 style='width:240pt'>A mapping can describe data
-             sources retrieved synchronously, asynchronously and as streams</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:SynchronousSource
-             rdfs:subClassOf cm:DataSource . <br>
-               cm:AsynchronousSource rdfs:subClassOf cm:DataSource .<span
-             style='mso-spacerun:yes'>  </span><br>
-               cm:StreamSource rdfs:subClassOf cm:DataSource .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl64 style='height:28.0pt'>cm-r2</td>
-             <td class=xl70 width=320 style='width:240pt'>A data source can describe data
-             in different formats specifying its Media Type</td>
-             <td>cm:DataSource dcat:mediaType dct:MediaType .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl64 style='height:28.0pt'>cm-r3</td>
-             <td class=xl65 width=320 style='width:240pt'>A data source may have a
-             specified data access service</td>
-             <td>cm:DataSource dcat:accessService cm:DataAccessService .</td>
-             <td></td>
-            </tr>
-            <tr height=19 style='height:14.0pt'>
-             <td height=19 class=xl64 style='height:14.0pt'>cm-r4</td>
-             <td class=xl65 width=320 style='width:240pt'>A data access service can
-             specify security terms</td>
-             <td>cm:DataAccessService cm:hasSecurityScheme wot:SecurityScheme .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl64 style='height:28.0pt'>cm-r5</td>
-             <td class=xl65 width=320 style='width:240pt'>A data access service can
-             specify up to one retrieval protocol</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:DataAccessService
-             cm:hasProtocol skos:Concept . *</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=19 style='height:14.0pt'>
-             <td height=19 class=xl64 style='height:14.0pt'>cm-r6</td>
-             <td class=xl71 width=320 style='width:240pt'>A data source can specify the
-             encoding</td>
-             <td></td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=39 style='mso-height-source:userset;height:29.0pt'>
-             <td height=39 class=xl64 style='height:29.0pt'>cm-r7</td>
-             <td class=xl70 width=320 style='width:240pt'>A mapping can include metadata
-             on the dataset and/or data source</td>
-             <td>cm:DataAccessService dcat:servesDataset dcat:Dataset .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=112 style='height:84.0pt'>
-             <td height=112 class=xl64 style='height:84.0pt'>cm-r8</td>
-             <td class=xl70 width=320 style='width:240pt'>A mapping specifies statement
-             maps to declare the transformation of frames into RDF triples</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasSubject
-             cm:NodeMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasPredicate
-             cm:ReferenceNodeMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasObject cm:ResourceMap
-             ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasDatatype
-             cm:ReferenceNodeMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasLanguage cm:LiteralMap
-             ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasNamedGraph cm:NodeMap .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=75 style='height:56.0pt'>
-             <td height=75 class=xl64 style='height:56.0pt'>cm-r9</td>
-             <td class=xl70 width=320 style='width:240pt'>Multiple data sources can be
-             described with combined frames and nested frames</td>
-             <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
-             cm:CombinedFrame .<br>
-               cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
-               cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=19 style='height:14.0pt'>
-             <td height=19 class=xl64 style='height:14.0pt'>cm-r10</td>
-             <td class=xl70 width=320 style='width:240pt'>A source frame describes exacly
-             one data source</td>
-             <td>cm:SourceFrame cm:hasDataSource cm:DataSource . *</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=111 style='mso-height-source:userset;height:83.0pt'>
-             <td height=111 class=xl64 style='height:83.0pt'>cm-r11</td>
-             <td class=xl70 width=320 style='width:240pt'>A statement map can describe
-             constant and dynamic subjects, predicates, objects</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasSubject
-             cm:NodeMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasPredicate
-             cm:ReferenceNodeMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasObject cm:ResourceMap
-             .<br>
-               (cm:ReferenceNodeMap cm:NodeMap) rdfs:subClassOf cm:ResourceMap .<br>
-               cm:ResourceMap cm:hasEvaluableExpression cm:EvaluableExpression .<br>
-               (cm:Constant cm:DataField) rdfs:subClassOf cm:EvaluableExpression.</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=108 style='mso-height-source:userset;height:81.0pt'>
-             <td height=108 class=xl64 style='height:81.0pt'>cm-r12</td>
-             <td class=xl70 width=320 style='width:240pt'>A statement map can describe
-             constant and dynamically up to 1 named graph, datatype and language tag</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasDatatype
-             cm:ReferenceNodeMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasLanguage cm:LiteralMap
-             ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasNamedGraph cm:NodeMap
-             .<br>
-               (cm:LiteralMap cm:NodeMap) rdfs:subClassOf cm:ResourceMap . <br>
-               cm:ResourceMap cm:hasEvaluableExpression cm:EvaluableExpression .<br>
-               (cm:Constant cm:DataField) rdfs:subClassOf cm:EvaluableExpression. *</td>
-             <td class=xl70 width=292 style='width:219pt'>Comparison framework analysis
-             and Mapping challenges - C1 (KGC-WG)</td>
-            </tr>
-            <tr height=73 style='mso-height-source:userset;height:55.0pt'>
-             <td height=73 class=xl64 style='height:55.0pt'>cm-r13</td>
-             <td class=xl70 width=320 style='width:240pt'>A resource map can reference one
-             or more data fields from one or more data sources<span
-             style='mso-spacerun:yes'> </span></td>
-             <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
-             cm:hasEvaluableExpression cm:FunctionExpression .<br>
-               cm:FunctionExpression cm:hasInput cm:ExpressionList .<br>
-               cm:ExpressionList rdfs:first cm:DataField .<br>
-               cm:DataField cm:belongsToFrame cm:SourceFrame .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=75 style='height:56.0pt'>
-             <td height=75 class=xl64 style='height:56.0pt'>cm-r14</td>
-             <td class=xl70 width=320 style='width:240pt'>A resource map may contain data
-             with different levels of iteration of a source</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
-             cm:hasEvaluableExpression cm:FunctionExpression .<br>
-               cm:FunctionExpression cm:hasInput cm:ExpressionList .<br>
-               cm:ExpressionList rdfs:first cm:DataField .<br>
-               cm:DataField cm:belongsToFrame cm:SourceFrame .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis
-             and Mapping challenges - C2a (KGC-WG)</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl64 style='height:28.0pt'>cm-r15</td>
-             <td class=xl70 width=320 style='width:240pt'>A resource map may contain
-             functions</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
-             cm:hasEvaluableExpression cm:FunctionExpression .<br>
-               cm:FunctionExpression cm:hasFunctionName skos:Concept .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=40 style='mso-height-source:userset;height:30.0pt'>
-             <td height=40 class=xl64 style='height:30.0pt'>cm-r16</td>
-             <td class=xl70 width=320 style='width:240pt'>A subject can only be expressed
-             as a blank node or an IRI</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasSubject
-             cm:NodeMap .<br>
-               (cm:ReferenceNodeMap cm:BlankNodeMap) rdfs:subClassOf cm:NodeMap .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=19 style='height:14.0pt'>
-             <td height=19 class=xl64 style='height:14.0pt'>cm-r17</td>
-             <td class=xl70 width=320 style='width:240pt'>A predicate can only be
-             expressed as an IRI</td>
-             <td>cm:StatementMap cm:hasPredicate cm:ReferenceNodeMap .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=75 style='height:56.0pt'>
-             <td height=75 class=xl64 style='height:56.0pt'>cm-r18</td>
-             <td class=xl70 width=320 style='width:240pt'>An object can only be expressed
-             as a blank node, an IRI, a literal, a container or a list</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasObject
-             cm:ResourceMap .<br>
-               (cm:LiteralMap ContainerMap ListMap cm:NodeMap) rdfs:subClassOf
-             cm:ResourceMap .<br>
-               (cm:ReferenceNodeMap cm:BlankNodeMap) rdfs:subClassOf cm:NodeMap .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis
-             and Mapping challenges - C3, C4 (KGC-WG)</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl64 style='height:28.0pt'>cm-r19</td>
-             <td class=xl70 width=320 style='width:240pt'>A named graph can only be
-             expressed as an IRI or blank node</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasNamedGraph
-             cm:NodeMap .<br>
-               (cm:ReferenceNodeMap cm:BlankNodeMap) rdfs:subClassOf cm:NodeMap .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=19 style='height:14.0pt'>
-             <td height=19 class=xl64 style='height:14.0pt'>cm-r20</td>
-             <td class=xl70 width=320 style='width:240pt'>A datatype tag can only be
-             expressed as an IRI</td>
-             <td>cm:StatementMap cm:hasDatatype cm:ReferenceNodeMap .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=20 style='mso-height-source:userset;height:15.0pt'>
-             <td height=20 class=xl64 style='height:15.0pt'>cm-r21</td>
-             <td class=xl70 width=320 style='width:240pt'>A language tag can only be
-             expressed as a Literal</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasLanguage
-             cm:LiteralMap .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl64 style='height:28.0pt'>cm-r22</td>
-             <td class=xl70 width=320 style='width:240pt'>A statement map can be subject
-             to a condition</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:ConditionalStatementMap
-             rdfs:subClassOf cm:StatementMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasBooleanCondition
-             cm:FunctionExpression .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=59 style='mso-height-source:userset;height:44.0pt'>
-             <td height=59 class=xl64 style='height:44.0pt'>cm-r23</td>
-             <td class=xl70 width=320 style='width:240pt'>A statement map can be linked to
-             another statement map with none, one or several conditions</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:LinkingMap cm:source
-             cm:StatementMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:target<span
-             style='mso-spacerun:yes'>  </span>cm:StatementMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasBooleanCondition
-             cm:FunctionExpression . *</td>
-             <td class=xl70 width=292 style='width:219pt'>Comparison framework analysis
-             and Mapping challenges - C5a (KGC-WG)</td>
-            </tr>
-            <tr height=56 style='height:42.0pt'>
-             <td height=56 class=xl64 style='height:42.0pt'>cm-r24</td>
-             <td class=xl70 width=320 style='width:240pt'>The condition to link statements
-             may be any boolean condition</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:ConditionalStatementMap
-             rdfs:subClassOf cm:StatementMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasBooleanCondition
-             cm:FunctionExpression .<br>
-               cm:FunctionExpression hasFunctionName skos:Concept .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=75 style='height:56.0pt'>
-             <td height=75 class=xl64 style='height:56.0pt'>cm-r25</td>
-             <td class=xl70 width=320 style='width:240pt'>A function may have nested
-             functions</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
-             cm:hasEvaluableExpression cm:FunctionExpression .<br>
-               cm:FunctionExpression cm:hasInput cm:ExpressionList .<br>
-               cm:ExpressionList rdfs:first cm:FunctionExpression ;<br>
-               <span style='mso-spacerun:yes'>    </span>rdfs:rest cm:ExpressionList .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=75 style='height:56.0pt'>
-             <td height=75 class=xl64 style='height:56.0pt'>cm-r27</td>
-             <td class=xl70 width=320 style='width:240pt'>A frame can have nested frames
-             to access multi-value references</td>
-             <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
-             cm:CombinedFrame .<br>
-               cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
-               cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
-             <td class=xl70 width=292 style='width:219pt'>Mapping challenges - C2b
-             (KGC-WG)</td>
-            </tr>
-            <tr height=93 style='height:70.0pt'>
-             <td height=93 class=xl64 style='height:70.0pt'>cm-r29</td>
-             <td class=xl70 width=320 style='width:240pt'>A statement map can have objects
-             of type literal using data from different sources using combined frames</td>
-             <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
-             cm:CombinedFrame ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasObject cm:ResourceMap
-             .<br>
-               cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
-               cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
-             <td class=xl70 width=292 style='width:219pt'>Mapping challenges - C5b
-             (KGC-WG)</td>
-            </tr>
-            <tr height=112 style='height:84.0pt'>
-             <td height=112 class=xl64 style='height:84.0pt'>cm-r30</td>
-             <td class=xl70 width=320 style='width:240pt'>A statement map can have
-             datatype and language tags using data from different sources using combined
-             frames</td>
-             <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
-             cm:CombinedFrame ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasDatatype
-             cm:ReferenceNodeMap ;<br>
-               <span style='mso-spacerun:yes'>    </span>cm:hasLanguage cm:LiteralMap
-             .<br>
-               cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
-               cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
-             <td class=xl70 width=292 style='width:219pt'>Mapping challenges - C5c
-             (KGC-WG)</td>
-            </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl64 style='height:28.0pt'>cm-r3</td>
+            <td class=xl65 width=320 style='width:240pt'>A data source may have a
+            specified data access service</td>
+            <td>cm:DataSource dcat:accessService cm:DataAccessService .</td>
+            <td></td>
+           </tr>
+           <tr height=19 style='height:14.0pt'>
+            <td height=19 class=xl64 style='height:14.0pt'>cm-r4</td>
+            <td class=xl65 width=320 style='width:240pt'>A data access service can
+            specify security terms</td>
+            <td>cm:DataAccessService cm:hasSecurityScheme wot:SecurityScheme .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl64 style='height:28.0pt'>cm-r5</td>
+            <td class=xl65 width=320 style='width:240pt'>A data access service can
+            specify up to one retrieval protocol</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:DataAccessService
+            cm:hasProtocol skos:Concept . *</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=19 style='height:14.0pt'>
+            <td height=19 class=xl64 style='height:14.0pt'>cm-r6</td>
+            <td class=xl71 width=320 style='width:240pt'>A data source can specify the
+            encoding</td>
+            <td>cm:DataSource cm:encoding xsd:string .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=39 style='mso-height-source:userset;height:29.0pt'>
+            <td height=39 class=xl64 style='height:29.0pt'>cm-r7</td>
+            <td class=xl70 width=320 style='width:240pt'>A mapping can include metadata
+            on the dataset and/or data source</td>
+            <td>cm:DataAccessService dcat:servesDataset dcat:Dataset .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=112 style='height:84.0pt'>
+            <td height=112 class=xl64 style='height:84.0pt'>cm-r8</td>
+            <td class=xl70 width=320 style='width:240pt'>A mapping specifies statement
+            maps to declare the transformation of frames into RDF triples</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasSubject
+            cm:NodeMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasPredicate
+            cm:ReferenceNodeMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasObject cm:ResourceMap
+            ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasDatatype
+            cm:ReferenceNodeMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasLanguage cm:LiteralMap
+            ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasNamedGraph cm:NodeMap .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=75 style='height:56.0pt'>
+            <td height=75 class=xl64 style='height:56.0pt'>cm-r9</td>
+            <td class=xl70 width=320 style='width:240pt'>Multiple data sources can be
+            described with combined frames and nested frames</td>
+            <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
+            cm:CombinedFrame .<br>
+              cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
+              cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=19 style='height:14.0pt'>
+            <td height=19 class=xl64 style='height:14.0pt'>cm-r10</td>
+            <td class=xl70 width=320 style='width:240pt'>A source frame describes exacly
+            one data source</td>
+            <td>cm:SourceFrame cm:hasDataSource cm:DataSource . *</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=111 style='mso-height-source:userset;height:83.0pt'>
+            <td height=111 class=xl64 style='height:83.0pt'>cm-r11</td>
+            <td class=xl70 width=320 style='width:240pt'>A statement map can describe
+            constant and dynamic subjects, predicates, objects</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasSubject
+            cm:NodeMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasPredicate
+            cm:ReferenceNodeMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasObject cm:ResourceMap
+            .<br>
+              (cm:ReferenceNodeMap cm:NodeMap) rdfs:subClassOf cm:ResourceMap .<br>
+              cm:ResourceMap cm:hasEvaluableExpression cm:EvaluableExpression .<br>
+              (cm:Constant cm:DataField) rdfs:subClassOf cm:EvaluableExpression.</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=108 style='mso-height-source:userset;height:81.0pt'>
+            <td height=108 class=xl64 style='height:81.0pt'>cm-r12</td>
+            <td class=xl70 width=320 style='width:240pt'>A statement map can describe
+            constant and dynamically up to 1 named graph, datatype and language tag</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasDatatype
+            cm:ReferenceNodeMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasLanguage cm:LiteralMap
+            ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasNamedGraph cm:NodeMap
+            .<br>
+              (cm:LiteralMap cm:NodeMap) rdfs:subClassOf cm:ResourceMap . <br>
+              cm:ResourceMap cm:hasEvaluableExpression cm:EvaluableExpression .<br>
+              (cm:Constant cm:DataField) rdfs:subClassOf cm:EvaluableExpression. *</td>
+            <td class=xl70 width=292 style='width:219pt'>Comparison framework analysis
+            and Mapping challenges - C1 (KGC-WG)</td>
+           </tr>
+           <tr height=73 style='mso-height-source:userset;height:55.0pt'>
+            <td height=73 class=xl64 style='height:55.0pt'>cm-r13</td>
+            <td class=xl70 width=320 style='width:240pt'>A resource map can reference one
+            or more data fields from one or more data sources<span
+            style='mso-spacerun:yes'> </span></td>
+            <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
+            cm:hasEvaluableExpression cm:FunctionExpression .<br>
+              cm:FunctionExpression cm:hasInput cm:ExpressionList .<br>
+              cm:ExpressionList rdfs:first cm:DataField .<br>
+              cm:DataField cm:belongsToFrame cm:SourceFrame .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=75 style='height:56.0pt'>
+            <td height=75 class=xl64 style='height:56.0pt'>cm-r14</td>
+            <td class=xl70 width=320 style='width:240pt'>A resource map may contain data
+            with different levels of iteration of a source</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
+            cm:hasEvaluableExpression cm:FunctionExpression .<br>
+              cm:FunctionExpression cm:hasInput cm:ExpressionList .<br>
+              cm:ExpressionList rdfs:first cm:DataField .<br>
+              cm:DataField cm:belongsToFrame cm:SourceFrame .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis
+            and Mapping challenges - C2a (KGC-WG)</td>
+           </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl64 style='height:28.0pt'>cm-r15</td>
+            <td class=xl70 width=320 style='width:240pt'>A resource map may contain
+            functions</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
+            cm:hasEvaluableExpression cm:FunctionExpression .<br>
+              cm:FunctionExpression cm:hasFunctionName skos:Concept .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+            <td height=40 class=xl64 style='height:30.0pt'>cm-r16</td>
+            <td class=xl70 width=320 style='width:240pt'>A subject can only be expressed
+            as a blank node or an IRI</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasSubject
+            cm:NodeMap .<br>
+              (cm:ReferenceNodeMap cm:BlankNodeMap) rdfs:subClassOf cm:NodeMap .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=19 style='height:14.0pt'>
+            <td height=19 class=xl64 style='height:14.0pt'>cm-r17</td>
+            <td class=xl70 width=320 style='width:240pt'>A predicate can only be
+            expressed as an IRI</td>
+            <td>cm:StatementMap cm:hasPredicate cm:ReferenceNodeMap .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=75 style='height:56.0pt'>
+            <td height=75 class=xl64 style='height:56.0pt'>cm-r18</td>
+            <td class=xl70 width=320 style='width:240pt'>An object can only be expressed
+            as a blank node, an IRI, a literal, a container or a list</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasObject
+            cm:ResourceMap .<br>
+              (cm:LiteralMap ContainerMap ListMap cm:NodeMap) rdfs:subClassOf
+            cm:ResourceMap .<br>
+              (cm:ReferenceNodeMap cm:BlankNodeMap) rdfs:subClassOf cm:NodeMap .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis
+            and Mapping challenges - C3, C4 (KGC-WG)</td>
+           </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl64 style='height:28.0pt'>cm-r19</td>
+            <td class=xl70 width=320 style='width:240pt'>A named graph can only be
+            expressed as an IRI or blank node</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasNamedGraph
+            cm:NodeMap .<br>
+              (cm:ReferenceNodeMap cm:BlankNodeMap) rdfs:subClassOf cm:NodeMap .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=19 style='height:14.0pt'>
+            <td height=19 class=xl64 style='height:14.0pt'>cm-r20</td>
+            <td class=xl70 width=320 style='width:240pt'>A datatype tag can only be
+            expressed as an IRI</td>
+            <td>cm:StatementMap cm:hasDatatype cm:ReferenceNodeMap .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+            <td height=20 class=xl64 style='height:15.0pt'>cm-r21</td>
+            <td class=xl70 width=320 style='width:240pt'>A language tag can only be
+            expressed as a Literal</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap cm:hasLanguage
+            cm:LiteralMap .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl64 style='height:28.0pt'>cm-r22</td>
+            <td class=xl70 width=320 style='width:240pt'>A statement map can be subject
+            to a condition</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:ConditionalStatementMap
+            rdfs:subClassOf cm:StatementMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasBooleanCondition
+            cm:FunctionExpression .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=59 style='mso-height-source:userset;height:44.0pt'>
+            <td height=59 class=xl64 style='height:44.0pt'>cm-r23</td>
+            <td class=xl70 width=320 style='width:240pt'>A statement map can be linked to
+            another statement map with none, one or several conditions</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:LinkingMap cm:source
+            cm:StatementMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:target<span
+            style='mso-spacerun:yes'>  </span>cm:StatementMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasBooleanCondition
+            cm:FunctionExpression . *</td>
+            <td class=xl70 width=292 style='width:219pt'>Comparison framework analysis
+            and Mapping challenges - C5a (KGC-WG)</td>
+           </tr>
+           <tr height=56 style='height:42.0pt'>
+            <td height=56 class=xl64 style='height:42.0pt'>cm-r24</td>
+            <td class=xl70 width=320 style='width:240pt'>The condition to link statements
+            may be any boolean condition</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:ConditionalStatementMap
+            rdfs:subClassOf cm:StatementMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasBooleanCondition
+            cm:FunctionExpression .<br>
+              cm:FunctionExpression hasFunctionName skos:Concept .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=75 style='height:56.0pt'>
+            <td height=75 class=xl64 style='height:56.0pt'>cm-r25</td>
+            <td class=xl70 width=320 style='width:240pt'>A function may have nested
+            functions</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:ResourceMap
+            cm:hasEvaluableExpression cm:FunctionExpression .<br>
+              cm:FunctionExpression cm:hasInput cm:ExpressionList .<br>
+              cm:ExpressionList rdfs:first cm:FunctionExpression ;<br>
+              <span style='mso-spacerun:yes'>    </span>rdfs:rest cm:ExpressionList .</td>
+            <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
+           </tr>
+           <tr height=75 style='height:56.0pt'>
+            <td height=75 class=xl64 style='height:56.0pt'>cm-r27</td>
+            <td class=xl70 width=320 style='width:240pt'>A frame can have nested frames
+            to access multi-value references</td>
+            <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
+            cm:CombinedFrame .<br>
+              cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
+              cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
+            <td class=xl70 width=292 style='width:219pt'>Mapping challenges - C2b
+            (KGC-WG)</td>
+           </tr>
+           <tr height=93 style='height:70.0pt'>
+            <td height=93 class=xl64 style='height:70.0pt'>cm-r29</td>
+            <td class=xl70 width=320 style='width:240pt'>A statement map can have objects
+            of type literal using data from different sources using combined frames</td>
+            <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
+            cm:CombinedFrame ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasObject cm:ResourceMap
+            .<br>
+              cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
+              cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
+            <td class=xl70 width=292 style='width:219pt'>Mapping challenges - C5b
+            (KGC-WG)</td>
+           </tr>
+           <tr height=112 style='height:84.0pt'>
+            <td height=112 class=xl64 style='height:84.0pt'>cm-r30</td>
+            <td class=xl70 width=320 style='width:240pt'>A statement map can have
+            datatype and language tags using data from different sources using combined
+            frames</td>
+            <td class=xl65 width=497 style='width:373pt'>cm:StatementMap cm:hasFrame
+            cm:CombinedFrame ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasDatatype
+            cm:ReferenceNodeMap ;<br>
+              <span style='mso-spacerun:yes'>    </span>cm:hasLanguage cm:LiteralMap
+            .<br>
+              cm:CombinedFrame cm:combinesFrame cm:SourceFrame, cm:CombinedFrame .<br>
+              cm:SourceFrame cm:hasDataSource cm:DataSource .</td>
+            <td class=xl70 width=292 style='width:219pt'>Mapping challenges - C5c
+            (KGC-WG)</td>
+           </tr>
         </tbody>
       </table>
    <!-- </div> -->
