@@ -32,129 +32,129 @@
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
         <owl:versionInfo xml:lang="en">v1.1.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
+    // Annotation properties 
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
+
 
 
     <!-- http://www.w3.org/2002/07/owl#versionIRI -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-    
+
 
 
     <!-- http://www.w3.org/2008/05/skos#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#definition"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -162,7 +162,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame -->
@@ -174,7 +174,7 @@
         <rdfs:label>belongs to frame</rdfs:label>
         <skos:definition>A relationship between a data field and the source frame it belongs to</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame -->
@@ -185,7 +185,7 @@
         <rdfs:label>combines frame</rdfs:label>
         <skos:definition>A relationship between a combined frame and the frames it combines</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition -->
@@ -203,7 +203,7 @@
         <rdfs:label>has boolean condition</rdfs:label>
         <skos:definition>A relationship between a linking expression or a conditional statement map and its boolean evaluable expression</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource -->
@@ -214,7 +214,7 @@
         <rdfs:label xml:lang="en">has data source</rdfs:label>
         <skos:definition xml:lang="en">A relation between a data source access and its data source</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType -->
@@ -226,7 +226,7 @@
         <rdfs:label xml:lang="en">has data type</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a reference node to define the predicate</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression -->
@@ -237,7 +237,7 @@
         <rdfs:label>has evaluable expression</rdfs:label>
         <skos:definition xml:lang="en">A relation between a resource map and the evaluable expression that defines it</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasField -->
@@ -248,7 +248,7 @@
         <rdfs:label>has field</rdfs:label>
         <skos:definition>A relationship between a source frame and its data field</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasFrame -->
@@ -260,7 +260,7 @@
         <rdfs:label>has frame</rdfs:label>
         <skos:definition>A relationship between a statement map and its frame</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName -->
@@ -282,7 +282,7 @@
         <rdfs:label xml:lang="en">has function name</rdfs:label>
         <skos:definition xml:lang="en">A relation between a recursive expression and the name of the function it defines</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasInput -->
@@ -294,7 +294,7 @@
         <rdfs:label xml:lang="en">has input</rdfs:label>
         <skos:definition xml:lang="en">A relation between an evaluable expression and the list of parameters it requires</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage -->
@@ -306,7 +306,7 @@
         <rdfs:label xml:lang="en">has language</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a literal to define the language</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph -->
@@ -318,7 +318,7 @@
         <rdfs:label xml:lang="en">has named graph</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a node to define the assigned named graph</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasNestedFrame -->
@@ -330,7 +330,7 @@
         <rdfs:label>has nested frame</rdfs:label>
         <skos:definition>A relationship between a source frame and another source frame within</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasObject -->
@@ -342,7 +342,7 @@
         <rdfs:label xml:lang="en">has object</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a resource map to define the predicate</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate -->
@@ -354,7 +354,7 @@
         <rdfs:label xml:lang="en">has predicate</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a reference node to define the predicate</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol -->
@@ -376,7 +376,7 @@
         <rdfs:label xml:lang="en">has protocol</rdfs:label>
         <skos:definition xml:lang="en">A relation between the data access and the protocol that describes it</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject -->
@@ -388,7 +388,7 @@
         <rdfs:label xml:lang="en">has subject</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a node to define the subject</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty -->
@@ -399,7 +399,7 @@
         <rdfs:label>inverse property</rdfs:label>
         <skos:definition>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy -->
@@ -410,7 +410,7 @@
         <rdfs:label>joins by</rdfs:label>
         <skos:definition>A relationship between a join combination and the field it joins the sources by</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#property -->
@@ -421,7 +421,7 @@
         <rdfs:label>property</rdfs:label>
         <skos:definition>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#returns -->
@@ -433,7 +433,7 @@
         <rdfs:label xml:lang="en">returns</rdfs:label>
         <skos:definition xml:lang="en">A relation between an evaluable expression and the resource it returns</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#source -->
@@ -444,7 +444,7 @@
         <rdfs:label>source</rdfs:label>
         <skos:definition>A relationship between a linking expression and its source statement map</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#target -->
@@ -455,7 +455,7 @@
         <rdfs:label>target</rdfs:label>
         <skos:definition>A relationship between a linking expression and its target statement map</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/hasSecurityScheme -->
@@ -466,7 +466,7 @@
         <rdfs:label xml:lang="en">has security scheme</rdfs:label>
         <skos:definition xml:lang="en">A relation between a data access and the security scheme it has</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#first -->
@@ -478,7 +478,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
         <rdfs:label>first</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#rest -->
@@ -490,7 +490,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
         <rdfs:label>rest</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
@@ -503,7 +503,7 @@
         <skos:definition xml:lang="en">Relates a resource (for example a concept) to a concept scheme in which it is included.</skos:definition>
         <skos:scopeNote xml:lang="en">A concept may be a member of more than one concept scheme.</skos:scopeNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#accessService -->
@@ -532,7 +532,7 @@
         <skos:definition xml:lang="es">Un sitio o end-point que da acceso a la distribución de un conjunto de datos.</skos:definition>
         <skos:definition xml:lang="it">Un sito o end-point che dà accesso alla distribuzione del set di dati.</skos:definition>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#distribution -->
@@ -571,7 +571,7 @@
         <skos:definition xml:lang="ja">データセットを、その利用可能な配信に接続します。</skos:definition>
         <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, translations pending (except for Italian, Spanish and Czech).</skos:editorialNote>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#servesDataset -->
@@ -602,10 +602,10 @@
         <skos:definition xml:lang="es">Una colección de datos que este Servicio de Datos puede distribuir.</skos:definition>
         <skos:definition xml:lang="it">Una raccolta di dati che questo DataService può distribuire.</skos:definition>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -613,7 +613,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#expression -->
@@ -625,7 +625,7 @@
         <rdfs:label xml:lang="en">expression</rdfs:label>
         <skos:definition xml:lang="en">What specifies which data is retrieven from a text source</skos:definition>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#field -->
@@ -636,7 +636,7 @@
         <rdfs:label>field</rdfs:label>
         <skos:definition>Expression that defines a field of the data</skos:definition>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime -->
@@ -648,7 +648,7 @@
         <rdfs:label xml:lang="en">refresh time</rdfs:label>
         <skos:definition xml:lang="en">Time between every data request</skos:definition>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#type -->
@@ -660,7 +660,7 @@
         <rdfs:label>type</rdfs:label>
         <skos:definition>Type of join combination of frames</skos:definition>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#encoding -->
@@ -671,10 +671,10 @@
         <rdfs:label xml:lang="en">encoding</rdfs:label>
         <skos:definition xml:lang="en">The encoding of the data described by the Data Source</skos:definition>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -682,7 +682,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource -->
@@ -701,7 +701,7 @@
         <rdfs:label xml:lang="en">Asynchronous Source</rdfs:label>
         <skos:definition xml:lang="en">Data source that is not synchronized when it is sent or received</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap -->
@@ -712,7 +712,7 @@
         <rdfs:label>Blank Node Map</rdfs:label>
         <skos:definition xml:lang="en">Unique node with no intrinsic name that is not a reference to a resource or a literal</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#CartessianProductCombination -->
@@ -724,7 +724,7 @@
         <rdfs:label>Cartessian Product Combination</rdfs:label>
         <skos:definition>Combined frame by cartessian product</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame -->
@@ -742,7 +742,7 @@
         <rdfs:label>Combined Frame</rdfs:label>
         <skos:definition>Frame that is formed by the combination of two other frames by union, join or cartessian product</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap -->
@@ -759,7 +759,7 @@
         <rdfs:label xml:lang="en">Conditional Statement Map</rdfs:label>
         <skos:definition xml:lang="en">Statement Map that needs to fulfil one condition to be generated</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#Constant -->
@@ -769,7 +769,7 @@
         <rdfs:label xml:lang="en">Constant</rdfs:label>
         <skos:definition xml:lang="en">Expression that contains a constant value</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap -->
@@ -782,7 +782,7 @@
         <rdfs:label>Container Map</rdfs:label>
         <skos:definition>Resource map that defines a container</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService -->
@@ -792,7 +792,7 @@
         <rdfs:label xml:lang="en">Data Access Service</rdfs:label>
         <skos:definition xml:lang="en">Description of how to retrieve the data from its source</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#DataField -->
@@ -809,7 +809,7 @@
         <rdfs:label xml:lang="en">Data Field</rdfs:label>
         <skos:definition xml:lang="en">Expression with a value retrieved from the source data</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#DataSource -->
@@ -819,7 +819,7 @@
         <rdfs:label xml:lang="en">Data Source</rdfs:label>
         <skos:definition xml:lang="en">Description of the retrieved data</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression -->
@@ -828,7 +828,7 @@
         <rdfs:label xml:lang="en">Evaluable Expression</rdfs:label>
         <skos:definition xml:lang="en">Element that contains the information to form objects, predicates and subjects</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#EventSource -->
@@ -839,7 +839,7 @@
         <rdfs:label xml:lang="en">Event Source</rdfs:label>
         <skos:definition xml:lang="en">Type of data access that retrieves data when a package arrives</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList -->
@@ -849,7 +849,7 @@
         <rdfs:label>Expression List</rdfs:label>
         <skos:definition>An expression that defines a list of Evaluable Expressions</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#Frame -->
@@ -858,7 +858,7 @@
         <rdfs:label>Frame</rdfs:label>
         <skos:definition>Fragment of data that is used to form statements</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression -->
@@ -868,7 +868,7 @@
         <rdfs:label xml:lang="en">Function Expression</rdfs:label>
         <skos:definition xml:lang="en">Expression that can expect one or more parameters and nested functions</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination -->
@@ -886,7 +886,7 @@
         <rdfs:label>Join Combination</rdfs:label>
         <skos:definition>Combined frame by join</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap -->
@@ -895,7 +895,7 @@
         <rdfs:label>Linking Map</rdfs:label>
         <skos:definition>What links two subjects from different statement maps and their data sources</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#ListMap -->
@@ -907,7 +907,7 @@
         <rdfs:label>List Map</rdfs:label>
         <skos:definition>Resource map that defines a list</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap -->
@@ -918,7 +918,7 @@
         <rdfs:label>Literal Map</rdfs:label>
         <skos:definition>Resource map that defines a literal</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap -->
@@ -928,7 +928,7 @@
         <rdfs:label>Node Map</rdfs:label>
         <skos:definition xml:lang="en">Union of blank node and reference node</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource -->
@@ -938,7 +938,7 @@
         <rdfs:label xml:lang="en">Periodic Source</rdfs:label>
         <skos:definition xml:lang="en">Data source that is retrieven repeatedly in a period of time</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap -->
@@ -948,7 +948,7 @@
         <rdfs:label>Reference Node Map</rdfs:label>
         <skos:definition xml:lang="en">Node that references an IRI</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap -->
@@ -964,7 +964,7 @@
         <rdfs:label xml:lang="en">Resource Map</rdfs:label>
         <skos:definition>What is to be created in a statement, either a subject, predicate, object, datatype, language or named graph</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame -->
@@ -981,7 +981,7 @@
         <rdfs:label>Source Frame</rdfs:label>
         <skos:definition>Frame that is related to the data source</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap -->
@@ -1011,7 +1011,7 @@
         <rdfs:label xml:lang="en">Statement Map</rdfs:label>
         <skos:definition xml:lang="en">Statement that defines for a triple its subject, predicate, object, and datatype, language and assigned named graph if applicable</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource -->
@@ -1022,7 +1022,7 @@
         <rdfs:label xml:lang="en">Stream Source</rdfs:label>
         <skos:definition xml:lang="en">Data that is continuously retrieved</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource -->
@@ -1032,7 +1032,7 @@
         <rdfs:label xml:lang="en">Synchronous Source</rdfs:label>
         <skos:definition xml:lang="en">Data source that is synchronized when it is sent or received</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination -->
@@ -1042,13 +1042,13 @@
         <rdfs:label>Union Combination</rdfs:label>
         <skos:definition>Combined frame by union</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.org/dc/dcmitype/Service -->
 
     <owl:Class rdf:about="http://purl.org/dc/dcmitype/Service"/>
-    
+
 
 
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
@@ -1059,7 +1059,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
         <rdfs:label>List</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
@@ -1069,7 +1069,7 @@
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
         <rdfs:label>Resource</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
@@ -1081,7 +1081,7 @@
         <rdfs:label xml:lang="en">Concept</rdfs:label>
         <skos:definition xml:lang="en">An abstract idea or notion; a unit of thought.</skos:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
@@ -1094,7 +1094,7 @@
         <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
         <skos1:definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</skos1:definition>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#DataService -->
@@ -1133,7 +1133,7 @@
         <skos:scopeNote xml:lang="es">Si un dcat:DataService está asociado con uno o más conjuntos de datos especificados, dichos conjuntos de datos pueden indicarse con la propiedad dcat:servesDataset.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">The kind of service can be indicated using the dct:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type vocabulary.</skos:scopeNote>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#Dataset -->
@@ -1188,7 +1188,7 @@
         <skos:scopeNote xml:lang="el">Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ&apos;εαυτό, όπως έχει δημοσιευθεί από τον εκδότη. Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο.</skos:scopeNote>
         <skos:scopeNote xml:lang="ja">このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。</skos:scopeNote>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#Distribution -->
@@ -1235,13 +1235,13 @@
         <skos:scopeNote xml:lang="el">Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα, μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές.</skos:scopeNote>
         <skos:scopeNote xml:lang="ja">これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。</skos:scopeNote>
     </owl:Class>
-    
+
 
 
     <!-- http://www.w3.org/ns/dcat#Resource -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource"/>
-    
+
 
 
     <!-- https://www.w3.org/2019/wot/security#SecurityScheme -->
@@ -1250,10 +1250,10 @@
         <rdfs:comment>Metadata describing the configuration of a security mechanism.  &lt;span class=&quot;rfc2119-assertion&quot; id=&quot;td-security-scheme-name&quot;&gt;The value assigned to the name &lt;code&gt;scheme&lt;/code&gt; MUST be defined within a vocabulary included in the Thing Description, either in the present vocabulary or in a TD context extension.</rdfs:comment>
         <rdfs:label>SecurityScheme</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1261,7 +1261,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl -->
@@ -1269,7 +1269,7 @@
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl -->
@@ -1282,4 +1282,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
