@@ -221,7 +221,14 @@
 
     <owl:ObjectProperty rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#ListMap"/>
+                    <rdf:Description rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
         <rdfs:label xml:lang="en">has data type</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a reference node to define the predicate</skos:definition>
@@ -301,7 +308,14 @@
 
     <owl:ObjectProperty rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#ListMap"/>
+                    <rdf:Description rdf:about="http://http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap"/>
         <rdfs:label xml:lang="en">has language</rdfs:label>
         <skos:definition xml:lang="en">A relation between a statement map and a literal to define the language</skos:definition>
