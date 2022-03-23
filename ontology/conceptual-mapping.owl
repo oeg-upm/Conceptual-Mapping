@@ -15,7 +15,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#">
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
-        <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title xml:lang="en">Conceptual Mapping</dc:title>
         <dcterms:contributor xml:lang="es">Andrea Cimmino (Ontology Engineering Group)</dcterms:contributor>
         <dcterms:contributor xml:lang="es">David Chaves Fraga (Ontology Engineering Group)</dcterms:contributor>
