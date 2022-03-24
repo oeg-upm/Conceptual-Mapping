@@ -4,8 +4,16 @@ This section provides details for each class and property defined by Conceptual 
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#AltMap"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#AltMap">Alt Map</a>
+      </li>
+      <li>
          <a href="#http://#AsynchronousSource"
             title="http://http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource">Asynchronous Source</a>
+      </li>
+      <li>
+         <a href="#BagMap"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#BagMap">Bag Map</a>
       </li>
       <li>
          <a href="#http://#BlankNodeMap"
@@ -122,6 +130,10 @@ This section provides details for each class and property defined by Conceptual 
             title="https://www.w3.org/2019/wot/security#SecurityScheme">SecurityScheme</a>
       </li>
       <li>
+         <a href="#SeqMap"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#SeqMap">Seq Map</a>
+      </li>
+      <li>
          <a href="#http://#SourceFrame"
             title="http://http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame">Source Frame</a>
       </li>
@@ -142,6 +154,25 @@ This section provides details for each class and property defined by Conceptual 
             title="http://http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination">Union Combination</a>
       </li>
    </ul>
+   <div class="entity" id="AltMap">
+      <h3>Alt Map<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#AltMap</p>
+      <div class="comment">
+         <span class="markdown">Resource map that defines an alt container</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://#ContainerMap"
+               title="http://http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap">Container Map</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://#AsynchronousSource">
       <h3>Asynchronous Source<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -179,6 +210,25 @@ This section provides details for each class and property defined by Conceptual 
                title="http://http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource">Stream Source</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://#SynchronousSource"
                title="http://http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource">Synchronous Source</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BagMap">
+      <h3>Bag Map<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#BagMap</p>
+      <div class="comment">
+         <span class="markdown">Resource map that defines a bag container</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://#ContainerMap"
+               title="http://http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap">Container Map</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -397,6 +447,16 @@ This section provides details for each class and property defined by Conceptual 
          <dd>
             <a href="#http://#ResourceMap"
                title="http://http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap">Resource Map</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AltMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#AltMap">Alt Map</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#BagMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#BagMap">Bag Map</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SeqMap"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#SeqMap">Seq Map</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -1131,6 +1191,25 @@ This section provides details for each class and property defined by Conceptual 
             <a href="#hasSecurityScheme"
                title="http://vocab.linkeddata.es/def/conceptual-mapping#hasSecurityScheme">has security scheme</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SeqMap">
+      <h3>Seq Map<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#SeqMap</p>
+      <div class="comment">
+         <span class="markdown">Resource map that defines a seq container</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://#ContainerMap"
+               title="http://http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap">Container Map</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
