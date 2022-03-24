@@ -1355,6 +1355,36 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#AltMap -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#AltMap">
+        <rdfs:subClassOf rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap"/>
+        <rdfs:label>Alt Map</rdfs:label>
+        <skos:definition>Resource map that defines an alt container</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#BagMap -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#BagMap">
+        <rdfs:subClassOf rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap"/>
+        <rdfs:label>Bag Map</rdfs:label>
+        <skos:definition>Resource map that defines a bag container</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#SeqMap -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#SeqMap">
+        <rdfs:subClassOf rdf:resource="http://http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap"/>
+        <rdfs:label>Seq Map</rdfs:label>
+        <skos:definition>Resource map that defines a seq container</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
 
     <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
