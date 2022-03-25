@@ -1,0 +1,379 @@
+@prefix : <http://example.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/ns#> .
+
+
+
+:Test1 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame hasDataSource DataSource" .
+
+:Test2 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "CombinedFrame combinesFrame CombinedFrame" .
+
+:Test3 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "CombinedFrame combinesFrame SourceFrame" .
+
+:Test4 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasFrame CombinedFrame" .
+
+:Test5 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasLanguage LiteralMap" .
+
+:Test6 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasDataType ReferenceNodeMap" .
+
+:Test7 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame hasDataSource DataSource" .
+
+:Test8 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "CombinedFrame combinesFrame CombinedFrame" .
+
+:Test9 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "CombinedFrame combinesFrame SourceFrame" .
+
+:Test10 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasFrame CombinedFrame" .
+
+:Test11 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasObject LiteralMap" .
+
+:Test12 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame hasNestedFrame SourceFrame" .
+
+:Test13 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ExpressionList rest ExpressionList" .
+
+:Test14 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ExpressionList first FunctionExpression" .
+
+:Test15 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FunctionExpression hasInput ExpressionList" .
+
+:Test16 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ResourceMap hasEvaluableExpression FunctionExpression" .
+
+:Test17 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FunctionExpression hasFunctionName Concept" .
+
+:Test18 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "LinkingMap hasBooleanCondition FunctionExpression" .
+
+:Test19 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "LinkingMap hasBooleanCondition FunctionExpression" .
+
+:Test20 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "LinkingMap target StatementMap" .
+
+:Test21 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "LinkingMap source StatementMap" .
+
+:Test22 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ConditionalStatementMap hasBooleanCondition FunctionExpression" .
+
+:Test23 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ConditionalStatementMap SubClassOf StatementMap" .
+
+:Test24 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasLanguage LiteralMap" .
+
+:Test25 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasLanguage ListMap" .
+
+:Test26 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasDataType ReferenceNodeMap" .
+
+:Test27 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasDataType ListMap" .
+
+:Test28 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "BlankNodeMap SubClassOf NodeMap" .
+
+:Test29 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReferenceNodeMap SubClassOf NodeMap" .
+
+:Test30 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasNamedGraph only NodeMap" .
+
+:Test31 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ContainerMap SubClassOf ResourceMap" .
+
+:Test32 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "LiteralMap SubClassOf ResourceMap" .
+
+:Test33 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "LiteralMap SubClassOf ResourceMap" .
+
+:Test34 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "NodeMap SubClassOf ResourceMap" .
+
+:Test35 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "BlankNodeMap SubClassOf NodeMap" .
+
+:Test36 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReferenceNodeMap SubClassOf NodeMap" .
+
+:Test37 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasObject only ResourceMap" .
+
+:Test38 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasPredicate only ReferenceNodeMap" .
+
+:Test39 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "BlankNodeMap SubClassOf NodeMap" .
+
+:Test40 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReferenceNodeMap SubClassOf NodeMap" .
+
+:Test41 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasSubject only NodeMap" .
+
+:Test42 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FunctionExpression hasFunctionName Concept" .
+
+:Test43 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ResourceMap hasEvaluableExpression FunctionExpression" .
+
+:Test44 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame hasNestedFrame SourceFrame" .
+
+:Test45 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataField belongsToFrame SourceFrame" .
+
+:Test46 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ExpressionList first DataField" .
+
+:Test47 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FunctionExpression hasInput ExpressionList" .
+
+:Test48 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ResourceMap hasEvaluableExpression FunctionExpression" .
+
+:Test49 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasFrame CombinedFrame" .
+
+:Test50 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "CombinedFrame combinesFrame SourceFrame" .
+
+:Test51 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataField belongsToFrame SourceFrame" .
+
+:Test52 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ExpressionList first DataField" .
+
+:Test53 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "FunctionExpression hasInput ExpressionList" .
+
+:Test54 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ResourceMap hasEvaluableExpression FunctionExpression" .
+
+:Test55 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasFrame CombinedFrame" .
+
+:Test56 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataField SubClassOf EvaluableExpression" .
+
+:Test57 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Constant SubClassOf EvaluableExpression" .
+
+:Test58 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ResourceMap hasEvaluableExpression EvaluableExpression" .
+
+:Test59 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "LiteralMap SubClassOf ResourceMap" .
+
+:Test60 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "NodeMap SubClassOf ResourceMap" .
+
+:Test61 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReferenceNodeMap SubClassOf NodeMap" .
+
+:Test62 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasLanguage max 1 LiteralMap" .
+
+:Test63 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasDataType max 1 ReferenceNodeMap" .
+
+:Test64 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasNamedGraph max 1 NodeMap" .
+
+:Test65 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataField SubClassOf EvaluableExpression" .
+
+:Test66 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Constant SubClassOf EvaluableExpression" .
+
+:Test67 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ResourceMap hasEvaluableExpression EvaluableExpression" .
+
+:Test68 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "NodeMap SubClassOf ResourceMap" .
+
+:Test69 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "ReferenceNodeMap SubClassOf NodeMap" .
+
+:Test70 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasObject ResourceMap" .
+
+:Test71 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasPredicate ReferenceNodeMap" .
+
+:Test72 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasSubject NodeMap" .
+
+:Test73 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame SubClassOf hasDataSource exactly 1 DataSource" .
+
+:Test74 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame hasNestedFrame SourceFrame" .
+
+:Test75 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame hasDataSource DataSource" .
+
+:Test76 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame SubClassOf Frame" .
+
+:Test77 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "CombinedFrame SubClassOf combinesFrame exactly 2 Frame" .
+
+:Test78 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasFrame CombinedFrame" .
+
+:Test79 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasLanguage max 1 LiteralMap" .
+
+:Test80 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasDataType max 1 ReferenceNodeMap" .
+
+:Test81 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasNamedGraph max 1 NodeMap" .
+
+:Test82 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasObject exactly 1 ResourceMap" .
+
+:Test83 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasPredicate exactly 1 ReferenceNodeMap" .
+
+:Test84 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap SubClassOf hasSubject exactly 1 NodeMap" .
+
+:Test85 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataService servesDataset Dataset" .
+
+:Test86 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "encoding domain DataSource" .
+
+:Test87 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataAccessService SubClassOf hasProtocol max 1 Concept" .
+
+:Test88 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataAccessService hasSecurityScheme SecurityScheme" .
+
+:Test89 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataSource accessService DataAccessService" .
+
+:Test90 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataSource mediaType MediaType" .
+
+:Test91 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "StreamSource SubClassOf DataSource" .
+
+:Test92 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "AsynchronousSource SubClassOf DataSource" .
+
+:Test93 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SynchronousSource SubClassOf DataSource" .
