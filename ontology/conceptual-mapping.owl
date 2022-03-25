@@ -1343,12 +1343,6 @@
     
 
 
-    <!-- http://purl.org/dc/dcmitype/Service -->
-
-    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Service"/>
-    
-
-
     <!-- http://purl.org/dc/terms/MediaType -->
 
     <owl:Class rdf:about="http://purl.org/dc/terms/MediaType"/>
@@ -1434,8 +1428,6 @@
     <!-- http://www.w3.org/ns/dcat#DataService -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#DataService">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Service"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
         <rdfs:comment xml:lang="en">A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.</rdfs:comment>
         <rdfs:comment xml:lang="da">Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.</rdfs:comment>
         <rdfs:comment xml:lang="cs">Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích.</rdfs:comment>
@@ -1473,7 +1465,6 @@
     <!-- http://www.w3.org/ns/dcat#Dataset -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
         <rdfs:comment xml:lang="ja">1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。</rdfs:comment>
         <rdfs:comment xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more representations.</rdfs:comment>
         <rdfs:comment xml:lang="da">En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</rdfs:comment>
@@ -1569,12 +1560,6 @@
         <skos:scopeNote xml:lang="el">Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα, μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές.</skos:scopeNote>
         <skos:scopeNote xml:lang="ja">これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。</skos:scopeNote>
     </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/dcat#Resource -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource"/>
     
 
 
