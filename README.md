@@ -2,7 +2,9 @@
 
 ## Purpose and scope
 
-This vocabulary has been developed to gather the expressiveness of current mapping languages that describe the transformation of heterogeneous data sources into RDF. The scope of the vocabulary is to represent description of data sources, their access, mapping rules for RDF transformation and functions.
+The Conceptual Mapping aims to gather the expressiveness of current mapping languages that describe the transformation of heterogeneous data sources into RDF. This language was born from the assumption that all mapping languages, being used for the basic same purpose of describing data sources in terms of an ontology to create RDF, must have some basic patterns and inherent shared characteristics across all languages. The Conceptual Mapping's model is designed to represent and articulate these core features, which are extracted from two sources: (1) the analysis of current mapping languages, and (2) the limitations of current languages identified by the community. These limitations are referred to as Mapping Challenges, and are proposed by the W3C Knowledge Graph Construction Community Group.
+
+The scope of the vocabulary is to represent features based on declarative languages for describing data sources, their access, mapping rules for RDF transformation and functions. It is out of the scope representing the entire expressivenes of procedural languages based on SPARQL, such as SPARQL-Generate of Facade-X.
 
 ## Vocabulary development
 ### Requirements
