@@ -344,36 +344,44 @@
 
 :Test85 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "DataService servesDataset Dataset" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataSource accessService DataAccessService" .
 
 :Test86 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "encoding domain DataSource" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "SourceFrame hasDataSource DataSource" .
 
 :Test87 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "DataAccessService SubClassOf hasProtocol max 1 Concept" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "StatementMap hasFrame SourceFrame" .
 
 :Test88 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "DataAccessService hasSecurityScheme SecurityScheme" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "encoding domain DataSource" .
 
 :Test89 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "DataSource accessService DataAccessService" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataAccessService SubClassOf hasProtocol max 1 Concept" .
 
 :Test90 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "DataSource mediaType MediaType" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataAccessService hasSecurityScheme SecurityScheme" .
 
 :Test91 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "StreamSource SubClassOf DataSource" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataSource accessService DataAccessService" .
 
 :Test92 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "AsynchronousSource SubClassOf DataSource" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "DataSource mediaType MediaType" .
 
 :Test93 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                 owl:NamedIndividual ;
-       <https://w3id.org/def/vtc#desiredBehaviour> "SynchronousSource SubClassOf DataSource" .
+       <https://w3id.org/def/vtc#desiredBehaviour> "StreamSource subclassof DataSource" .
+
+:Test94 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "AsynchronousSource subclassof DataSource" .
+
+:Test95 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "SynchronousSource subclassof DataSource" .
