@@ -17,7 +17,7 @@
                                                                                              "Raúl García Castro (Ontology Engineering Group)"@es ;
                                                       <http://purl.org/dc/terms/created> "2020-10-14T00:00:00"@en ;
                                                       <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es ;
-                                                      <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims to gather the expressiveness of existing mapping languages and represent their inherent shared characteristics."@en ;
+                                                      <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics."@en ;
                                                       <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> ;
                                                       <http://purl.org/dc/terms/modified> "2022-03-23T00:00:00"^^xsd:dateTime ;
                                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en ;
@@ -191,7 +191,7 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
                  rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                     owl:hasValue <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl>
+                                                     owl:hasValue <http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl>
                                                    ]
                                                  ) ;
                               rdf:type owl:Class
@@ -1220,8 +1220,8 @@ rdfs:Resource rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl> rdf:type owl:NamedIndividual ,
+###  http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl
+<http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl> rdf:type owl:NamedIndividual ,
                                                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 

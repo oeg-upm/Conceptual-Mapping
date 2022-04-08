@@ -9,7 +9,7 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Raúl García Castro (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/created> "2020-10-14T00:00:00"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es .
-<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims to gather the expressiveness of existing mapping languages and represent their inherent shared characteristics."@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics."@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/modified> "2022-03-23T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en .
@@ -176,7 +176,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl> .
+_:genid9 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl> .
 _:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
@@ -1155,9 +1155,9 @@ _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl
+<http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

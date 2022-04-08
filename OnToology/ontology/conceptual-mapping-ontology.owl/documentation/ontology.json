@@ -281,7 +281,7 @@
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl"
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -361,7 +361,7 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "This ontology describes a mapping language that aims to gather the expressiveness of existing mapping languages and represent their inherent shared characteristics."
+    "@value" : "This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics."
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"
@@ -1315,7 +1315,7 @@
     "@value" : "Type of join combination of frames"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl",
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
