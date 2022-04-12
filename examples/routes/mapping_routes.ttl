@@ -1,0 +1,114 @@
+@base <http://example.com/ns#> .
+@prefix cm: <http://vocab.linkeddata.es/def/conceptual-mapping#> .
+@prefix cmp: <http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list/> .
+@prefix cmf: <http://vocab.linkeddata.es/def/conceptual-mapping/functions_list/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix wotsec: <https://www.w3.org/2019/wot/security#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trans: <http://example.com/transport#> .
+
+:FrameRoute a cm:SourceFrame;
+    cm:expression "$.trips[*]";
+    cm:hasField :line_id;
+    cm:hasField :trip_headsign;
+    cm:hasNestedFrame [
+        cm:expression "route[*]";
+        cm:hasField :r_route_id;
+        cm:hasField :direction_id ];
+    cm:hasDataSource [ a cm:SynchronousSource;
+        dcat:mediaType "text/json";
+        dcat:accessService [
+            cm:hasProtocol cmp:https;
+            dcat:endpointURL "https://ex.com/transport/trips.json"
+            cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
+        ] ;
+    ] .
+
+
+:FrameStop a cm:SourceFrame;
+    cm:hasField :s_route_id;
+    cm:hasField :stops_ids;
+    cm:hasField :start_time;
+    cm:hasDataSource [ a cm:SynchronousSource;
+        dcat:mediaType "text/csv";
+        dcat:accessService [
+            cm:hasProtocol cmp:file;
+            dcat:endpointURL "file:///user/data/route_stop.csv"
+            cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
+        ] ;
+    ] .
+
+:FrameRouteStop a cm:JoinCombination;
+  cm:combinesFrame :FrameStop;
+  cm:combinesFrame :FrameRoute;
+  cm:joinsBy :s_route_id;
+  cm:joinsBy :r_route_id.
+
+
+:s_route_id a cm:DataField; cm:field "route_id" .
+:stops_ids a cm:DataField; cm:field "stops_ids" .
+:start_time a cm:DataField; cm:field "start_time" .
+:line_id a cm:DataField; cm:field "line_id" .
+:trip_headsign a cm:DataField; cm:field "trip_headsign" .
+:r_route_id a cm:DataField; cm:field "route_id" .
+:direction_id a cm:DataField; cm:field "direction_id" .
+
+:SubjectRoute a cm:ReferenceNodeMap ;
+    cm:hasEvaluableExpression [
+        cm:hasFunctionName cmf:concat;
+        cm:hasInput ([cm:returns "http://ex.com/route/"] :s_route_id ] .
+
+:StatementRoute1 a cm:StatementMap ;
+    cm:hasFrame :FrameRouteStop ;
+    cm:subject :SubjectRoute ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns rdf:type ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:returns trans:Route] ].
+
+:StatementRoute2 a cm:StatementMap ;
+    cm:hasFrame :FrameRouteStop ;
+    cm:subject :SubjectRoute ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns trans:lineIdentifier ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:returns :line_id] ].
+
+:StatementRoute3 a cm:StatementMap ;
+    cm:hasFrame :FrameRouteStop ;
+    cm:subject :SubjectRoute ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns trans:tripHeadsign ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:returns :trip_headsign] ];
+    cm:language [ cm:hasEvaluableExpression [cm:returns "es"] ].
+
+:StatementRoute4 a cm:StatementMap ;
+    cm:hasFrame :FrameRouteStop ;
+    cm:subject :SubjectRoute ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns trans:startTime ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:returns :start_time] ];
+    cm:datatype [ cm:hasEvaluableExpression [cm:returns xsd:Time] ].
+
+:StatementRoute5 a cm:StatementMap ;
+    cm:hasFrame :FrameRouteStop ;
+    cm:subject :SubjectRoute ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns trans:stopIdentifier ] ];
+    cm:object [ a cm:ListMap; cm:hasEvaluableExpression :city_ns ].
+
+:city_ns a cm:FunctionExpression ;
+    cm:functionName cmf:split ;
+    cm:hasInput (:stop_ids, ";")
+
+:StatementRoute6 a cm:StatementMap ;
+    cm:hasFrame :FrameRouteStop ;
+    cm:subject :SubjectRoute ;
+    cm:predicate [ a cm:ReferenceNodeMap;
+        cm:hasEvaluableExpression [cm:returns trans:tripIdentifier ] ];
+    cm:object [ cm:hasEvaluableExpression :trip_id ].
+
+:trip_id a FunctionExpression;
+    cm:hasFunctionName cmf:concat;
+    cm:hasInput (:s_route_id [cm:returns "_"]
+                :direction_id [ cm:returns "_" ] :start_time) ].

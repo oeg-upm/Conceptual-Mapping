@@ -1,0 +1,32 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trans: <http://example.com/transport#> .
+
+<http://ex.com/route/51-go> a trans:Route ;
+  trans:lineIdentifier "51" ;
+  trans:tripHeadsign "Sol"@es ;
+  trans:startTime "07:00:00"^^xsd:time ;
+  trans:stopIdentifier ("113" "440" "438") ;
+  trans:tripIdentifier "51-go_1_07:00:00" .
+
+<http://ex.com/route/51-return> a trans:Route ;
+  trans:lineIdentifier "51" ;
+  trans:tripHeadsign "Sol"@es ;
+  trans:startTime "07:30:00"^^xsd:time ;
+  trans:stopIdentifier ("5682" "2002" "90") ;
+  trans:tripIdentifier "51-go_0_07:30:00" .
+
+<http://ex.com/route/52-go> a trans:Route ;
+  trans:lineIdentifier "52" ;
+  trans:tripHeadsign "Cibeles"@es ;
+  trans:startTime "07:00:00"^^xsd:time ;
+  trans:stopIdentifier ("2508" "2509" "2510") ;
+  trans:tripIdentifier "52-go_1_07:00:00" .
+
+<http://ex.com/route/52-return> a trans:Route ;
+  trans:lineIdentifier "52" ;
+  trans:tripHeadsign "Cibeles"@es ;
+  trans:startTime "07:30:00"^^xsd:time ;
+  trans:stopIdentifier ("90" "70" "162") ;
+  trans:tripIdentifier "52-go_0_07:30:00" .

@@ -1,7 +1,7 @@
 @base <http://example.com/ns#> .
 @prefix cm: <http://vocab.linkeddata.es/def/conceptual-mapping#> .
-@prefix cmp: <http://vocab.linkeddata.es/kos/conceptual-mapping#protocols-list/> .
-@prefix cmf: <http://vocab.linkeddata.es/kos/conceptual-mapping#functions-list/> .
+@prefix cmp: <http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list/> .
+@prefix cmf: <http://vocab.linkeddata.es/def/conceptual-mapping/functions_list/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix wotsec: <https://www.w3.org/2019/wot/security#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,7 +11,7 @@
 
 
 :FrameLoc a cm:SourceFrame;
-    cm:expression "$\dollar$.coordinates[*]";
+    cm:expression "$.coordinates[*]";
     cm:hasField :lat;
     cm:hasField :long;
     cm:hasField :loc_city;
@@ -19,7 +19,7 @@
         dcat:mediaType "text/json";
         dcat:accessService [
             cm:hasProtocol cmp:https;
-            dcat:endpointURL "https://ex.com/geodata/coordinates.json" 
+            dcat:endpointURL "https://ex.com/geodata/coordinates.json"
             cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
         ] ;
     ] .
@@ -30,21 +30,21 @@
 
 :SubjectLoc a cm:ReferenceNodeMap ;
     cm:hasEvaluableExpression [
-        cm:hasFunctionName cmf:concat; 
-        cm:hasInput ([cm:returns "http://ex.com/loc/"]  
-                     eg:lat [ cm:returns "-" ] eg:long) ] .
+        cm:hasFunctionName cmf:concat;
+        cm:hasInput ([cm:returns "http://ex.com/loc/"]
+                     :lat [ cm:returns "-" ] :long) ] .
 
 :StatementLoc1 a cm:StatementMap ;
     cm:hasFrame :FrameLoc ;
     cm:subject :SubjectLoc ;
-    cm:predicate [ a cm:ReferenceNodeMap; 
+    cm:predicate [ a cm:ReferenceNodeMap;
         cm:hasEvaluableExpression [cm:returns rdf:type ] ];
     cm:object [ cm:hasEvaluableExpression [cm:returns eg:Location] ].
 
 :StatementLoc2 a cm:StatementMap ;
     cm:hasFrame :FrameLoc ;
     cm:subject :SubjectLoc ;
-    cm:predicate [ a cm:ReferenceNodeMap; 
+    cm:predicate [ a cm:ReferenceNodeMap;
         cm:hasEvaluableExpression [cm:returns eg:lat] ];
     cm:object [ a cm:Literal; cm:hasEvaluableExpression :lat ];
     cm:hasDatatype [cm:hasEvaluableExpression xsd:decimal ].
@@ -52,7 +52,7 @@
 :StatementLoc3 a cm:StatementMap ;
     cm:hasFrame :FrameLoc ;
     cm:subject :SubjectLoc ;
-    cm:predicate [ a cm:ReferenceNodeMap; 
+    cm:predicate [ a cm:ReferenceNodeMap;
         cm:hasEvaluableExpression [cm:returns eg:long] ];
     cm:object [ a cm:Literal; cm:hasEvaluableExpression :long ];
     cm:hasDatatype [ cm:hasEvaluableExpression xsd:decimal ].
@@ -79,7 +79,7 @@
     cm:hasField :population;
     cm:hasField :year;
     cm:hasNestedFrame [
-        cm:expression "$\dollar$.zipcodes.*";
+        cm:expression "$.zipcodes[*]";
         cm:hasField :zipcode ];
     cm:hasDataSource [ a cm:SynchronousSource;
         dcat:mediaType "text/plain";
@@ -96,25 +96,25 @@
 
 :city_ns a cm:FunctionExpression ;
     cm:functionName cmf:replace ;
-    cm:hasInput (c_city, " ", "")
+    cm:hasInput (:c_city, " ", "")
 
 :SubjectCities a cm:ReferenceNodeMap;
     cm:hasEvaluableExpression [
-        cm:hasFunctionName cmf:concat; 
+        cm:hasFunctionName cmf:concat;
         cm:hasInput ([cm:returns "http://ex.com/city/"] :city_ns)].
 
 :StatementCit1 a cm:StatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
-    cm:predicate [ a cm:ReferenceNodeMap; 
+    cm:predicate [ a cm:ReferenceNodeMap;
         cm:hasEvaluableExpression [cm:returns rdf:type] ];
-    cm:object [ a cm:ReferenceNodeMap; 
+    cm:object [ a cm:ReferenceNodeMap;
         cm:hasEvaluableExpression  [cm:returns eg:City] ] .
 
 :StatementCit3 a cm:StatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
-    cm:predicate [ a cm:ReferenceNodeMap; 
+    cm:predicate [ a cm:ReferenceNodeMap;
         cm:hasEvaluableExpression [cm:returns eg:zipcode] ];
     cm:object [ a cm:Literal;
         cm:hasEvaluableExpression [cm:returns :zipcode] ];
@@ -124,9 +124,9 @@
 :StatementCit2 a cm:ConditionalStatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
-    cm:predicate [ a cm:ReferenceNodeMap; 
+    cm:predicate [ a cm:ReferenceNodeMap;
         cm:hasEvaluableExpression [cm:returns eg:population] ];
-    cm:object [ a cm:Literal; 
+    cm:object [ a cm:Literal;
         cm:hasEvaluableExpression  [cm:returns :population] ];
     cm:hasDatatype [ cm:hasEvaluableExpression xsd:nonNegativeInteger ];
     cm:hasBooleanCondition [
@@ -139,12 +139,9 @@
     cm:target :StatementLoc1 ;
     cm:property eg:location ;
     cm:hasBooleanCondition [
-        cm:functionName cmf:greater_than ; 
+        cm:functionName cmf:greater_than ;
         cm:hasInput ( :levfun 0.75 ) ] .
 
 :levfun a cm:FunctionExpression ;
-    cm:functionName cmf:levenshtein_distance ;    
+    cm:functionName cmf:levenshtein_distance ;
     cm:hasInput (:c_city :loc_city) .
-
-
-

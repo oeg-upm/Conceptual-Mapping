@@ -1,0 +1,32 @@
+{
+   "trips":[
+      {
+         "line_id":"51",
+         "trip_headsign":"Sol",
+         "route":[
+            {
+               "route_id":"51-go",
+               "direction_id":"1"
+            },
+            {
+               "route_id":"51-return",
+               "direction_id":"0"
+            }
+         ]
+      },
+      {
+         "line_id":"52",
+         "trip_headsign":"Cibeles",
+         "route":[
+            {
+               "route_id":"52-go",
+               "direction_id":"1"
+            },
+            {
+               "route_id":"52-return",
+               "direction_id":"0"
+            }
+         ]
+      }
+   ]
+}

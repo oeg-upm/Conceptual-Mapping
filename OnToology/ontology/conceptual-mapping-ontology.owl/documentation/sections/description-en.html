@@ -323,7 +323,7 @@ Mappings Ontology.
       cm:hasInput (:c_city :loc_city) .
 </pre>
 
-<h3 id="examples2" class="list">Examples: Cities and Locations with other mapping languages</h3>
+<h3 id="examples1-2" class="list">Examples: Cities and Locations with other mapping languages</h3>
   <p>This section provides the mapping of cities and locations described in the previous section
   in other mapping languages: R2RML, RML+FnO, xR2RML, ShExML, Helio and SPARQL-Generate.
   </p>
@@ -620,3 +620,172 @@ Mappings Ontology.
       BIND(fun:JSONPath(?location, "$.longitude") as ?long)
     }
   </pre>
+
+  <h3 id="examples2" class="list">Examples: Routes with the Conceptual Mapping</h3>
+
+    <p>
+    The following example illustrate features of the ontology that didn't appear in the previous example.
+    They show how to describe a JSON file, "trips.json"
+    (Figure 4a) and CSV file (Figure 4b) following the ontology described by Figure 4c.
+    This ontology is composed of one class <tt>eg:Route</tt>.
+    The routes are described with the properties <tt>trans:lineIdentifier</tt>, <tt>trans:tripHeadsign</tt>,
+    <tt>trans:startTime</tt>, <tt>trans:stopIdentifier</tt> and <tt>trans:tripIdentifier</tt>.
+    The fields created contain information from different levels of iteration from
+    the JSON file and fields from the CSV file.
+  </p>
+
+  <center>
+    <img src="resources/images/routes_example.png" alt="sources and ontology for example 2" width="80%"> <figcaption><b>Figure 4.</b> - Data sources 'trips.json'(a) and 'route_stop.csv' (b), ontology example for routes (c).</figcaption>
+  </center>
+
+
+  <p>The expected RDF output is as follows:</p>
+
+  <pre>
+  &lthttp://ex.com/route/51-go> a trans:Route ;
+    trans:lineIdentifier "51" ;
+    trans:tripHeadsign "Sol"@es ;
+    trans:startTime "07:00:00"^^xsd:time ;
+    trans:stopIdentifier ("113" "440" "438") ;
+    trans:tripIdentifier "51-go_1_07:00:00" .
+
+  &lthttp://ex.com/route/51-return> a trans:Route ;
+    trans:lineIdentifier "51" ;
+    trans:tripHeadsign "Sol"@es ;
+    trans:startTime "07:30:00"^^xsd:time ;
+    trans:stopIdentifier ("5682" "2002" "90") ;
+    trans:tripIdentifier "51-go_0_07:30:00" .
+
+  &lthttp://ex.com/route/52-go> a trans:Route ;
+    trans:lineIdentifier "52" ;
+    trans:tripHeadsign "Cibeles"@es ;
+    trans:startTime "07:00:00"^^xsd:time ;
+    trans:stopIdentifier ("2508" "2509" "2510") ;
+    trans:tripIdentifier "52-go_1_07:00:00" .
+
+  &lthttp://ex.com/route/52-return> a trans:Route ;
+    trans:lineIdentifier "52" ;
+    trans:tripHeadsign "Cibeles"@es ;
+    trans:startTime "07:30:00"^^xsd:time ;
+    trans:stopIdentifier ("90" "70" "162") ;
+    trans:tripIdentifier "52-go_0_07:30:00" .
+  </pre>
+
+  <p>The mapping presented joins two sources (<tt>:FrameRouteStop</tt>). It uses a <tt>CombinedFrame</tt>, that joins two <tt>SourceFrame</tt>, one
+    that describes a json file, "trips.json" (<tt>:FrameRoute</tt>), and another that describes a csv file,
+    "route_stop.csv" (<tt>:FrameStop</tt>). The join is performed by joining the fields <tt>:s_route_id</tt>
+    and <tt>r_route_id</tt>.
+  </p>
+
+  <pre>
+    :FrameRoute a cm:SourceFrame;
+        cm:expression "$.trips[*]";
+        cm:hasField :line_id;
+        cm:hasField :trip_headsign;
+        cm:hasNestedFrame [
+            cm:expression "route[*]";
+            cm:hasField :r_route_id;
+            cm:hasField :direction_id ];
+        cm:hasDataSource [ a cm:SynchronousSource;
+            dcat:mediaType "text/json";
+            dcat:accessService [
+                cm:hasProtocol cmp:https;
+                dcat:endpointURL "https://ex.com/transport/trips.json"
+                cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
+            ] ;
+        ] .
+
+    :FrameStop a cm:SourceFrame;
+        cm:hasField :s_route_id;
+        cm:hasField :stops_ids;
+        cm:hasField :start_time;
+        cm:hasDataSource [ a cm:SynchronousSource;
+            dcat:mediaType "text/csv";
+            dcat:accessService [
+                cm:hasProtocol cmp:file;
+                dcat:endpointURL "file:///user/data/route_stop.csv"
+                cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
+            ] ;
+        ] .
+
+    :FrameRouteStop a cm:JoinCombination;
+      cm:combinesFrame :FrameStop;
+      cm:combinesFrame :FrameRoute;
+      cm:joinsBy :s_route_id;
+      cm:joinsBy :r_route_id.
+
+    :s_route_id a cm:DataField; cm:field "route_id" .
+    :stops_ids a cm:DataField; cm:field "stops_ids" .
+    :start_time a cm:DataField; cm:field "start_time" .
+    :line_id a cm:DataField; cm:field "line_id" .
+    :trip_headsign a cm:DataField; cm:field "trip_headsign" .
+    :r_route_id a cm:DataField; cm:field "route_id" .
+    :direction_id a cm:DataField; cm:field "direction_id" .
+  </pre>
+
+<p>
+  The mapping rules create the values from the data properties of the class <tt>trans:Route</tt>
+  from two different sources joined as one frame, separatedly or in one single object,
+  like <tt>:StatementRoute6</tt>. Additionally, <tt>:StatementRoute5</tt> creates a
+  list of values for the stops ids using a split function to separate the original value.
+</p>
+
+<pre>
+  :SubjectRoute a cm:ReferenceNodeMap ;
+      cm:hasEvaluableExpression [
+          cm:hasFunctionName cmf:concat;
+          cm:hasInput ([cm:returns "http://ex.com/route/"] :s_route_id ] .
+
+  :StatementRoute1 a cm:StatementMap ;
+      cm:hasFrame :FrameRouteStop ;
+      cm:subject :SubjectRoute ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns rdf:type ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:returns trans:Route] ].
+
+  :StatementRoute2 a cm:StatementMap ;
+      cm:hasFrame :FrameRouteStop ;
+      cm:subject :SubjectRoute ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns trans:lineIdentifier ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:returns :line_id] ].
+
+  :StatementRoute3 a cm:StatementMap ;
+      cm:hasFrame :FrameRouteStop ;
+      cm:subject :SubjectRoute ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns trans:tripHeadsign ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:returns :trip_headsign] ];
+      cm:language [ cm:hasEvaluableExpression [cm:returns "es"] ].
+
+  :StatementRoute4 a cm:StatementMap ;
+      cm:hasFrame :FrameRouteStop ;
+      cm:subject :SubjectRoute ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns trans:startTime ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:returns :start_time] ];
+      cm:datatype [ cm:hasEvaluableExpression [cm:returns xsd:Time] ].
+
+  :StatementRoute5 a cm:StatementMap ;
+      cm:hasFrame :FrameRouteStop ;
+      cm:subject :SubjectRoute ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns trans:stopIdentifier ] ];
+      cm:object [ a cm:ListMap; cm:hasEvaluableExpression :city_ns ].
+
+  :city_ns a cm:FunctionExpression ;
+      cm:functionName cmf:split ;
+      cm:hasInput (:stop_ids, ";")
+
+  :StatementRoute6 a cm:StatementMap ;
+      cm:hasFrame :FrameRouteStop ;
+      cm:subject :SubjectRoute ;
+      cm:predicate [ a cm:ReferenceNodeMap;
+          cm:hasEvaluableExpression [cm:returns trans:tripIdentifier ] ];
+      cm:object [ cm:hasEvaluableExpression :trip_id ].
+
+  :trip_id a FunctionExpression;
+      cm:hasFunctionName cmf:concat;
+      cm:hasInput (:s_route_id [cm:returns "_"]
+                  :direction_id [ cm:returns "_" ] :start_time) ].
+</pre>
