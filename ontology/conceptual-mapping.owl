@@ -3,6 +3,8 @@
      xml:base="http://vocab.linkeddata.es/def/conceptual-mapping"
      xmlns:cm="http://vocab.linkeddata.es/def/conceptual-mapping#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cmf="http://vocab.linkeddata.es/def/conceptual-mapping/functions_list/"
+     xmlns:cmp="http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
