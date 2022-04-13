@@ -17,12 +17,15 @@
         cm:expression "route[*]";
         cm:hasField :r_route_id;
         cm:hasField :direction_id ];
-    cm:hasDataSource [ a cm:SynchronousSource;
+    cm:hasDataSource [ a cm:AsynchronousSource;
+        cm:refreshTime 300000 ;
         dcat:mediaType "text/json";
         dcat:accessService [
             cm:hasProtocol cmp:https;
             dcat:endpointURL "https://ex.com/transport/trips.json"
-            cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
+            cm:hasSecurityScheme [ a wotsec:APIKeySecurityScheme;
+                wotsec:in "header";
+                wotsec:name "api_key"];
         ] ;
     ] .
 
