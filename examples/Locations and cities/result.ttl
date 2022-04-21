@@ -1,0 +1,30 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix eg: <http://example.com/geo#> .
+
+<http://ex.com/loc/40.4189--3.6919> a eg:Location ;
+  eg:lat "40.4189"^^xsd:decimal ;
+  eg:long "-3.6919"^^xsd:decimal .
+
+<http://ex.com/loc/43.3713--8.4188> a eg:Location ;
+  eg:lat "43.3713"^^xsd:decimal ;
+  eg:long "-8.4188"^^xsd:decimal .
+
+<http://ex.com/loc/36.8333--2.45> a eg:Location ;
+  eg:lat "36.8333"^^xsd:decimal ;
+  eg:long "-2.45"^^xsd:decimal .
+
+<http://ex.com/city/ACoruña> a eg:City ;
+  eg:zipcode 15001, 15002, 15003, 15004 ;
+  eg:location <http://ex.com/loc/43.3713--8.4188> .
+
+<http://ex.com/city/Almería> a eg:City ;
+  eg:zipcode 04001, 04002 ;
+  eg:population 201322 ;
+  eg:location <http://ex.com/loc/36.8333--2.45> .
+
+<http://ex.com/city/Madrid> a eg:City ;
+  eg:zipcode 28001, 28002, 28003, 28004, 28005, 28006 ;
+  eg:population 3334730 ;
+  eg:location <http://ex.com/loc/40.4189--3.6919> .

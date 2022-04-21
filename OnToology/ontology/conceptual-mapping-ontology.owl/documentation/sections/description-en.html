@@ -493,10 +493,10 @@ Mappings Ontology.
       FIELD zipcodes &ltzipcodes>
     }
 
-    ITERATOR coord_json &ltjsonpath: $.coordinates[*]> {
-      FIELD lat &lt$.latitude>
-      FIELD long &lt$.longitude>
-      FIELD loc_city &lt$.city>
+    ITERATOR coord_json &ltjsonpath: coordinates[*]> {
+      FIELD lat &ltlatitude>
+      FIELD long &ltlongitude>
+      FIELD loc_city &ltcity>
     }
 
     EXPRESSION cit_locs &ltcities_source.cities_rdb.c_city JOIN coord_source.coord_json.loc_city>
