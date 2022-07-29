@@ -115,6 +115,10 @@ This section provides details for each class and property defined by Conceptual 
             title="http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource">Periodic Source</a>
       </li>
       <li>
+         <a href="#http://semweb.mmlab.be/ns/rml#ReferenceFormulation"
+            title="http://semweb.mmlab.be/ns/rml#ReferenceFormulation">Reference Formulation</a>
+      </li>
+      <li>
          <a href="#ReferenceNodeMap"
             title="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap">Reference Node Map</a>
       </li>
@@ -426,8 +430,8 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#returns"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#returns">returns</a>
+            <a href="#constantValue"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#constantValue">constant value</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1043,6 +1047,25 @@ This section provides details for each class and property defined by Conceptual 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://semweb.mmlab.be/ns/rml#ReferenceFormulation">
+      <h3>Reference Formulation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://semweb.mmlab.be/ns/rml#ReferenceFormulation</p>
+      <div class="comment">
+         <span class="markdown">Represents a Reference Formulation.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#language"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#language">language</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ReferenceNodeMap">
       <h3>Reference Node Map<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1103,9 +1126,9 @@ This section provides details for each class and property defined by Conceptual 
          <dt>is in range of</dt>
          <dd>
             <a href="#http://www.w3.org/ns/dcat#accessURL" title="http://www.w3.org/ns/dcat#accessURL">access address</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#constantValue"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#constantValue">constant value</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/dcat#downloadURL" title="http://www.w3.org/ns/dcat#downloadURL">download URL</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#returns"
-               title="http://vocab.linkeddata.es/def/conceptual-mapping#returns">returns</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/dcat#endpointURL" title="http://www.w3.org/ns/dcat#endpointURL">service end-point</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -1215,6 +1238,8 @@ This section provides details for each class and property defined by Conceptual 
                title="http://vocab.linkeddata.es/def/conceptual-mapping#hasField">has field</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasNestedFrame"
                title="http://vocab.linkeddata.es/def/conceptual-mapping#hasNestedFrame">has nested frame</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#language"
+               title="http://vocab.linkeddata.es/def/conceptual-mapping#language">language</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1379,6 +1404,10 @@ This section provides details for each class and property defined by Conceptual 
          <a href="#http://www.w3.org/ns/dcat#compressFormat" title="http://www.w3.org/ns/dcat#compressFormat">compression format</a>
       </li>
       <li>
+         <a href="#constantValue"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#constantValue">constant value</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/dcat#accessService" title="http://www.w3.org/ns/dcat#accessService">data access service</a>
       </li>
       <li>
@@ -1469,6 +1498,10 @@ This section provides details for each class and property defined by Conceptual 
             title="http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy">joins by</a>
       </li>
       <li>
+         <a href="#language"
+            title="http://vocab.linkeddata.es/def/conceptual-mapping#language">language</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/dcat#mediaType" title="http://www.w3.org/ns/dcat#mediaType">media type</a>
       </li>
       <li>
@@ -1480,10 +1513,6 @@ This section provides details for each class and property defined by Conceptual 
       </li>
       <li>
          <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">rest</a>
-      </li>
-      <li>
-         <a href="#returns"
-            title="http://vocab.linkeddata.es/def/conceptual-mapping#returns">returns</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/dcat#servesDataset" title="http://www.w3.org/ns/dcat#servesDataset">serves dataset</a>
@@ -1632,6 +1661,35 @@ This section provides details for each class and property defined by Conceptual 
                <a href="http://purl.org/dc/terms/MediaType"
                   target="_blank"
                   title="http://purl.org/dc/terms/MediaType">media type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="constantValue">
+      <h3>constant value<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#constantValue</p>
+      <div class="comment">
+         <span class="markdown">A relation between an evaluable expression and the constant resource value it returns</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Constant"
+                  title="http://vocab.linkeddata.es/def/conceptual-mapping#Constant">Constant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2374,6 +2432,36 @@ This section provides details for each class and property defined by Conceptual 
          </dl>
       </div>
    </div>
+   <div class="entity" id="language">
+      <h3>language<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#language</p>
+      <div class="comment">
+         <span class="markdown">A relationship between a source frame and its reference formulation</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SourceFrame"
+                  title="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame">Source Frame</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://semweb.mmlab.be/ns/rml#ReferenceFormulation"
+                  title="http://semweb.mmlab.be/ns/rml#ReferenceFormulation">Reference Formulation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.w3.org/ns/dcat#mediaType">
       <h3>media type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2515,35 +2603,6 @@ This section provides details for each class and property defined by Conceptual 
             <dd>
                <a href="#ExpressionList"
                   title="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList">Expression List</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="returns">
-      <h3>returns<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/conceptual-mapping#returns</p>
-      <div class="comment">
-         <span class="markdown">A relation between an evaluable expression and the resource it returns</span>
-      </div>
-      <div class="description">
-         <p>
-            <strong>has characteristics:
-                </strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Constant"
-                  title="http://vocab.linkeddata.es/def/conceptual-mapping#Constant">Constant</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://www.w3.org/2000/01/rdf-schema#Resource" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

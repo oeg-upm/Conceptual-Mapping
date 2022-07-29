@@ -19,11 +19,11 @@
                                                       <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es ;
                                                       <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics."@en ;
                                                       <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> ;
-                                                      <http://purl.org/dc/terms/modified> "2022-03-23T00:00:00"^^xsd:dateTime ;
+                                                      <http://purl.org/dc/terms/modified> "2022-07-29T00:00:00"^^xsd:dateTime ;
                                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en ;
                                                       <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping> ;
                                                       owl:priorVersion <http://vocab.linkeddata.es/def/conceptual-mapping/1.0.0/> ;
-                                                      owl:versionInfo "v1.1.0"@en .
+                                                      owl:versionInfo "v1.1.1"@en .
 
 #################################################################
 #    Annotation properties
@@ -124,6 +124,15 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
                rdfs:range :Frame ;
                rdfs:label "combines frame" ;
                <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a combined frame and the frames it combines" .
+
+
+###  http://vocab.linkeddata.es/def/conceptual-mapping#constantValue
+:constantValue rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Constant ;
+               rdfs:range rdfs:Resource ;
+               rdfs:label "constant value"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the constant resource value it returns"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition
@@ -307,21 +316,21 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
          <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a join combination and the field it joins the sources by" .
 
 
+###  http://vocab.linkeddata.es/def/conceptual-mapping#language
+:language rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :SourceFrame ;
+          rdfs:range <http://semweb.mmlab.be/ns/rml#ReferenceFormulation> ;
+          rdfs:comment "A relationship between a source frame and its reference formulation" ;
+          rdfs:label "language" .
+
+
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#property
 :property rdf:type owl:ObjectProperty ;
           rdfs:domain :LinkingMap ;
           rdfs:range :ReferenceNodeMap ;
           rdfs:label "property" ;
           <http://www.w3.org/2004/02/skos/core#definition> "A relationship between the linking expression and the reference node map formed when the condition is fulfilled" .
-
-
-###  http://vocab.linkeddata.es/def/conceptual-mapping#returns
-:returns rdf:type owl:ObjectProperty ,
-                  owl:FunctionalProperty ;
-         rdfs:domain :Constant ;
-         rdfs:range rdfs:Resource ;
-         rdfs:label "returns"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the resource it returns"@en .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#source
@@ -768,6 +777,12 @@ rdf:rest rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/dc/terms/MediaType
 <http://purl.org/dc/terms/MediaType> rdf:type owl:Class .
+
+
+###  http://semweb.mmlab.be/ns/rml#ReferenceFormulation
+<http://semweb.mmlab.be/ns/rml#ReferenceFormulation> rdf:type owl:Class ;
+                                                     rdfs:comment "Represents a Reference Formulation."@en ;
+                                                     rdfs:label "Reference Formulation" .
 
 
 ###  http://vocab.linkeddata.es/def/conceptual-mapping#AltMap

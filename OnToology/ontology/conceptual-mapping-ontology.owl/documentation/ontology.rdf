@@ -22,13 +22,13 @@
         <terms:contributor xml:lang="es">Raúl García Castro (Ontology Engineering Group)</terms:contributor>
         <terms:created xml:lang="en">2020-10-14T00:00:00</terms:created>
         <terms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</terms:creator>
-        <terms:description xml:lang="en">This ontology describes a mapping language that aims to gather the expressiveness of existing mapping languages and represent their inherent shared characteristics.</terms:description>
+        <terms:description xml:lang="en">This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics.</terms:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-23T00:00:00</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-29T00:00:00</terms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
         <owl:priorVersion rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping/1.0.0/"/>
-        <owl:versionInfo xml:lang="en">v1.1.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">v1.1.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -215,6 +215,19 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#constantValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#constantValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Constant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">constant value</rdfs:label>
+        <skos:definition xml:lang="en">A relation between an evaluable expression and the constant resource value it returns</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition -->
 
 
@@ -315,7 +328,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -483,6 +496,19 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#language -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#language">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:range rdf:resource="http://semweb.mmlab.be/ns/rml#ReferenceFormulation"/>
+        <rdfs:comment>A relationship between a source frame and its reference formulation</rdfs:comment>
+        <rdfs:label>language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/def/conceptual-mapping#property -->
 
 
@@ -491,19 +517,6 @@
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
         <rdfs:label>property</rdfs:label>
         <skos:definition>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#returns -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#returns">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Constant"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:label xml:lang="en">returns</rdfs:label>
-        <skos:definition xml:lang="en">A relation between an evaluable expression and the resource it returns</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1050,6 +1063,16 @@
 
 
     <owl:Class rdf:about="http://purl.org/dc/terms/MediaType"/>
+    
+
+
+    <!-- http://semweb.mmlab.be/ns/rml#ReferenceFormulation -->
+
+
+    <owl:Class rdf:about="http://semweb.mmlab.be/ns/rml#ReferenceFormulation">
+        <rdfs:comment xml:lang="en">Represents a Reference Formulation.</rdfs:comment>
+        <rdfs:label>Reference Formulation</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1687,10 +1710,10 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl -->
+    <!-- http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping/functions-list.ttl">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     

@@ -11,7 +11,7 @@ Mappings Ontology.
 <span class="markdown">
   The Conceptual Mapping ontology has two sections which are denoted as Statement
   Map and Data Source. It reuses the Data Catalog (dcat) Ontology and the Web of
-  Things Security (WoT) Ontology for some concepts in the Data Source section. It
+  Things Security (WoT) Ontology and RML for some concepts in the Data Source section. It
   also reuses rdf and owl classes and properties in order to represent evaluable
   expressions and statement maps in the Statement Map section. Additionally
   predefined values for certain properties are represented using the Simple
@@ -99,9 +99,12 @@ Mappings Ontology.
   i.e. a JSONPath, XPath, a query or a regular expression, among others, can be
   expressed with this feature. It may be related to another source frame with
   <tt>hasNestedFrame</tt>, e.g. a frame is accessed firstly with a SPARQL query,
-  and their results as a CSV file with this property. A source fragment
+  and their results as a CSV file with this property. A source frame
   may refer to many data fields (<tt>hasField</tt>); this property is the inverse
-  property of the property <tt>belongsToFrame</tt>.</p>
+  property of the property <tt>belongsToFrame</tt>. The reference formulation
+  for the source frame can be defined with <tt>rml:ReferenceFormulation</tt> (e.g.
+  if the frame is accessed with a JSONPath, XPath, as a CSV, etc.).
+</p>
 
     </li>
     </ul>
@@ -197,21 +200,21 @@ Mappings Ontology.
   :SubjectLoc a cm:ReferenceNodeMap ;
       cm:hasEvaluableExpression [
           cm:hasFunctionName cmf:concat;
-          cm:hasInput ([cm:returns "http://ex.com/loc/"]
-                       eg:lat [ cm:returns "-" ] eg:long) ] .
+          cm:hasInput ([cm:constantValue "http://ex.com/loc/"]
+                       eg:lat [ cm:constantValue "-" ] eg:long) ] .
 
   :StatementLoc1 a cm:StatementMap ;
       cm:hasFrame :FrameLoc ;
       cm:subject :SubjectLoc ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns rdf:type ] ];
-      cm:object [ cm:hasEvaluableExpression [cm:returns eg:Location] ].
+          cm:hasEvaluableExpression [cm:constantValue rdf:type ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:constantValue eg:Location] ].
 
   :StatementLoc2 a cm:StatementMap ;
       cm:hasFrame :FrameLoc ;
       cm:subject :SubjectLoc ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns eg:lat] ];
+          cm:hasEvaluableExpression [cm:constantValue eg:lat] ];
       cm:object [ a cm:Literal; cm:hasEvaluableExpression :lat ];
       cm:hasDatatype [cm:hasEvaluableExpression xsd:decimal ].
 
@@ -219,7 +222,7 @@ Mappings Ontology.
       cm:hasFrame :FrameLoc ;
       cm:subject :SubjectLoc ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns eg:long] ];
+          cm:hasEvaluableExpression [cm:constantValue eg:long] ];
       cm:object [ a cm:Literal; cm:hasEvaluableExpression :long ];
       cm:hasDatatype [ cm:hasEvaluableExpression xsd:decimal ].
 </pre>
@@ -265,32 +268,32 @@ Mappings Ontology.
 :SubjectCities a cm:ReferenceNodeMap;
     cm:hasEvaluableExpression [
         cm:hasFunctionName cmf:concat;
-        cm:hasInput ([cm:returns "http://ex.com/city/"] :city_ns)].
+        cm:hasInput ([cm:constantValue "http://ex.com/city/"] :city_ns)].
 
 :StatementCit1 a cm:StatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns rdf:type] ];
+        cm:hasEvaluableExpression [cm:constantValue rdf:type] ];
     cm:object [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression  [cm:returns eg:City] ] .
+        cm:hasEvaluableExpression  [cm:constantValue eg:City] ] .
 
 :StatementCit2 a cm:StatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns eg:zipcode] ];
+        cm:hasEvaluableExpression [cm:constantValue eg:zipcode] ];
     cm:object [ a cm:Literal;
-        cm:hasEvaluableExpression [cm:returns :zipcode] ];
+        cm:hasEvaluableExpression [cm:constantValue :zipcode] ];
     cm:hasDatatype [ cm:hasEvaluableExpression xsd:integer ].
 
 :StatementCit3 a cm:ConditionalStatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns eg:population] ];
+        cm:hasEvaluableExpression [cm:constantValue eg:population] ];
     cm:object [ a cm:Literal;
-        cm:hasEvaluableExpression  [cm:returns :population] ];
+        cm:hasEvaluableExpression  [cm:constantValue :population] ];
     cm:hasDatatype [ cm:hasEvaluableExpression xsd:nonNegativeInteger ];
     cm:hasBooleanCondition [
         cm:functionName cmf:greater_than ;
@@ -738,43 +741,43 @@ Mappings Ontology.
   :SubjectRoute a cm:ReferenceNodeMap ;
       cm:hasEvaluableExpression [
           cm:hasFunctionName cmf:concat;
-          cm:hasInput ([cm:returns "http://ex.com/route/"] :s_route_id ] .
+          cm:hasInput ([cm:constantValue "http://ex.com/route/"] :s_route_id ] .
 
   :StatementRoute1 a cm:StatementMap ;
       cm:hasFrame :FrameRouteStop ;
       cm:subject :SubjectRoute ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns rdf:type ] ];
-      cm:object [ cm:hasEvaluableExpression [cm:returns trans:Route] ].
+          cm:hasEvaluableExpression [cm:constantValue rdf:type ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:constantValue trans:Route] ].
 
   :StatementRoute2 a cm:StatementMap ;
       cm:hasFrame :FrameRouteStop ;
       cm:subject :SubjectRoute ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns trans:lineIdentifier ] ];
-      cm:object [ cm:hasEvaluableExpression [cm:returns :line_id] ].
+          cm:hasEvaluableExpression [cm:constantValue trans:lineIdentifier ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:constantValue :line_id] ].
 
   :StatementRoute3 a cm:StatementMap ;
       cm:hasFrame :FrameRouteStop ;
       cm:subject :SubjectRoute ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns trans:tripHeadsign ] ];
-      cm:object [ cm:hasEvaluableExpression [cm:returns :trip_headsign] ];
-      cm:language [ cm:hasEvaluableExpression [cm:returns "es"] ].
+          cm:hasEvaluableExpression [cm:constantValue trans:tripHeadsign ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:constantValue :trip_headsign] ];
+      cm:language [ cm:hasEvaluableExpression [cm:constantValue "es"] ].
 
   :StatementRoute4 a cm:StatementMap ;
       cm:hasFrame :FrameRouteStop ;
       cm:subject :SubjectRoute ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns trans:startTime ] ];
-      cm:object [ cm:hasEvaluableExpression [cm:returns :start_time] ];
-      cm:datatype [ cm:hasEvaluableExpression [cm:returns xsd:Time] ].
+          cm:hasEvaluableExpression [cm:constantValue trans:startTime ] ];
+      cm:object [ cm:hasEvaluableExpression [cm:constantValue :start_time] ];
+      cm:datatype [ cm:hasEvaluableExpression [cm:constantValue xsd:Time] ].
 
   :StatementRoute5 a cm:StatementMap ;
       cm:hasFrame :FrameRouteStop ;
       cm:subject :SubjectRoute ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns trans:stopIdentifier ] ];
+          cm:hasEvaluableExpression [cm:constantValue trans:stopIdentifier ] ];
       cm:object [ a cm:ListMap; cm:hasEvaluableExpression :city_ns ].
 
   :city_ns a cm:FunctionExpression ;
@@ -785,11 +788,11 @@ Mappings Ontology.
       cm:hasFrame :FrameRouteStop ;
       cm:subject :SubjectRoute ;
       cm:predicate [ a cm:ReferenceNodeMap;
-          cm:hasEvaluableExpression [cm:returns trans:tripIdentifier ] ];
+          cm:hasEvaluableExpression [cm:constantValue trans:tripIdentifier ] ];
       cm:object [ cm:hasEvaluableExpression :trip_id ].
 
   :trip_id a FunctionExpression;
       cm:hasFunctionName cmf:concat;
-      cm:hasInput (:s_route_id [cm:returns "_"]
-                  :direction_id [ cm:returns "_" ] :start_time) ].
+      cm:hasInput (:s_route_id [cm:constantValue "_"]
+                  :direction_id [ cm:constantValue "_" ] :start_time) ].
 </pre>

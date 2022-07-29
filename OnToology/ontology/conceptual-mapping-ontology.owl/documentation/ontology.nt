@@ -11,11 +11,11 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics."@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/modified> "2022-03-23T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/dc/terms/modified> "2022-07-29T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/def/conceptual-mapping> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#> <http://www.w3.org/2002/07/owl#priorVersion> <http://vocab.linkeddata.es/def/conceptual-mapping/1.0.0/> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.0"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.1"@en .
 # 
 # 
 # #################################################################
@@ -105,6 +105,14 @@
 <http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#Frame> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame> <http://www.w3.org/2000/01/rdf-schema#label> "combines frame" .
 <http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a combined frame and the frames it combines" .
+# 
+# http://vocab.linkeddata.es/def/conceptual-mapping#constantValue
+<http://vocab.linkeddata.es/def/conceptual-mapping#constantValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#constantValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#constantValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Constant> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#constantValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#constantValue> <http://www.w3.org/2000/01/rdf-schema#label> "constant value"@en .
+<http://vocab.linkeddata.es/def/conceptual-mapping#constantValue> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the constant resource value it returns"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition
 <http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -289,20 +297,20 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy> <http://www.w3.org/2000/01/rdf-schema#label> "joins by" .
 <http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a join combination and the field it joins the sources by" .
 # 
+# http://vocab.linkeddata.es/def/conceptual-mapping#language
+<http://vocab.linkeddata.es/def/conceptual-mapping#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://semweb.mmlab.be/ns/rml#ReferenceFormulation> .
+<http://vocab.linkeddata.es/def/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a source frame and its reference formulation" .
+<http://vocab.linkeddata.es/def/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
+# 
 # http://vocab.linkeddata.es/def/conceptual-mapping#property
 <http://vocab.linkeddata.es/def/conceptual-mapping#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#property> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#property> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap> .
 <http://vocab.linkeddata.es/def/conceptual-mapping#property> <http://www.w3.org/2000/01/rdf-schema#label> "property" .
 <http://vocab.linkeddata.es/def/conceptual-mapping#property> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between the linking expression and the reference node map formed when the condition is fulfilled" .
-# 
-# http://vocab.linkeddata.es/def/conceptual-mapping#returns
-<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/def/conceptual-mapping#Constant> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2000/01/rdf-schema#label> "returns"@en .
-<http://vocab.linkeddata.es/def/conceptual-mapping#returns> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the resource it returns"@en .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#source
 <http://vocab.linkeddata.es/def/conceptual-mapping#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -738,6 +746,11 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # http://purl.org/dc/terms/MediaType
 <http://purl.org/dc/terms/MediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://semweb.mmlab.be/ns/rml#ReferenceFormulation
+<http://semweb.mmlab.be/ns/rml#ReferenceFormulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semweb.mmlab.be/ns/rml#ReferenceFormulation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a Reference Formulation."@en .
+<http://semweb.mmlab.be/ns/rml#ReferenceFormulation> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Formulation" .
 # 
 # http://vocab.linkeddata.es/def/conceptual-mapping#AltMap
 <http://vocab.linkeddata.es/def/conceptual-mapping#AltMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
