@@ -1,8 +1,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/aaa> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Diameter_(protocol)' title='Diameter (protocol)'>Diameter Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Diameter_(protocol)' title='Diameter (protocol)'>Diameter Protocol</a>" ;
 	skos:notation "RFC 3588","RFC 6733" ;
 	skos:scopeNote "aaa[s]://<host>[:<port>][;transport=<transport>][;protocol=<protocol>]"@en ,"aaa://host.example.com:1813;transport=udp;protocol=radius"@en  ;
 	skos:prefLabel "aaa","aaas" .
@@ -12,13 +13,13 @@
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
 	skos:definition "Displaying product information and internal information" ;
 	skos:notation "RFC 6694" ;
-	skos:note "Widely used by <a href='/wiki/Web_browser' title='Web browser'>web browsers</a> , sometimes even providing interactive resources. Individual vendors modify this scheme: for instance, the <a href='/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera web browser</a> forwards to their <code>opera:</code> scheme instead and <a class='mw-redirect' href='/wiki/Chrome_(browser)' title='Chrome (browser)'>Chrome</a> uses <code>chrome:</code> ." ;
+	skos:note "Widely used by <a href='https://en.wikipedia.org/wiki/Web_browser' title='Web browser'>web browsers</a> , sometimes even providing interactive resources. Individual vendors modify this scheme: for instance, the <a href='https://en.wikipedia.org/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera web browser</a> forwards to their <code>opera:</code> scheme instead and <a class='mw-redirect' href='/wiki/Chrome_(browser)' title='Chrome (browser)'>Chrome</a> uses <code>chrome:</code> ." ;
 	skos:prefLabel "about" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/acap> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Application_Configuration_Access_Protocol' title='Application Configuration Access Protocol'>Application Configuration Access Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Application_Configuration_Access_Protocol' title='Application Configuration Access Protocol'>Application Configuration Access Protocol</a>" ;
 	skos:notation "RFC 2244" ;
 	skos:scopeNote "acap://[<user>[;AUTH=<type>]@]<host>[:<port>]/<entry>"@en  ;
 	skos:note "URL scheme used within the ACAP protocol for the 'subdataset' attribute, referrals and inheritance" ;
@@ -50,7 +51,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/afp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Accessing <a href='/wiki/Apple_Filing_Protocol' title='Apple Filing Protocol'>Apple Filing Protocol</a> shares" ;
+	skos:definition "Accessing <a href='https://en.wikipedia.org/wiki/Apple_Filing_Protocol' title='Apple Filing Protocol'>Apple Filing Protocol</a> shares" ;
 	skos:notation "IANA registration template  IETF Draft" ;
 	skos:scopeNote "afp://[<user>@]<host>[:<port>][/[<path>]]"@en ,"afp:/at/[<user>@]<host>[:<zone>][/]"@en  ;
 	skos:prefLabel "afp" .
@@ -83,10 +84,10 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/attachment> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Attaching resources to <a href='/wiki/MHTML' title='MHTML'>MHTML</a> pages" ;
+	skos:definition "Attaching resources to <a href='https://en.wikipedia.org/wiki/MHTML' title='MHTML'>MHTML</a> pages" ;
 	skos:notation "IANA registration template" ;
 	skos:scopeNote "attachment:/<resource number>/<filename>"@en  ;
-	skos:note "<a href='/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera</a> -specific" ;
+	skos:note "<a href='https://en.wikipedia.org/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera</a> -specific" ;
 	skos:prefLabel "attachment" .
 
 
@@ -101,7 +102,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/amss> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Identifier for an <a href='/wiki/Amplitude_modulation_signalling_system' title='Amplitude modulation signalling system'>AMSS</a> broadcast" ;
+	skos:definition "Identifier for an <a href='https://en.wikipedia.org/wiki/Amplitude_modulation_signalling_system' title='Amplitude modulation signalling system'>AMSS</a> broadcast" ;
 	skos:notation "ETSI TS 103 270" ;
 	skos:scopeNote "amss:<sid>"@en  ;
 	skos:prefLabel "amss" .
@@ -127,7 +128,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/bitcoin> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Send money to a <a href='/wiki/Bitcoin' title='Bitcoin'>Bitcoin</a> address" ;
+	skos:definition "Send money to a <a href='https://en.wikipedia.org/wiki/Bitcoin' title='Bitcoin'>Bitcoin</a> address" ;
 	skos:notation "IANA registration template  Bitcoin URI Scheme" ;
 	skos:scopeNote "bitcoin:<address>[?[amount=<size>][&][label=<label>][&][message=<message>]]"@en  ;
 	skos:prefLabel "bitcoin" .
@@ -151,10 +152,10 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/callto> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Launching <a href='/wiki/Skype' title='Skype'>Skype</a> call (+And in Hungary the KLIP Software call too) (see also <a href='#skype:'>skype:</a> )" ;
+	skos:definition "Launching <a href='https://en.wikipedia.org/wiki/Skype' title='Skype'>Skype</a> call (+And in Hungary the KLIP Software call too) (see also <a href='#skype:'>skype:</a> )" ;
 	skos:notation "IANA registration template  old version of IETF Draft" ;
 	skos:scopeNote "callto:<screenname>"@en ,"callto:<phonenumber>"@en  ;
-	skos:note "Introduced with <a href='/wiki/Microsoft_NetMeeting' title='Microsoft NetMeeting'>Microsoft NetMeeting</a> . Works with current version of <a href='/wiki/Skype' title='Skype'>Skype</a> with <a href='/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> , <a href='/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera</a> and <a href='/wiki/Safari_(web_browser)' title='Safari (web browser)'>Safari</a>" ;
+	skos:note "Introduced with <a href='https://en.wikipedia.org/wiki/Microsoft_NetMeeting' title='Microsoft NetMeeting'>Microsoft NetMeeting</a> . Works with current version of <a href='https://en.wikipedia.org/wiki/Skype' title='Skype'>Skype</a> with <a href='https://en.wikipedia.org/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> , <a href='https://en.wikipedia.org/wiki/Opera_(web_browser)' title='Opera (web browser)'>Opera</a> and <a href='https://en.wikipedia.org/wiki/Safari_(web_browser)' title='Safari (web browser)'>Safari</a>" ;
 	skos:prefLabel "callto" .
 
 
@@ -171,16 +172,16 @@
 	skos:definition "Specifies user interfaces built using XUL in Mozilla-based browsers." ;
 	skos:notation "IANA registration template  Mozilla" ;
 	skos:scopeNote "chrome://<package>/<section>/<path>"@en ,"<section>"@en ,"content"@en ,"skin"@en ,"locale"@en  ;
-	skos:note "Works only in Mozilla-based browsers such as Firefox, SeaMonkey and Netscape. Not related to the <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> browser." ;
+	skos:note "Works only in Mozilla-based browsers such as Firefox, SeaMonkey and Netscape. Not related to the <a href='https://en.wikipedia.org/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> browser." ;
 	skos:prefLabel "chrome" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/chrome> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used for the management of <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> 's settings. In contrast with other browsers, its preferences appear as web-pages instead of dialog boxes." ;
+	skos:definition "Used for the management of <a href='https://en.wikipedia.org/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> 's settings. In contrast with other browsers, its preferences appear as web-pages instead of dialog boxes." ;
 	skos:notation "IANA registration template  Google" ;
 	skos:scopeNote "chrome://<settings>/<path>/[<specificSetting>]"@en  ;
-	skos:note "Works only in <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> and <a href='/wiki/Chromium_(web_browser)' title='Chromium (web browser)'>Chromium</a> ." ;
+	skos:note "Works only in <a href='https://en.wikipedia.org/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> and <a href='https://en.wikipedia.org/wiki/Chromium_(web_browser)' title='Chromium (web browser)'>Chromium</a> ." ;
 	skos:prefLabel "chrome" .
 
 
@@ -189,7 +190,7 @@
 	skos:definition "Manage the settings of extensions which have been installed." ;
 	skos:notation "IANA registration template  Google" ;
 	skos:scopeNote "chrome-extension://<extensionID>/<pageName>.html"@en ,"<extensionID>"@en ,"<pageName>"@en  ;
-	skos:note "Works only in <a href='/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> and <a href='/wiki/Chromium_(web_browser)' title='Chromium (web browser)'>Chromium</a> ." ;
+	skos:note "Works only in <a href='https://en.wikipedia.org/wiki/Google_Chrome' title='Google Chrome'>Google Chrome</a> and <a href='https://en.wikipedia.org/wiki/Chromium_(web_browser)' title='Chromium (web browser)'>Chromium</a> ." ;
 	skos:prefLabel "chrome-extension" .
 
 
@@ -201,7 +202,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/cid> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Referencing individual parts of an <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='/wiki/MIME' title='MIME'>MIME</a> message" ;
+	skos:definition "Referencing individual parts of an <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='https://en.wikipedia.org/wiki/MIME' title='MIME'>MIME</a> message" ;
 	skos:notation "RFC 2111","RFC 2392" ;
 	skos:scopeNote "cid:<content-id>"@en  ;
 	skos:note "e.g. referencing an attached image within a formatted e-mail. (See also <a href='#mid:'>mid:</a> )" ;
@@ -210,7 +211,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/coap> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Constrained_Application_Protocol' title='Constrained Application Protocol'>Constrained Application Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Constrained_Application_Protocol' title='Constrained Application Protocol'>Constrained Application Protocol</a>" ;
 	skos:notation "RFC 7252" ;
 	skos:scopeNote "coap[s]://<host>[:<port>]/<path>[?<query>]"@en  ;
 	skos:note "Identify CoAP resources and provide a means of locating the resource." ;
@@ -219,7 +220,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/content> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Accessing an <a href='/wiki/Android_(operating_system)' title='Android (operating system)'>Android</a> content provider." ;
+	skos:definition "Accessing an <a href='https://en.wikipedia.org/wiki/Android_(operating_system)' title='Android (operating system)'>Android</a> content provider." ;
 	skos:notation "IANA registration template  Open Handset Alliance" ;
 	skos:scopeNote "content://provider/<path>"@en  ;
 	skos:note "Performs a query on an Android <a class='external text' href='https://developer.android.com/guide/topics/providers/content-providers.html' rel='nofollow'>Content Provider</a>" ;
@@ -228,7 +229,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/crid> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/TV-Anytime' title='TV-Anytime'>TV-Anytime</a> Content Reference Identifier" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/TV-Anytime' title='TV-Anytime'>TV-Anytime</a> Content Reference Identifier" ;
 	skos:notation "RFC 4078" ;
 	skos:scopeNote "crid://<host>/<data>"@en  ;
 	skos:note "Allow references to scheduled publications of broadcast media content." ;
@@ -237,7 +238,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/cvs> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Provides a link to a <a href='/wiki/Concurrent_Versions_System' title='Concurrent Versions System'>Concurrent Versions System</a> (CVS) Repository" ;
+	skos:definition "Provides a link to a <a href='https://en.wikipedia.org/wiki/Concurrent_Versions_System' title='Concurrent Versions System'>Concurrent Versions System</a> (CVS) Repository" ;
 	skos:notation "IANA registration template  Concurrent Versions System" ;
 	skos:scopeNote "cvs://<method:logindetails>@<repository>/<modulepath>;[date=date to retrieve | tag=tag to retrieve]"@en  ;
 	skos:prefLabel "cvs" .
@@ -261,7 +262,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/dav> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "HTTP Extensions for Distributed Authoring ( <a href='/wiki/WebDAV' title='WebDAV'>WebDAV</a> )" ;
+	skos:definition "HTTP Extensions for Distributed Authoring ( <a href='https://en.wikipedia.org/wiki/WebDAV' title='WebDAV'>WebDAV</a> )" ;
 	skos:notation "RFC 2518","RFC 4918" ;
 	skos:scopeNote "dav:"@en  ;
 	skos:note "Used for internal identifiers only; WebDAV itself addresses resources using the <code>http:</code> and <code>https:</code> schemes. <a class='external autonumber' href='https://web.archive.org/web/20090114080855/http://article.gmane.org/gmane.org.w3c.uri/808' rel='nofollow'>[2]</a>" ;
@@ -270,7 +271,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/dict> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/DICT' title='DICT'>Dictionary service protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/DICT' title='DICT'>Dictionary service protocol</a>" ;
 	skos:notation "RFC 2229" ;
 	skos:scopeNote "dict://<user>;<auth>@<host>:<port>/d:<word>:<database>:<n>"@en ,"dict://<user>;<auth>@<host>:<port>/m:<word>:<database>:<strat>:<n>"@en  ;
 	skos:note "refer to definitions or word lists available using the DICT protocol" ;
@@ -285,7 +286,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/dns> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Domain_Name_System' title='Domain Name System'>Domain Name System</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Domain_Name_System' title='Domain Name System'>Domain Name System</a>" ;
 	skos:notation "RFC 4501" ;
 	skos:scopeNote "dns:[//<host>[:<port>]/]<dnsname>[?<dnsquery>]"@en ,"dns:example?TYPE=A;CLASS=IN"@en ,"dns://192.168.1.1/ftp.example.org?type=A"@en  ;
 	skos:note "designates a DNS resource record set, referenced by domain name, class, type, and, optionally, the authority" ;
@@ -301,7 +302,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/drm> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Identifier for a <a href='/wiki/Digital_Radio_Mondiale' title='Digital Radio Mondiale'>DRM</a> broadcast" ;
+	skos:definition "Identifier for a <a href='https://en.wikipedia.org/wiki/Digital_Radio_Mondiale' title='Digital Radio Mondiale'>DRM</a> broadcast" ;
 	skos:notation "ETSI TS 103 270" ;
 	skos:scopeNote "drm:<sid>[.<appdomain>.<uatype>]"@en  ;
 	skos:prefLabel "drm" .
@@ -322,10 +323,10 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/ed2k> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Resources available using the <a href='/wiki/EDonkey2000' title='EDonkey2000'>eDonkey2000</a> network" ;
+	skos:definition "Resources available using the <a href='https://en.wikipedia.org/wiki/EDonkey2000' title='EDonkey2000'>eDonkey2000</a> network" ;
 	skos:notation "IANA registration template  eDonkey2000" ;
 	skos:scopeNote "ed2k://|file|<filename>|<size of file>|<hash of file>|/"@en ,"ed2k://|server|<host>|<port>|/"@en  ;
-	skos:note "Links to servers are also possible, as are additional parameters. Official documentation from <a class='external text' href='https://web.archive.org/*/http://www.edonkey2000.com/documentation/distro.html' rel='nofollow'>eDonkey2000 website</a> at the <a href='/wiki/Wayback_Machine' title='Wayback Machine'>Wayback Machine</a> (archive index)" ;
+	skos:note "Links to servers are also possible, as are additional parameters. Official documentation from <a class='external text' href='https://web.archive.org/*/http://www.edonkey2000.com/documentation/distro.html' rel='nofollow'>eDonkey2000 website</a> at the <a href='https://en.wikipedia.org/wiki/Wayback_Machine' title='Wayback Machine'>Wayback Machine</a> (archive index)" ;
 	skos:prefLabel "ed2k" .
 
 
@@ -348,7 +349,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/fax> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used for <a href='/wiki/Fax' title='Fax'>telefacsimile</a> numbers" ;
+	skos:definition "Used for <a href='https://en.wikipedia.org/wiki/Fax' title='Fax'>telefacsimile</a> numbers" ;
 	skos:notation "RFC 2806","RFC 3966" ;
 	skos:scopeNote "fax:<phonenumber>"@en  ;
 	skos:note "Deprecated in RFC 3966 in favour of <a href='#tel:'>tel:</a> . Listed as ' <span data-sort-value='3' style='display:none;'></span> Historical'" ;
@@ -357,16 +358,16 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/feed> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Web_feed' title='Web feed'>web feed</a> subscription" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Web_feed' title='Web feed'>web feed</a> subscription" ;
 	skos:notation "IANA registration template" ;
 	skos:scopeNote "feed:<absolute_uri>"@en ,"feed://<hierarchical part>"@en ,"feed://example.com/rss.xml"@en ,"feed:https://example.com/rss.xml"@en  ;
-	skos:note "See <a href='/wiki/Feed_URI_scheme' title='Feed URI scheme'>Feed URI scheme</a> for a detailed overview of common implementations, supported software, and critics." ;
+	skos:note "See <a href='https://en.wikipedia.org/wiki/Feed_URI_scheme' title='Feed URI scheme'>Feed URI scheme</a> for a detailed overview of common implementations, supported software, and critics." ;
 	skos:prefLabel "feed" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/file> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Addressing files on local or network <a href='/wiki/File_system' title='File system'>file systems</a>" ;
+	skos:definition "Addressing files on local or network <a href='https://en.wikipedia.org/wiki/File_system' title='File system'>file systems</a>" ;
 	skos:notation "RFC 1738","RFC 3986" ;
 	skos:scopeNote "file://[host]/path"@en ,"file:[//host]/path"@en  ;
 	skos:note "Since this usually used for local files the host from RFC 1738 is often empty leading to a starting triple /. RFC 3986 allows an absolute path with no host part." ;
@@ -382,7 +383,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/finger> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Querying user information using the <a href='/wiki/Finger_protocol' title='Finger protocol'>Finger protocol</a>" ;
+	skos:definition "Querying user information using the <a href='https://en.wikipedia.org/wiki/Finger_protocol' title='Finger protocol'>Finger protocol</a>" ;
 	skos:notation "IANA registration template  IETF Draft" ;
 	skos:scopeNote "finger://host[:port][/<request>]"@en  ;
 	skos:prefLabel "finger" .
@@ -393,13 +394,13 @@
 	skos:definition "Accessing another computer's files using the <a class='mw-redirect' href='/wiki/Secure_Shell' title='Secure Shell'>SSH</a> protocol" ;
 	skos:notation "IANA registration template  fish KDE kioslave" ;
 	skos:scopeNote "fish://[<username>[:<password>]@]<hostname>[:<port>]"@en  ;
-	skos:note "See <a href='/wiki/Files_transferred_over_shell_protocol' title='Files transferred over shell protocol'>Files transferred over shell protocol</a> for details about the protocol." ;
+	skos:note "See <a href='https://en.wikipedia.org/wiki/Files_transferred_over_shell_protocol' title='Files transferred over shell protocol'>Files transferred over shell protocol</a> for details about the protocol." ;
 	skos:prefLabel "fish" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/fm> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Identifier for a <a href='/wiki/FM_broadcasting' title='FM broadcasting'>FM</a> broadcast" ;
+	skos:definition "Identifier for a <a href='https://en.wikipedia.org/wiki/FM_broadcasting' title='FM broadcasting'>FM</a> broadcast" ;
 	skos:notation "ETSI TS 103 270" ;
 	skos:scopeNote "fm:<gcc>.<pi>.<frequency>"@en  ;
 	skos:prefLabel "fm" .
@@ -407,7 +408,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/ftp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/File_Transfer_Protocol' title='File Transfer Protocol'>FTP</a> resources" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/File_Transfer_Protocol' title='File Transfer Protocol'>FTP</a> resources" ;
 	skos:notation "RFC 1738  IETF Draft  Old IETF Draft" ;
 	skos:prefLabel "ftp" .
 
@@ -417,13 +418,13 @@
 	skos:definition "A Uniform Resource Identifier for Geographic Locations" ;
 	skos:notation "RFC 5870" ;
 	skos:scopeNote "geo:<lat>,<lon>[,<alt>][;u=<uncertainty>]"@en  ;
-	skos:note "Other <a class='mw-redirect' href='/wiki/Spatial_referencing_system' title='Spatial referencing system'>coordinate reference systems</a> (including those for non-terrestrial globes, such as <a href='/wiki/Moon' title='Moon'>The Moon</a> and <a href='/wiki/Mars' title='Mars'>Mars</a> ) will be supported, once registered." ;
+	skos:note "Other <a class='mw-redirect' href='/wiki/Spatial_referencing_system' title='Spatial referencing system'>coordinate reference systems</a> (including those for non-terrestrial globes, such as <a href='https://en.wikipedia.org/wiki/Moon' title='Moon'>The Moon</a> and <a href='https://en.wikipedia.org/wiki/Mars' title='Mars'>Mars</a> ) will be supported, once registered." ;
 	skos:prefLabel "geo" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/gg> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Starting chat with <a href='/wiki/Gadu-Gadu' title='Gadu-Gadu'>Gadu-Gadu</a> user" ;
+	skos:definition "Starting chat with <a href='https://en.wikipedia.org/wiki/Gadu-Gadu' title='Gadu-Gadu'>Gadu-Gadu</a> user" ;
 	skos:notation "IANA registration template  Gadu-Gadu" ;
 	skos:scopeNote "gg:<userid>"@en  ;
 	skos:prefLabel "gg" .
@@ -439,7 +440,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/gizmoproject> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Gizmo5' title='Gizmo5'>Gizmo5</a> calling link." ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Gizmo5' title='Gizmo5'>Gizmo5</a> calling link." ;
 	skos:notation "IANA registration template" ;
 	skos:scopeNote "gizmoproject://call?id=<gizmo_id>"@en  ;
 	skos:note "May use <a class='external free' href='sip://' rel='nofollow'>sip://</a> instead of gizmoproject:// in recent versions of Gizmo5." ;
@@ -456,7 +457,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/gopher> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used with <a href='/wiki/Gopher_(protocol)' title='Gopher (protocol)'>Gopher protocol</a>" ;
+	skos:definition "Used with <a href='https://en.wikipedia.org/wiki/Gopher_(protocol)' title='Gopher (protocol)'>Gopher protocol</a>" ;
 	skos:notation "RFC 4266" ;
 	skos:scopeNote "gopher://<host>:<port>/<item type><path>"@en  ;
 	skos:prefLabel "gopher" .
@@ -464,16 +465,16 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/gtalk> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Start a chat with a <a href='/wiki/Google_Talk' title='Google Talk'>Google Talk</a> user" ;
+	skos:definition "Start a chat with a <a href='https://en.wikipedia.org/wiki/Google_Talk' title='Google Talk'>Google Talk</a> user" ;
 	skos:notation "IANA registration template  Google Talk" ;
 	skos:scopeNote "gtalk:chat?jid=example@gmail.com"@en  ;
-	skos:note "See <a href='/wiki/Google_Talk' title='Google Talk'>Google Talk</a> , <a class='mw-redirect' href='/wiki/Extensible_Messaging_and_Presence_Protocol' title='Extensible Messaging and Presence Protocol'>XMPP</a> , and <a class='external free' href='http://juberti.blogspot.com/2006/11/gtalk-uri.html' rel='nofollow'>http://juberti.blogspot.com/2006/11/gtalk-uri.html</a> for more information" ;
+	skos:note "See <a href='https://en.wikipedia.org/wiki/Google_Talk' title='Google Talk'>Google Talk</a> , <a class='mw-redirect' href='/wiki/Extensible_Messaging_and_Presence_Protocol' title='Extensible Messaging and Presence Protocol'>XMPP</a> , and <a class='external free' href='http://juberti.blogspot.com/2006/11/gtalk-uri.html' rel='nofollow'>http://juberti.blogspot.com/2006/11/gtalk-uri.html</a> for more information" ;
 	skos:prefLabel "gtalk" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/h323> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used with <a href='/wiki/H.323' title='H.323'>H.323</a> multimedia communications" ;
+	skos:definition "Used with <a href='https://en.wikipedia.org/wiki/H.323' title='H.323'>H.323</a> multimedia communications" ;
 	skos:notation "RFC 3508" ;
 	skos:scopeNote "h323:[<user>@]<host>[:<port>][;<parameters>]"@en  ;
 	skos:prefLabel "h323" .
@@ -484,7 +485,7 @@
 	skos:definition "Displaying a help page on <a class='mw-redirect' href='/wiki/Microsoft_Windows_Help_and_Support_Center' title='Microsoft Windows Help and Support Center'>Microsoft Windows Help and Support Center</a> ." ;
 	skos:notation "IANA registration template  Microsoft" ;
 	skos:scopeNote "hcp://system/<File>.htm"@en ,"<File>"@en  ;
-	skos:note "Works only on <a href='/wiki/Windows_XP' title='Windows XP'>Windows XP</a> . Later replaced by <a href='#ms-help:'>ms-help:</a> ." ;
+	skos:note "Works only on <a href='https://en.wikipedia.org/wiki/Windows_XP' title='Windows XP'>Windows XP</a> . Later replaced by <a href='#ms-help:'>ms-help:</a> ." ;
 	skos:prefLabel "hcp" .
 
 
@@ -497,14 +498,14 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/https> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "HTTP connections secured using <a href='/wiki/Transport_Layer_Security' title='Transport Layer Security'>SSL/TLS</a>" ;
+	skos:definition "HTTP connections secured using <a href='https://en.wikipedia.org/wiki/Transport_Layer_Security' title='Transport Layer Security'>SSL/TLS</a>" ;
 	skos:notation "RFC 2817","RFC 7230" ;
 	skos:prefLabel "https" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/iax> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Inter-Asterisk_eXchange' title='Inter-Asterisk eXchange'>Inter-Asterisk eXchange</a> protocol version 2" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Inter-Asterisk_eXchange' title='Inter-Asterisk eXchange'>Inter-Asterisk eXchange</a> protocol version 2" ;
 	skos:notation "RFC 5456" ;
 	skos:scopeNote "iax:[<username>@]<host>[:<port>][/<number>[?<context>]]"@en ,"iax:[2001:db8::1]:4569/alice?friends"@en ,"iax:johnQ@example.com/12022561414"@en  ;
 	skos:prefLabel "iax" .
@@ -512,7 +513,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/icap> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Internet_Content_Adaptation_Protocol' title='Internet Content Adaptation Protocol'>Internet Content Adaptation Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Internet_Content_Adaptation_Protocol' title='Internet Content Adaptation Protocol'>Internet Content Adaptation Protocol</a>" ;
 	skos:notation "RFC 3507" ;
 	skos:prefLabel "icap" .
 
@@ -525,7 +526,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/im> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Instant_messaging' title='Instant messaging'>Instant messaging</a> protocol" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Instant_messaging' title='Instant messaging'>Instant messaging</a> protocol" ;
 	skos:notation "RFC 3860" ;
 	skos:scopeNote "im:<username>@<host>, and also im:sip:<username>@<host> for MS Communicator launching"@en  ;
 	skos:note "Works as <code>xmpp:</code> URI for single user chat sessions." ;
@@ -562,21 +563,21 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/ipp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a>" ;
 	skos:notation "RFC 3510" ;
 	skos:prefLabel "ipp" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/ipps> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a> over HTTPS" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Internet_Printing_Protocol' title='Internet Printing Protocol'>Internet Printing Protocol</a> over HTTPS" ;
 	skos:notation "RFC 7472" ;
 	skos:prefLabel "ipps" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/irc> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Connecting to an <a href='/wiki/Internet_Relay_Chat' title='Internet Relay Chat'>Internet Relay Chat</a> server to join a channel." ;
+	skos:definition "Connecting to an <a href='https://en.wikipedia.org/wiki/Internet_Relay_Chat' title='Internet Relay Chat'>Internet Relay Chat</a> server to join a channel." ;
 	skos:notation "IANA registration template  IETF Draft  Old IETF Draft" ;
 	skos:scopeNote "irc://<host>[:<port>]/[<channel>[?<password>]]"@en  ;
 	skos:note "Assuming the client knows a server associated with the name, 'host' may optionally be an IRC network name." ;
@@ -585,7 +586,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/irc6> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/IPv6' title='IPv6'>IPv6</a> equivalent of <i>irc</i>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/IPv6' title='IPv6'>IPv6</a> equivalent of <i>irc</i>" ;
 	skos:notation "IANA registration template" ;
 	skos:scopeNote "irc6://<host>[:<port>]/[<channel>[?<password>]]"@en  ;
 	skos:note "See <i>irc</i>" ;
@@ -627,7 +628,7 @@
 	skos:definition "Compressed archive member" ;
 	skos:notation "IANA registration template  Java API" ;
 	skos:scopeNote "jar:<url>!/[<entry>]"@en  ;
-	skos:note "Works for any <a href='/wiki/ZIP_(file_format)' title='ZIP (file format)'>ZIP</a> based file." ;
+	skos:note "Works for any <a href='https://en.wikipedia.org/wiki/ZIP_(file_format)' title='ZIP (file format)'>ZIP</a> based file." ;
 	skos:prefLabel "jar" .
 
 
@@ -648,7 +649,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/lastfm> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Connecting to a <a class='new' href='/w/index.php?title=Radio_stream&amp;action=edit&amp;redlink=1' title='Radio stream (page does not exist)'>radio stream</a> from <a href='/wiki/Last.fm' title='Last.fm'>Last.fm</a> ." ;
+	skos:definition "Connecting to a <a class='new' href='/w/index.php?title=Radio_stream&amp;action=edit&amp;redlink=1' title='Radio stream (page does not exist)'>radio stream</a> from <a href='https://en.wikipedia.org/wiki/Last.fm' title='Last.fm'>Last.fm</a> ." ;
 	skos:notation "IANA registration template  Last.fm" ;
 	skos:scopeNote "lastfm://<radio_stream>"@en ,"lastfm://globaltags/<genre>"@en ,"lastfm://user/<username>/<stuff>"@en  ;
 	skos:prefLabel "lastfm" .
@@ -656,7 +657,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/ldap> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Lightweight_Directory_Access_Protocol' title='Lightweight Directory Access Protocol'>LDAP</a> directory request" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol' title='Lightweight Directory Access Protocol'>LDAP</a> directory request" ;
 	skos:notation "RFC 2255","RFC 4516" ;
 	skos:scopeNote "ldap://[<host>[:<port>]][/<dn> [?[<attributes>][?[<scope>][?[<filter>][?<extensions>]]]]]"@en ,"ldap://ldap1.example.net:6666/o=University%20of%20Michigan, c=US??sub?(cn=Babs%20Jensen)"@en  ;
 	skos:prefLabel "ldap" .
@@ -676,7 +677,7 @@
 	skos:definition "'magnet links'" ;
 	skos:notation "IANA registration template  Magnet-URI Project" ;
 	skos:scopeNote "magnet:?xt=urn:sha1:<hash of file>&dn=<display name>"@en  ;
-	skos:note "Used by various <a href='/wiki/Peer-to-peer' title='Peer-to-peer'>peer-to-peer</a> clients, usually providing the hash of a file to be located on the network." ;
+	skos:note "Used by various <a href='https://en.wikipedia.org/wiki/Peer-to-peer' title='Peer-to-peer'>peer-to-peer</a> clients, usually providing the hash of a file to be located on the network." ;
 	skos:prefLabel "magnet" .
 
 
@@ -689,7 +690,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/mailto> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Simple_Mail_Transfer_Protocol' title='Simple Mail Transfer Protocol'>SMTP</a>  <a class='mw-redirect' href='/wiki/E-mail' title='E-mail'>e-mail</a> addresses and default content" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol' title='Simple Mail Transfer Protocol'>SMTP</a>  <a class='mw-redirect' href='/wiki/E-mail' title='E-mail'>e-mail</a> addresses and default content" ;
 	skos:notation "RFC 6068" ;
 	skos:scopeNote "mailto:<address>[?<header1>=<value1>[&<header2>=<value2>]]"@en ,"mailto:jsmith@example.com?subject=A%20Test&body=My%20idea%20is%3A%20%0A"@en  ;
 	skos:note "Headers are optional, but often include <code>subject=</code> ; <code>body=</code> can be used to pre-fill the body of the message." ;
@@ -724,7 +725,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/mid> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Referencing <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='/wiki/MIME' title='MIME'>MIME</a> messages, or parts of messages." ;
+	skos:definition "Referencing <a class='mw-redirect' href='/wiki/SMTP' title='SMTP'>SMTP</a> / <a href='https://en.wikipedia.org/wiki/MIME' title='MIME'>MIME</a> messages, or parts of messages." ;
 	skos:notation "RFC 2111","RFC 2392" ;
 	skos:scopeNote "mid:<message-id>[/<content-id>]"@en  ;
 	skos:note "(See also <a href='#cid:'>cid:</a> )" ;
@@ -749,10 +750,10 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/ms-help> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Displaying a help page on <a class='mw-redirect' href='/wiki/Microsoft_Windows_Help_and_Support_Center' title='Microsoft Windows Help and Support Center'>Microsoft Windows Help and Support Center</a> . Used by <a href='/wiki/Windows_Vista' title='Windows Vista'>Windows Vista</a> and later." ;
+	skos:definition "Displaying a help page on <a class='mw-redirect' href='/wiki/Microsoft_Windows_Help_and_Support_Center' title='Microsoft Windows Help and Support Center'>Microsoft Windows Help and Support Center</a> . Used by <a href='https://en.wikipedia.org/wiki/Windows_Vista' title='Windows Vista'>Windows Vista</a> and later." ;
 	skos:notation "IANA registration template  Microsoft" ;
 	skos:scopeNote "ms-help://<section>/<path>/<file>.htm"@en ,"<section>"@en ,"<path>"@en ,"<file>"@en  ;
-	skos:note "Works only on <a href='/wiki/Windows_Vista' title='Windows Vista'>Windows Vista</a> and later." ;
+	skos:note "Works only on <a href='https://en.wikipedia.org/wiki/Windows_Vista' title='Windows Vista'>Windows Vista</a> and later." ;
 	skos:prefLabel "ms-help" .
 
 
@@ -774,7 +775,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/msrp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Message_Session_Relay_Protocol' title='Message Session Relay Protocol'>Message Session Relay Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Message_Session_Relay_Protocol' title='Message Session Relay Protocol'>Message Session Relay Protocol</a>" ;
 	skos:notation "RFC 4975" ;
 	skos:prefLabel "msrp","msrps" .
 
@@ -790,7 +791,7 @@
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
 	skos:definition "Joining a server." ;
 	skos:notation "IANA registration template  Mumble" ;
-	skos:scopeNote "mumble://[username[:password]@]<address>[:port]/[channelpath]?version=<serverversion>[&title=<servername>][&url=<serverurl>]
+	skos:scopeNote "mumble://[username[:password]@]<address>[:port]/[channelpath]?version=<serverversion>[&title=<servername>][&url=<serverurl>]";
 	skos:note "Official documentation from <a class='external text' href='http://mumble.sourceforge.net/Mumble_URL' rel='nofollow'>Mumble website</a>" ;
 	skos:prefLabel "mumble" .
 
@@ -804,7 +805,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/mvn> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Access <a href='/wiki/Apache_Maven' title='Apache Maven'>Apache Maven</a> repository artifacts" ;
+	skos:definition "Access <a href='https://en.wikipedia.org/wiki/Apache_Maven' title='Apache Maven'>Apache Maven</a> repository artifacts" ;
 	skos:notation "IANA registration template  OPS4J" ;
 	skos:scopeNote "mvn:org.ops4j.pax.web.bundles/service/0.2.0-SNAPSHOT"@en ,"mvn:http://user:password@repository.ops4j.org/maven2!org.ops4j.pax.web.bundles/service/0.2.0"@en  ;
 	skos:prefLabel "mvn" .
@@ -812,7 +813,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/news> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "( <a href='/wiki/Usenet' title='Usenet'>Usenet</a> ) newsgroups and postings" ;
+	skos:definition "( <a href='https://en.wikipedia.org/wiki/Usenet' title='Usenet'>Usenet</a> ) newsgroups and postings" ;
 	skos:notation "RFC 1738","RFC 5538" ;
 	skos:scopeNote "news:<newsgroupname>"@en ,"news:<message-id>"@en  ;
 	skos:note "References a particular <i>resource</i> , regardless of location." ;
@@ -837,7 +838,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/nntp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Usenet <a href='/wiki/Network_News_Transfer_Protocol' title='Network News Transfer Protocol'>NNTP</a>" ;
+	skos:definition "Usenet <a href='https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol' title='Network News Transfer Protocol'>NNTP</a>" ;
 	skos:notation "RFC 1738","RFC 5538" ;
 	skos:scopeNote "nntp://<host>:<port>/<newsgroup-name>/<article-number>"@en  ;
 	skos:note "Referencing a specific host is often less useful than referencing the resource generically, as NNTP servers are not always publicly accessible" ;
@@ -873,7 +874,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/palm> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used to designate system services in HP <a href='/wiki/WebOS' title='WebOS'>webOS</a> applications" ;
+	skos:definition "Used to designate system services in HP <a href='https://en.wikipedia.org/wiki/WebOS' title='WebOS'>webOS</a> applications" ;
 	skos:notation "IANA registration template  HP webOS" ;
 	skos:scopeNote "palm:<servicename>[/<method>]]/"@en  ;
 	skos:note "Official documentation from <a class='external text' href='https://web.archive.org/web/20101231064025/http://developer.palm.com/index.php?option=com_content&amp;view=article&amp;id=1649&amp;Itemid=20' rel='nofollow'>HP webOS Services Overview</a>" ;
@@ -899,7 +900,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/pkcs11> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/PKCS_11' title='PKCS 11'>PKCS #11</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/PKCS_11' title='PKCS 11'>PKCS #11</a>" ;
 	skos:notation "RFC 7512" ;
 	skos:prefLabel "pkcs11" .
 
@@ -967,14 +968,14 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/redis> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Redis' title='Redis'>Redis</a> database" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Redis' title='Redis'>Redis</a> database" ;
 	skos:notation "IANA registration template  IANA registration template" ;
 	skos:prefLabel "redis","rediss" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/reload> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/REsource_LOcation_And_Discovery_Framing' title='REsource LOcation And Discovery Framing'>REsource LOcation And Discovery Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/REsource_LOcation_And_Discovery_Framing' title='REsource LOcation And Discovery Framing'>REsource LOcation And Discovery Protocol</a>" ;
 	skos:notation "RFC 6940" ;
 	skos:scopeNote "reload://<destination>@<overlay>/[<specifier>]"@en  ;
 	skos:prefLabel "reload" .
@@ -982,19 +983,19 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/res> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used by <a href='/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> to display <a href='/wiki/List_of_HTTP_status_codes#4xx_Client_Error' title='List of HTTP status codes'>error pages</a> when the server doesn't have its own customized error pages, or when there is no response from the server (in case which the server wasn't found, like when the server is down or the domain isn't registered or when there is no Internet connection, or in case of a timeout)." ;
+	skos:definition "Used by <a href='https://en.wikipedia.org/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> to display <a href='https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error' title='List of HTTP status codes'>error pages</a> when the server doesn't have its own customized error pages, or when there is no response from the server (in case which the server wasn't found, like when the server is down or the domain isn't registered or when there is no Internet connection, or in case of a timeout)." ;
 	skos:notation "IANA registration template  Microsoft" ;
 	skos:scopeNote "res://ieframe.dll/<File>"@en ,"<File>"@en  ;
-	skos:note "Works only in <a href='/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> ." ;
+	skos:note "Works only in <a href='https://en.wikipedia.org/wiki/Internet_Explorer' title='Internet Explorer'>Internet Explorer</a> ." ;
 	skos:prefLabel "res" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/resource> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Creating mapping for resource protocol aliases generted by the resource instruction. Used by <a href='/wiki/Firefox' title='Firefox'>Firefox</a> . <sup class='reference' id='cite_ref-1'><a href='#cite_note-1'>[1]</a></sup>" ;
+	skos:definition "Creating mapping for resource protocol aliases generted by the resource instruction. Used by <a href='https://en.wikipedia.org/wiki/Firefox' title='Firefox'>Firefox</a> . <sup class='reference' id='cite_ref-1'><a href='#cite_note-1'>[1]</a></sup>" ;
 	skos:notation "IANA registration template  Mozilla" ;
 	skos:scopeNote "resource://<aliasname>/"@en ,"<aliasname>"@en  ;
-	skos:note "Works only in <a href='/wiki/Firefox' title='Firefox'>Firefox</a> ." ;
+	skos:note "Works only in <a href='https://en.wikipedia.org/wiki/Firefox' title='Firefox'>Firefox</a> ." ;
 	skos:prefLabel "resource" .
 
 
@@ -1003,13 +1004,13 @@
 	skos:definition "Look up a Java object in an RMI registry." ;
 	skos:notation "IANA registration template  Sun" ;
 	skos:scopeNote "rmi://<host>[:<port>]/<object-name>"@en  ;
-	skos:note "URI scheme understood by <a class='mw-redirect' href='/wiki/Jndi' title='Jndi'>JNDI</a> . Can be used to look up a remote Java object within an RMI registry (typically for the purposes of <a href='/wiki/Java_remote_method_invocation' title='Java remote method invocation'>RMI</a> on that object). Host/port in the URI are of the <a class='external text' href='http://java.sun.com/javase/6/docs/technotes/tools/solaris/rmiregistry.html' rel='nofollow'>rmiregistry</a> process, not the remote object." ;
+	skos:note "URI scheme understood by <a class='mw-redirect' href='/wiki/Jndi' title='Jndi'>JNDI</a> . Can be used to look up a remote Java object within an RMI registry (typically for the purposes of <a href='https://en.wikipedia.org/wiki/Java_remote_method_invocation' title='Java remote method invocation'>RMI</a> on that object). Host/port in the URI are of the <a class='external text' href='http://java.sun.com/javase/6/docs/technotes/tools/solaris/rmiregistry.html' rel='nofollow'>rmiregistry</a> process, not the remote object." ;
 	skos:prefLabel "rmi" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/rsync> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Rsync' title='Rsync'>rsync</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Rsync' title='Rsync'>rsync</a>" ;
 	skos:notation "RFC 5781" ;
 	skos:scopeNote "rsync://<host>[:<port>]/<path>"@en  ;
 	skos:prefLabel "rsync" .
@@ -1034,7 +1035,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/rtsp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Real_Time_Streaming_Protocol' title='Real Time Streaming Protocol'>Real Time Streaming Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol' title='Real Time Streaming Protocol'>Real Time Streaming Protocol</a>" ;
 	skos:notation "RFC 2326" ;
 	skos:prefLabel "rtsp" .
 
@@ -1056,7 +1057,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/session> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Media_Resource_Control_Protocol' title='Media Resource Control Protocol'>Media Resource Control Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Media_Resource_Control_Protocol' title='Media Resource Control Protocol'>Media Resource Control Protocol</a>" ;
 	skos:notation "RFC 4463","RFC 6787" ;
 	skos:scopeNote "session:<content-id>"@en ,"session:help@root-level.store"@en  ;
 	skos:prefLabel "session" .
@@ -1064,7 +1065,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/sftp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a class='mw-redirect' href='/wiki/SSH_file_transfer_protocol' title='SSH file transfer protocol'>SFTP</a> file transfers (not be to confused with <a href='/wiki/FTPS' title='FTPS'>FTPS</a> (FTP/SSL))" ;
+	skos:definition "<a class='mw-redirect' href='/wiki/SSH_file_transfer_protocol' title='SSH file transfer protocol'>SFTP</a> file transfers (not be to confused with <a href='https://en.wikipedia.org/wiki/FTPS' title='FTPS'>FTPS</a> (FTP/SSL))" ;
 	skos:notation "IANA registration template  IETF Draft" ;
 	skos:scopeNote "sftp://[<user>[;fingerprint=<host-key fingerprint>]@]<host>[:<port>]/<path>/<file>"@en  ;
 	skos:prefLabel "sftp" .
@@ -1081,9 +1082,9 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/shttp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Secure_Hypertext_Transfer_Protocol' title='Secure Hypertext Transfer Protocol'>Secure HTTP</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Secure_Hypertext_Transfer_Protocol' title='Secure Hypertext Transfer Protocol'>Secure HTTP</a>" ;
 	skos:notation "RFC 2660" ;
-	skos:note "Largely superseded by <a href='/wiki/HTTPS' title='HTTPS'>HTTPS</a> ." ;
+	skos:note "Largely superseded by <a href='https://en.wikipedia.org/wiki/HTTPS' title='HTTPS'>HTTPS</a> ." ;
 	skos:prefLabel "shttp" .
 
 
@@ -1096,7 +1097,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/sip> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used with <a href='/wiki/Session_Initiation_Protocol' title='Session Initiation Protocol'>Session Initiation Protocol</a> (SIP)" ;
+	skos:definition "Used with <a href='https://en.wikipedia.org/wiki/Session_Initiation_Protocol' title='Session Initiation Protocol'>Session Initiation Protocol</a> (SIP)" ;
 	skos:notation "RFC 2543","RFC 3969","RFC 3261" ;
 	skos:scopeNote "sip:<user>[:<password>]@<host>[:<port>][;<uri-parameters>][?<headers>]"@en ,"sip:alice@atlanta.com?subject=project%20x&priority=urgent"@en ,"sip:+1-212-555-1212:1234@gateway.com;user=phone"@en  ;
 	skos:prefLabel "sip" .
@@ -1112,7 +1113,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/skype> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Launching <a href='/wiki/Skype' title='Skype'>Skype</a> call (see also <a href='#callto:'>callto:</a> )" ;
+	skos:definition "Launching <a href='https://en.wikipedia.org/wiki/Skype' title='Skype'>Skype</a> call (see also <a href='#callto:'>callto:</a> )" ;
 	skos:notation "IANA registration template  Skype" ;
 	skos:scopeNote "skype:<username|phonenumber>[?[add|call|chat|sendfile|userinfo]]"@en  ;
 	skos:prefLabel "skype" .
@@ -1120,7 +1121,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/smb> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Accessing <a href='/wiki/Server_Message_Block' title='Server Message Block'>SMB</a> /CIFS shares" ;
+	skos:definition "Accessing <a href='https://en.wikipedia.org/wiki/Server_Message_Block' title='Server Message Block'>SMB</a> /CIFS shares" ;
 	skos:notation "IANA registration template  IETF Draft" ;
 	skos:scopeNote "smb://[<user>@]<host>[:<port>][/[<path>]][?<param1>=<value1>[;<param2>=<value2>]]"@en ,"smb://[<user>@]<workgroup>[:<port>][/]"@en ,"smb://[[<domain>;]<username>[:<password>]@]<server>[:<port>][/[<share>[/[<path>]]][?[<param>=<value>[<param2>=<value2>[...]]]]]"@en ,"smb://workgroup;user:password@server/share/folder/file.txt"@en  ;
 	skos:prefLabel "smb" .
@@ -1128,10 +1129,10 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/sms> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Interact with <a href='/wiki/SMS' title='SMS'>SMS</a> capable devices for composing and sending messages." ;
+	skos:definition "Interact with <a href='https://en.wikipedia.org/wiki/SMS' title='SMS'>SMS</a> capable devices for composing and sending messages." ;
 	skos:notation "RFC 5724" ;
 	skos:scopeNote "sms:<phone number>?<action>"@en ,"sms:+15105550101?body=hello%20there"@en ,"sms:+15105550101,+15105550102?body=hello%20there"@en  ;
-	skos:note "Should be used as a subset to the <code>tel:</code> schema. <sup class='noprint Inline-Template Template-Fact' style='white-space:nowrap;'>[<i><a href='/wiki/Wikipedia:Citation_needed' title='Wikipedia:Citation needed'><span title='This claim needs references to reliable sources. (August 2007)'>citation needed</span></a></i>]</sup>" ;
+	skos:note "Should be used as a subset to the <code>tel:</code> schema. <sup class='noprint Inline-Template Template-Fact' style='white-space:nowrap;'>[<i><a href='https://en.wikipedia.org/wiki/Wikipedia:Citation_needed' title='Wikipedia:Citation needed'><span title='This claim needs references to reliable sources. (August 2007)'>citation needed</span></a></i>]</sup>" ;
 	skos:prefLabel "sms" .
 
 
@@ -1144,7 +1145,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/snmp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Simple_Network_Management_Protocol' title='Simple Network Management Protocol'>Simple Network Management Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol' title='Simple Network Management Protocol'>Simple Network Management Protocol</a>" ;
 	skos:notation "RFC 4088" ;
 	skos:scopeNote "snmp://[user@]host[:port][/[<context>[;<contextEngineID>]][/<oid>]]"@en ,"snmp://example.com//1.3.6.1.2.1.1.3+"@en ,"snmp://tester5@example.com:8161/bridge1;800002b804616263"@en  ;
 	skos:prefLabel "snmp" .
@@ -1235,7 +1236,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/telnet> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used with <a href='/wiki/Telnet' title='Telnet'>telnet</a>" ;
+	skos:definition "Used with <a href='https://en.wikipedia.org/wiki/Telnet' title='Telnet'>telnet</a>" ;
 	skos:notation "RFC 1738","RFC 4248" ;
 	skos:scopeNote "telnet://<user>:<password>@<host>[:<port>/]"@en  ;
 	skos:prefLabel "telnet" .
@@ -1243,7 +1244,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/tftp> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Trivial_File_Transfer_Protocol' title='Trivial File Transfer Protocol'>Trivial File Transfer Protocol</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol' title='Trivial File Transfer Protocol'>Trivial File Transfer Protocol</a>" ;
 	skos:notation "RFC 3617" ;
 	skos:prefLabel "tftp" .
 
@@ -1280,7 +1281,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/turn> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Traversal_Using_Relays_around_NAT' title='Traversal Using Relays around NAT'>Traversal Using Relays around NAT</a> (TURN)" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT' title='Traversal Using Relays around NAT'>Traversal Using Relays around NAT</a> (TURN)" ;
 	skos:notation "RFC 7065" ;
 	skos:scopeNote "turn[s]:<host>[:<port>][?transport=<transport>]"@en  ;
 	skos:prefLabel "turn","turns" .
@@ -1307,7 +1308,7 @@
 	skos:definition "MPEG Transport Stream over UDP" ;
 	skos:notation "IANA registration template  MPEG-TS" ;
 	skos:scopeNote "udp://[<localaddress>@]<destination|multicastgroup>[:<port>]"@en  ;
-	skos:note "Supported by <a href='/wiki/FFmpeg' title='FFmpeg'>FFmpeg</a> , <a href='/wiki/VLC_media_player' title='VLC media player'>VLC</a> and other common video streaming applications and appliances. Each UDP packet typically contains 1 to 7 188 byte TS packets with no additional headers or footers." ;
+	skos:note "Supported by <a href='https://en.wikipedia.org/wiki/FFmpeg' title='FFmpeg'>FFmpeg</a> , <a href='https://en.wikipedia.org/wiki/VLC_media_player' title='VLC media player'>VLC</a> and other common video streaming applications and appliances. Each UDP packet typically contains 1 to 7 188 byte TS packets with no additional headers or footers." ;
 	skos:prefLabel "udp" .
 
 
@@ -1322,7 +1323,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/urn> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Uniform_Resource_Name' title='Uniform Resource Name'>Uniform Resource Names</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Uniform_Resource_Name' title='Uniform Resource Name'>Uniform Resource Names</a>" ;
 	skos:notation "RFC 2141" ;
 	skos:scopeNote "urn:<namespace>:<specificpart>"@en  ;
 	skos:note "Commonly used with namespace 'uuid'. See <a class='external text' href='https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml' rel='nofollow'>URN Namespaces</a> ." ;
@@ -1365,13 +1366,13 @@
 	skos:definition "Shows a web page as code 'in the raw'." ;
 	skos:notation "IANA registration template \nIETF Draft" ;
 	skos:scopeNote "view-source:<absolute-URI>"@en ,"view-source:http://en.wikipedia.org/wiki/URI_scheme"@en  ;
-	skos:note "See <a href='/wiki/View-source_URI_scheme' title='View-source URI scheme'>view-source URI scheme</a> for details." ;
+	skos:note "See <a href='https://en.wikipedia.org/wiki/View-source_URI_scheme' title='View-source URI scheme'>view-source URI scheme</a> for details." ;
 	skos:prefLabel "view-source" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/vnc> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Virtual_Network_Computing' title='Virtual Network Computing'>Virtual Network Computing</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Virtual_Network_Computing' title='Virtual Network Computing'>Virtual Network Computing</a>" ;
 	skos:notation "RFC 7869" ;
 	skos:scopeNote "vnc://[<host>[:<port>]][?<params>]"@en  ;
 	skos:prefLabel "vnc" .
@@ -1379,7 +1380,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/wais> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Used with <a href='/wiki/Wide_area_information_server' title='Wide area information server'>Wide area information server</a> (WAIS)" ;
+	skos:definition "Used with <a href='https://en.wikipedia.org/wiki/Wide_area_information_server' title='Wide area information server'>Wide area information server</a> (WAIS)" ;
 	skos:notation "RFC 1738","RFC 4156" ;
 	skos:scopeNote "wais://<host>:<port>/<database>[?<search>]"@en ,"wais://<host>:<port>/<database>/<wtype>/<wpath>"@en  ;
 	skos:note "Listed as ' <span data-sort-value='3' style='display:none;'></span> Historical' by IANA." ;
@@ -1388,16 +1389,16 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/webcal> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Subscribing to calendars in <a href='/wiki/ICalendar' title='ICalendar'>iCalendar</a> format" ;
+	skos:definition "Subscribing to calendars in <a href='https://en.wikipedia.org/wiki/ICalendar' title='ICalendar'>iCalendar</a> format" ;
 	skos:notation "IANA registration template  iCalendar" ;
 	skos:scopeNote "webcal://<hierarchical part>"@en ,"webcal://example.com/calendar.ics"@en  ;
-	skos:note "<a class='mw-redirect' href='/wiki/HTTP' title='HTTP'>HTTP</a> as a transport protocol is assumed. <br/> See <a href='/wiki/Webcal' title='Webcal'>Webcal</a> for details." ;
+	skos:note "<a class='mw-redirect' href='/wiki/HTTP' title='HTTP'>HTTP</a> as a transport protocol is assumed. <br/> See <a href='https://en.wikipedia.org/wiki/Webcal' title='Webcal'>Webcal</a> for details." ;
 	skos:prefLabel "webcal" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/ws> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/WebSocket' title='WebSocket'>WebSocket</a> protocol" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/WebSocket' title='WebSocket'>WebSocket</a> protocol" ;
 	skos:notation "RFC 6455" ;
 	skos:scopeNote "ws:<hierarchical part>"@en  ;
 	skos:prefLabel "ws","wss" .
@@ -1414,10 +1415,10 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/wyciwyg> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "What You Cache Is What You Get <a href='/wiki/WYCIWYG' title='WYCIWYG'>WYCIWYG</a>" ;
+	skos:definition "What You Cache Is What You Get <a href='https://en.wikipedia.org/wiki/WYCIWYG' title='WYCIWYG'>WYCIWYG</a>" ;
 	skos:notation "IANA registration template  Mozilla" ;
 	skos:scopeNote "wyciwyg://<URI>"@en  ;
-	skos:note "See <a href='/wiki/WYCIWYG' title='WYCIWYG'>WYCIWYG</a> for details." ;
+	skos:note "See <a href='https://en.wikipedia.org/wiki/WYCIWYG' title='WYCIWYG'>WYCIWYG</a> for details." ;
 	skos:prefLabel "wyciwyg" .
 
 
@@ -1476,7 +1477,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/z39.50r> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Z39.50' title='Z39.50'>Z39.50</a> retrieval" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Z39.50' title='Z39.50'>Z39.50</a> retrieval" ;
 	skos:notation "RFC 2056" ;
 	skos:scopeNote "z39.50r://<host>[:<port>]/<database>?<docid>[;esn=<elementset>][;rs=<recordsyntax>]"@en  ;
 	skos:prefLabel "z39.50r" .
@@ -1492,7 +1493,7 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/admin> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "URL scheme in the <a href='/wiki/GNOME' title='GNOME'>GNOME</a> desktop environment to access file(s) with <a href='/wiki/Superuser' title='Superuser'>administrative permissions</a> with GUI applications in a safer way, instead of the <i>insecure-considered</i>  <a href='/wiki/Sudo' title='Sudo'>sudo, gksu &amp; gksudo</a> ." ;
+	skos:definition "URL scheme in the <a href='https://en.wikipedia.org/wiki/GNOME' title='GNOME'>GNOME</a> desktop environment to access file(s) with <a href='https://en.wikipedia.org/wiki/Superuser' title='Superuser'>administrative permissions</a> with GUI applications in a safer way, instead of the <i>insecure-considered</i>  <a href='https://en.wikipedia.org/wiki/Sudo' title='Sudo'>sudo, gksu &amp; gksudo</a> ." ;
 	skos:notation "admin://<path>/<to>/<file>\nexample: gedit admin://etc/default/grub" ;
 	skos:prefLabel "admin" .
 
@@ -1514,27 +1515,27 @@
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/javascript> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Execute <a href='/wiki/JavaScript' title='JavaScript'>JavaScript</a> code" ;
+	skos:definition "Execute <a href='https://en.wikipedia.org/wiki/JavaScript' title='JavaScript'>JavaScript</a> code" ;
 	skos:notation "javascript:<javascript to execute>" ;
 	skos:prefLabel "javascript" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/jdbc> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Connect a database with <a href='/wiki/Java_Database_Connectivity' title='Java Database Connectivity'>Java Database Connectivity</a> technology." ;
+	skos:definition "Connect a database with <a href='https://en.wikipedia.org/wiki/Java_Database_Connectivity' title='Java Database Connectivity'>Java Database Connectivity</a> technology." ;
 	skos:notation "jdbc:somejdbcvendor:other_data...\njdbc:oracle:oci:@host:port(sid or /service)?params...\njdbc:sqlserver://serverName\\instanceName:portNumber;params...\njdbc:mysql://host:port/database?params..." ;
 	skos:prefLabel "jdbc" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/odbc> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "<a href='/wiki/Open_Database_Connectivity' title='Open Database Connectivity'>Open Database Connectivity</a>" ;
+	skos:definition "<a href='https://en.wikipedia.org/wiki/Open_Database_Connectivity' title='Open Database Connectivity'>Open Database Connectivity</a>" ;
 	skos:prefLabel "odbc" .
 
 
 <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list/stratum> a skos:Concept ;
 	skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/protocols-list> ;
-	skos:definition "Connectivity URI for the Stratum <a class='mw-redirect' href='/wiki/Communications_protocol' title='Communications protocol'>protocol</a> , used for <a class='mw-redirect' href='/wiki/Proof-of-work' title='Proof-of-work'>proof-of-work</a> coordination in pooled <a href='/wiki/Cryptocurrency' title='Cryptocurrency'>cryptocurrency</a>  <a href='/wiki/Cryptocurrency#Proof-of-work_schemes' title='Cryptocurrency'>mining</a> ." ;
+	skos:definition "Connectivity URI for the Stratum <a class='mw-redirect' href='/wiki/Communications_protocol' title='Communications protocol'>protocol</a> , used for <a class='mw-redirect' href='/wiki/Proof-of-work' title='Proof-of-work'>proof-of-work</a> coordination in pooled <a href='https://en.wikipedia.org/wiki/Cryptocurrency' title='Cryptocurrency'>cryptocurrency</a>  <a href='https://en.wikipedia.org/wiki/Cryptocurrency#Proof-of-work_schemes' title='Cryptocurrency'>mining</a> ." ;
 	skos:notation "stratum+tcp://server:port"," stratum+udp://server:port" ;
 	skos:prefLabel "stratum" .
 
