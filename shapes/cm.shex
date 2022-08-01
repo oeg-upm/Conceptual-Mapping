@@ -1,0 +1,119 @@
+prefix cm:	<http://vocab.linkeddata.es/def/conceptual-mapping#>
+prefix cmf:	<http://vocab.linkeddata.es/def/conceptual-mapping/functions_list/>
+prefix cmp:	<http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list/>
+prefix wotsec:	<https://www.w3.org/2019/wot/security>
+prefix def:	<http://vocab.linkeddata.es/def>
+prefix owl:	<http://www.w3.org/2002/07/owl>
+prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns>
+prefix rdflicense:	<http://purl.org/NET/rdflicense>
+prefix terms:	<http://purl.org/dc/terms>
+prefix xsd:	<http://www.w3.org/2001/XMLSchema#>
+prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema>
+prefix vann:	<http://purl.org/vocab/vann>
+# prefix :	<http://vocab.linkeddata.es/def/conceptual-mapping#>  # Should need the # ???
+prefix dc:	<http://purl.org/dc/elements/1.1>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+
+<StatementMap> {
+    cm:hasFrame     @<Frame> ? ;
+    cm:subject      @<NodeMap> ;
+    cm:predicate    @<ReferenceNodeMap> ;
+    cm:object       @<ResourceMap>  ;  
+    cm:hasDataType  @<ListMap> OR @<ReferenceNodeMap> ? ;
+    cm:language     @<LiteralMap> ?
+}
+
+<ReferenceNodeMap> extends @<NodeMap> {
+    a [ cm:ReferenceNodeMap ] ? ;
+}
+<BlankNodeMap>     extends @<NodeMap> {}
+<NodeMap>          extends @<ResourceMap> {}
+<LiteralMap>       extends @<ResourceMap> {}
+<ListMap>          extends @<ResourceMap> {}
+<ContainerMap>     extends @<ResourceMap> {}
+<BagMap>           extends @<ContainerMap> {}
+<AltMap>           extends @<ContainerMap> {}
+<SeqMap>           extends @<ContainerMap> {}
+
+<ConditionalStatement> extends @<StatementMap> {
+ cm:hasBooleanCondition @<FunctionExpression> + ;
+}
+
+<LinkingMap> extends @<StatementMap> {
+ cm:source              @<StatementMap>         ;
+ cm:target              @<StatementMap>         ;
+ cm:hasBooleanCondition @<FunctionExpression> * ;
+ cm:property            @<ReferenceNodeMap>     ;
+ cm:inverseProperty     @<ReferenceNodeMap>     
+}
+
+<ResourceMap>      {
+  cm:hasEvaluableExpression @<EvaluableExpression>
+}
+
+<EvaluableExpression> {
+}
+
+<Constant> extends @<EvaluableExpression> {
+  cm:returns . ?
+}
+
+
+<Frame> {}
+
+<SourceFrame> extends @<Frame> {
+    cm:expression     xsd:string       ;
+    cm:hasField       @<DataField>   * ;
+    cm:hasNestedFrame @<SourceFrame> ? ;
+    cm:hasDataSource  @<DataSource>  ? ;
+}
+
+<DataField> extends @<EvaluableExpression> {
+  cm:field xsd:string 
+}
+
+<FunctionExpression> extends @<EvaluableExpression> {
+ cm:hasFunctionName . ; # @<SkosConcept>     
+ cm:hasInput        @<ExpressionList>  ?
+}
+
+<ExpressionList> {
+  rdf:first @<EvaluableExpression> ;
+  rdf:rest  @<ExpressionList> ;
+}
+
+
+<DataSource> extends @<Distribution> {
+    cm:encoding  xsd:string ? ;
+}
+
+<Distribution> {
+   dcat:mediatype     xsd:string  ;
+   dcat:accessService @<DataService> *
+}
+
+<DataService> {
+   dcat:endpointURL    xsd:string ; # Should be a URL ?
+   dcat:servesDataSet  @<DataSet> *
+}
+
+<DataSet> { 
+    dcat:distribution  @<Distribution> *
+}
+
+<AsynchronousSource> extends @<DataSource> {
+    cm:refreshTime     xsd:integer ;
+}
+
+<DataAccessService> extends @<DataService> {
+    cm:hasProtocol       @<Protocol>       ? ; 
+    cm:hasSecurityScheme @<SecurityScheme> *
+}
+
+<SecurityScheme> {
+    a [ wotsec:APIKeySecurityScheme ] ;
+    wotsec:in  xsd:string ;
+    wotsec:name xsd:string 
+}
+
+<Protocol> [ cmp:https ]

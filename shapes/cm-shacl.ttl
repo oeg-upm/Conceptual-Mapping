@@ -1,0 +1,13 @@
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/01214018352> .
+
+<https://astrea.linkeddata.es/report/01214018352>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "https://raw.githubusercontent.com/oeg-upm/Conceptual-Mapping/main/ontology/conceptual-mapping.owl" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^<http://www.w3.org/2001/XMLSchema#int> .
