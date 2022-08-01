@@ -61,43 +61,43 @@
 :SubjectRoute a cm:ReferenceNodeMap ;
     cm:hasEvaluableExpression [
         cm:hasFunctionName cmf:concat;
-        cm:hasInput ([cm:returns "http://ex.com/route/"] :s_route_id ] .
+        cm:hasInput ([cm:constantValue "http://ex.com/route/"] :s_route_id ] .
 
 :StatementRoute1 a cm:StatementMap ;
     cm:hasFrame :FrameRouteStop ;
     cm:subject :SubjectRoute ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns rdf:type ] ];
-    cm:object [ cm:hasEvaluableExpression [cm:returns trans:Route] ].
+        cm:hasEvaluableExpression [cm:constantValue rdf:type ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:constantValue trans:Route] ].
 
 :StatementRoute2 a cm:StatementMap ;
     cm:hasFrame :FrameRouteStop ;
     cm:subject :SubjectRoute ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns trans:lineIdentifier ] ];
-    cm:object [ cm:hasEvaluableExpression [cm:returns :line_id] ].
+        cm:hasEvaluableExpression [cm:constantValue trans:lineIdentifier ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:constantValue :line_id] ].
 
 :StatementRoute3 a cm:StatementMap ;
     cm:hasFrame :FrameRouteStop ;
     cm:subject :SubjectRoute ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns trans:tripHeadsign ] ];
-    cm:object [ cm:hasEvaluableExpression [cm:returns :trip_headsign] ];
-    cm:language [ cm:hasEvaluableExpression [cm:returns "es"] ].
+        cm:hasEvaluableExpression [cm:constantValue trans:tripHeadsign ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:constantValue :trip_headsign] ];
+    cm:language [ cm:hasEvaluableExpression [cm:constantValue "es"] ].
 
 :StatementRoute4 a cm:StatementMap ;
     cm:hasFrame :FrameRouteStop ;
     cm:subject :SubjectRoute ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns trans:startTime ] ];
-    cm:object [ cm:hasEvaluableExpression [cm:returns :start_time] ];
-    cm:datatype [ cm:hasEvaluableExpression [cm:returns xsd:Time] ].
+        cm:hasEvaluableExpression [cm:constantValue trans:startTime ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:constantValue :start_time] ];
+    cm:datatype [ cm:hasEvaluableExpression [cm:constantValue xsd:Time] ].
 
 :StatementRoute5 a cm:StatementMap ;
     cm:hasFrame :FrameRouteStop ;
     cm:subject :SubjectRoute ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns trans:stopIdentifier ] ];
+        cm:hasEvaluableExpression [cm:constantValue trans:stopIdentifier ] ];
     cm:object [ a cm:ListMap; cm:hasEvaluableExpression :city_ns ].
 
 :city_ns a cm:FunctionExpression ;
@@ -108,10 +108,10 @@
     cm:hasFrame :FrameRouteStop ;
     cm:subject :SubjectRoute ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns trans:tripIdentifier ] ];
+        cm:hasEvaluableExpression [cm:constantValue trans:tripIdentifier ] ];
     cm:object [ cm:hasEvaluableExpression :trip_id ].
 
 :trip_id a FunctionExpression;
     cm:hasFunctionName cmf:concat;
-    cm:hasInput (:s_route_id [cm:returns "_"]
-                :direction_id [ cm:returns "_" ] :start_time) ].
+    cm:hasInput (:s_route_id [cm:constantValue "_"]
+                :direction_id [ cm:constantValue "_" ] :start_time) ].

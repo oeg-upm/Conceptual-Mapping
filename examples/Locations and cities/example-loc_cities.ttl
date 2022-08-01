@@ -31,21 +31,21 @@
 :SubjectLoc a cm:ReferenceNodeMap ;
     cm:hasEvaluableExpression [
         cm:hasFunctionName cmf:concat;
-        cm:hasInput ([cm:returns "http://ex.com/loc/"]
-                     :lat [ cm:returns "-" ] :long) ] .
+        cm:hasInput ([cm:constantValue "http://ex.com/loc/"]
+                     :lat [ cm:constantValue "-" ] :long) ] .
 
 :StatementLoc1 a cm:StatementMap ;
     cm:hasFrame :FrameLoc ;
     cm:subject :SubjectLoc ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns rdf:type ] ];
-    cm:object [ cm:hasEvaluableExpression [cm:returns eg:Location] ].
+        cm:hasEvaluableExpression [cm:constantValue rdf:type ] ];
+    cm:object [ cm:hasEvaluableExpression [cm:constantValue eg:Location] ].
 
 :StatementLoc2 a cm:StatementMap ;
     cm:hasFrame :FrameLoc ;
     cm:subject :SubjectLoc ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns eg:lat] ];
+        cm:hasEvaluableExpression [cm:constantValue eg:lat] ];
     cm:object [ a cm:Literal; cm:hasEvaluableExpression :lat ];
     cm:hasDatatype [cm:hasEvaluableExpression xsd:decimal ].
 
@@ -53,7 +53,7 @@
     cm:hasFrame :FrameLoc ;
     cm:subject :SubjectLoc ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns eg:long] ];
+        cm:hasEvaluableExpression [cm:constantValue eg:long] ];
     cm:object [ a cm:Literal; cm:hasEvaluableExpression :long ];
     cm:hasDatatype [ cm:hasEvaluableExpression xsd:decimal ].
 
@@ -101,23 +101,23 @@
 :SubjectCities a cm:ReferenceNodeMap;
     cm:hasEvaluableExpression [
         cm:hasFunctionName cmf:concat;
-        cm:hasInput ([cm:returns "http://ex.com/city/"] :city_ns)].
+        cm:hasInput ([cm:constantValue "http://ex.com/city/"] :city_ns)].
 
 :StatementCit1 a cm:StatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns rdf:type] ];
+        cm:hasEvaluableExpression [cm:constantValue rdf:type] ];
     cm:object [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression  [cm:returns eg:City] ] .
+        cm:hasEvaluableExpression  [cm:constantValue eg:City] ] .
 
 :StatementCit3 a cm:StatementMap ;
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns eg:zipcode] ];
+        cm:hasEvaluableExpression [cm:constantValue eg:zipcode] ];
     cm:object [ a cm:Literal;
-        cm:hasEvaluableExpression [cm:returns :zipcode] ];
+        cm:hasEvaluableExpression [cm:constantValue :zipcode] ];
     cm:hasDatatype [ cm:hasEvaluableExpression xsd:integer ].
 
 
@@ -125,9 +125,9 @@
     cm:hasFrame :FrameCities ;
     cm:subject :SubjectCities ;
     cm:predicate [ a cm:ReferenceNodeMap;
-        cm:hasEvaluableExpression [cm:returns eg:population] ];
+        cm:hasEvaluableExpression [cm:constantValue eg:population] ];
     cm:object [ a cm:Literal;
-        cm:hasEvaluableExpression  [cm:returns :population] ];
+        cm:hasEvaluableExpression  [cm:constantValue :population] ];
     cm:hasDatatype [ cm:hasEvaluableExpression xsd:nonNegativeInteger ];
     cm:hasBooleanCondition [
         cm:functionName cmf:greater_than ;

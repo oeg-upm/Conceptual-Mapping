@@ -169,6 +169,7 @@ Mappings Ontology.
 <pre>
 :FrameLoc a cm:SourceFrame;
     cm:expression "$.coordinates[*]";
+    cm:language ql:JSONPath ;
     cm:hasField :lat;
     cm:hasField :long;
     cm:hasField :loc_city;
@@ -486,20 +487,18 @@ Mappings Ontology.
 
   <b>ShExML</b>
   <pre>
-    SOURCE cities_source &ltjdbc:mysql://localhost:3306/citydb>
-    SOURCE coord_source &lthttps://ex.com/geodata/coordinates.json>
-
-    ITERATOR cities_rdb &ltsql: cities> {
-      FIELD c_city &ltcity>
-      FIELD population &ltpopulation>
-      FIELD year &ltyear_modified>
-      FIELD zipcodes &ltzipcodes>
-    }
-
-    ITERATOR coord_json &ltjsonpath: coordinates[*]> {
-      FIELD lat &ltlatitude>
-      FIELD long &ltlongitude>
-      FIELD loc_city &ltcity>
+    SOURCE cities_rdb jdbc:mysql://localhost:3306/citydb
+    SOURCE coord_json
+    ITERATOR it_cities  {
+       FIELD c_city
+       FIELD population
+       FIELD year
+       FIELD zipcode
+      }
+    ITERATOR it_coord  {
+       FIELD lat
+       FIELD long
+       FIELD loc_city
     }
 
     EXPRESSION cit_locs &ltcities_source.cities_rdb.c_city JOIN coord_source.coord_json.loc_city>
@@ -684,10 +683,12 @@ Mappings Ontology.
   <pre>
     :FrameRoute a cm:SourceFrame;
         cm:expression "$.trips[*]";
+        cm:language ql:JSONPath ;
         cm:hasField :line_id;
         cm:hasField :trip_headsign;
         cm:hasNestedFrame [
             cm:expression "route[*]";
+            cm:language ql:JSONPath ;
             cm:hasField :r_route_id;
             cm:hasField :direction_id ];
         cm:hasDataSource [ a cm:AsynchronousSource;
@@ -695,7 +696,7 @@ Mappings Ontology.
             dcat:mediaType "text/json";
             dcat:accessService [
                 cm:hasProtocol cmp:https;
-                dcat:endpointURL "https://ex.com/transport/trips.json"
+                dcat:endpointURL "https://ex.com/transport/trips.json" ;
                 cm:hasSecurityScheme [ a wotsec:APIKeySecurityScheme;
                     wotsec:in "header";
                     wotsec:name "api_key"];
@@ -703,6 +704,7 @@ Mappings Ontology.
         ] .
 
     :FrameStop a cm:SourceFrame;
+        cm:language ql:CSV ;
         cm:hasField :s_route_id;
         cm:hasField :stops_ids;
         cm:hasField :start_time;
@@ -710,7 +712,7 @@ Mappings Ontology.
             dcat:mediaType "text/csv";
             dcat:accessService [
                 cm:hasProtocol cmp:file;
-                dcat:endpointURL "file:///user/data/route_stop.csv"
+                dcat:endpointURL "file:///user/data/route_stop.csv" ;
                 cm:hasSecurityScheme [ a wotsec:NoSecurityScheme; ];
             ] ;
         ] .
