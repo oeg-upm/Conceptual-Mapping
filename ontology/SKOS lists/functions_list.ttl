@@ -1,1458 +1,1458 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Functions applied over strings" ;
   skos:prefLabel "String Functions" ;
-  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ascii>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/character_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat_ws>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/field>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find_in_set>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/format>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/insert>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/instr>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lcase>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/left>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/length>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/locate>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lpad>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ltrim>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mid>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/position>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/repeat>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/reverse>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/right>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpad>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rtrim>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/space>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/strcmp>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring_index>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/trim>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ucase>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_string>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/starts_with>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ends_with>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/contains>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_title_case>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/chomp>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_index_of>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace_chars>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/match>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_number>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_lengths>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_char_type>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/partitioning>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpartitioning>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/escape>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/unescape>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/md5>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sha1>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bit_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/octet_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/difference>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hextoraw>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rawtohex>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_replace>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_like>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/soundex>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringdecode>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringencode>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringtoutf8>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/utf8tostring>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quote_ident>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlattr>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlnode>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcomment>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcdata>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlstartdoc>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmltext>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_char>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/translate> .
+  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ascii>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/char_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/character_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/concat>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/concat_ws>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/field>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/find_in_set>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/format>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/insert>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/instr>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/lcase>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/left>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/length>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/locate>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/lpad>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ltrim>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/mid>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/position>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/repeat>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/replace>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/reverse>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/right>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rpad>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rtrim>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/space>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/strcmp>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/substring>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/substring_index>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/trim>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ucase>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_string>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/starts_with>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ends_with>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/contains>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_title_case>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/chomp>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/last_index_of>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/replace_chars>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/find>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/match>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_number>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/split>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/split_by_lengths>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/split_by_char_type>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/partitioning>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rpartitioning>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/escape>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/unescape>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/md5>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sha1>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bit_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/octet_length>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/char>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/difference>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hextoraw>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rawtohex>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/regexp_replace>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/regexp_like>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/soundex>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/stringdecode>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/stringencode>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/stringtoutf8>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/utf8tostring>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/quote_ident>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlattr>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlnode>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlcomment>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlcdata>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlstartdoc>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmltext>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_char>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/translate> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ascii>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ascii>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the ASCII value for the specific character" ;
   skos:prefLabel "ASCII" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char_length>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/char_length>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the length of a string (in characters)" ;
   skos:prefLabel "CHAR_LENGTH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/character_length>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/character_length>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the length of a string (in characters)" ;
   skos:prefLabel "CHARACTER_LENGTH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/concat>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Adds two or more expressions together" ;
   skos:prefLabel "CONCAT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat_ws>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/concat_ws>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Adds two or more expressions together with a separator" ;
   skos:prefLabel "CONCAT_WS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/field>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/field>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the index position of a value in a list of values" ;
   skos:prefLabel "FIELD" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find_in_set>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/find_in_set>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the position of a string within a list of strings" ;
   skos:prefLabel "FIND_IN_SET" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/format>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/format>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Formats a number to a format like #" ;
   skos:prefLabel "FORMAT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/insert>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/insert>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Inserts a string within a string at the specified position and for a certain number of characters" ;
   skos:prefLabel "INSERT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/instr>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/instr>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the position of the first occurrence of a string in another string" ;
   skos:prefLabel "INSTR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lcase>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/lcase>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a string to lower-case" ;
   skos:prefLabel "LCASE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/left>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/left>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts a number of characters from a string (starting from left)" ;
   skos:prefLabel "LEFT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/length>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/length>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the length of a string (in bytes)" ;
   skos:prefLabel "LENGTH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/locate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/locate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the position of the first occurrence of a substring in a string" ;
   skos:prefLabel "LOCATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lpad>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/lpad>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "LPAD" ;
   skos:definition "to a certain length", "Left-pads a string with another string" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ltrim>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ltrim>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Removes leading spaces from a string" ;
   skos:prefLabel "LTRIM" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mid>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/mid>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts a substring from a string (starting at any position)" ;
   skos:prefLabel "MID" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/position>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/position>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the position of the first occurrence of a substring in a string" ;
   skos:prefLabel "POSITION" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/repeat>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/repeat>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Repeats a string as many times as specified" ;
   skos:prefLabel "REPEAT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/replace>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "REPLACE" ;
   skos:definition "with a new substring", "Replaces all occurrences of a substring within a string" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/reverse>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/reverse>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Reverses a string and returns the result" ;
   skos:prefLabel "REVERSE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/right>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/right>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts a number of characters from a string (starting from right)" ;
   skos:prefLabel "RIGHT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpad>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rpad>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "RPAD" ;
   skos:definition "to a certain length", "Right-pads a string with another string" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rtrim>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rtrim>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Removes trailing spaces from a string" ;
   skos:prefLabel "RTRIM" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/space>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/space>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a string of the specified number of space characters" ;
   skos:prefLabel "SPACE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/strcmp>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/strcmp>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Compares two strings" ;
   skos:prefLabel "STRCMP" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/substring>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts a substring from a string (starting at any position)" ;
   skos:prefLabel "SUBSTRING" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring_index>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/substring_index>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a substring of a string before a specified number of delimiter occurs" ;
   skos:prefLabel "SUBSTRING_INDEX" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/trim>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/trim>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Removes leading and trailing spaces from a string" ;
   skos:prefLabel "TRIM" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ucase>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ucase>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a string to upper-case" ;
   skos:prefLabel "UCASE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_string>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_string>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Transform any data type into a string" ;
   skos:prefLabel "toString" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/starts_with>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/starts_with>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Checks if s1 starts with s2 and returns a boolean" ;
   skos:prefLabel "startsWith" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ends_with>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ends_with>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Checks if s1 ends with s2 and returns a boolean" ;
   skos:prefLabel "endsWith" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/contains>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/contains>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Checks if s2 is contained in s1 and returns a boolean" ;
   skos:prefLabel "contains" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_title_case>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_title_case>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the string converted to titlecase (first letter of each word in uppercase)" ;
   skos:prefLabel "toTitleCase" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/chomp>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/chomp>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns s1 without s2 (it s2 is in s1, else returns s1 as it was)" ;
   skos:prefLabel "chomp" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_index_of>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/last_index_of>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the index fo s2 last ocurring in s1 as an integer, returns -1 if s2 is not found in s1" ;
   skos:prefLabel "lastIndexOf" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace_chars>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/replace_chars>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the string obtained by replacing any character in s1 that is also in s2 with the character s3" ;
   skos:prefLabel "replaceChars" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/find>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Attempts to find the next subsequence of the string that matches the pattern (maintains duplicates)" ;
   skos:prefLabel "find" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/match>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/match>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Attempts to match the string in its entirety against the regex pattern and returns an array of capture groups (removes duplicates) - returning the first match" ;
   skos:prefLabel "match" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_number>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_number>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts input to number" ;
   skos:prefLabel "toNumber" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/split>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the array of strings obtained by splitting the string at wherever separator is found in it." ;
   skos:prefLabel "split" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_lengths>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/split_by_lengths>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the array of strings obtained by splitting s into substrings with the given lengths." ;
   skos:prefLabel "splitByLengths" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_char_type>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/split_by_char_type>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns an array of strings obtained by splitting s into groups of consecutive characters where the characters within each group share the same unicode type" ;
   skos:prefLabel "splitByCharType" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/partitioning>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/partitioning>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "frag", "b ] where a is the substring within string before the first occurrence of frag in string" ;
   skos:definition "frag is not returned", "and b is the substring after frag. If boolean is true" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpartitioning>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rpartitioning>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "frag", "b ] where a is the substring within string before the last occurrence of frag in string" ;
   skos:definition "frag is not returned", "and b is the substring after frag. If boolean is true" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/escape>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/escape>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "escape in the given escaping modes" ;
   skos:prefLabel "escape" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/unescape>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/unescape>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "unescape in the given escaping modes" ;
   skos:prefLabel "unescape" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/md5>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/md5>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "return hash in md-5" ;
   skos:prefLabel "md5" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sha1>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sha1>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "return hash in sha-1" ;
   skos:prefLabel "sha1" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bit_length>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bit_length>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the number of bits in a string." ;
   skos:prefLabel "BIT_LENGTH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/octet_length>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/octet_length>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the number of bytes in a string" ;
   skos:prefLabel "OCTET_LENGTH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/char>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the character that represents the ASCII value" ;
   skos:prefLabel "CHAR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/difference>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/difference>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the difference between the sounds of two strings" ;
   skos:prefLabel "DIFFERENCE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hextoraw>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hextoraw>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a hex representation of a string to a string" ;
   skos:prefLabel "HEXTORAW" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rawtohex>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rawtohex>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a string or bytes to the hex representation" ;
   skos:prefLabel "RAWTOHEX" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_replace>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/regexp_replace>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Replaces each substring that matches a regular expression" ;
   skos:prefLabel "REGEXP_REPLACE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_like>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/regexp_like>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Matches string to a regular expression" ;
   skos:prefLabel "REGEXP_LIKE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/soundex>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/soundex>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a four character code representing the sound of a string" ;
   skos:prefLabel "SOUNDEX" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringdecode>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/stringdecode>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a encoded string using the Java string literal encoding format" ;
   skos:prefLabel "STRINGDECODE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringencode>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/stringencode>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Encodes special characters in a string using the Java string literal encoding format" ;
   skos:prefLabel "STRINGENCODE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringtoutf8>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/stringtoutf8>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Encodes a string to a byte array using the UTF8 encoding format" ;
   skos:prefLabel "STRINGTOUTF8" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/utf8tostring>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/utf8tostring>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Decodes a byte array in the UTF8 format to a string" ;
   skos:prefLabel "UTF8TOSTRING" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quote_ident>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/quote_ident>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Quotes the specified identifier. Identifier is surrounded by double quotes" ;
   skos:prefLabel "QUOTE_IDENT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlattr>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlattr>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Creates an XML attribute element of the form name=value" ;
   skos:prefLabel "XMLATTR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlnode>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlnode>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Create an XML node element" ;
   skos:prefLabel "XMLNODE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcomment>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlcomment>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Creates an XML comment" ;
   skos:prefLabel "XMLCOMMENT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcdata>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlcdata>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Creates an XML CDATA element" ;
   skos:prefLabel "XMLCDATA" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlstartdoc>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmlstartdoc>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the XML declaration" ;
   skos:prefLabel "XMLSTARTDOC" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmltext>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/xmltext>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Creates an XML text element" ;
   skos:prefLabel "XMLTEXT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_char>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_char>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "or text", "a number" ;
   skos:prefLabel "Oracle-compatible TO_CHAR function that can format a timestamp" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/translate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/translate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Oracle-compatible TRANSLATE function that replaces a sequence of characters in a string with another set of characters" ;
   skos:prefLabel "TRANSLATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Functions applied over numbers" ;
   skos:prefLabel "Numeric Functions" ;
-  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/abs>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/acos>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/asin>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan2>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/avg>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceil>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceiling>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cos>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cot>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/count>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/degrees>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/div>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/exp>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/floor>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greatest>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/least>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ln>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log10>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log2>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/max>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/min>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mod>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pi>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pow>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/power>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/radians>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/round>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sign>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sin>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sqrt>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sum>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tan>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/truncate>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cosh>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sinh>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tanh>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitand>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitget>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitnot>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitor>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitxor>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lshift>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rshift>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ora_hash>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand_uuid>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/roundmagic>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/secure_rand>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/encrypt>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/decrypt>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hash>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/compress>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/expand>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/zero> .
+  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/abs>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/acos>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/asin>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/atan>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/atan2>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/avg>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ceil>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ceiling>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/cos>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/cot>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/count>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/degrees>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/div>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/exp>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/floor>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/greatest>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/least>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ln>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/log>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/log10>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/log2>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/max>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/min>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/mod>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/pi>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/pow>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/power>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/radians>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rand>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/round>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sign>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sin>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sqrt>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sum>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tan>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/truncate>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/cosh>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sinh>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tanh>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitand>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitget>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitnot>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitor>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitxor>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/lshift>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rshift>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ora_hash>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rand_uuid>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/roundmagic>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/secure_rand>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/encrypt>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/decrypt>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hash>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/compress>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/expand>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/zero> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/abs>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/abs>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the absolute value of a number" ;
   skos:prefLabel "ABS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/acos>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/acos>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the arc cosine of a number" ;
   skos:prefLabel "ACOS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/asin>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/asin>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the arc sine of a number" ;
   skos:prefLabel "ASIN" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/atan>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the arc tangent of one or two numbers" ;
   skos:prefLabel "ATAN" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan2>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/atan2>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the arc tangent of two numbers" ;
   skos:prefLabel "ATAN2" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/avg>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/avg>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the average value of an expression" ;
   skos:prefLabel "AVG" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceil>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ceil>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the smallest integer value that is >= to a number" ;
   skos:prefLabel "CEIL" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceiling>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ceiling>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the smallest integer value that is >= to a number" ;
   skos:prefLabel "CEILING" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cos>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/cos>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the cosine of a number" ;
   skos:prefLabel "COS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cot>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/cot>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the cotangent of a number" ;
   skos:prefLabel "COT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/count>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/count>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the number of records returned by a select query" ;
   skos:prefLabel "COUNT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/degrees>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/degrees>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a value in radians to degrees" ;
   skos:prefLabel "DEGREES" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/div>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/div>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Used for integer division" ;
   skos:prefLabel "DIV" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/exp>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/exp>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns e raised to the power of a specified number" ;
   skos:prefLabel "EXP" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/floor>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/floor>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the largest integer value that is <= to a number" ;
   skos:prefLabel "FLOOR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greatest>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/greatest>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the greatest value of the list of arguments" ;
   skos:prefLabel "GREATEST" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/least>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/least>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the smallest value of the list of arguments" ;
   skos:prefLabel "LEAST" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ln>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ln>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the natural logarithm of a number" ;
   skos:prefLabel "LN" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/log>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "LOG" ;
   skos:definition "or the logarithm of a number to a specified base", "Returns the natural logarithm of a number" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log10>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/log10>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the natural logarithm of a number to base 10" ;
   skos:prefLabel "LOG10" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log2>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/log2>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the natural logarithm of a number to base 2" ;
   skos:prefLabel "LOG2" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/max>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/max>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the maximum value in a set of values" ;
   skos:prefLabel "MAX" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/min>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/min>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the minimum value in a set of values" ;
   skos:prefLabel "MIN" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mod>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/mod>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the remainder of a number divided by another number" ;
   skos:prefLabel "MOD" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pi>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/pi>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the value of PI" ;
   skos:prefLabel "PI" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pow>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/pow>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the value of a number raised to the power of another number" ;
   skos:prefLabel "POW" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/power>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/power>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the value of a number raised to the power of another number" ;
   skos:prefLabel "POWER" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/radians>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/radians>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a degree value into radians" ;
   skos:prefLabel "RADIANS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rand>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a random number" ;
   skos:prefLabel "RAND" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/round>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/round>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Rounds a number to a specified number of decimal places" ;
   skos:prefLabel "ROUND" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sign>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sign>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the sign of a number" ;
   skos:prefLabel "SIGN" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sin>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sin>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the sine of a number" ;
   skos:prefLabel "SIN" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sqrt>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sqrt>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the square root of a number" ;
   skos:prefLabel "SQRT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sum>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sum>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Calculates the sum of a set of values" ;
   skos:prefLabel "SUM" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tan>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tan>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the tangent of a number" ;
   skos:prefLabel "TAN" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/truncate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/truncate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Truncates a number to the specified number of decimal places" ;
   skos:prefLabel "TRUNCATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cosh>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/cosh>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Calculate the hyperbolic cosine" ;
   skos:prefLabel "COSH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sinh>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sinh>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Calculate the hyperbolic sine" ;
   skos:prefLabel "SINH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tanh>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tanh>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Calculate the hyperbolic tangent" ;
   skos:prefLabel "TANH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitand>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitand>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "The bitwise AND operation" ;
   skos:prefLabel "BITAND" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitget>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitget>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns true if and only if the first parameter has a bit set in the position specified by the second parameter." ;
   skos:prefLabel "BITGET" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitnot>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitnot>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "The bitwise NOT operation" ;
   skos:prefLabel "BITNOT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitor>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitor>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "The bitwise OR operation" ;
   skos:prefLabel "BITOR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitxor>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/bitxor>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "The bitwise XOR operation" ;
   skos:prefLabel "BITXOR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lshift>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/lshift>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "The bitwise left shift operation" ;
   skos:prefLabel "LSHIFT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rshift>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rshift>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "The bitwise right shift operation" ;
   skos:prefLabel "RSHIFT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ora_hash>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/ora_hash>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Computes a hash value" ;
   skos:prefLabel "ORA_HASH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand_uuid>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rand_uuid>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a new UUID with 122 pseudo random bits" ;
   skos:prefLabel "RAND_UUID" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/roundmagic>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/roundmagic>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "ROUNDMAGIC" ;
   skos:definition "but it is slow", "This function rounds numbers in a good way" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/secure_rand>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/secure_rand>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Generates a number of cryptographically secure random numbers" ;
   skos:prefLabel "SECURE_RAND" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/encrypt>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/encrypt>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Encrypts data using a key" ;
   skos:prefLabel "ENCRYPT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/decrypt>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/decrypt>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Decrypts data using a key" ;
   skos:prefLabel "DECRYPT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hash>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hash>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "HASH" ;
   skos:definition "and repeat this process for a number of iterations", "Calculate the hash value using an algorithm" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/compress>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/compress>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Compresses the data using the specified compression algorithm" ;
   skos:prefLabel "COMPRESS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/expand>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/expand>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Expands data that was compressed using the COMPRESS function" ;
   skos:prefLabel "EXPAND" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/zero>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/zero>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the value 0" ;
   skos:prefLabel "ZERO" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/logical_functions>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Logical operators" ;
   skos:prefLabel "Logical Functions" ;
-  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/equal>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greater_than>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/less_than> .
+  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/equal>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/greater_than>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/less_than> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/equal>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/equal>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Checks if two given values are the same" ;
   skos:prefLabel "equal" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/logical_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greater_than>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/greater_than>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Checks if numerical value is greater than another" ;
   skos:prefLabel "greater than" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/logical_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/less_than>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/less_than>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Checks if numerical value is less than another" ;
   skos:prefLabel "less than" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/logical_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Functions applied over dates" ;
   skos:prefLabel "DateTime Functions" ;
-  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/adddate>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/addtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curdate>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_date>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_time>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_timestamp>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datediff>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_add>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_format>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_sub>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/day>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayname>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofmonth>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofweek>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofyear>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/extract>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/from_days>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hour>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_day>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtimestamp>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/makedate>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maketime>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/microsecond>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/minute>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/month>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/monthname>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/now>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_add>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_diff>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quarter>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/second>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sec_to_time>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/str_to_date>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subdate>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sysdate>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_format>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_to_sec>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timediff>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timestamp>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_days>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/week>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekday>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekofyear>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/year>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/yearweek>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_date>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/inc>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_part>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/parsedatetime> .
+  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/adddate>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/addtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/curdate>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/current_date>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/current_time>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/current_timestamp>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/curtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datediff>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_add>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_format>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_sub>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/day>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayname>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayofmonth>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayofweek>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayofyear>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/extract>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/from_days>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hour>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/last_day>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/localtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/localtimestamp>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/makedate>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/maketime>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/microsecond>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/minute>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/month>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/monthname>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/now>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/period_add>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/period_diff>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/quarter>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/second>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sec_to_time>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/str_to_date>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/subdate>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/subtime>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sysdate>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/time>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/time_format>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/time_to_sec>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/timediff>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/timestamp>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_days>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/week>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/weekday>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/weekofyear>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/year>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/yearweek>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_date>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/inc>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_part>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/parsedatetime> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/adddate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/adddate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Adds a time/date interval to a date and then returns the date" ;
   skos:prefLabel "ADDDATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/addtime>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/addtime>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Adds a time interval to a time/datetime and then returns the time/datetime" ;
   skos:prefLabel "ADDTIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curdate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/curdate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current date" ;
   skos:prefLabel "CURDATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_date>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/current_date>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current date" ;
   skos:prefLabel "CURRENT_DATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_time>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/current_time>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current time" ;
   skos:prefLabel "CURRENT_TIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_timestamp>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/current_timestamp>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current date and time" ;
   skos:prefLabel "CURRENT_TIMESTAMP" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curtime>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/curtime>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current time" ;
   skos:prefLabel "CURTIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts the date part from a datetime expression" ;
   skos:prefLabel "DATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datediff>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datediff>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the number of days between two date values" ;
   skos:prefLabel "DATEDIFF" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_add>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_add>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Adds a time/date interval to a date and then returns the date" ;
   skos:prefLabel "DATE_ADD" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_format>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_format>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Formats a date" ;
   skos:prefLabel "DATE_FORMAT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_sub>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_sub>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Subtracts a time/date interval from a date and then returns the date" ;
   skos:prefLabel "DATE_SUB" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/day>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/day>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the day of the month for a given date" ;
   skos:prefLabel "DAY" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayname>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayname>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the weekday name for a given date" ;
   skos:prefLabel "DAYNAME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofmonth>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayofmonth>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the day of the month for a given date" ;
   skos:prefLabel "DAYOFMONTH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofweek>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayofweek>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the weekday index for a given date" ;
   skos:prefLabel "DAYOFWEEK" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofyear>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/dayofyear>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the day of the year for a given date" ;
   skos:prefLabel "DAYOFYEAR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/extract>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/extract>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts a part from a given date" ;
   skos:prefLabel "EXTRACT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/from_days>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/from_days>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a date from a numeric datevalue" ;
   skos:prefLabel "FROM_DAYS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hour>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hour>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the hour part for a given date" ;
   skos:prefLabel "HOUR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_day>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/last_day>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts the last day of the month for a given date" ;
   skos:prefLabel "LAST_DAY" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtime>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/localtime>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current date and time" ;
   skos:prefLabel "LOCALTIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtimestamp>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/localtimestamp>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current date and time" ;
   skos:prefLabel "LOCALTIMESTAMP" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/makedate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/makedate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Creates and returns a date based on a year and a number of days value" ;
   skos:prefLabel "MAKEDATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maketime>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/maketime>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "and second value", "minute" ;
   skos:prefLabel "Creates and returns a time based on an hour" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/microsecond>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/microsecond>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the microsecond part of a time/datetime" ;
   skos:prefLabel "MICROSECOND" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/minute>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/minute>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the minute part of a time/datetime" ;
   skos:prefLabel "MINUTE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/month>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/month>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the month part for a given date" ;
   skos:prefLabel "MONTH" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/monthname>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/monthname>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the name of the month for a given date" ;
   skos:prefLabel "MONTHNAME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/now>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/now>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current date and time" ;
   skos:prefLabel "NOW" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_add>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/period_add>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Adds a specified number of months to a period" ;
   skos:prefLabel "PERIOD_ADD" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_diff>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/period_diff>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the difference between two periods" ;
   skos:prefLabel "PERIOD_DIFF" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quarter>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/quarter>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the quarter of the year for a given date value" ;
   skos:prefLabel "QUARTER" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/second>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/second>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the seconds part of a time/datetime" ;
   skos:prefLabel "SECOND" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sec_to_time>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sec_to_time>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a time value based on the specified seconds" ;
   skos:prefLabel "SEC_TO_TIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/str_to_date>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/str_to_date>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a date based on a string and a format" ;
   skos:prefLabel "STR_TO_DATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subdate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/subdate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Subtracts a time/date interval from a date and then returns the date" ;
   skos:prefLabel "SUBDATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subtime>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/subtime>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Subtracts a time interval from a datetime and then returns the time/datetime" ;
   skos:prefLabel "SUBTIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sysdate>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sysdate>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the current date and time" ;
   skos:prefLabel "SYSDATE" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/time>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Extracts the time part from a given time/datetime" ;
   skos:prefLabel "TIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_format>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/time_format>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Formats a time by a specified format" ;
   skos:prefLabel "TIME_FORMAT" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_to_sec>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/time_to_sec>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Converts a time value into seconds" ;
   skos:prefLabel "TIME_TO_SEC" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timediff>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/timediff>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the difference between two time/datetime expressions" ;
   skos:prefLabel "TIMEDIFF" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timestamp>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/timestamp>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a datetime value based on a date or datetime value" ;
   skos:prefLabel "TIMESTAMP" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_days>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_days>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the number of days between a date and date 0000-00-00''" ;
   skos:prefLabel "TO_DAYS" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/week>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/week>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the week number for a given date" ;
   skos:prefLabel "WEEK" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekday>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/weekday>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the weekday number for a given date" ;
   skos:prefLabel "WEEKDAY" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekofyear>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/weekofyear>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the week number for a given date" ;
   skos:prefLabel "WEEKOFYEAR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/year>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/year>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the year part for a given date" ;
   skos:prefLabel "YEAR" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/yearweek>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/yearweek>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the year and week number for a given date" ;
   skos:prefLabel "YEARWEEK" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_date>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/to_date>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns the value converted in date. Month_first false if date is formatted with the day before the month. FormatN formats of the input (don't understand this very well)" ;
   skos:prefLabel "toDate" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/inc>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/inc>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns a date changed by the given amount in the given unit of time. Unit defaults to 'hour'." ;
   skos:prefLabel "inc" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_part>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/date_part>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Returns part of a date." ;
   skos:prefLabel "datePart" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/parsedatetime>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/parsedatetime>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Parses a string and returns a timestamp" ;
   skos:prefLabel "PARSEDATETIME" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:definition "Functions that measure distance between two strings" ;
   skos:prefLabel "String metrics Functions" ;
-  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/block_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/confusion_probability>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/damerau-levenshtein_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/fellegi-sunters_metric>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/grammar-based_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hamming_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hellinger_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/information_radius>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaccard_simmilarity>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaro-winkler_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/levenshtein_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maximal_matches>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/overlap_coefficient>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rfidf_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/simple_matching_coefficient>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/skew_divergence>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sorensen-dice_coefficient>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tau_metric>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tversky_index>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/variarional_distance> .
+  skos:narrower <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/block_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/confusion_probability>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/damerau-levenshtein_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/fellegi-sunters_metric>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/grammar-based_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hamming_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hellinger_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/information_radius>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/jaccard_simmilarity>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/jaro-winkler_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/levenshtein_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/maximal_matches>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/overlap_coefficient>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rfidf_distance>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/simple_matching_coefficient>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/skew_divergence>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sorensen-dice_coefficient>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tau_metric>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tversky_index>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/variarional_distance> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/block_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/block_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Block distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/confusion_probability>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/confusion_probability>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Confusion probability" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/damerau-levenshtein_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/damerau-levenshtein_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Damerau-Levenshtain distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/fellegi-sunters_metric>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/fellegi-sunters_metric>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Fellegi-Sunters metric" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/grammar-based_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/grammar-based_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Grammar-based distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hamming_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hamming_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Hamming distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hellinger_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/hellinger_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Hellinger distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/information_radius>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/information_radius>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Information radius" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaccard_simmilarity>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/jaccard_simmilarity>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Jaccard simmilarity" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaro-winkler_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/jaro-winkler_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Jaro-Winkler distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/levenshtein_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/levenshtein_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Levenshtain distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maximal_matches>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/maximal_matches>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Maximal Matches" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/overlap_coefficient>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/overlap_coefficient>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Overlap coefficient" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rfidf_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/rfidf_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "RFIDF distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/simple_matching_coefficient>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/simple_matching_coefficient>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Simple Matching coefficient" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/skew_divergence>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/skew_divergence>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Skew divergence" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sorensen-dice_coefficient>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/sorensen-dice_coefficient>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Sorensen-Dice coefficient" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tau_metric>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tau_metric>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Tau metric" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tversky_index>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/tversky_index>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Tversky index" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/variarional_distance>
-  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/variarional_distance>
+  skos:inScheme <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list> ;
   a skos:Concept ;
   skos:prefLabel "Variational distance" ;
-  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> .
+  skos:broader <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> .
 
-<http://vocab.linkeddata.es/def/conceptual-mapping/functions-list>
-  skos:hasTopConcept <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions>, <http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions> ;
+<http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list>
+  skos:hasTopConcept <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_functions>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/numeric_functions>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/datetime_functions>, <http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list/string_metrics_functions> ;
   skos:prefLabel "Functions taxonomy" ;
   dc:title "Thesaurus that gathers information of functions from MySQL" ;
   dc:date "2021-09-07" ;
