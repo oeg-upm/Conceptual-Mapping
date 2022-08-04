@@ -64,7 +64,7 @@
   "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl"
+    "@id" : "http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/protocols-list"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -281,7 +281,7 @@
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl"
+    "@id" : "http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/functions-list"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -1340,13 +1340,13 @@
     "@value" : "Type of join combination of frames"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl",
+  "@id" : "http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/functions-list",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl",
+  "@id" : "http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/protocols-list",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
