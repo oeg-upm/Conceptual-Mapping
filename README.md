@@ -23,7 +23,10 @@ The following diagram shows a general overview of the classes and properties of 
 </p>
 
 ### Ontology (OWL)
-The encoded core ontology in OWL can be found [here](https://github.com/oeg-upm/Conceptual-Mapping/blob/main/ontology/conceptual-mapping.owl). It has associated two SKOS lists, for [Protocols](http://vocab.linkeddata.es/def/conceptual-mapping/protocols_list.ttl) and [Functions](http://vocab.linkeddata.es/def/conceptual-mapping/functions_list.ttl).
+The encoded core ontology in OWL can be found [here](https://github.com/oeg-upm/Conceptual-Mapping/blob/main/ontology/conceptual-mapping.owl). It has associated two SKOS lists, for [Protocols](http://vocab.linkeddata.es/def/conceptual-mapping/kos/protocols-list) and [Functions](http://vocab.linkeddata.es/def/conceptual-mapping/kos/functions-list).
+
+### Shapes
+To check that a mapping written with the Conceptual Mapping is correct, shapes in ShEx and SHACL are provided in the [shapes folder](https://github.com/oeg-upm/Conceptual-Mapping/tree/main/shapes). Special thanks to José Emilio Labra Gayo ([@labra](https://github.com/labra)) for providing the ShEx shapes.
 
 ### Examples
 Some examples of how the language can be used to describe data for RDF transformation is shown in the [examples folder](https://github.com/oeg-upm/Conceptual-Mapping/tree/main/examples).
