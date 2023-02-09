@@ -73,8 +73,8 @@
 <div class="container">
    <!-- Jumbotron -->
    <div class="jumbotron">
-     <h1>Conceptual Mapping - CSV Description</h1>
-      <p class="lead">Here you can find the list of the requirements identified for the Conceptual Mapping extension for describing CSV files and its main features.
+     <h1>Conceptual Mapping - RDF-Star</h1>
+      <p class="lead">Here you can find the list of the requirements identified for the Conceptual Mapping extension for generating RDF-star graphs.
    </div>
    <hr>
    <div class="row">
@@ -95,41 +95,46 @@
          </thead>
          <tbody>
            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl71 style='height:28.0pt'>cm-csv-r1</td>
-             <td class=xl72 width=320 style='width:240pt'>A frame can describe the headers
-             of a csv data source</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:CSVSourceFrame
-             rdfs:subClassOf cm:SourceFrame ;<br>
-               <span style='mso-spacerun:yes'>    </span>csvw:header xsd:boolean .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl71 style='height:28.0pt'>cm-csv-r2</td>
-             <td class=xl72 width=320 style='width:240pt'>A frame can describe the
-             delimiter of a csv data source</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:CSVSourceFrame
-             rdfs:subClassOf cm:SourceFrame ;<br>
-               <span style='mso-spacerun:yes'>    </span>csvw:delimiter xsd:boolean .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl71 style='height:28.0pt'>cm-csv-r3</td>
-             <td class=xl72 width=320 style='width:240pt'>A frame can describe the
-             separator of a csv data source</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:CSVSourceFrame
-             rdfs:subClassOf cm:SourceFrame ;<br>
-               <span style='mso-spacerun:yes'>    </span>csvw:separator xsd:boolean .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
-            <tr height=37 style='height:28.0pt'>
-             <td height=37 class=xl71 style='height:28.0pt'>cm-csv-r4</td>
-             <td class=xl72 width=320 style='width:240pt'>A frame can describe the quote
-             character of a csv data source</td>
-             <td class=xl72 width=497 style='width:373pt'>cm:CSVSourceFrame
-             rdfs:subClassOf cm:SourceFrame ;<br>
-               <span style='mso-spacerun:yes'>    </span>csvw:quoteChar xsd:boolean .</td>
-             <td class=xl65 width=292 style='width:219pt'>Comparison framework analysis</td>
-            </tr>
+            <td height=37 class=xl71 style='height:28.0pt'>cm-star1</td>
+            <td class=xl72 width=320 style='width:240pt'>A statement map can be quoted by
+            another statement map in the position of subject</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap
+            cm-star:hasQuotedSubject cm:StatementMap .</td>
+            <td></td>
+           </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl71 style='height:28.0pt'>cm-star2</td>
+            <td class=xl72 width=320 style='width:240pt'>A statement map can be quoted by
+            another statement map in the position of object</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap
+            cm-star:hasQuotedObject cm:StatementMap .</td>
+            <td></td>
+           </tr>
+           <tr height=56 style='height:42.0pt'>
+            <td height=56 class=xl71 style='height:42.0pt'>cm-star3</td>
+            <td class=xl72 width=320 style='width:240pt'>A statement map can have two
+            quoted statement map in the position of subject and object respectively</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap
+            cm-star:hasQuotedSubject cm:StatementMap ;<br>
+              cm:StatementMap cm-star:hasQuotedObject cm:StatementMap .</td>
+            <td></td>
+           </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl71 style='height:28.0pt'>cm-star4</td>
+            <td class=xl65 width=320 style='width:240pt'>A quoted statemen map can be non
+            asserted</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap
+            cm-star:hasQuotedSubject cm:NonAssertedStatementMap .</td>
+            <td class=xl65 width=292 style='width:219pt'></td>
+           </tr>
+           <tr height=37 style='height:28.0pt'>
+            <td height=37 class=xl71 style='height:28.0pt'>cm-star5</td>
+            <td class=xl65 width=320 style='width:240pt'>A statement map can be quoted
+            inside another quoted statement map</td>
+            <td class=xl72 width=497 style='width:373pt'>cm:StatementMap
+            cm-star:hasQuotedSubject [ cm-star:hasQuotedSubject cm:StatementMap ] .</td>
+            <td class=xl65 width=292 style='width:219pt'></td>
+           </tr>
         </tbody>
       </table>
    <!-- </div> -->
