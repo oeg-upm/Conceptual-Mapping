@@ -1,0 +1,4208 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Ana Iglesias (Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2021-09-07"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Thesaurus that gathers information of functions from MySQL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#conceptScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Functions taxonomy"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/abs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the absolute value of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ABS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/acos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the arc cosine of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ACOS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/adddate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Adds a time/date interval to a date and then returns the date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ADDDATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/addtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Adds a time interval to a time/datetime and then returns the time/datetime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ADDTIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ascii",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the ASCII value for the specific character"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ASCII"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/asin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the arc sine of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ASIN"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the arc tangent of one or two numbers"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ATAN"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the arc tangent of two numbers"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ATAN2"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/avg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the average value of an expression"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "AVG"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bit_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the number of bits in a string."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "BIT_LENGTH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The bitwise AND operation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "BITAND"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns true if and only if the first parameter has a bit set in the position specified by the second parameter."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "BITGET"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitnot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The bitwise NOT operation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "BITNOT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The bitwise OR operation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "BITOR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitxor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The bitwise XOR operation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "BITXOR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/block_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Block distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the smallest integer value that is >= to a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CEIL"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceiling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the smallest integer value that is >= to a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CEILING"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the character that represents the ASCII value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CHAR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the length of a string (in characters)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CHAR_LENGTH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/character_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the length of a string (in characters)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CHARACTER_LENGTH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/chomp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns s1 without s2 (it s2 is in s1, else returns s1 as it was)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "chomp"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/compress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Compresses the data using the specified compression algorithm"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "COMPRESS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Adds two or more expressions together"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CONCAT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat_ws",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Adds two or more expressions together with a separator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CONCAT_WS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/confusion_probability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Confusion probability"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Checks if s2 is contained in s1 and returns a boolean"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "contains"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the cosine of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "COS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cosh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Calculate the hyperbolic cosine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "COSH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the cotangent of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "COT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/count",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the number of records returned by a select query"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "COUNT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curdate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CURDATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CURRENT_DATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CURRENT_TIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_timestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current date and time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CURRENT_TIMESTAMP"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "CURTIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/damerau-levenshtein_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Damerau-Levenshtain distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts the date part from a datetime expression"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_add",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Adds a time/date interval to a date and then returns the date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DATE_ADD"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Formats a date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DATE_FORMAT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns part of a date."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "datePart"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_sub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Subtracts a time/date interval from a date and then returns the date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DATE_SUB"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datediff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the number of days between two date values"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DATEDIFF"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Functions applied over dates"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/adddate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/addtime"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curdate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_date"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_time"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/current_timestamp"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/curtime"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_add"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_format"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_part"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/date_sub"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datediff"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/day"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayname"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofmonth"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofweek"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofyear"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/extract"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/from_days"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hour"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/inc"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_day"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtime"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtimestamp"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/makedate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maketime"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/microsecond"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/minute"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/month"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/monthname"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/now"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/parsedatetime"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_add"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_diff"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quarter"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sec_to_time"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/second"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/str_to_date"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subdate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subtime"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sysdate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_format"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_to_sec"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timediff"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timestamp"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_date"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_days"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/week"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekday"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekofyear"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/year"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/yearweek"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DateTime Functions"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the day of the month for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DAY"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the weekday name for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DAYNAME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofmonth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the day of the month for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DAYOFMONTH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofweek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the weekday index for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DAYOFWEEK"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/dayofyear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the day of the year for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DAYOFYEAR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/decrypt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Decrypts data using a key"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DECRYPT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/degrees",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a value in radians to degrees"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DEGREES"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/difference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the difference between the sounds of two strings"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DIFFERENCE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/div",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Used for integer division"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "DIV"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/encrypt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Encrypts data using a key"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ENCRYPT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ends_with",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Checks if s1 ends with s2 and returns a boolean"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "endsWith"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/equal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Checks if two given values are the same"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "equal"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/escape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "escape in the given escaping modes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "escape"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/exp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns e raised to the power of a specified number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "EXP"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/expand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Expands data that was compressed using the COMPRESS function"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "EXPAND"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/extract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts a part from a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "EXTRACT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/fellegi-sunters_metric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Fellegi-Sunters metric"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/field",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the index position of a value in a list of values"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "FIELD"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Attempts to find the next subsequence of the string that matches the pattern (maintains duplicates)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "find"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find_in_set",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the position of a string within a list of strings"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "FIND_IN_SET"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/floor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the largest integer value that is <= to a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "FLOOR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Formats a number to a format like #"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "FORMAT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/from_days",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a date from a numeric datevalue"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "FROM_DAYS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/grammar-based_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Grammar-based distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greater_than",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Checks if numerical value is greater than another"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "greater than"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greatest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the greatest value of the list of arguments"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "GREATEST"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hamming_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Hamming distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Calculate the hash value using an algorithm"
+  }, {
+    "@value" : "and repeat this process for a number of iterations"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "HASH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hellinger_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Hellinger distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hextoraw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a hex representation of a string to a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "HEXTORAW"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the hour part for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "HOUR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/inc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a date changed by the given amount in the given unit of time. Unit defaults to 'hour'."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "inc"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/information_radius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Information radius"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/insert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Inserts a string within a string at the specified position and for a certain number of characters"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "INSERT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/instr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the position of the first occurrence of a string in another string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "INSTR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaccard_simmilarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Jaccard simmilarity"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaro-winkler_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Jaro-Winkler distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts the last day of the month for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LAST_DAY"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_index_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the index fo s2 last ocurring in s1 as an integer, returns -1 if s2 is not found in s1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "lastIndexOf"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lcase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a string to lower-case"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LCASE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/least",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the smallest value of the list of arguments"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LEAST"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts a number of characters from a string (starting from left)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LEFT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the length of a string (in bytes)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LENGTH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/less_than",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Checks if numerical value is less than another"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "less than"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/levenshtein_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Levenshtain distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ln",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the natural logarithm of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LN"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current date and time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LOCALTIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/localtimestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current date and time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LOCALTIMESTAMP"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/locate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the position of the first occurrence of a substring in a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LOCATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the natural logarithm of a number"
+  }, {
+    "@value" : "or the logarithm of a number to a specified base"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LOG"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the natural logarithm of a number to base 10"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LOG10"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the natural logarithm of a number to base 2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LOG2"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/logical_functions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Logical operators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/equal"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greater_than"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/less_than"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Logical Functions"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lpad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Left-pads a string with another string"
+  }, {
+    "@value" : "to a certain length"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LPAD"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lshift",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The bitwise left shift operation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LSHIFT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ltrim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Removes leading spaces from a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "LTRIM"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/makedate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Creates and returns a date based on a year and a number of days value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MAKEDATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maketime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "and second value"
+  }, {
+    "@value" : "minute"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Creates and returns a time based on an hour"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/match",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Attempts to match the string in its entirety against the regex pattern and returns an array of capture groups (removes duplicates) - returning the first match"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "match"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/max",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the maximum value in a set of values"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MAX"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maximal_matches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Maximal Matches"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/md5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "return hash in md-5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "md5"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/microsecond",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the microsecond part of a time/datetime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MICROSECOND"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts a substring from a string (starting at any position)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MID"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/min",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the minimum value in a set of values"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MIN"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/minute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the minute part of a time/datetime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MINUTE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the remainder of a number divided by another number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MOD"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the month part for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MONTH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/monthname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the name of the month for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "MONTHNAME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/now",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current date and time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "NOW"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Functions applied over numbers"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/abs"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/acos"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/asin"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/atan2"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/avg"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitand"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitget"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitnot"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitor"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bitxor"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceil"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ceiling"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/compress"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cos"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cosh"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/cot"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/count"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/decrypt"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/degrees"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/div"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/encrypt"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/exp"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/expand"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/floor"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/greatest"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hash"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/least"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ln"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log10"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/log2"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lshift"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/max"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/min"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mod"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ora_hash"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pi"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pow"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/power"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/radians"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand_uuid"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/round"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/roundmagic"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rshift"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/secure_rand"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sign"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sin"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sinh"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sqrt"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sum"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tan"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tanh"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/truncate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/zero"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Numeric Functions"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/octet_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the number of bytes in a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "OCTET_LENGTH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ora_hash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Computes a hash value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ORA_HASH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/overlap_coefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Overlap coefficient"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/parsedatetime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Parses a string and returns a timestamp"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "PARSEDATETIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/partitioning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "and b is the substring after frag. If boolean is true"
+  }, {
+    "@value" : "frag is not returned"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "b ] where a is the substring within string before the first occurrence of frag in string"
+  }, {
+    "@value" : "frag"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_add",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Adds a specified number of months to a period"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "PERIOD_ADD"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/period_diff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the difference between two periods"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "PERIOD_DIFF"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the value of PI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "PI"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the position of the first occurrence of a substring in a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "POSITION"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/pow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the value of a number raised to the power of another number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "POW"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the value of a number raised to the power of another number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "POWER"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quarter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the quarter of the year for a given date value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "QUARTER"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quote_ident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Quotes the specified identifier. Identifier is surrounded by double quotes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "QUOTE_IDENT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/radians",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a degree value into radians"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RADIANS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a random number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RAND"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rand_uuid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a new UUID with 122 pseudo random bits"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RAND_UUID"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rawtohex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a string or bytes to the hex representation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RAWTOHEX"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_like",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Matches string to a regular expression"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "REGEXP_LIKE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_replace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Replaces each substring that matches a regular expression"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "REGEXP_REPLACE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/repeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Repeats a string as many times as specified"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "REPEAT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Replaces all occurrences of a substring within a string"
+  }, {
+    "@value" : "with a new substring"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "REPLACE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace_chars",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the string obtained by replacing any character in s1 that is also in s2 with the character s3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "replaceChars"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/reverse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Reverses a string and returns the result"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "REVERSE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rfidf_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RFIDF distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts a number of characters from a string (starting from right)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RIGHT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/round",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Rounds a number to a specified number of decimal places"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ROUND"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/roundmagic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "This function rounds numbers in a good way"
+  }, {
+    "@value" : "but it is slow"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ROUNDMAGIC"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Right-pads a string with another string"
+  }, {
+    "@value" : "to a certain length"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RPAD"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpartitioning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "and b is the substring after frag. If boolean is true"
+  }, {
+    "@value" : "frag is not returned"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "b ] where a is the substring within string before the last occurrence of frag in string"
+  }, {
+    "@value" : "frag"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rshift",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The bitwise right shift operation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RSHIFT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rtrim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Removes trailing spaces from a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "RTRIM"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sec_to_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a time value based on the specified seconds"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SEC_TO_TIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/second",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the seconds part of a time/datetime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SECOND"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/secure_rand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Generates a number of cryptographically secure random numbers"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SECURE_RAND"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sha1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "return hash in sha-1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "sha1"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the sign of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SIGN"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/simple_matching_coefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Simple Matching coefficient"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the sine of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SIN"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sinh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Calculate the hyperbolic sine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SINH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/skew_divergence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Skew divergence"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sorensen-dice_coefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Sorensen-Dice coefficient"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/soundex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a four character code representing the sound of a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SOUNDEX"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a string of the specified number of space characters"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SPACE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the array of strings obtained by splitting the string at wherever separator is found in it."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "split"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_char_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns an array of strings obtained by splitting s into groups of consecutive characters where the characters within each group share the same unicode type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "splitByCharType"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_lengths",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the array of strings obtained by splitting s into substrings with the given lengths."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "splitByLengths"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sqrt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the square root of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SQRT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/starts_with",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Checks if s1 starts with s2 and returns a boolean"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "startsWith"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/str_to_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a date based on a string and a format"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "STR_TO_DATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/strcmp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Compares two strings"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "STRCMP"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Functions applied over strings"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ascii"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/bit_length"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/char_length"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/character_length"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/chomp"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/concat_ws"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/contains"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/difference"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ends_with"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/escape"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/field"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/find_in_set"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/format"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hextoraw"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/insert"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/instr"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/last_index_of"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lcase"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/left"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/length"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/locate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/lpad"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ltrim"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/match"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/md5"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/mid"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/octet_length"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/partitioning"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/position"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/quote_ident"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rawtohex"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_like"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/regexp_replace"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/repeat"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/replace_chars"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/reverse"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/right"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpad"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rpartitioning"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rtrim"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sha1"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/soundex"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/space"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_char_type"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/split_by_lengths"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/starts_with"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/strcmp"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringdecode"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringencode"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringtoutf8"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring_index"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_char"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_number"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_string"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_title_case"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/translate"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/trim"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ucase"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/unescape"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/utf8tostring"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlattr"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcdata"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcomment"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlnode"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlstartdoc"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmltext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "String Functions"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Functions that measure distance between two strings"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/block_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/confusion_probability"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/damerau-levenshtein_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/fellegi-sunters_metric"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/grammar-based_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hamming_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/hellinger_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/information_radius"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaccard_simmilarity"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/jaro-winkler_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/levenshtein_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/maximal_matches"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/overlap_coefficient"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/rfidf_distance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/simple_matching_coefficient"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/skew_divergence"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sorensen-dice_coefficient"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tau_metric"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tversky_index"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/variarional_distance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "String metrics Functions"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringdecode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a encoded string using the Java string literal encoding format"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "STRINGDECODE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringencode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Encodes special characters in a string using the Java string literal encoding format"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "STRINGENCODE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/stringtoutf8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Encodes a string to a byte array using the UTF8 encoding format"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "STRINGTOUTF8"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subdate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Subtracts a time/date interval from a date and then returns the date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SUBDATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts a substring from a string (starting at any position)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SUBSTRING"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/substring_index",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a substring of a string before a specified number of delimiter occurs"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SUBSTRING_INDEX"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/subtime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Subtracts a time interval from a datetime and then returns the time/datetime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SUBTIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Calculates the sum of a set of values"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SUM"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/sysdate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the current date and time"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "SYSDATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the tangent of a number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TAN"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tanh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Calculate the hyperbolic tangent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TANH"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tau_metric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Tau metric"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Extracts the time part from a given time/datetime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TIME"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Formats a time by a specified format"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TIME_FORMAT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/time_to_sec",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a time value into seconds"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TIME_TO_SEC"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timediff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the difference between two time/datetime expressions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TIMEDIFF"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/timestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns a datetime value based on a date or datetime value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TIMESTAMP"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_char",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a number"
+  }, {
+    "@value" : "or text"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Oracle-compatible TO_CHAR function that can format a timestamp"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the value converted in date. Month_first false if date is formatted with the day before the month. FormatN formats of the input (don't understand this very well)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "toDate"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_days",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the number of days between a date and date 0000-00-00''"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TO_DAYS"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts input to number"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "toNumber"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_string",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Transform any data type into a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "toString"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/to_title_case",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the string converted to titlecase (first letter of each word in uppercase)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "toTitleCase"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/translate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Oracle-compatible TRANSLATE function that replaces a sequence of characters in a string with another set of characters"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TRANSLATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/trim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Removes leading and trailing spaces from a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TRIM"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/truncate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Truncates a number to the specified number of decimal places"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "TRUNCATE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/tversky_index",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Tversky index"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/ucase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Converts a string to upper-case"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "UCASE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/unescape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unescape in the given escaping modes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "unescape"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/utf8tostring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Decodes a byte array in the UTF8 format to a string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "UTF8TOSTRING"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/variarional_distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_metrics_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "Variational distance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/week",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the week number for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "WEEK"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekday",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the weekday number for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "WEEKDAY"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/weekofyear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the week number for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "WEEKOFYEAR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlattr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Creates an XML attribute element of the form name=value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "XMLATTR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcdata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Creates an XML CDATA element"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "XMLCDATA"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlcomment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Creates an XML comment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "XMLCOMMENT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlnode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Create an XML node element"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "XMLNODE"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmlstartdoc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the XML declaration"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "XMLSTARTDOC"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/xmltext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/string_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Creates an XML text element"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "XMLTEXT"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the year part for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "YEAR"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/yearweek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/datetime_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the year and week number for a given date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "YEARWEEK"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/zero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list/numeric_functions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Returns the value 0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://vocab.linkeddata.es/def/conceptual-mapping/functions-list"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "ZERO"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#conceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
