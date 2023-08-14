@@ -185,7 +185,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/rml/Compression"/>
-        <rdfs:comment xml:lang="en">Defines the compression format of a Source or Target.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Defines the compression format of a Source or Target</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
         <rdfs:label>compression</rdfs:label>
     </owl:ObjectProperty>
