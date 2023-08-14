@@ -1,0 +1,1264 @@
+<https://w3id.org/conceptual-mapping#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/conceptual-mapping#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/conceptual-mapping> .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/elements/1.1/publisher> <https://oeg.fi.upm.es/> .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/elements/1.1/title> "Conceptual Mapping"@en .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Andrea Cimmino (Ontology Engineering Group)"@es .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "David Chaves Fraga (Ontology Engineering Group)"@es .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Edna Ruckhaus (Ontology Engineering Group)"@es .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Oscar Corcho (Ontology Engineering Group)"@es .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/contributor> "Raúl García Castro (Ontology Engineering Group)"@es .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/created> "2020-10-14T00:00:00"@en .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/creator> "Ana Iglesias Molina (Ontology Engineering Group)"@es .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/description> "This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics."@en .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/dc/terms/modified> "2023-08-14T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cm"@en .
+<https://w3id.org/conceptual-mapping#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/conceptual-mapping> .
+<https://w3id.org/conceptual-mapping#> <http://www.w3.org/2002/07/owl#priorVersion> <http://vocab.linkeddata.es/def/conceptual-mapping/1.1.1/> .
+<https://w3id.org/conceptual-mapping#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.2" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#changeNote
+<http://www.w3.org/2004/02/skos/core#changeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2008/05/skos#definition
+<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/rml/compression
+<http://w3id.org/rml/compression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rml/compression> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/rml/Target> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/rml/Source> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rml/compression> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rml/Compression> .
+<http://w3id.org/rml/compression> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the compression format of a Source or Target"@en .
+<http://w3id.org/rml/compression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/compression> <http://www.w3.org/2000/01/rdf-schema#label> "compression" .
+# 
+# http://w3id.org/rml/encoding
+<http://w3id.org/rml/encoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rml/encoding> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/rml/Target> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/rml/Source> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rml/encoding> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rml/Encoding> .
+<http://w3id.org/rml/encoding> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the encoding format of a Source or Target."@en .
+<http://w3id.org/rml/encoding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/encoding> <http://www.w3.org/2000/01/rdf-schema#label> "encoding" .
+# 
+# http://w3id.org/rml/serialization
+<http://w3id.org/rml/serialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rml/serialization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rml/LogicalTarget> .
+<http://w3id.org/rml/serialization> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/ns/formats/Format> .
+<http://w3id.org/rml/serialization> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the serialization to generate the target output."@en .
+<http://w3id.org/rml/serialization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/serialization> <http://www.w3.org/2000/01/rdf-schema#label> "serialization" .
+# 
+# http://w3id.org/rml/target
+<http://w3id.org/rml/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rml/target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rml/LogicalTarget> .
+<http://w3id.org/rml/target> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rml/Target> .
+<http://w3id.org/rml/target> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the target that describe the output data."@en .
+<http://w3id.org/rml/target> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/target> <http://www.w3.org/2000/01/rdf-schema#label> "target" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#ExpressionList> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#comment> "The first item in the subject RDF list." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#label> "first" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#ExpressionList> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#ExpressionList> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#comment> "The rest of the subject RDF list after the first item." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/2000/01/rdf-schema#label> "rest" .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "is in scheme"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
+# 
+# http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#DataService> .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#comment> "A site or end-point that gives access to the distribution of the dataset."@en .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#comment> "Et websted eller endpoint der giver adgang til en repræsentation af datasættet."@da .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#comment> "Umístění či přístupový bod zpřístupňující distribuci datové sady."@cs .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#comment> "Un sitio o end-point que da acceso a la distribución de un conjunto de datos."@es .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#comment> "Un sito o end-point che dà accesso alla distribuzione del set di dati."@it .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#label> "data access service"@en .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#label> "dataadgangstjeneste"@da .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#label> "servicio de acceso de datos"@es .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#label> "servizio di accesso ai dati"@it .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2000/01/rdf-schema#label> "služba pro přístup k datům"@cs .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà aggiunta in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab tilføjet i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#definition> "A site or end-point that gives access to the distribution of the dataset."@en .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#definition> "Et websted eller endpoint der giver adgang til en repræsentation af datasættet."@da .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#definition> "Umístění či přístupový bod zpřístupňující distribuci datové sady."@cs .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#definition> "Un sitio o end-point que da acceso a la distribución de un conjunto de datos."@es .
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/2004/02/skos/core#definition> "Un sito o end-point che dà accesso alla distribuzione del set di dati."@it .
+# 
+# http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "A URL of a resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred."@en .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, un Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable."@fr .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "En URL for en ressource som giver adgang til en repræsentation af datsættet. Fx destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben downloadURL foretrækkes."@da .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de destino, descarga, URL feed, punto de acceso SPARQL. Esta propriedad se debe usar cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar."@es .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL."@cs .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Un URL di una risorsa che consente di accedere a una distribuzione del set di dati. Per esempio, pagina di destinazione, feed, endpoint SPARQL. Da utilizzare per tutti i casi, tranne  quando  si tratta di un semplice link per il download nel qual caso è preferito downloadURL."@it .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Μπορεί να είναι οποιουδήποτε είδους URL που δίνει πρόσβαση στη διανομή ενός συνόλου δεδομένων. Π.χ. ιστοσελίδα αρχικής πρόσβασης, μεταφόρτωση, feed URL, σημείο διάθεσης SPARQL. Να χρησιμοποιείται όταν ο κατάλογος δεν περιέχει πληροφορίες εαν πρόκειται ή όχι για μεταφορτώσιμο αρχείο."@el .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "أي رابط يتيح الوصول إلى البيانات. إذا كان الرابط هو ربط مباشر لملف يمكن تحميله استخدم الخاصية downloadURL"@ar .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"@ja .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL d'accès"@fr .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL de acceso"@es .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL πρόσβασης"@el .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "access address"@en .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "adgangsadresse"@da .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "indirizzo di accesso"@it .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "přístupová adresa"@cs .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "رابط وصول"@ar .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "アクセスURL"@ja .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#altLabel> "adgangsURL"@da .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "A URL of a resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred."@en .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, un Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable."@fr .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "En URL for en ressource som giver adgang til en repræsentation af datsættet. Fx destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben downloadURL foretrækkes."@da .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de destino, descarga, URL feed, punto de acceso SPARQL. Esta propriedad se debe usar cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar."@es .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL."@cs .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "Un URL di una risorsa che consente di accedere a una distribuzione del set di dati. Per esempio, pagina di destinazione, feed, endpoint SPARQL. Da utilizzare per tutti i casi, tranne  quando  si tratta di un semplice link per il download nel qual caso è preferito downloadURL."@it .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "Μπορεί να είναι οποιουδήποτε είδους URL που δίνει πρόσβαση στη διανομή ενός συνόλου δεδομένων. Π.χ. ιστοσελίδα αρχικής πρόσβασης, μεταφόρτωση, feed URL, σημείο διάθεσης SPARQL. Να χρησιμοποιείται όταν ο κατάλογος δεν περιέχει πληροφορίες εαν πρόκειται ή όχι για μεταφορτώσιμο αρχείο."@el .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "أي رابط يتيح الوصول إلى البيانات. إذا كان الرابط هو ربط مباشر لملف يمكن تحميله استخدم الخاصية downloadURL"@ar .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#definition> "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"@ja .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#editorialNote> "Status: English Definition text modified by DCAT revision team, updated Italian and Czech translation provided, translations for other languages pending."@en .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#editorialNote> "rdfs:label, rdfs:comment and skos:scopeNote have been modified. Non-english versions except for Italian must be updated."@en .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "El rango es una URL. Si la distribución es accesible solamente través de una página de destino (es decir, si no se conoce una URL de descarga directa), entonces el enlance a la página de destino debe ser duplicado como accessURL en la distribución."@es .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "Hvis en eller flere distributioner kun er tilgængelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), så bør destinationssidelinket gentages som adgangsadresse for distributionen."@da .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link should be duplicated as accessURL on a distribution."@en .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "La valeur est une URL. Si la distribution est accessible seulement au travers d'une page d'atterrissage (c-à-dire on n'ignore une URL de téléchargement direct), alors le lien à la page d'atterrissage doit être dupliqué comee accessURL sur la distribution."@fr .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "Pokud jsou distribuce přístupné pouze přes vstupní stránku (tj. URL pro přímé stažení nejsou známa), pak by URL přístupové stránky mělo být duplikováno ve vlastnosti distribuce accessURL."@cs .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "Se le distribuzioni sono accessibili solo attraverso una pagina web (ad esempio, gli URL per il download diretto non sono noti), allora il link della pagina web deve essere duplicato come accessURL sulla distribuzione."@it .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "Η τιμή είναι ένα URL. Αν η/οι διανομή/ές είναι προσβάσιμη/ες μόνο μέσω μίας ιστοσελίδας αρχικής πρόσβασης (δηλαδή αν δεν υπάρχουν γνωστές διευθύνσεις άμεσης μεταφόρτωσης), τότε ο σύνδεσμος της ιστοσελίδας αρχικής πρόσβασης πρέπει να αναπαραχθεί ως accessURL σε μία διανομή."@el .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "確実にダウンロードでない場合や、ダウンロードかどうかが不明である場合は、downloadURLではなく、accessURLを用いてください。ランディング・ページを通じてしか配信にアクセスできない場合（つまり、直接的なダウンロードURLが不明）は、配信におけるaccessURLとしてランディング・ページのリンクをコピーすべきです（SHOULD）。"@ja .
+# 
+# http://www.w3.org/ns/dcat#compressFormat
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/MediaType> .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "El formato de la distribución en el que los datos están en forma comprimida, e.g. para reducir el tamaño del archivo a bajar."@es .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Formát komprese souboru, ve kterém jsou data poskytována v komprimované podobě, např. ke snížení velikosti souboru ke stažení."@cs .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Il formato di compressione della distribuzione nel quale i dati sono in forma compressa, ad es. per ridurre le dimensioni del file da scaricare."@it .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx for at reducere størrelsen af downloadfilen."@da .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file."@en .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3.org/TR/vocab-dcat-2/> .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#label> "compression format"@en .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#label> "formato de compresión"@es .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#label> "formato di compressione"@it .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#label> "formát komprese"@cs .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2000/01/rdf-schema#label> "kompressionsformat"@da .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà aggiunta in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab tilføjet i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#definition> "El formato de la distribución en el que los datos están en forma comprimida, e.g. para reducir el tamaño del archivo a bajar."@es .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#definition> "Formát komprese souboru, ve kterém jsou data poskytována v komprimované podobě, např. ke snížení velikosti souboru ke stažení."@cs .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#definition> "Il formato di compressione della distribuzione nel quale i dati sono in forma compressa, ad es. per ridurre le dimensioni del file da scaricare."@it .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#definition> "Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx for at reducere størrelsen af downloadfilen."@da .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#definition> "The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file."@en .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Denne egenskab kan anvendes når filerne i en distribution er blevet komprimeret, fx i en ZIP-fil. Formatet BØR udtrykkes ved en medietype som defineret i 'IANA media types registry', hvis der optræder en relevant medietype dér: https://www.iana.org/assignments/media-types/."@da .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Esta propiedad se debe usar cuando los archivos de la distribución están comprimidos, por ejemplo en un archivo ZIP. El formato DEBERÍA expresarse usando un 'media type', tales como los definidos en el registro IANA de 'media types' https://www.iana.org/assignments/media-types/, si está disponibles."@es .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Questa proprietà deve essere utilizzata quando i file nella distribuzione sono compressi, ad es. in un file ZIP. Il formato DOVREBBE essere espresso usando un tipo di media come definito dal registro dei tipi di media IANA https://www.iana.org/assignments/media-types/, se disponibile."@it .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Tato vlastnost se použije, když jsou soubory v distribuci komprimovány, např. v ZIP souboru. Formát BY MĚL být vyjádřen pomocí typu média definovaného v registru IANA https://www.iana.org/assignments/media-types/, pokud existuje."@cs .
+<http://www.w3.org/ns/dcat#compressFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "This property is to be used when the files in the distribution are compressed, e.g. in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA media types registry https://www.iana.org/assignments/media-types/, if available."@en .
+# 
+# http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "An available distribution of the dataset."@en .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Connecte un jeu de données à des distributions disponibles."@fr .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Dostupná distribuce datové sady."@cs .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "En tilgængelig repræsentation af datasættet."@da .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Una distribución disponible del conjunto de datos."@es .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Una distribuzione disponibile per il set di dati."@it .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του."@el .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات"@ar .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "データセットを、その利用可能な配信に接続します。"@ja .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "distribuce"@cs .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "distribución"@es .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "distribution"@da .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "distribution"@en .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "distribution"@fr .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "distribuzione"@it .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "διανομή"@el .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "توزيع"@ar .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2000/01/rdf-schema#label> "データセット配信"@ja .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#altLabel> "har distribution"@da .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "An available distribution of the dataset."@en .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "Connecte un jeu de données à des distributions disponibles."@fr .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "Dostupná distribuce datové sady."@cs .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "En tilgængelig repræsentation af datasættet."@da .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "Una distribución disponible del conjunto de datos."@es .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "Una distribuzione disponibile per il set di dati."@it .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του."@el .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات"@ar .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#definition> "データセットを、その利用可能な配信に接続します。"@ja .
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/2004/02/skos/core#editorialNote> "Status: English Definition text modified by DCAT revision team, translations pending (except for Italian, Spanish and Czech)."@en .
+# 
+# http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Ceci est un lien direct à un fichier téléchargeable en un format donnée. Exple fichier CSV ou RDF. Le format est décrit par les propriétés de distribution dct:format et/ou dcat:mediaType."@fr .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "La URL de un archivo descargable en el formato dato. Por ejemplo, archivo CSV o archivo RDF. El formato se describe con las propiedades de la distribución dct:format y/o dcat:mediaType."@es .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Questo è un link diretto al file scaricabile in un dato formato. E.g. un file CSV o un file RDF. Il formato è descritto dal dct:format e/o dal dcat:mediaType della distribuzione."@it .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType."@en .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL souboru ke stažení v daném formátu, například CSV nebo RDF soubor. Formát je popsán vlastností distribuce dct:format a/nebo dcat:mediaType."@cs .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType."@da .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "dcat:downloadURLはdcat:accessURLの特定の形式です。しかし、DCATプロファイルが非ダウンロード・ロケーションに対してのみaccessURLを用いる場合には、より強い分離を課すことを望む可能性があるため、この含意を強化しないように、DCATは、dcat:downloadURLをdcat:accessURLのサブプロパティーであると定義しません。"@ja .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Είναι ένας σύνδεσμος άμεσης μεταφόρτωσης ενός αρχείου σε μια δεδομένη μορφή. Π.χ. ένα αρχείο CSV ή RDF. Η μορφη αρχείου περιγράφεται από τις ιδιότητες dct:format ή/και dcat:mediaType της διανομής."@el .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#comment> "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType "@ar .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL de descarga"@es .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL de téléchargement"@fr .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL di scarico"@it .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL souboru ke stažení"@cs .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL μεταφόρτωσης"@el .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "download URL"@en .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "downloadURL"@da .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "رابط تحميل"@ar .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#label> "ダウンロードURL"@ja .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "Ceci est un lien direct à un fichier téléchargeable en un format donnée. Exple fichier CSV ou RDF. Le format est décrit par les propriétés de distribution dct:format et/ou dcat:mediaType."@fr .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "La URL de un archivo descargable en el formato dato. Por ejemplo, archivo CSV o archivo RDF. El formato se describe con las propiedades de la distribución dct:format y/o dcat:mediaType."@es .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "Questo è un link diretto al file scaricabile in un dato formato. E.g. un file CSV o un file RDF. Il formato è descritto dal dct:format e/o dal dcat:mediaType della distribuzione."@it .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType."@en .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "URL souboru ke stažení v daném formátu, například CSV nebo RDF soubor. Formát je popsán vlastností distribuce dct:format a/nebo dcat:mediaType."@cs .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType."@da .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "dcat:downloadURLはdcat:accessURLの特定の形式です。しかし、DCATプロファイルが非ダウンロード・ロケーションに対してのみaccessURLを用いる場合には、より強い分離を課すことを望む可能性があるため、この含意を強化しないように、DCATは、dcat:downloadURLをdcat:accessURLのサブプロパティーであると定義しません。"@ja .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "Είναι ένας σύνδεσμος άμεσης μεταφόρτωσης ενός αρχείου σε μια δεδομένη μορφή. Π.χ. ένα αρχείο CSV ή RDF. Η μορφη αρχείου περιγράφεται από τις ιδιότητες dct:format ή/και dcat:mediaType της διανομής."@el .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#definition> "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType "@ar .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#editorialNote> "Status: English  Definition text modified by DCAT revision team, Italian, Spanish and Czech translation updated, other translations pending."@en .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#editorialNote> "rdfs:label, rdfs:comment and/or skos:scopeNote have been modified. Non-english versions must be updated."@en .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "El valor es una URL."@es .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "La valeur est une URL."@fr .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "dcat:downloadURL BY MĚLA být použita pro adresu, ze které je distribuce přímo přístupná, typicky skrze požadavek HTTP Get."@cs .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "dcat:downloadURL BØR anvendes til angivelse af den adresse hvor distributionen er tilgængelig direkte, typisk gennem et HTTP Get request."@da .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "dcat:downloadURL DOVREBBE essere utilizzato per l'indirizzo a cui questa distribuzione è disponibile direttamente, in genere attraverso una richiesta Get HTTP."@it .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "dcat:downloadURL SHOULD be used for the address at which this distribution is available directly, typically through a HTTP Get request."@en .
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2004/02/skos/core#scopeNote> "Η τιμή είναι ένα URL."@el .
+# 
+# http://www.w3.org/ns/dcat#endpointDescription
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#DataService> .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the service end-point, including its operations, parameters etc."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Popis přístupového bodu služby včetně operací, parametrů apod."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "descripción del end-point del servicio"@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "description of service end-point"@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "descrizione dell'endpoint del servizio"@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "endpointbeskrivelse"@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "popis přístupového bodu služby"@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "A description of the service end-point, including its operations, parameters etc."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "Popis přístupového bodu služby včetně operací, parametrů apod."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc.."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description, an OGC GetCapabilities response, a SPARQL Service Description, an OpenSearch or WSDL document, a Hydra API description, else in text or some other informal mode if a formal representation is not possible."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "En beskrivelse af et endpoint kan udtrykkes i et maskinlæsbart format, såsom OpenAPI (Swagger)-beskrivelser, et OGC GetCapabilities svar, en SPARQL tjenestebeskrivelse, en OpenSearch- eller et WSDL-dokument, en Hydra-API-beskrivelse, eller i tekstformat eller i et andet uformelt format, hvis en formel repræsentation ikke er mulig."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Endpointbeskrivelsen giver specifikke oplysninger om den konkrete endpointinstans, mens dct:conformsTo anvendes til at indikere den overordnede standard eller specifikation som endpointet er i overensstemmelse med."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "La descripción del endpoint brinda detalles específicos de la instancia del endpoint, mientras que dct:conformsTo se usa para indicar el estándar general o especificación que implementa el endpoint."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "La descrizione dell'endpoint fornisce dettagli specifici dell'istanza dell'endpoint reale, mentre dct:conformsTo viene utilizzato per indicare lo standard o le specifiche implementate dall'endpoint."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Popis přístupového bodu dává specifické detaily jeho konkrétní instance, zatímco dct:conformsTo indikuje obecný standard či specifikaci kterou přístupový bod implementuje."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Popis přístupového bodu může být vyjádřen ve strojově čitelné formě, například jako popis OpenAPI (Swagger), odpověď služby OGC getCapabilities, pomocí slovníku SPARQL Service Description, jako OpenSearch či WSDL document, jako popis API dle slovníku Hydra, a nebo textově nebo jiným neformálním způsobem, pokud není možno použít formální reprezentaci."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "The endpoint description gives specific details of the actual endpoint instance, while dct:conformsTo is used to indicate the general standard or specification that the endpoint implements."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Una descripción del endpoint del servicio puede expresarse en un formato que la máquina puede interpretar, tal como una descripción basada en OpenAPI (Swagger), una respuesta OGC GetCapabilities, una descripción de un servicio SPARQL, un documento OpenSearch o WSDL, una descripción con la Hydra API, o en texto u otro modo informal si la representación formal no es posible."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Una descrizione dell'endpoint può essere espressa in un formato leggibile dalla macchina, come una descrizione OpenAPI (Swagger), una risposta GetCapabilities OGC, una descrizione del servizio SPARQL, un documento OpenSearch o WSDL, una descrizione API Hydra, o con del testo o qualche altra modalità informale se una rappresentazione formale non è possibile."@it .
+# 
+# http://www.w3.org/ns/dcat#endpointURL
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#DataService> .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "La posición raíz o end-point principal del servicio (una IRI web)."@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "The root location or primary endpoint of the service (a web-resolvable IRI)."@en .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "end-point del servicio"@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "end-point del servizio"@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "přístupový bod služby"@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "service end-point"@en .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "tjenesteendpoint"@da .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "La posición raíz o end-point principal del servicio (una IRI web)."@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "The root location or primary endpoint of the service (a web-resolvable IRI)."@en .
+# 
+# http://www.w3.org/ns/dcat#mediaType
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/MediaType> .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Cette propriété doit être utilisée quand c'est définit le type de média de la distribution en IANA, sinon dct:format DOIT être utilisé avec différentes valeurs."@fr .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad debe ser usada cuando está definido el tipo de media de la distribución en IANA, de otra manera dct:format puede ser utilizado con diferentes valores"@es .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Il tipo di media della distribuzione come definito da IANA"@it .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Medietypen for distributionen som den er defineret af IANA."@da .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "The media type of the distribution as defined by IANA"@en .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Typ média distribuce definovaný v IANA."@cs .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Η ιδιότητα αυτή ΘΑ ΠΡΕΠΕΙ να χρησιμοποιείται όταν ο τύπος μέσου μίας διανομής είναι ορισμένος στο IANA, αλλιώς η ιδιότητα dct:format ΔΥΝΑΤΑΙ να χρησιμοποιηθεί με διαφορετικές τιμές."@el .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "يجب استخدام هذه الخاصية إذا كان نوع الملف معرف ضمن IANA"@ar .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "このプロパティーは、配信のメディア・タイプがIANAで定義されているときに使用すべきで（SHOULD）、そうでない場合には、dct:formatを様々な値と共に使用できます（MAY）。"@ja .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "media type"@en .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "medietype"@da .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de media"@es .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo di media"@it .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "typ média"@cs .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "type de média"@fr .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "τύπος μέσου"@el .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "نوع الميديا"@ar .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#label> "メディア・タイプ"@ja .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#changeNote> "Il range di dcat:mediaType è stato ristretto  come parte della revisione di DCAT."@it .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#changeNote> "Obor hodnot dcat:mediaType byl zúžen v této revizi DCAT."@cs .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#changeNote> "The range of dcat:mediaType has been tightened as part of the revision of DCAT."@en .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "Cette propriété doit être utilisée quand c'est définit le type de média de la distribution en IANA, sinon dct:format DOIT être utilisé avec différentes valeurs."@fr .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "Esta propiedad debe ser usada cuando está definido el tipo de media de la distribución en IANA, de otra manera dct:format puede ser utilizado con diferentes valores."@es .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "Il tipo di media della distribuzione come definito da IANA."@it .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "Medietypen for distributionen som den er defineret af IANA."@da .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "The media type of the distribution as defined by IANA."@en .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "Typ média distribuce definovaný v IANA."@cs .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "Η ιδιότητα αυτή ΘΑ ΠΡΕΠΕΙ να χρησιμοποιείται όταν ο τύπος μέσου μίας διανομής είναι ορισμένος στο IANA, αλλιώς η ιδιότητα dct:format ΔΥΝΑΤΑΙ να χρησιμοποιηθεί με διαφορετικές τιμές."@el .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "يجب استخدام هذه الخاصية إذا كان نوع الملف معرف ضمن IANA"@ar .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#definition> "このプロパティーは、配信のメディア・タイプがIANAで定義されているときに使用すべきで（SHOULD）、そうでない場合には、dct:formatを様々な値と共に使用できます（MAY）。"@ja .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#editorialNote> "Status: English Definition text modified by DCAT revision team, Italian and Czech translation provided, other translations pending. Note some inconsistency on def vs. usage."@en .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#scopeNote> "Denne egenskab BØR anvendes hvis distributionens medietype optræder i 'IANA media types registry' https://www.iana.org/assignments/media-types/, ellers KAN egenskaben dct:format anvendes med et andet udfaldsrum."@da .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#scopeNote> "Esta propiedad DEBERÍA usarse cuando el 'media type' de la distribución está definido en el registro IANA de 'media types' https://www.iana.org/assignments/media-types/, de lo contrario, dct:format PUEDE usarse con distintos valores."@es .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#scopeNote> "Questa proprietà DEVE essere usata quando il tipo di media della distribuzione è definito nel registro dei tipi di media IANA https://www.iana.org/assignments/media-types/, altrimenti dct:format PUO 'essere usato con differenti valori."@it .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#scopeNote> "Tato vlastnost BY MĚLA být použita, je-li typ média distribuce definován v registru IANA https://www.iana.org/assignments/media-types/. V ostatních případech MŮŽE být použita vlastnost dct:format s jinými hodnotami."@cs .
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2004/02/skos/core#scopeNote> "This property SHOULD be used when the media type of the distribution is defined in the IANA media types registry https://www.iana.org/assignments/media-types/, otherwise dct:format MAY be used with different values."@en .
+# 
+# http://www.w3.org/ns/dcat#packageFormat
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/MediaType> .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Balíčkový formát souboru, ve kterém je jeden či více souborů seskupeno dohromady, např. aby bylo možné stáhnout sadu souvisejících souborů naráz."@cs .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "El formato del archivo en que se agrupan uno o más archivos de datos, e.g. para permitir que un conjunto de archivos relacionados se bajen juntos."@es .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution. "@da .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Il formato di impacchettamento della distribuzione in cui uno o più file di dati sono raggruppati insieme, ad es. per abilitare un insieme di file correlati da scaricare insieme."@it .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together."@en .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.w3.org/TR/vocab-dcat-2/> .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#label> "formato de empaquetado"@es .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#label> "formato di impacchettamento"@it .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#label> "formát balíčku"@cs .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#label> "packaging format"@en .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2000/01/rdf-schema#label> "pakkeformat"@da .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà aggiunta in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab tilføjet i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#definition> "Balíčkový formát souboru, ve kterém je jeden či více souborů seskupeno dohromady, např. aby bylo možné stáhnout sadu souvisejících souborů naráz."@cs .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#definition> "El formato del archivo en que se agrupan uno o más archivos de datos, e.g. para permitir que un conjunto de archivos relacionados se bajen juntos."@es .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#definition> "Il formato di impacchettamento della distribuzione in cui uno o più file di dati sono raggruppati insieme, ad es. per abilitare un insieme di file correlati da scaricare insieme."@it .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#definition> "The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together."@en .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Denne egenskab kan anvendes hvis filerne i en distribution er pakket, fx i en TAR-fil, en Frictionless Data Package eller en Bagit-fil. Formatet BØR udtrykkes ved en medietype som defineret i 'IANA media types registry', hvis der optræder en relevant medietype dér: https://www.iana.org/assignments/media-types/."@da .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Esta propiedad se debe usar cuando los archivos de la distribución están empaquetados, por ejemplo en un archivo TAR, Frictionless Data Package o Bagit. El formato DEBERÍA expresarse usando un 'media type', tales como los definidos en el registro IANA de 'media types' https://www.iana.org/assignments/media-types/, si está disponibles."@es .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Questa proprietà deve essere utilizzata quando i file nella distribuzione sono impacchettati, ad esempio in un file TAR, Frictionless Data Package o Bagit. Il formato DOVREBBE essere espresso utilizzando un tipo di supporto come definito dal registro dei tipi di media IANA https://www.iana.org/assignments/media-types/, se disponibili."@it .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "Tato vlastnost se použije, když jsou soubory v distribuci zabaleny, např. v souboru TAR, v balíčku Frictionless Data Package nebo v souboru Bagit. Formát BY MĚL být vyjádřen pomocí typu média definovaného v registru IANA https://www.iana.org/assignments/media-types/, pokud existuje."@cs .
+<http://www.w3.org/ns/dcat#packageFormat> <http://www.w3.org/2004/02/skos/core#scopeNote> "This property to be used when the files in the distribution are packaged, e.g. in a TAR file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA media types registry https://www.iana.org/assignments/media-types/, if available."@en .
+# 
+# http://www.w3.org/ns/dcat#servesDataset
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#DataService> .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data that this DataService can distribute."@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "En samling af data som denne datatjeneste kan distribuere."@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Una colección de datos que este Servicio de Datos puede distribuir."@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Una raccolta di dati che questo DataService può distribuire."@it .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "datatjeneste for datasæt"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "poskytuje datovou sadu"@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "provee conjunto de datos"@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "serve set di dati"@it .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "serves dataset"@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#altLabel> "distribuerer"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#altLabel> "ekspederer"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#altLabel> "udstiller"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "A collection of data that this DataService can distribute."@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "En samling af data som denne datatjeneste kan distribuere."@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "Una colección de datos que este Servicio de Datos puede distribuir."@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "Una raccolta di dati che questo DataService può distribuire."@it .
+# 
+# https://w3id.org/conceptual-mapping#belongsToFrame
+<https://w3id.org/conceptual-mapping#belongsToFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#belongsToFrame> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/conceptual-mapping#hasField> .
+<https://w3id.org/conceptual-mapping#belongsToFrame> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#DataField> .
+<https://w3id.org/conceptual-mapping#belongsToFrame> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#belongsToFrame> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to frame" .
+<https://w3id.org/conceptual-mapping#belongsToFrame> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a data field and the source frame it belongs to" .
+# 
+# https://w3id.org/conceptual-mapping#combinesFrame
+<https://w3id.org/conceptual-mapping#combinesFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#combinesFrame> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#CombinedFrame> .
+<https://w3id.org/conceptual-mapping#combinesFrame> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#Frame> .
+<https://w3id.org/conceptual-mapping#combinesFrame> <http://www.w3.org/2000/01/rdf-schema#label> "combines frame" .
+<https://w3id.org/conceptual-mapping#combinesFrame> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a combined frame and the frames it combines" .
+# 
+# https://w3id.org/conceptual-mapping#constantValue
+<https://w3id.org/conceptual-mapping#constantValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#constantValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#constantValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#Constant> .
+<https://w3id.org/conceptual-mapping#constantValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://w3id.org/conceptual-mapping#constantValue> <http://www.w3.org/2000/01/rdf-schema#label> "constant value"@en .
+<https://w3id.org/conceptual-mapping#constantValue> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the constant resource value it returns"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasBooleanCondition
+<https://w3id.org/conceptual-mapping#hasBooleanCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasBooleanCondition> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping#LinkingMap> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping#ConditionalStatementMap> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#hasBooleanCondition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+<https://w3id.org/conceptual-mapping#hasBooleanCondition> <http://www.w3.org/2000/01/rdf-schema#label> "has boolean condition" .
+<https://w3id.org/conceptual-mapping#hasBooleanCondition> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a linking expression or a conditional statement map and its boolean evaluable expression" .
+# 
+# https://w3id.org/conceptual-mapping#hasDataSource
+<https://w3id.org/conceptual-mapping#hasDataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#DataSource> .
+<https://w3id.org/conceptual-mapping#hasDataSource> <http://www.w3.org/2000/01/rdf-schema#label> "has data source"@en .
+<https://w3id.org/conceptual-mapping#hasDataSource> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data source access and its data source"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasDataType
+<https://w3id.org/conceptual-mapping#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping#ReferenceNodeMap> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping#ListMap> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#hasDataType> <http://www.w3.org/2000/01/rdf-schema#label> "has data type"@en .
+<https://w3id.org/conceptual-mapping#hasDataType> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasEvaluableExpression
+<https://w3id.org/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#ResourceMap> .
+<https://w3id.org/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+<https://w3id.org/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluable expression" .
+<https://w3id.org/conceptual-mapping#hasEvaluableExpression> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a resource map and the evaluable expression that defines it"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasField
+<https://w3id.org/conceptual-mapping#hasField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasField> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#hasField> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#DataField> .
+<https://w3id.org/conceptual-mapping#hasField> <http://www.w3.org/2000/01/rdf-schema#label> "has field" .
+<https://w3id.org/conceptual-mapping#hasField> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a source frame and its data field" .
+# 
+# https://w3id.org/conceptual-mapping#hasFrame
+<https://w3id.org/conceptual-mapping#hasFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasFrame> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasFrame> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#Frame> .
+<https://w3id.org/conceptual-mapping#hasFrame> <http://www.w3.org/2000/01/rdf-schema#label> "has frame" .
+<https://w3id.org/conceptual-mapping#hasFrame> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a statement map and its frame" .
+# 
+# https://w3id.org/conceptual-mapping#hasFunctionName
+<https://w3id.org/conceptual-mapping#hasFunctionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasFunctionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#FunctionExpression> .
+<https://w3id.org/conceptual-mapping#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/conceptual-mapping/functions-list> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/conceptual-mapping#hasFunctionName> <http://www.w3.org/2000/01/rdf-schema#label> "has function name"@en .
+<https://w3id.org/conceptual-mapping#hasFunctionName> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a recursive expression and the name of the function it defines"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasInput
+<https://w3id.org/conceptual-mapping#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#FunctionExpression> .
+<https://w3id.org/conceptual-mapping#hasInput> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#ExpressionList> .
+<https://w3id.org/conceptual-mapping#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "has input"@en .
+<https://w3id.org/conceptual-mapping#hasInput> <http://www.w3.org/2004/02/skos/core#definition> "A relation between an evaluable expression and the list of parameters it requires"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasLanguage
+<https://w3id.org/conceptual-mapping#hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping#LiteralMap> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/conceptual-mapping#ListMap> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "has language"@en .
+<https://w3id.org/conceptual-mapping#hasLanguage> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a literal to define the language"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasLogicalTarget
+<https://w3id.org/conceptual-mapping#hasLogicalTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasLogicalTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasLogicalTarget> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rml/LogicalTarget> .
+<https://w3id.org/conceptual-mapping#hasLogicalTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a statement and its logical target" .
+<https://w3id.org/conceptual-mapping#hasLogicalTarget> <http://www.w3.org/2000/01/rdf-schema#label> "has logical target" .
+# 
+# https://w3id.org/conceptual-mapping#hasNamedGraph
+<https://w3id.org/conceptual-mapping#hasNamedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasNamedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#NodeMap> .
+<https://w3id.org/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#label> "has named graph"@en .
+<https://w3id.org/conceptual-mapping#hasNamedGraph> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the assigned named graph"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasNestedFrame
+<https://w3id.org/conceptual-mapping#hasNestedFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasNestedFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasNestedFrame> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#hasNestedFrame> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#hasNestedFrame> <http://www.w3.org/2000/01/rdf-schema#label> "has nested frame" .
+<https://w3id.org/conceptual-mapping#hasNestedFrame> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a source frame and another source frame within" .
+# 
+# https://w3id.org/conceptual-mapping#hasObject
+<https://w3id.org/conceptual-mapping#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#ResourceMap> .
+<https://w3id.org/conceptual-mapping#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "has object"@en .
+<https://w3id.org/conceptual-mapping#hasObject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a resource map to define the predicate"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasPredicate
+<https://w3id.org/conceptual-mapping#hasPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#ReferenceNodeMap> .
+<https://w3id.org/conceptual-mapping#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#label> "has predicate"@en .
+<https://w3id.org/conceptual-mapping#hasPredicate> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a reference node to define the predicate"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasProtocol
+<https://w3id.org/conceptual-mapping#hasProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasProtocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#DataAccessService> .
+<https://w3id.org/conceptual-mapping#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#range> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/conceptual-mapping/protocols-list> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/conceptual-mapping#hasProtocol> <http://www.w3.org/2000/01/rdf-schema#label> "has protocol"@en .
+<https://w3id.org/conceptual-mapping#hasProtocol> <http://www.w3.org/2004/02/skos/core#definition> "A relation between the data access and the protocol that describes it"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasSecurityScheme
+<https://w3id.org/conceptual-mapping#hasSecurityScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#DataAccessService> .
+<https://w3id.org/conceptual-mapping#hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2019/wot/security#SecurityScheme> .
+<https://w3id.org/conceptual-mapping#hasSecurityScheme> <http://www.w3.org/2000/01/rdf-schema#label> "has security scheme"@en .
+<https://w3id.org/conceptual-mapping#hasSecurityScheme> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a data access and the security scheme it has"@en .
+# 
+# https://w3id.org/conceptual-mapping#hasSubject
+<https://w3id.org/conceptual-mapping#hasSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#NodeMap> .
+<https://w3id.org/conceptual-mapping#hasSubject> <http://www.w3.org/2000/01/rdf-schema#label> "has subject"@en .
+<https://w3id.org/conceptual-mapping#hasSubject> <http://www.w3.org/2004/02/skos/core#definition> "A relation between a statement map and a node to define the subject"@en .
+# 
+# https://w3id.org/conceptual-mapping#inverseProperty
+<https://w3id.org/conceptual-mapping#inverseProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#inverseProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#LinkingMap> .
+<https://w3id.org/conceptual-mapping#inverseProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#ReferenceNodeMap> .
+<https://w3id.org/conceptual-mapping#inverseProperty> <http://www.w3.org/2000/01/rdf-schema#label> "inverse property" .
+<https://w3id.org/conceptual-mapping#inverseProperty> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between the linking expression and the reference node map formed when the condition is fulfilled" .
+# 
+# https://w3id.org/conceptual-mapping#joinsBy
+<https://w3id.org/conceptual-mapping#joinsBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#joinsBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#JoinCombination> .
+<https://w3id.org/conceptual-mapping#joinsBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#DataField> .
+<https://w3id.org/conceptual-mapping#joinsBy> <http://www.w3.org/2000/01/rdf-schema#label> "joins by" .
+<https://w3id.org/conceptual-mapping#joinsBy> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a join combination and the field it joins the sources by" .
+# 
+# https://w3id.org/conceptual-mapping#language
+<https://w3id.org/conceptual-mapping#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://semweb.mmlab.be/ns/rml#ReferenceFormulation> .
+<https://w3id.org/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a source frame and its reference formulation" .
+<https://w3id.org/conceptual-mapping#language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
+# 
+# https://w3id.org/conceptual-mapping#property
+<https://w3id.org/conceptual-mapping#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#property> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#LinkingMap> .
+<https://w3id.org/conceptual-mapping#property> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#ReferenceNodeMap> .
+<https://w3id.org/conceptual-mapping#property> <http://www.w3.org/2000/01/rdf-schema#label> "property" .
+<https://w3id.org/conceptual-mapping#property> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between the linking expression and the reference node map formed when the condition is fulfilled" .
+# 
+# https://w3id.org/conceptual-mapping#source
+<https://w3id.org/conceptual-mapping#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#source> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#LinkingMap> .
+<https://w3id.org/conceptual-mapping#source> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#source> <http://www.w3.org/2000/01/rdf-schema#label> "source" .
+<https://w3id.org/conceptual-mapping#source> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a linking expression and its source statement map" .
+# 
+# https://w3id.org/conceptual-mapping#target
+<https://w3id.org/conceptual-mapping#target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/conceptual-mapping#target> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#LinkingMap> .
+<https://w3id.org/conceptual-mapping#target> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#target> <http://www.w3.org/2000/01/rdf-schema#label> "target" .
+<https://w3id.org/conceptual-mapping#target> <http://www.w3.org/2004/02/skos/core#definition> "A relationship between a linking expression and its target statement map" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/conceptual-mapping#encoding
+<https://w3id.org/conceptual-mapping#encoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/conceptual-mapping#encoding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#DataSource> .
+<https://w3id.org/conceptual-mapping#encoding> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/conceptual-mapping#encoding> <http://www.w3.org/2000/01/rdf-schema#label> "encoding"@en .
+<https://w3id.org/conceptual-mapping#encoding> <http://www.w3.org/2004/02/skos/core#definition> "The encoding of the data described by the Data Source"@en .
+# 
+# https://w3id.org/conceptual-mapping#expression
+<https://w3id.org/conceptual-mapping#expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/conceptual-mapping#expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/conceptual-mapping#expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+<https://w3id.org/conceptual-mapping#expression> <http://www.w3.org/2004/02/skos/core#definition> "What specifies which data is retrieven from a text source"@en .
+# 
+# https://w3id.org/conceptual-mapping#field
+<https://w3id.org/conceptual-mapping#field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/conceptual-mapping#field> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#DataField> .
+<https://w3id.org/conceptual-mapping#field> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/conceptual-mapping#field> <http://www.w3.org/2000/01/rdf-schema#label> "field" .
+<https://w3id.org/conceptual-mapping#field> <http://www.w3.org/2004/02/skos/core#definition> "Expression that defines a field of the data" .
+# 
+# https://w3id.org/conceptual-mapping#refreshTime
+<https://w3id.org/conceptual-mapping#refreshTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/conceptual-mapping#refreshTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#AsynchronousSource> .
+<https://w3id.org/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/conceptual-mapping#refreshTime> <http://www.w3.org/2000/01/rdf-schema#label> "refresh time"@en .
+<https://w3id.org/conceptual-mapping#refreshTime> <http://www.w3.org/2004/02/skos/core#definition> "Time between every data request"@en .
+# 
+# https://w3id.org/conceptual-mapping#type
+<https://w3id.org/conceptual-mapping#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/conceptual-mapping#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/conceptual-mapping#type> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/conceptual-mapping#JoinCombination> .
+<https://w3id.org/conceptual-mapping#type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/conceptual-mapping#type> <http://www.w3.org/2000/01/rdf-schema#label> "type" .
+<https://w3id.org/conceptual-mapping#type> <http://www.w3.org/2004/02/skos/core#definition> "Type of join combination of frames" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/MediaType
+<http://purl.org/dc/terms/MediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://semweb.mmlab.be/ns/rml#ReferenceFormulation
+<http://semweb.mmlab.be/ns/rml#ReferenceFormulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://semweb.mmlab.be/ns/rml#ReferenceFormulation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a Reference Formulation."@en .
+<http://semweb.mmlab.be/ns/rml#ReferenceFormulation> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Formulation" .
+# 
+# http://w3id.org/rml/Compression
+<http://w3id.org/rml/Compression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rml/Compression> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents file compression schemes."@en .
+<http://w3id.org/rml/Compression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/Compression> <http://www.w3.org/2000/01/rdf-schema#label> "compression class" .
+# 
+# http://w3id.org/rml/Encoding
+<http://w3id.org/rml/Encoding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rml/Encoding> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents encoding formats."@en .
+<http://w3id.org/rml/Encoding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/Encoding> <http://www.w3.org/2000/01/rdf-schema#label> "Encoding class" .
+# 
+# http://w3id.org/rml/LogicalTarget
+<http://w3id.org/rml/LogicalTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rml/LogicalTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes a logical target."@en .
+<http://w3id.org/rml/LogicalTarget> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/LogicalTarget> <http://www.w3.org/2000/01/rdf-schema#label> "LogicalTarget" .
+# 
+# http://w3id.org/rml/Source
+<http://w3id.org/rml/Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/rml/Target
+<http://w3id.org/rml/Target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rml/Target> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes a target."@en .
+<http://w3id.org/rml/Target> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/rml/io/> .
+<http://w3id.org/rml/Target> <http://www.w3.org/2000/01/rdf-schema#label> "Target" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of RDF Lists." .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/2000/01/rdf-schema#label> "List" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "The class resource, everything." .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://purl.org/dc/terms/issued> "2008-05-xx" .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://purl.org/dc/terms/issued> "2008-05-xx"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept scheme may be defined to include concepts from different sources."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2008/05/skos#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+# 
+# http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#comment> "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#comment> "Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#comment> "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#comment> "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#comment> "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate."@it .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#label> "Data service"@en .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#label> "Datatjeneste"@da .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#label> "Servicio de datos"@es .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#label> "Servizio di dati"@it .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#altLabel> "Dataservice"@da .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#changeNote> "New class added in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová třída přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva clase añadida en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova classe aggiunta in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny klasse tilføjet i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#definition> "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#definition> "Et site eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#definition> "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#definition> "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#definition> "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate."@it .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "Datatjenestetypen kan indikeres ved hjælp af egenskaben dct:type. Værdien kan tages fra kontrollerede udfaldsrum såsom INSPIRE spatial data service vocabulary."@da .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "Druh služby může být indikován vlastností dct:type. Její hodnota může být z řízeného slovníku, kterým je například slovník typů prostorových datových služeb INSPIRE."@cs .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "El tipo de servicio puede indicarse usando la propiedad dct:type. Su valor puede provenir de un vocabulario controlado, como por ejemplo el vocabulario de servicios de datos espaciales de INSPIRE."@es .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "Hvis en dcat:DataService er bundet til en eller flere specifikke datasæt kan dette indikeres ved hjælp af egenskaben dcat:servesDataset. "@da .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property."@en .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "Il tipo di servizio può essere indicato usando la proprietà dct:type. Il suo valore può essere preso da un vocabolario controllato come il vocabolario dei tipi di servizi per dati spaziali di INSPIRE."@it .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "Pokud je dcat:DataService navázána na jednu či více Datových sad, jsou tyto indikovány vlstností dcat:servesDataset."@cs .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "Se un dcat:DataService è associato a uno o più Dataset specificati, questi sono indicati dalla proprietà dcat:serveDataset."@it .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "Si un dcat:DataService está asociado con uno o más conjuntos de datos especificados, dichos conjuntos de datos pueden indicarse con la propiedad dcat:servesDataset."@es .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2004/02/skos/core#scopeNote> "The kind of service can be indicated using the dct:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type vocabulary."@en .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data, published or curated by a single source, and available for access or download in one or more representations."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Conjunto de datos"@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@it .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Datasæt"@da .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Datová sada"@cs .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Jeu de données"@fr .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Σύνολο Δεδομένων"@el .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "قائمة بيانات"@ar .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "データセット"@ja .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#altLabel> "Datasamling"@da .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#changeNote> "2018-02 - odstraněno tvrzení o podtřídě dctype:Dataset, jelikož rozsah dcat:Dataset zahrnuje několik dalších typů ze slovníku dctype."@cs .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#changeNote> "2018-02 - se eliminó el axioma de subclase con dctype:Dataset porque el alcance de dcat:Dataset incluye muchos otros tipos del vocabulario dctype."@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#changeNote> "2018-02 - sottoclasse di dctype:Dataset rimosso perché l'ambito di dcat:Dataset include diversi altri tipi dal vocabolario dctype."@it .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#changeNote> "2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#changeNote> "2018-02 - subklasse af dctype:Dataset fjernet da scope af dcat:Dataset omfatter flere forskellige typer fra dctype-vokabularet."@da .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "En samling a data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#definition> "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#editorialNote> "2020-03-16 A new scopenote added and need to be translated"@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier."@fr .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Denne klasse beskriver det konceptuelle datasæt. En eller flere repræsentationer kan være tilgængelige med forskellige skematiske opsætninger, formater eller serialiseringer."@da .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes. "@da .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Esta clase representa el conjunto de datos publicados. En los casos donde es necesario distinguir entre el conjunto de datos y su entrada en el catálogo de datos, se debe utilizar la clase 'registro del catálogo'."@es .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Questa classe descrive il dataset dal punto di vista concettuale. Possono essere disponibili una o più rappresentazioni, con diversi layout e formati schematici o serializzazioni."@it .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Questa classe rappresenta il dataset come pubblicato dall’editore. Nel caso in cui sia necessario operare  una distinzione fra i metadati originali del dataset e il record dei metadati ad esso associato nel catalogo (ad esempio, per distinguere la data di modifica del dataset da quella del dataset nel catalogo) si può impiegare la classe catalog record."@it .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Tato třída reprezentuje datovou sadu tak, jak je publikována poskytovatelem dat. V případě potřeby rozlišení datové sady a jejího katalogizačního záznamu (jelikož metadata jako datum modifikace se mohou lišit) pro něj může být použita třída \"katalogizační záznam\"."@cs .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "The notion of dataset in DCAT is broad and inclusive, with the intention of accommodating resource types arising from all communities. Data comes in many forms including numbers, text, pixels, imagery, sound and other multi-media, and potentially other types, any of which might be collected into a dataset."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "This class describes the conceptual dataset. One or more representations might be available, with differing schematic layouts and formats or serializations."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "This class represents the actual dataset as published by the dataset provider. In cases where a distinction between the actual dataset and its entry in the catalog is necessary (because metadata such as modification date and maintainer might differ), the catalog record class can be used for the latter."@en .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη. Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο."@el .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2004/02/skos/core#scopeNote> "このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。"@ja .
+# 
+# http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)."@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly)."@cs .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed."@it .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS."@fr .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."@es .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed."@el .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك."@ar .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#comment> "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"@ja .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribuce"@cs .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribución"@es .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribution"@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribution"@en .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribution"@fr .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Distribuzione"@it .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "Διανομή"@el .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "التوزيع"@ar .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2000/01/rdf-schema#label> "配信"@ja .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#altLabel> "Datadistribution"@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#altLabel> "Datamanifestation"@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#altLabel> "Datarepræsentation"@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#altLabel> "Dataudstilling"@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)."@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly)."@cs .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed."@it .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS."@fr .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."@es .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed."@el .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك."@ar .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#definition> "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"@ja .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information sur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web."@fr .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Denne klasse repræsenterer datasættets overordnede tilgængelighed og giver ikke oplysninger om hvilken metode der kan anvendes til at få adgang til data, dvs. om adgang til datasættet realiseres ved direkte download, API eller via et websted. Anvendelsen af egenskaben dcat:downloadURL indikerer at distributionen kan downloades direkte."@da .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web."@es .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Questa classe rappresenta una disponibilità generale di un dataset e non implica alcuna informazione sul metodo di accesso effettivo ai dati, ad esempio se si tratta di un accesso a download diretto, API, o attraverso una pagina Web. L'utilizzo della proprietà dcat:downloadURL indica distribuzioni direttamente scaricabili."@it .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skutečné metodě přístupu k datům, tj. zda jsou přímo ke stažení, skrze API či přes webovou stránku. Použití vlastnosti dcat:downloadURL indikuje přímo stažitelné distribuce."@cs .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα, μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές."@el .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/2004/02/skos/core#scopeNote> "これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。"@ja .
+# 
+# https://w3id.org/conceptual-mapping#AltMap
+<https://w3id.org/conceptual-mapping#AltMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#AltMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#ContainerMap> .
+<https://w3id.org/conceptual-mapping#AltMap> <http://www.w3.org/2000/01/rdf-schema#label> "Alt Map" .
+<https://w3id.org/conceptual-mapping#AltMap> <http://www.w3.org/2004/02/skos/core#definition> "Resource map that defines an alt container" .
+# 
+# https://w3id.org/conceptual-mapping#AsynchronousSource
+<https://w3id.org/conceptual-mapping#AsynchronousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#DataSource> .
+<https://w3id.org/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#refreshTime> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#StreamSource> .
+<https://w3id.org/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#SynchronousSource> .
+<https://w3id.org/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2000/01/rdf-schema#label> "Asynchronous Source"@en .
+<https://w3id.org/conceptual-mapping#AsynchronousSource> <http://www.w3.org/2004/02/skos/core#definition> "Data source that is not synchronized when it is sent or received"@en .
+# 
+# https://w3id.org/conceptual-mapping#BagMap
+<https://w3id.org/conceptual-mapping#BagMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#BagMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#ContainerMap> .
+<https://w3id.org/conceptual-mapping#BagMap> <http://www.w3.org/2000/01/rdf-schema#label> "Bag Map" .
+<https://w3id.org/conceptual-mapping#BagMap> <http://www.w3.org/2004/02/skos/core#definition> "Resource map that defines a bag container" .
+# 
+# https://w3id.org/conceptual-mapping#BlankNodeMap
+<https://w3id.org/conceptual-mapping#BlankNodeMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#BlankNodeMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#NodeMap> .
+<https://w3id.org/conceptual-mapping#BlankNodeMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#ReferenceNodeMap> .
+<https://w3id.org/conceptual-mapping#BlankNodeMap> <http://www.w3.org/2000/01/rdf-schema#label> "Blank Node Map" .
+<https://w3id.org/conceptual-mapping#BlankNodeMap> <http://www.w3.org/2004/02/skos/core#definition> "Unique node with no intrinsic name that is not a reference to a resource or a literal"@en .
+# 
+# https://w3id.org/conceptual-mapping#CartessianProductCombination
+<https://w3id.org/conceptual-mapping#CartessianProductCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#CartessianProductCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#CombinedFrame> .
+<https://w3id.org/conceptual-mapping#CartessianProductCombination> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#JoinCombination> .
+<https://w3id.org/conceptual-mapping#CartessianProductCombination> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#UnionCombination> .
+<https://w3id.org/conceptual-mapping#CartessianProductCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Cartessian Product Combination" .
+<https://w3id.org/conceptual-mapping#CartessianProductCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combined frame by cartessian product" .
+# 
+# https://w3id.org/conceptual-mapping#CombinedFrame
+<https://w3id.org/conceptual-mapping#CombinedFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#CombinedFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#Frame> .
+<https://w3id.org/conceptual-mapping#CombinedFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#Frame> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#combinesFrame> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#CombinedFrame> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#SourceFrame> .
+<https://w3id.org/conceptual-mapping#CombinedFrame> <http://www.w3.org/2000/01/rdf-schema#label> "Combined Frame" .
+<https://w3id.org/conceptual-mapping#CombinedFrame> <http://www.w3.org/2004/02/skos/core#definition> "Frame that is formed by the combination of two other frames by union, join or cartessian product" .
+# 
+# https://w3id.org/conceptual-mapping#ConditionalStatementMap
+<https://w3id.org/conceptual-mapping#ConditionalStatementMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#ConditionalStatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#StatementMap> .
+<https://w3id.org/conceptual-mapping#ConditionalStatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+_:genid26 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#hasBooleanCondition> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#ConditionalStatementMap> <http://www.w3.org/2000/01/rdf-schema#label> "Conditional Statement Map"@en .
+<https://w3id.org/conceptual-mapping#ConditionalStatementMap> <http://www.w3.org/2004/02/skos/core#definition> "Statement Map that needs to fulfil one condition to be generated"@en .
+# 
+# https://w3id.org/conceptual-mapping#Constant
+<https://w3id.org/conceptual-mapping#Constant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#Constant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+<https://w3id.org/conceptual-mapping#Constant> <http://www.w3.org/2000/01/rdf-schema#label> "Constant"@en .
+<https://w3id.org/conceptual-mapping#Constant> <http://www.w3.org/2004/02/skos/core#definition> "Expression that contains a constant value"@en .
+# 
+# https://w3id.org/conceptual-mapping#ContainerMap
+<https://w3id.org/conceptual-mapping#ContainerMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#ContainerMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#ResourceMap> .
+<https://w3id.org/conceptual-mapping#ContainerMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#ListMap> .
+<https://w3id.org/conceptual-mapping#ContainerMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#LiteralMap> .
+<https://w3id.org/conceptual-mapping#ContainerMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#NodeMap> .
+<https://w3id.org/conceptual-mapping#ContainerMap> <http://www.w3.org/2000/01/rdf-schema#label> "Container Map" .
+<https://w3id.org/conceptual-mapping#ContainerMap> <http://www.w3.org/2004/02/skos/core#definition> "Resource map that defines a container" .
+# 
+# https://w3id.org/conceptual-mapping#DataAccessService
+<https://w3id.org/conceptual-mapping#DataAccessService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#DataAccessService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#DataService> .
+<https://w3id.org/conceptual-mapping#DataAccessService> <http://www.w3.org/2000/01/rdf-schema#label> "Data Access Service"@en .
+<https://w3id.org/conceptual-mapping#DataAccessService> <http://www.w3.org/2004/02/skos/core#definition> "Description of how to retrieve the data from its source"@en .
+# 
+# https://w3id.org/conceptual-mapping#DataField
+<https://w3id.org/conceptual-mapping#DataField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#DataField> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+<https://w3id.org/conceptual-mapping#DataField> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#Frame> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#belongsToFrame> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#DataField> <http://www.w3.org/2000/01/rdf-schema#label> "Data Field"@en .
+<https://w3id.org/conceptual-mapping#DataField> <http://www.w3.org/2004/02/skos/core#definition> "Expression with a value retrieved from the source data"@en .
+# 
+# https://w3id.org/conceptual-mapping#DataSource
+<https://w3id.org/conceptual-mapping#DataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/conceptual-mapping#DataSource> <http://www.w3.org/2000/01/rdf-schema#label> "Data Source"@en .
+<https://w3id.org/conceptual-mapping#DataSource> <http://www.w3.org/2004/02/skos/core#definition> "Description of the retrieved data"@en .
+# 
+# https://w3id.org/conceptual-mapping#EvaluableExpression
+<https://w3id.org/conceptual-mapping#EvaluableExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluable Expression"@en .
+<https://w3id.org/conceptual-mapping#EvaluableExpression> <http://www.w3.org/2004/02/skos/core#definition> "Element that contains the information to form objects, predicates and subjects"@en .
+# 
+# https://w3id.org/conceptual-mapping#EventSource
+<https://w3id.org/conceptual-mapping#EventSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#EventSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#AsynchronousSource> .
+<https://w3id.org/conceptual-mapping#EventSource> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#PeriodicSource> .
+<https://w3id.org/conceptual-mapping#EventSource> <http://www.w3.org/2000/01/rdf-schema#label> "Event Source"@en .
+<https://w3id.org/conceptual-mapping#EventSource> <http://www.w3.org/2004/02/skos/core#definition> "Type of data access that retrieves data when a package arrives"@en .
+# 
+# https://w3id.org/conceptual-mapping#ExpressionList
+<https://w3id.org/conceptual-mapping#ExpressionList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#ExpressionList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/conceptual-mapping#ExpressionList> <http://www.w3.org/2000/01/rdf-schema#label> "Expression List" .
+<https://w3id.org/conceptual-mapping#ExpressionList> <http://www.w3.org/2004/02/skos/core#definition> "An expression that defines a list of Evaluable Expressions" .
+# 
+# https://w3id.org/conceptual-mapping#Frame
+<https://w3id.org/conceptual-mapping#Frame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#Frame> <http://www.w3.org/2000/01/rdf-schema#label> "Frame" .
+<https://w3id.org/conceptual-mapping#Frame> <http://www.w3.org/2004/02/skos/core#definition> "Fragment of data that is used to form statements" .
+# 
+# https://w3id.org/conceptual-mapping#FunctionExpression
+<https://w3id.org/conceptual-mapping#FunctionExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#FunctionExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+<https://w3id.org/conceptual-mapping#FunctionExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Function Expression"@en .
+<https://w3id.org/conceptual-mapping#FunctionExpression> <http://www.w3.org/2004/02/skos/core#definition> "Expression that can expect one or more parameters and nested functions"@en .
+# 
+# https://w3id.org/conceptual-mapping#JoinCombination
+<https://w3id.org/conceptual-mapping#JoinCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#JoinCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#CombinedFrame> .
+<https://w3id.org/conceptual-mapping#JoinCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#DataField> .
+_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#joinsBy> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#JoinCombination> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#UnionCombination> .
+<https://w3id.org/conceptual-mapping#JoinCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Join Combination" .
+<https://w3id.org/conceptual-mapping#JoinCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combined frame by join" .
+# 
+# https://w3id.org/conceptual-mapping#LinkingMap
+<https://w3id.org/conceptual-mapping#LinkingMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#LinkingMap> <http://www.w3.org/2000/01/rdf-schema#label> "Linking Map" .
+<https://w3id.org/conceptual-mapping#LinkingMap> <http://www.w3.org/2004/02/skos/core#definition> "What links two subjects from different statement maps and their data sources" .
+# 
+# https://w3id.org/conceptual-mapping#ListMap
+<https://w3id.org/conceptual-mapping#ListMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#ListMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#ResourceMap> .
+<https://w3id.org/conceptual-mapping#ListMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#LiteralMap> .
+<https://w3id.org/conceptual-mapping#ListMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#NodeMap> .
+<https://w3id.org/conceptual-mapping#ListMap> <http://www.w3.org/2000/01/rdf-schema#label> "List Map" .
+<https://w3id.org/conceptual-mapping#ListMap> <http://www.w3.org/2004/02/skos/core#definition> "Resource map that defines a list" .
+# 
+# https://w3id.org/conceptual-mapping#LiteralMap
+<https://w3id.org/conceptual-mapping#LiteralMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#LiteralMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#ResourceMap> .
+<https://w3id.org/conceptual-mapping#LiteralMap> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#NodeMap> .
+<https://w3id.org/conceptual-mapping#LiteralMap> <http://www.w3.org/2000/01/rdf-schema#label> "Literal Map" .
+<https://w3id.org/conceptual-mapping#LiteralMap> <http://www.w3.org/2004/02/skos/core#definition> "Resource map that defines a literal" .
+# 
+# https://w3id.org/conceptual-mapping#NodeMap
+<https://w3id.org/conceptual-mapping#NodeMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#NodeMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#ResourceMap> .
+<https://w3id.org/conceptual-mapping#NodeMap> <http://www.w3.org/2000/01/rdf-schema#label> "Node Map" .
+<https://w3id.org/conceptual-mapping#NodeMap> <http://www.w3.org/2004/02/skos/core#definition> "Union of blank node and reference node"@en .
+# 
+# https://w3id.org/conceptual-mapping#PeriodicSource
+<https://w3id.org/conceptual-mapping#PeriodicSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#PeriodicSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#AsynchronousSource> .
+<https://w3id.org/conceptual-mapping#PeriodicSource> <http://www.w3.org/2000/01/rdf-schema#label> "Periodic Source"@en .
+<https://w3id.org/conceptual-mapping#PeriodicSource> <http://www.w3.org/2004/02/skos/core#definition> "Data source that is retrieven repeatedly in a period of time"@en .
+# 
+# https://w3id.org/conceptual-mapping#ReferenceNodeMap
+<https://w3id.org/conceptual-mapping#ReferenceNodeMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#ReferenceNodeMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#NodeMap> .
+<https://w3id.org/conceptual-mapping#ReferenceNodeMap> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Node Map" .
+<https://w3id.org/conceptual-mapping#ReferenceNodeMap> <http://www.w3.org/2004/02/skos/core#definition> "Node that references an IRI"@en .
+# 
+# https://w3id.org/conceptual-mapping#ResourceMap
+<https://w3id.org/conceptual-mapping#ResourceMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#ResourceMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#EvaluableExpression> .
+_:genid29 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#hasEvaluableExpression> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#ResourceMap> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Map"@en .
+<https://w3id.org/conceptual-mapping#ResourceMap> <http://www.w3.org/2004/02/skos/core#definition> "What is to be created in a statement, either a subject, predicate, object, datatype, language or named graph" .
+# 
+# https://w3id.org/conceptual-mapping#SeqMap
+<https://w3id.org/conceptual-mapping#SeqMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#SeqMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#ContainerMap> .
+<https://w3id.org/conceptual-mapping#SeqMap> <http://www.w3.org/2000/01/rdf-schema#label> "Seq Map" .
+<https://w3id.org/conceptual-mapping#SeqMap> <http://www.w3.org/2004/02/skos/core#definition> "Resource map that defines a seq container" .
+# 
+# https://w3id.org/conceptual-mapping#SourceFrame
+<https://w3id.org/conceptual-mapping#SourceFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#SourceFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#Frame> .
+<https://w3id.org/conceptual-mapping#SourceFrame> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#DataSource> .
+_:genid30 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#hasDataSource> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#SourceFrame> <http://www.w3.org/2000/01/rdf-schema#label> "Source Frame" .
+<https://w3id.org/conceptual-mapping#SourceFrame> <http://www.w3.org/2004/02/skos/core#definition> "Frame that is related to the data source" .
+# 
+# https://w3id.org/conceptual-mapping#StatementMap
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#ResourceMap> .
+_:genid31 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#hasObject> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#ReferenceNodeMap> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#hasPredicate> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/conceptual-mapping#NodeMap> .
+_:genid33 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/conceptual-mapping#hasSubject> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/2000/01/rdf-schema#label> "Statement Map"@en .
+<https://w3id.org/conceptual-mapping#StatementMap> <http://www.w3.org/2004/02/skos/core#definition> "Statement that defines for a triple its subject, predicate, object, and datatype, language and assigned named graph if applicable"@en .
+# 
+# https://w3id.org/conceptual-mapping#StreamSource
+<https://w3id.org/conceptual-mapping#StreamSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#StreamSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#DataSource> .
+<https://w3id.org/conceptual-mapping#StreamSource> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/conceptual-mapping#SynchronousSource> .
+<https://w3id.org/conceptual-mapping#StreamSource> <http://www.w3.org/2000/01/rdf-schema#label> "Stream Source"@en .
+<https://w3id.org/conceptual-mapping#StreamSource> <http://www.w3.org/2004/02/skos/core#definition> "Data that is continuously retrieved"@en .
+# 
+# https://w3id.org/conceptual-mapping#SynchronousSource
+<https://w3id.org/conceptual-mapping#SynchronousSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#SynchronousSource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#DataSource> .
+<https://w3id.org/conceptual-mapping#SynchronousSource> <http://www.w3.org/2000/01/rdf-schema#label> "Synchronous Source"@en .
+<https://w3id.org/conceptual-mapping#SynchronousSource> <http://www.w3.org/2004/02/skos/core#definition> "Data source that is synchronized when it is sent or received"@en .
+# 
+# https://w3id.org/conceptual-mapping#UnionCombination
+<https://w3id.org/conceptual-mapping#UnionCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/conceptual-mapping#UnionCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/conceptual-mapping#CombinedFrame> .
+<https://w3id.org/conceptual-mapping#UnionCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Union Combination" .
+<https://w3id.org/conceptual-mapping#UnionCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combined frame by union" .
+# 
+# https://www.w3.org/2019/wot/security#SecurityScheme
+<https://www.w3.org/2019/wot/security#SecurityScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2019/wot/security#SecurityScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Metadata describing the configuration of a security mechanism.  <span class=\"rfc2119-assertion\" id=\"td-security-scheme-name\">The value assigned to the name <code>scheme</code> MUST be defined within a vocabulary included in the Thing Description, either in the present vocabulary or in a TD context extension." .
+<https://www.w3.org/2019/wot/security#SecurityScheme> <http://www.w3.org/2000/01/rdf-schema#label> "SecurityScheme" .
+# 
+# https://www.w3.org/ns/formats/Format
+<https://www.w3.org/ns/formats/Format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/conceptual-mapping/functions-list
+<https://w3id.org/conceptual-mapping/functions-list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/conceptual-mapping/functions-list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# https://w3id.org/conceptual-mapping/protocols-list
+<https://w3id.org/conceptual-mapping/protocols-list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/conceptual-mapping/protocols-list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
