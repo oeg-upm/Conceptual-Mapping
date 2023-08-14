@@ -5,7 +5,7 @@ Mappings Ontology.
 </span>
 
 <center>
-  <img src="resources/images/cm_diagram.png" alt="General overview of the Conceptual Mapping Ontology." width="90%"> <figcaption><b>Figure 1.</b> - Vocabulary for the representation of of the concepts covered by state-of-the-art mapping languages.</figcaption>
+  <img src="resources/images/cm_diagram.svg" alt="General overview of the Conceptual Mapping Ontology." width="90%"> <figcaption><b>Figure 1.</b> - Vocabulary for the representation of of the concepts covered by state-of-the-art mapping languages.</figcaption>
 </center>
 
 <span class="markdown">
@@ -104,6 +104,17 @@ Mappings Ontology.
   property of the property <tt>belongsToFrame</tt>. The reference formulation
   for the source frame can be defined with <tt>rml:ReferenceFormulation</tt> (e.g.
   if the frame is accessed with a JSONPath, XPath, as a CSV, etc.).
+</p>
+
+<p>
+  The desired output of the statements that are to be generated can be described with
+  the imported <tt>rml:LogicalTarget</tt>, referenced by the optional property
+  <tt>hasLogicalTarget</tt>. A <tt>rml:LogicalTarget</tt> specifies which RDF
+  serialisation the output should be encoded (<tt>rml:serialization</tt>), and the
+  referred <tt>rml:Target</tt>.
+  The <tt>rml:Target</tt> indicates how the output target can be accessed,
+  and can describe: (i) the compression format for the RDF output (<tt>rml:compression</tt>) and, if so, how e.g., GZip,
+  and (ii) the encoding (<tt>rml:encoding</tt>), e.g., UTF-8.
 </p>
 
     </li>

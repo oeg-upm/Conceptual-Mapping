@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/def/conceptual-mapping#"
-     xml:base="http://vocab.linkeddata.es/def/conceptual-mapping"
+<rdf:RDF xmlns="https://w3id.org/conceptual-mapping#"
+     xml:base="https://w3id.org/conceptual-mapping"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,8 +11,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
+    <owl:Ontology rdf:about="https://w3id.org/conceptual-mapping#">
+        <owl:versionIRI rdf:resource="https://w3id.org/conceptual-mapping"/>
         <dc:publisher rdf:resource="https://oeg.fi.upm.es/"/>
         <dc:title xml:lang="en">Conceptual Mapping</dc:title>
         <terms:contributor xml:lang="es">Andrea Cimmino (Ontology Engineering Group)</terms:contributor>
@@ -24,11 +24,11 @@
         <terms:creator xml:lang="es">Ana Iglesias Molina (Ontology Engineering Group)</terms:creator>
         <terms:description xml:lang="en">This ontology describes a mapping language that aims to gather the expressiveness of declarative mapping languages and represent their inherent shared characteristics.</terms:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by-nc-sa4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-29T00:00:00</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-14T00:00:00</terms:modified>
         <vann:preferredNamespacePrefix xml:lang="en">cm</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping"/>
-        <owl:priorVersion rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping/1.0.0/"/>
-        <owl:versionInfo xml:lang="en">v1.1.1</owl:versionInfo>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/conceptual-mapping"/>
+        <owl:priorVersion rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping/1.1.1/"/>
+        <owl:versionInfo>v1.1.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -190,357 +190,68 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame -->
+    <!-- http://w3id.org/rml/compression -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame">
-        <owl:inverseOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasField"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:label>belongs to frame</rdfs:label>
-        <skos:definition>A relationship between a data field and the source frame it belongs to</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
-        <rdfs:label>combines frame</rdfs:label>
-        <skos:definition>A relationship between a combined frame and the frames it combines</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#constantValue -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#constantValue">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Constant"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:label xml:lang="en">constant value</rdfs:label>
-        <skos:definition xml:lang="en">A relation between an evaluable expression and the constant resource value it returns</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition">
+    <owl:ObjectProperty rdf:about="http://w3id.org/rml/compression">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap"/>
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
+                    <rdf:Description rdf:about="http://w3id.org/rml/Source"/>
+                    <rdf:Description rdf:about="http://w3id.org/rml/Target"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <rdfs:label>has boolean condition</rdfs:label>
-        <skos:definition>A relationship between a linking expression or a conditional statement map and its boolean evaluable expression</skos:definition>
+        <rdfs:range rdf:resource="http://w3id.org/rml/Compression"/>
+        <rdfs:comment xml:lang="en">Defines the compression format of a Source or Target</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
+        <rdfs:label>compression</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource -->
+    <!-- http://w3id.org/rml/encoding -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <rdfs:label xml:lang="en">has data source</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a data source access and its data source</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataType">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range>
+    <owl:ObjectProperty rdf:about="http://w3id.org/rml/encoding">
+        <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ListMap"/>
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
+                    <rdf:Description rdf:about="http://w3id.org/rml/Source"/>
+                    <rdf:Description rdf:about="http://w3id.org/rml/Target"/>
                 </owl:unionOf>
             </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">has data type</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a statement map and a reference node to define the predicate</skos:definition>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://w3id.org/rml/Encoding"/>
+        <rdfs:comment xml:lang="en">Defines the encoding format of a Source or Target.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
+        <rdfs:label>encoding</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression -->
+    <!-- http://w3id.org/rml/serialization -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <rdfs:label>has evaluable expression</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a resource map and the evaluable expression that defines it</skos:definition>
+    <owl:ObjectProperty rdf:about="http://w3id.org/rml/serialization">
+        <rdfs:domain rdf:resource="http://w3id.org/rml/LogicalTarget"/>
+        <rdfs:range rdf:resource="https://www.w3.org/ns/formats/Format"/>
+        <rdfs:comment xml:lang="en">Defines the serialization to generate the target output.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
+        <rdfs:label>serialization</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasField -->
+    <!-- http://w3id.org/rml/target -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasField">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
-        <rdfs:label>has field</rdfs:label>
-        <skos:definition>A relationship between a source frame and its data field</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasFrame -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasFrame">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
-        <rdfs:label>has frame</rdfs:label>
-        <skos:definition>A relationship between a statement map and its frame</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasFunctionName">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/functions-list"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">has function name</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a recursive expression and the name of the function it defines</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasInput -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasInput">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
-        <rdfs:label xml:lang="en">has input</rdfs:label>
-        <skos:definition xml:lang="en">A relation between an evaluable expression and the list of parameters it requires</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasLanguage">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ListMap"/>
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">has language</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a statement map and a literal to define the language</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasNamedGraph">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:label xml:lang="en">has named graph</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a statement map and a node to define the assigned named graph</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasNestedFrame -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasNestedFrame">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:label>has nested frame</rdfs:label>
-        <skos:definition>A relationship between a source frame and another source frame within</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasObject -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasObject">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
-        <rdfs:label xml:lang="en">has object</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a statement map and a resource map to define the predicate</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
-        <rdfs:label xml:lang="en">has predicate</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a statement map and a reference node to define the predicate</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasProtocol">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/protocols-list"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">has protocol</rdfs:label>
-        <skos:definition xml:lang="en">A relation between the data access and the protocol that describes it</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasSecurityScheme -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasSecurityScheme">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService"/>
-        <rdfs:range rdf:resource="https://www.w3.org/2019/wot/security#SecurityScheme"/>
-        <rdfs:label xml:lang="en">has security scheme</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a data access and the security scheme it has</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:label xml:lang="en">has subject</rdfs:label>
-        <skos:definition xml:lang="en">A relation between a statement map and a node to define the subject</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#inverseProperty">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
-        <rdfs:label>inverse property</rdfs:label>
-        <skos:definition>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
-        <rdfs:label>joins by</rdfs:label>
-        <skos:definition>A relationship between a join combination and the field it joins the sources by</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#language -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#language">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:range rdf:resource="http://semweb.mmlab.be/ns/rml#ReferenceFormulation"/>
-        <rdfs:comment>A relationship between a source frame and its reference formulation</rdfs:comment>
-        <rdfs:label>language</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#property -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#property">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
-        <rdfs:label>property</rdfs:label>
-        <skos:definition>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#source -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#source">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:label>source</rdfs:label>
-        <skos:definition>A relationship between a linking expression and its source statement map</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#target -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#target">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
+    <owl:ObjectProperty rdf:about="http://w3id.org/rml/target">
+        <rdfs:domain rdf:resource="http://w3id.org/rml/LogicalTarget"/>
+        <rdfs:range rdf:resource="http://w3id.org/rml/Target"/>
+        <rdfs:comment xml:lang="en">Defines the target that describe the output data.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
         <rdfs:label>target</rdfs:label>
-        <skos:definition>A relationship between a linking expression and its target statement map</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -549,8 +260,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#ExpressionList"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
         <rdfs:comment>The first item in the subject RDF list.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
         <rdfs:label>first</rdfs:label>
@@ -562,8 +273,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#ExpressionList"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#ExpressionList"/>
         <rdfs:comment>The rest of the subject RDF list after the first item.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
         <rdfs:label>rest</rdfs:label>
@@ -972,6 +683,373 @@
     
 
 
+    <!-- https://w3id.org/conceptual-mapping#belongsToFrame -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#belongsToFrame">
+        <owl:inverseOf rdf:resource="https://w3id.org/conceptual-mapping#hasField"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#DataField"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
+        <rdfs:label>belongs to frame</rdfs:label>
+        <skos:definition>A relationship between a data field and the source frame it belongs to</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#combinesFrame -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#combinesFrame">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#CombinedFrame"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#Frame"/>
+        <rdfs:label>combines frame</rdfs:label>
+        <skos:definition>A relationship between a combined frame and the frames it combines</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#constantValue -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#constantValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#Constant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">constant value</rdfs:label>
+        <skos:definition xml:lang="en">A relation between an evaluable expression and the constant resource value it returns</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasBooleanCondition -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasBooleanCondition">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#ConditionalStatementMap"/>
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#LinkingMap"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:label>has boolean condition</rdfs:label>
+        <skos:definition>A relationship between a linking expression or a conditional statement map and its boolean evaluable expression</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasDataSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasDataSource">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#DataSource"/>
+        <rdfs:label xml:lang="en">has data source</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a data source access and its data source</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasDataType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasDataType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#ListMap"/>
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#ReferenceNodeMap"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">has data type</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a statement map and a reference node to define the predicate</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasEvaluableExpression -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasEvaluableExpression">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#ResourceMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:label>has evaluable expression</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a resource map and the evaluable expression that defines it</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasField -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasField">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#DataField"/>
+        <rdfs:label>has field</rdfs:label>
+        <skos:definition>A relationship between a source frame and its data field</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasFrame -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasFrame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#Frame"/>
+        <rdfs:label>has frame</rdfs:label>
+        <skos:definition>A relationship between a statement map and its frame</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasFunctionName -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasFunctionName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#FunctionExpression"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/conceptual-mapping/functions-list"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">has function name</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a recursive expression and the name of the function it defines</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasInput">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#FunctionExpression"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#ExpressionList"/>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+        <skos:definition xml:lang="en">A relation between an evaluable expression and the list of parameters it requires</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasLanguage -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasLanguage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#ListMap"/>
+                    <rdf:Description rdf:about="https://w3id.org/conceptual-mapping#LiteralMap"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">has language</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a statement map and a literal to define the language</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasLogicalTarget -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasLogicalTarget">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range rdf:resource="http://w3id.org/rml/LogicalTarget"/>
+        <rdfs:comment>A relation between a statement and its logical target</rdfs:comment>
+        <rdfs:label>has logical target</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasNamedGraph -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasNamedGraph">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+        <rdfs:label xml:lang="en">has named graph</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a statement map and a node to define the assigned named graph</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasNestedFrame -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasNestedFrame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
+        <rdfs:label>has nested frame</rdfs:label>
+        <skos:definition>A relationship between a source frame and another source frame within</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasObject -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#ResourceMap"/>
+        <rdfs:label xml:lang="en">has object</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a statement map and a resource map to define the predicate</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasPredicate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasPredicate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:label xml:lang="en">has predicate</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a statement map and a reference node to define the predicate</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasProtocol -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasProtocol">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#DataAccessService"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://w3id.org/conceptual-mapping/protocols-list"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">has protocol</rdfs:label>
+        <skos:definition xml:lang="en">A relation between the data access and the protocol that describes it</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasSecurityScheme -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasSecurityScheme">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#DataAccessService"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2019/wot/security#SecurityScheme"/>
+        <rdfs:label xml:lang="en">has security scheme</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a data access and the security scheme it has</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#hasSubject -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#hasSubject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+        <rdfs:label xml:lang="en">has subject</rdfs:label>
+        <skos:definition xml:lang="en">A relation between a statement map and a node to define the subject</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#inverseProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#inverseProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#LinkingMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:label>inverse property</rdfs:label>
+        <skos:definition>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#joinsBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#joinsBy">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#JoinCombination"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#DataField"/>
+        <rdfs:label>joins by</rdfs:label>
+        <skos:definition>A relationship between a join combination and the field it joins the sources by</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#language -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#language">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
+        <rdfs:range rdf:resource="http://semweb.mmlab.be/ns/rml#ReferenceFormulation"/>
+        <rdfs:comment>A relationship between a source frame and its reference formulation</rdfs:comment>
+        <rdfs:label>language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#property -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#property">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#LinkingMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:label>property</rdfs:label>
+        <skos:definition>A relationship between the linking expression and the reference node map formed when the condition is fulfilled</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#source -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#source">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#LinkingMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:label>source</rdfs:label>
+        <skos:definition>A relationship between a linking expression and its source statement map</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#target -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/conceptual-mapping#target">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#LinkingMap"/>
+        <rdfs:range rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:label>target</rdfs:label>
+        <skos:definition>A relationship between a linking expression and its target statement map</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -984,11 +1062,11 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#encoding -->
+    <!-- https://w3id.org/conceptual-mapping#encoding -->
 
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#encoding">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/conceptual-mapping#encoding">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#DataSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">encoding</rdfs:label>
         <skos:definition xml:lang="en">The encoding of the data described by the Data Source</skos:definition>
@@ -996,12 +1074,12 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#expression -->
+    <!-- https://w3id.org/conceptual-mapping#expression -->
 
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#expression">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/conceptual-mapping#expression">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">expression</rdfs:label>
         <skos:definition xml:lang="en">What specifies which data is retrieven from a text source</skos:definition>
@@ -1009,11 +1087,11 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#field -->
+    <!-- https://w3id.org/conceptual-mapping#field -->
 
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#field">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/conceptual-mapping#field">
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#DataField"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>field</rdfs:label>
         <skos:definition>Expression that defines a field of the data</skos:definition>
@@ -1021,12 +1099,12 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime -->
+    <!-- https://w3id.org/conceptual-mapping#refreshTime -->
 
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/conceptual-mapping#refreshTime">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#AsynchronousSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label xml:lang="en">refresh time</rdfs:label>
         <skos:definition xml:lang="en">Time between every data request</skos:definition>
@@ -1034,12 +1112,12 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#type -->
+    <!-- https://w3id.org/conceptual-mapping#type -->
 
 
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#type">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/conceptual-mapping#type">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
+        <rdfs:domain rdf:resource="https://w3id.org/conceptual-mapping#JoinCombination"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>type</rdfs:label>
         <skos:definition>Type of join combination of frames</skos:definition>
@@ -1076,423 +1154,53 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#AltMap -->
+    <!-- http://w3id.org/rml/Compression -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#AltMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap"/>
-        <rdfs:label>Alt Map</rdfs:label>
-        <skos:definition>Resource map that defines an alt container</skos:definition>
+    <owl:Class rdf:about="http://w3id.org/rml/Compression">
+        <rdfs:comment xml:lang="en">Represents file compression schemes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
+        <rdfs:label>compression class</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource -->
+    <!-- http://w3id.org/rml/Encoding -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#refreshTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource"/>
-        <rdfs:label xml:lang="en">Asynchronous Source</rdfs:label>
-        <skos:definition xml:lang="en">Data source that is not synchronized when it is sent or received</skos:definition>
+    <owl:Class rdf:about="http://w3id.org/rml/Encoding">
+        <rdfs:comment xml:lang="en">Represents encoding formats.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
+        <rdfs:label>Encoding class</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#BagMap -->
+    <!-- http://w3id.org/rml/LogicalTarget -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#BagMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap"/>
-        <rdfs:label>Bag Map</rdfs:label>
-        <skos:definition>Resource map that defines a bag container</skos:definition>
+    <owl:Class rdf:about="http://w3id.org/rml/LogicalTarget">
+        <rdfs:comment xml:lang="en">Denotes a logical target.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
+        <rdfs:label>LogicalTarget</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap -->
+    <!-- http://w3id.org/rml/Source -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#BlankNodeMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
-        <rdfs:label>Blank Node Map</rdfs:label>
-        <skos:definition xml:lang="en">Unique node with no intrinsic name that is not a reference to a resource or a literal</skos:definition>
-    </owl:Class>
+    <owl:Class rdf:about="http://w3id.org/rml/Source"/>
     
 
 
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#CartessianProductCombination -->
+    <!-- http://w3id.org/rml/Target -->
 
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#CartessianProductCombination">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination"/>
-        <rdfs:label>Cartessian Product Combination</rdfs:label>
-        <skos:definition>Combined frame by cartessian product</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#combinesFrame"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame"/>
-        <rdfs:label>Combined Frame</rdfs:label>
-        <skos:definition>Frame that is formed by the combination of two other frames by union, join or cartessian product</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ConditionalStatementMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasBooleanCondition"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Conditional Statement Map</rdfs:label>
-        <skos:definition xml:lang="en">Statement Map that needs to fulfil one condition to be generated</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Constant -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Constant">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <rdfs:label xml:lang="en">Constant</rdfs:label>
-        <skos:definition xml:lang="en">Expression that contains a constant value</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ListMap"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:label>Container Map</rdfs:label>
-        <skos:definition>Resource map that defines a container</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataAccessService">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
-        <rdfs:label xml:lang="en">Data Access Service</rdfs:label>
-        <skos:definition xml:lang="en">Description of how to retrieve the data from its source</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataField -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataField">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#belongsToFrame"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Data Field</rdfs:label>
-        <skos:definition xml:lang="en">Expression with a value retrieved from the source data</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#DataSource -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-        <rdfs:label xml:lang="en">Data Source</rdfs:label>
-        <skos:definition xml:lang="en">Description of the retrieved data</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression">
-        <rdfs:label xml:lang="en">Evaluable Expression</rdfs:label>
-        <skos:definition xml:lang="en">Element that contains the information to form objects, predicates and subjects</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#EventSource -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#EventSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource"/>
-        <rdfs:label xml:lang="en">Event Source</rdfs:label>
-        <skos:definition xml:lang="en">Type of data access that retrieves data when a package arrives</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ExpressionList">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-        <rdfs:label>Expression List</rdfs:label>
-        <skos:definition>An expression that defines a list of Evaluable Expressions</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#Frame -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#Frame">
-        <rdfs:label>Frame</rdfs:label>
-        <skos:definition>Fragment of data that is used to form statements</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#FunctionExpression">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-        <rdfs:label xml:lang="en">Function Expression</rdfs:label>
-        <skos:definition xml:lang="en">Expression that can expect one or more parameters and nested functions</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#JoinCombination">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#joinsBy"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataField"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination"/>
-        <rdfs:label>Join Combination</rdfs:label>
-        <skos:definition>Combined frame by join</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LinkingMap">
-        <rdfs:label>Linking Map</rdfs:label>
-        <skos:definition>What links two subjects from different statement maps and their data sources</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ListMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ListMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:label>List Map</rdfs:label>
-        <skos:definition>Resource map that defines a list</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#LiteralMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:label>Literal Map</rdfs:label>
-        <skos:definition>Resource map that defines a literal</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
-        <rdfs:label>Node Map</rdfs:label>
-        <skos:definition xml:lang="en">Union of blank node and reference node</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#PeriodicSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#AsynchronousSource"/>
-        <rdfs:label xml:lang="en">Periodic Source</rdfs:label>
-        <skos:definition xml:lang="en">Data source that is retrieven repeatedly in a period of time</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-        <rdfs:label>Reference Node Map</rdfs:label>
-        <skos:definition xml:lang="en">Node that references an IRI</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasEvaluableExpression"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#EvaluableExpression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Resource Map</rdfs:label>
-        <skos:definition>What is to be created in a statement, either a subject, predicate, object, datatype, language or named graph</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#SeqMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#SeqMap">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ContainerMap"/>
-        <rdfs:label>Seq Map</rdfs:label>
-        <skos:definition>Resource map that defines a seq container</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#SourceFrame">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#Frame"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasDataSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Source Frame</rdfs:label>
-        <skos:definition>Frame that is related to the data source</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#StatementMap">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasObject"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ResourceMap"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasPredicate"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#ReferenceNodeMap"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#hasSubject"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#NodeMap"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Statement Map</rdfs:label>
-        <skos:definition xml:lang="en">Statement that defines for a triple its subject, predicate, object, and datatype, language and assigned named graph if applicable</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#StreamSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <owl:disjointWith rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource"/>
-        <rdfs:label xml:lang="en">Stream Source</rdfs:label>
-        <skos:definition xml:lang="en">Data that is continuously retrieved</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#SynchronousSource">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#DataSource"/>
-        <rdfs:label xml:lang="en">Synchronous Source</rdfs:label>
-        <skos:definition xml:lang="en">Data source that is synchronized when it is sent or received</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/def/conceptual-mapping#UnionCombination">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/def/conceptual-mapping#CombinedFrame"/>
-        <rdfs:label>Union Combination</rdfs:label>
-        <skos:definition>Combined frame by union</skos:definition>
+    <owl:Class rdf:about="http://w3id.org/rml/Target">
+        <rdfs:comment xml:lang="en">Denotes a target.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/rml/io/"/>
+        <rdfs:label>Target</rdfs:label>
     </owl:Class>
     
 
@@ -1688,6 +1396,427 @@
     
 
 
+    <!-- https://w3id.org/conceptual-mapping#AltMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#AltMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#ContainerMap"/>
+        <rdfs:label>Alt Map</rdfs:label>
+        <skos:definition>Resource map that defines an alt container</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#AsynchronousSource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#AsynchronousSource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#DataSource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#refreshTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#StreamSource"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#SynchronousSource"/>
+        <rdfs:label xml:lang="en">Asynchronous Source</rdfs:label>
+        <skos:definition xml:lang="en">Data source that is not synchronized when it is sent or received</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#BagMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#BagMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#ContainerMap"/>
+        <rdfs:label>Bag Map</rdfs:label>
+        <skos:definition>Resource map that defines a bag container</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#BlankNodeMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#BlankNodeMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#ReferenceNodeMap"/>
+        <rdfs:label>Blank Node Map</rdfs:label>
+        <skos:definition xml:lang="en">Unique node with no intrinsic name that is not a reference to a resource or a literal</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#CartessianProductCombination -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#CartessianProductCombination">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#CombinedFrame"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#JoinCombination"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#UnionCombination"/>
+        <rdfs:label>Cartessian Product Combination</rdfs:label>
+        <skos:definition>Combined frame by cartessian product</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#CombinedFrame -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#CombinedFrame">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#Frame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#combinesFrame"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#Frame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#SourceFrame"/>
+        <rdfs:label>Combined Frame</rdfs:label>
+        <skos:definition>Frame that is formed by the combination of two other frames by union, join or cartessian product</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#ConditionalStatementMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#ConditionalStatementMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#StatementMap"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#hasBooleanCondition"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Conditional Statement Map</rdfs:label>
+        <skos:definition xml:lang="en">Statement Map that needs to fulfil one condition to be generated</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#Constant -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#Constant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:label xml:lang="en">Constant</rdfs:label>
+        <skos:definition xml:lang="en">Expression that contains a constant value</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#ContainerMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#ContainerMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#ResourceMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#ListMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#LiteralMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+        <rdfs:label>Container Map</rdfs:label>
+        <skos:definition>Resource map that defines a container</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#DataAccessService -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#DataAccessService">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdfs:label xml:lang="en">Data Access Service</rdfs:label>
+        <skos:definition xml:lang="en">Description of how to retrieve the data from its source</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#DataField -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#DataField">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#belongsToFrame"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#Frame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Data Field</rdfs:label>
+        <skos:definition xml:lang="en">Expression with a value retrieved from the source data</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#DataSource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#DataSource">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:label xml:lang="en">Data Source</rdfs:label>
+        <skos:definition xml:lang="en">Description of the retrieved data</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#EvaluableExpression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#EvaluableExpression">
+        <rdfs:label xml:lang="en">Evaluable Expression</rdfs:label>
+        <skos:definition xml:lang="en">Element that contains the information to form objects, predicates and subjects</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#EventSource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#EventSource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#AsynchronousSource"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#PeriodicSource"/>
+        <rdfs:label xml:lang="en">Event Source</rdfs:label>
+        <skos:definition xml:lang="en">Type of data access that retrieves data when a package arrives</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#ExpressionList -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#ExpressionList">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <rdfs:label>Expression List</rdfs:label>
+        <skos:definition>An expression that defines a list of Evaluable Expressions</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#Frame -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#Frame">
+        <rdfs:label>Frame</rdfs:label>
+        <skos:definition>Fragment of data that is used to form statements</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#FunctionExpression -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#FunctionExpression">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
+        <rdfs:label xml:lang="en">Function Expression</rdfs:label>
+        <skos:definition xml:lang="en">Expression that can expect one or more parameters and nested functions</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#JoinCombination -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#JoinCombination">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#CombinedFrame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#joinsBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#DataField"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#UnionCombination"/>
+        <rdfs:label>Join Combination</rdfs:label>
+        <skos:definition>Combined frame by join</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#LinkingMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#LinkingMap">
+        <rdfs:label>Linking Map</rdfs:label>
+        <skos:definition>What links two subjects from different statement maps and their data sources</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#ListMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#ListMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#ResourceMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#LiteralMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+        <rdfs:label>List Map</rdfs:label>
+        <skos:definition>Resource map that defines a list</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#LiteralMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#LiteralMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#ResourceMap"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+        <rdfs:label>Literal Map</rdfs:label>
+        <skos:definition>Resource map that defines a literal</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#NodeMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#NodeMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#ResourceMap"/>
+        <rdfs:label>Node Map</rdfs:label>
+        <skos:definition xml:lang="en">Union of blank node and reference node</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#PeriodicSource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#PeriodicSource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#AsynchronousSource"/>
+        <rdfs:label xml:lang="en">Periodic Source</rdfs:label>
+        <skos:definition xml:lang="en">Data source that is retrieven repeatedly in a period of time</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#ReferenceNodeMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#ReferenceNodeMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+        <rdfs:label>Reference Node Map</rdfs:label>
+        <skos:definition xml:lang="en">Node that references an IRI</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#ResourceMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#ResourceMap">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#hasEvaluableExpression"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#EvaluableExpression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Resource Map</rdfs:label>
+        <skos:definition>What is to be created in a statement, either a subject, predicate, object, datatype, language or named graph</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#SeqMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#SeqMap">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#ContainerMap"/>
+        <rdfs:label>Seq Map</rdfs:label>
+        <skos:definition>Resource map that defines a seq container</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#SourceFrame -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#SourceFrame">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#Frame"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#hasDataSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#DataSource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Source Frame</rdfs:label>
+        <skos:definition>Frame that is related to the data source</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#StatementMap -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#StatementMap">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#hasObject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#ResourceMap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#hasPredicate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#ReferenceNodeMap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/conceptual-mapping#hasSubject"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/conceptual-mapping#NodeMap"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Statement Map</rdfs:label>
+        <skos:definition xml:lang="en">Statement that defines for a triple its subject, predicate, object, and datatype, language and assigned named graph if applicable</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#StreamSource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#StreamSource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#DataSource"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/conceptual-mapping#SynchronousSource"/>
+        <rdfs:label xml:lang="en">Stream Source</rdfs:label>
+        <skos:definition xml:lang="en">Data that is continuously retrieved</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#SynchronousSource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#SynchronousSource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#DataSource"/>
+        <rdfs:label xml:lang="en">Synchronous Source</rdfs:label>
+        <skos:definition xml:lang="en">Data source that is synchronized when it is sent or received</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/conceptual-mapping#UnionCombination -->
+
+
+    <owl:Class rdf:about="https://w3id.org/conceptual-mapping#UnionCombination">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/conceptual-mapping#CombinedFrame"/>
+        <rdfs:label>Union Combination</rdfs:label>
+        <skos:definition>Combined frame by union</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://www.w3.org/2019/wot/security#SecurityScheme -->
 
 
@@ -1695,6 +1824,13 @@
         <rdfs:comment>Metadata describing the configuration of a security mechanism.  &lt;span class=&quot;rfc2119-assertion&quot; id=&quot;td-security-scheme-name&quot;&gt;The value assigned to the name &lt;code&gt;scheme&lt;/code&gt; MUST be defined within a vocabulary included in the Thing Description, either in the present vocabulary or in a TD context extension.</rdfs:comment>
         <rdfs:label>SecurityScheme</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/ns/formats/Format -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/ns/formats/Format"/>
     
 
 
@@ -1710,19 +1846,19 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/functions-list -->
+    <!-- https://w3id.org/conceptual-mapping/functions-list -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/functions-list">
+    <owl:NamedIndividual rdf:about="https://w3id.org/conceptual-mapping/functions-list">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/protocols-list -->
+    <!-- https://w3id.org/conceptual-mapping/protocols-list -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/page/def/conceptual-mapping/kos/protocols-list">
+    <owl:NamedIndividual rdf:about="https://w3id.org/conceptual-mapping/protocols-list">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
 </rdf:RDF>
